@@ -1,2 +1,145 @@
 "Dashboard As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
 
+    ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =RGBA(249, 250, 252, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutGap: =30
+        LayoutMode: =LayoutMode.Auto
+        PaddingRight: =30
+        Width: =Parent.Width
+        ZIndex: =1
+
+        SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: ='Left Navigation_2'.Width
+            ZIndex: =2
+
+            "'Left Navigation_2' As 'Left Navigation'":
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Width: ='Left Navigation_2'.MenuWidth
+                ZIndex: =1
+
+        RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =7
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =40
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =Component2_4.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =4
+
+                Component2_4 As Component2_3:
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =640
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =30
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =5
+
+                Container2 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =180
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    ZIndex: =1
+
+                    Container6 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(227, 234, 243, 1)
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                    Container7 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(204, 208, 225, 1)
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                    Container8 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(251, 188, 159, 1)
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =3
+
+                Container3 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =252
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    ZIndex: =2
+
+                    Container9 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(202, 202, 202, 1)
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                    Container10 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(238, 204, 204, 1)
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                Container4 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =364
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    ZIndex: =3
+
+                    Container11 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(175, 191, 224, 1)
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                    Container12 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(127, 178, 57, 1)
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                Container5 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =4
+
