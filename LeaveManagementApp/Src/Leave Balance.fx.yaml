@@ -1,0 +1,34 @@
+"'Leave Balance' As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+
+    ScreenContainer3 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutMode: =LayoutMode.Auto
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =1728.00
+        X: =0.00
+        ZIndex: =1
+
+        LeftSideContainer3 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =863.30
+            X: =0.00
+            ZIndex: =2
+
+        RightSideContainer3 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =863.30
+            X: =863.30
+            ZIndex: =3
+

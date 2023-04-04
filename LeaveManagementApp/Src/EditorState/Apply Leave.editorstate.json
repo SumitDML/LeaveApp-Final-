@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "ApplyScreen": {
+    "Apply Leave": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -20,7 +20,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ApplyScreen",
+      "Name": "Apply Leave",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -69,5 +69,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "ApplyScreen"
+  "TopParentName": "Apply Leave"
 }
