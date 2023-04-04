@@ -18,8 +18,8 @@ Component2_3 As CanvasComponent:
         RadiusTopLeft: =50
         RadiusTopRight: =50
         Width: =74.52
-        X: =Parent.Width-Self.Width-20
-        Y: =22
+        X: =Parent.Width-Self.Width-10
+        Y: =Parent.Height/2-Self.Height/2
         ZIndex: =1
 
     Label5_1 As label:
