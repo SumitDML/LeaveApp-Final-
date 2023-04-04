@@ -17,38 +17,40 @@ Component2_3 As CanvasComponent:
         RadiusBottomRight: =50
         RadiusTopLeft: =50
         RadiusTopRight: =50
-        Width: =53
-        X: =34
+        Width: =74.52
+        X: =47.80
         Y: =17
         ZIndex: =1
 
     Label5_1 As label:
         FontWeight: =FontWeight.Semibold
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =13.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.28
         Text: ="Hello, "&User().FullName
-        Width: =509
-        X: =103
+        Width: =715.66
+        X: =144.82
         Y: =17
         ZIndex: =3
 
     HtmlText2 As htmlViewer:
         Height: =34
         HtmlText: ="Welcome to <b>Leave Management System</b>"
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =9
-        Width: =259
-        X: =103.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12.65
+        Width: =364.16
+        X: =144.82
         Y: =46
         ZIndex: =4
 
     Image8 As image:
         Height: =45
         Image: =notification
-        Width: =45
-        X: =1270
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =63.27
+        X: =1785.65
         Y: =20
         ZIndex: =5
 

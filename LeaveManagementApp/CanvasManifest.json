@@ -93,12 +93,12 @@
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
-    "DocumentLayoutHeight": 768,
+    "DocumentLayoutHeight": 1117,
     "DocumentLayoutLockOrientation": false,
     "DocumentLayoutMaintainAspectRatio": true,
     "DocumentLayoutOrientation": "landscape",
     "DocumentLayoutScaleToFit": true,
-    "DocumentLayoutWidth": 1229,
+    "DocumentLayoutWidth": 1728,
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "2a31dd94-f2cb-49d4-b46a-968ab075fb59",
@@ -120,6 +120,11 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen2"
+    "Screen2",
+    "Apply Leave",
+    "Consumed Leaves",
+    "Dashboard",
+    "Leave Balance",
+    "Leave Status"
   ]
 }
