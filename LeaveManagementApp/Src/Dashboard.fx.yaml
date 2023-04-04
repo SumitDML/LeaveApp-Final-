@@ -73,61 +73,158 @@
                     FillPortions: =0
                     Height: =180
                     LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutGap: =20
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
+                    PaddingLeft: =2
+                    PaddingRight: =2
                     ZIndex: =1
 
                     Container6 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(227, 234, 243, 1)
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =1
 
+                        Button2 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(204, 208, 225, 1)
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =2
 
+                        Button2_1 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
                     Container8 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(251, 188, 159, 1)
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =3
+
+                        Button2_2 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            Color: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
 
                 Container3 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =252
                     LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutGap: =20
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
+                    PaddingLeft: =2
                     ZIndex: =2
 
                     Container9 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(202, 202, 202, 1)
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =1
 
+                        Button2_3 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
                     Container10 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(238, 204, 204, 1)
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =2
+
+                        Button2_4 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
 
                 Container4 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =364
                     LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutGap: =20
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -136,17 +233,55 @@
 
                     Container11 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(175, 191, 224, 1)
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =1
 
+                        Button2_5 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(127, 178, 57, 1)
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =2
+
+                        Button2_6 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: |
+                                =1
+                            Y: |
+                                =1
+                            ZIndex: =1
 
                 Container5 As groupContainer.horizontalAutoLayoutContainer:
                     LayoutMinHeight: =100
