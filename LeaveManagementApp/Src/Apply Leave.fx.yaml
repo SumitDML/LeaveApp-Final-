@@ -5,6 +5,7 @@
         Height: =Parent.Height
         LayoutGap: =30
         LayoutMode: =LayoutMode.Auto
+        PaddingRight: =30
         Width: =Parent.Width
         ZIndex: =1
 
