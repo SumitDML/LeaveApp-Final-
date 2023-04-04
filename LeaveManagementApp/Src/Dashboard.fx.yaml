@@ -10,17 +10,6 @@
         X: =0.00
         ZIndex: =1
 
-        LeftSideContainer1 As groupContainer.verticalAutoLayoutContainer:
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Width: =863.30
-            X: =0.00
-            ZIndex: =2
-
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
