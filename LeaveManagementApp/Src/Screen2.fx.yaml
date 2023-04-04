@@ -1,0 +1,18 @@
+"Screen2 As screen.'tabletAutoLayout_Sidebar_ver1.0'":
+
+    ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =3
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+

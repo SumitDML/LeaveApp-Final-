@@ -120,10 +120,11 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Dashboard",
+    "Screen2",
     "Apply Leave",
-    "Leave Balance",
     "Consumed Leaves",
+    "Dashboard",
+    "Leave Balance",
     "Leave Status"
   ]
 }

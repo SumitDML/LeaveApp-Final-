@@ -911,36 +911,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.notification"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.notification",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "notification",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.teamLeave"
                 }
               ],
