@@ -16,12 +16,14 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            Visible: =If(App.ActiveScreen.Size<3,false,true)
             Width: ='Left Navigation_2'.Width
             ZIndex: =2
 
             "'Left Navigation_2' As 'Left Navigation'":
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
+                Visible: =true
                 Width: ='Left Navigation_2'.MenuWidth
                 ZIndex: =1
 
@@ -44,11 +46,20 @@
                 Width: =Parent.Width
                 ZIndex: =4
 
-                Component2_4 As Component2_3:
-                    LayoutMinHeight: =640
-                    LayoutMinWidth: =640
-                    Width: =Parent.Width
+                Icon1 As icon.Add:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Color: =RGBA(0, 0, 0, 1)
+                    Icon: =Icon.Hamburger
+                    OnSelect: =Set(var,true)
+                    Width: =If(App.ActiveScreen.Size<3,60,0)
                     ZIndex: =1
+
+                Component2_4 As Component2_3:
+                    FillPortions: =1
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =200
+                    Width: =Parent.Width
+                    ZIndex: =2
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
@@ -142,4 +153,33 @@
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =4
+
+    navbar As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+        "'Left Navigation_3' As 'Left Navigation'":
+            Visible: =var
+            Width: ='Left Navigation_3'.MenuWidth
+
+        Rectangle1 As rectangle:
+            Fill: =RGBA(237, 237, 237, 0.7)
+            Height: =1117
+            Visible: =var
+            Width: =1728
+            ZIndex: =2
+
+        Icon2 As icon.Cancel:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =45
+            Icon: =Icon.Cancel
+            OnSelect: =Set(var,false)
+            Visible: =var
+            Width: =50
+            X: =339
+            Y: =27
+            ZIndex: =4
 
