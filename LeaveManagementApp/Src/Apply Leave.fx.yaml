@@ -1,2 +1,16 @@
 "'Apply Leave' As screen":
 
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =RGBA(249, 250, 252, 1)
+        Height: =Parent.Height
+        LayoutGap: =30
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        "'Left Navigation_1' As 'Left Navigation'":
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            Width: ='Left Navigation_1'.MenuWidth
+            ZIndex: =1
+

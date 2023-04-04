@@ -2,7 +2,7 @@
     CurrentScreen: ="Text"
     Fill: =RGBA(255, 255, 255, 1) 
     Height: =Max(App.Height,App.DesignHeight)
-    MenuWidth: =Max(App.Width, App.MinScreenWidth)/6-30
+    MenuWidth: =412
     NavItems: =lmsnav
     Width: ='Left Navigation'.MenuWidth
     X: =0
