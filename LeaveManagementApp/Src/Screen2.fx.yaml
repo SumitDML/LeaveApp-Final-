@@ -8,11 +8,12 @@
         ZIndex: =1
 
         SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
-            FillPortions: =3
+            FillPortions: =0
             Height: =Parent.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            Width: =412
             ZIndex: =2
 
