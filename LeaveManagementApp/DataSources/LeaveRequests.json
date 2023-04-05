@@ -37,6 +37,8 @@
       "HR": "HR",
       "HR#Claims": "HR Claims",
       "ID": "ID",
+      "LeaveId": "LeaveId",
+      "LeaveId#Id": "LeaveId Id",
       "LeaveTypes": "LeaveTypes",
       "LeaveTypes#Id": "LeaveTypes Id",
       "Modified": "Modified",
