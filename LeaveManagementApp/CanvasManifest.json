@@ -105,11 +105,11 @@
     "Id": "2a31dd94-f2cb-49d4-b46a-968ab075fb59",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "LeaveManagementApp(Final)",
+    "Name": "Leave App (Demo)",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "LeaveManagementApp(Final)",
+    "AppName": "Leave App (Demo)",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -122,9 +122,10 @@
   "ScreenOrder": [
     "Apply Leave",
     "Consumed Leaves",
-    "D",
+    "Dashboard",
     "Leave Balance",
     "Leave Status",
-    "D2"
+    "D2",
+    "Screen1"
   ]
 }

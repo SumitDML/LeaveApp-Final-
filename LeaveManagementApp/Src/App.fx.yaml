@@ -6,7 +6,7 @@ App As appinfo:
             Table(
                 {
                     Title: "Dashboard",
-                    Screen: D,
+                    Screen: Dashboard,
                     Icon: home
                 },
                 {

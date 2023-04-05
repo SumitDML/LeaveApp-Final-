@@ -42,15 +42,16 @@
             ZIndex: =4
 
             Label1 As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
+                Color: =RGBA(149, 149, 149, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =Parent.TemplateHeight
                 OnSelect: =Navigate(ThisItem.Screen)
                 PaddingRight: =7.03
                 PaddingTop: =7.03
-                Size: =18.28
+                Size: =17
                 Text: =ThisItem.Title
-                Width: =252.24
+                Width: =Parent.TemplateWidth-Image3.Width
                 X: =70
                 ZIndex: =1
 
