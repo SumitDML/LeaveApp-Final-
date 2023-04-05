@@ -602,6 +602,7 @@
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
+                        Width: =Parent.Width
                         ZIndex: =1
 
                         Button2_5 As button:
@@ -633,20 +634,47 @@
                             Y: =21
                             ZIndex: =2
 
-                        HtmlText3 As htmlViewer:
-                            Height: =276
-                            HtmlText: |-
-                                ="
-                                  <div style='width: 90px; height: 250px; background: #f2dfff; border-radius: 10px; position: relative;'>
-                                    <div style='width: 85%; height:50%; background: #BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
-                                      <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 24px;'>4</span><span style='font-size: 17px;'>/8<span><p>
-                                    </div>
-                                  </div>
-                                "
-                            Width: =97
-                            X: =137
-                            Y: =86
-                            ZIndex: =3
+                        "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+                            DelayItemLoading: =true
+                            Height: =293
+                            Items: =LeaveBalance
+                            LoadingSpinner: =LoadingSpinner.Data
+                            ShowScrollbar: =false
+                            TemplatePadding: =0
+                            TemplateSize: =155
+                            Width: =618
+                            Y: =71
+                            ZIndex: =4
+
+                            Title4 As label:
+                                Align: =Align.Center
+                                Height: =38
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =13
+                                Text: =ThisItem.Title
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =Parent.TemplateWidth
+                                Y: =252
+                                ZIndex: =2
+
+                            HtmlText3 As htmlViewer:
+                                Height: =234
+                                HtmlText: |-
+                                    ="
+                                      <div style='margin-left:26px;width: 95px; height: 220px; background:"&If(ThisItem.LeaveType.Value="Sick","##e4bfff",If(ThisItem.LeaveType.Value="Paid","#fff5b2",If(ThisItem.LeaveType.Value="Maternity","##98b2ff",If(ThisItem.LeaveType.Value="Casual","##d1ffd4"))))&"; border-radius: 10px; position: relative;'>
+                                        <div style='width: 85%; height:50%; background:"&If(ThisItem.LeaveType.Value="Sick","#BB5EFF",If(ThisItem.LeaveType.Value="Paid","##f6e15b",If(ThisItem.LeaveType.Value="Maternity","#4537bd",If(ThisItem.LeaveType.Value="Casual","##37bd46"))))&"; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
+                                          <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 24px;'>4</span><span style='font-size: 17px;'>/8<span><p>
+                                        </div>
+                                      </div>
+                                    "
+                                OnSelect: =Select(Parent)
+                                Width: =155
+                                Y: =4
+                                ZIndex: =3
 
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
