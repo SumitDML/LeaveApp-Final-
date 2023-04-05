@@ -1,0 +1,6 @@
+"D As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+    OnVisible: |-
+        =Set(consumed,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
+        Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
+        Set(Total,Sum(LeaveBalance,TotalLeave));
+

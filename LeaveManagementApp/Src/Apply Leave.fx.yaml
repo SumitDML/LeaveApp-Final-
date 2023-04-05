@@ -22,12 +22,6 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
-            Component2_5 As Component2_3:
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                Width: =Parent.Width
-                ZIndex: =1
-
             Container14 As groupContainer.manualLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -145,18 +139,6 @@
                             X: =50
                             Y: =168
                             ZIndex: =6
-
-                            Title1_1 As label:
-                                Align: =Align.Center
-                                Height: =WeekdayGallery1_1.TemplateHeight
-                                OnSelect: =Select(Parent)
-                                Size: =17 * WeekdayGallery1_1.TemplateWidth / 77
-                                Text: =ThisItem.Value
-                                Width: =WeekdayGallery1_1.TemplateWidth
-                                Wrap: =false
-                                X: =WeekdayGallery1_1.TemplateWidth / 2 - Self.Width / 2
-                                Y: =WeekdayGallery1_1.TemplateHeight / 2 - Self.Height / 2
-                                ZIndex: =1
 
                         MonthDayGallery1_1 As gallery.MonthDayGallery:
                             AccessibleLabel: ="Days of selected month"
@@ -277,15 +259,6 @@
                                 Y: =8
                                 ZIndex: =1
 
-                        Label2_2 As label:
-                            Height: =65
-                            Size: =24
-                            Text: ="SELECT LEAVE TYPE"
-                            Width: =317
-                            X: =4
-                            Y: =140
-                            ZIndex: =3
-
                         Icon3 As icon.ChevronDown:
                             Height: =36
                             Icon: =Icon.ChevronDown
@@ -311,14 +284,6 @@
                             X: =21
                             Y: =205
                             ZIndex: =5
-
-                        Label2_3 As label:
-                            Height: =65
-                            Size: =24
-                            Text: ="SELECT LEAVE TYPE"
-                            Width: =317
-                            Y: =278
-                            ZIndex: =6
 
                         TextInput2 As text:
                             Default: =""

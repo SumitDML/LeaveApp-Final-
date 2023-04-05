@@ -6,7 +6,7 @@ App As appinfo:
             Table(
                 {
                     Title: "Dashboard",
-                    Screen: Dashboard,
+                    Screen: D,
                     Icon: home
                 },
                 {
@@ -28,32 +28,6 @@ App As appinfo:
                     Title: "Leave Status",
                     Screen: 'Leave Status',
                     Icon: 'leaveStatus-7'
-                }
-            )
-        );
-        
-        ClearCollect(
-            fullhalf,
-            Table(
-                {
-                    Title: "Full Day"
-                },
-                {
-                    Title: "First Half"
-                },
-                  {
-                    Title: "Second Half"
-                }
-            )
-        );
-        ClearCollect(
-            onemulti,
-            Table(
-                {
-                    Title: "Single Day"
-                },
-                {
-                    Title: "Multiple Day"
                 }
             )
         );

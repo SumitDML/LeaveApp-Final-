@@ -23,11 +23,12 @@ Component2_3 As CanvasComponent:
         ZIndex: =1
 
     Label5_1 As label:
+        Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Semibold
         Height: =89
         PaddingRight: =7.03
         PaddingTop: =7.03
-        Size: =36
+        Size: =33
         Text: =App.ActiveScreen.Name
         Visible: =If(App.ActiveScreen.Size>=4,true,false)
         Width: =450
