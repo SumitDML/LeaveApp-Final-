@@ -621,7 +621,8 @@
                             RadiusTopRight: =20
                             Text: =""
                             Width: =Parent.Width-2
-                            X: =2
+                            X: =1
+                            Y: =1
                             ZIndex: =1
 
                         Label4_4 As label:
