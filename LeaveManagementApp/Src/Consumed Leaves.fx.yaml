@@ -498,15 +498,24 @@
                         Label9 As label:
                             Align: =Align.Center
                             Text: ="Sick Leave"
-                            X: =74
-                            Y: =237
+                            Width: =Parent.Width
+                            Y: =246
                             ZIndex: =2
 
-                        Label10 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)
-                            X: =74
-                            Y: =183
-                            ZIndex: =3
+                        HtmlText3_2 As htmlViewer:
+                            Height: =231
+                            HtmlText: |-
+                                ="
+                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#e4bfff; border-radius: 10px; position: relative;'>
+                                    <div style='width: 85%; height:50%; background:#BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
+                                      <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)&"<span><p>
+                                    </div>
+                                  </div>
+                                "
+                            OnSelect: =
+                            Width: =Parent.Width
+                            Y: =15
+                            ZIndex: =4
 
                     Container13_1 As groupContainer.manualLayoutContainer:
                         LayoutMinHeight: =100
@@ -536,15 +545,25 @@
                         Label9_1 As label:
                             Align: =Align.Center
                             Text: ="Paid Leave"
-                            X: =74
-                            Y: =238
+                            Width: =Parent.Width
+                            X: =1
+                            Y: =246
                             ZIndex: =2
 
-                        Label11 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)
-                            X: =74
-                            Y: =198
-                            ZIndex: =3
+                        HtmlText3_3 As htmlViewer:
+                            Height: =231
+                            HtmlText: |-
+                                ="
+                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#e4bfff; border-radius: 10px; position: relative;'>
+                                    <div style='width: 85%; height:50%; background:#BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
+                                      <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)&"<span><p>
+                                    </div>
+                                  </div>
+                                "
+                            OnSelect: =
+                            Width: =Parent.Width
+                            Y: =15
+                            ZIndex: =4
 
                     Container13_2 As groupContainer.manualLayoutContainer:
                         LayoutMinHeight: =100
@@ -574,15 +593,24 @@
                         Label9_2 As label:
                             Align: =Align.Center
                             Text: ="Casual Leave"
-                            X: =74
-                            Y: =241
+                            Width: =Parent.Width
+                            Y: =246
                             ZIndex: =2
 
-                        Label12 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)
-                            X: =74
-                            Y: =188
-                            ZIndex: =3
+                        HtmlText3_4 As htmlViewer:
+                            Height: =231
+                            HtmlText: |-
+                                ="
+                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#e4bfff; border-radius: 10px; position: relative;'>
+                                    <div style='width: 85%; height:50%; background:#BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
+                                      <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)&"<span><p>
+                                    </div>
+                                  </div>
+                                "
+                            OnSelect: =
+                            Width: =Parent.Width
+                            Y: =15
+                            ZIndex: =4
 
                     Container13_3 As groupContainer.manualLayoutContainer:
                         LayoutMinHeight: =100
@@ -612,15 +640,24 @@
                         Label9_3 As label:
                             Align: =Align.Center
                             Text: ="Maternity Leave"
-                            X: =74
-                            Y: =240
+                            Width: =Parent.Width
+                            Y: =246
                             ZIndex: =2
 
-                        Label13 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)
-                            X: =74
-                            Y: =189
-                            ZIndex: =3
+                        HtmlText3_5 As htmlViewer:
+                            Height: =231
+                            HtmlText: |-
+                                ="
+                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#e4bfff; border-radius: 10px; position: relative;'>
+                                    <div style='width: 85%; height:50%; background:#BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
+                                      <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)&"<span><p>
+                                    </div>
+                                  </div>
+                                "
+                            OnSelect: =
+                            Width: =Parent.Width
+                            Y: =15
+                            ZIndex: =4
 
     navbar_2 As group:
         Height: =5
