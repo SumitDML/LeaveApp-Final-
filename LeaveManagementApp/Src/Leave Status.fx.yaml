@@ -47,7 +47,7 @@
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 Width: =Parent.Width
-                ZIndex: =4
+                ZIndex: =1
 
                 Icon1_3 As icon.Add:
                     AlignInContainer: =AlignInContainer.Stretch
@@ -64,14 +64,11 @@
                     Width: =Parent.Width
                     ZIndex: =2
 
-            MainSectionContainer1_3 As groupContainer.verticalAutoLayoutContainer:
-                FillPortions: =120
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =30
+            Container14 As groupContainer.manualLayoutContainer:
+                FillPortions: =6
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =5
+                ZIndex: =2
 
                 Button2_14 As button:
                     BorderColor: =RGBA(202, 202, 202, 1)
@@ -81,7 +78,7 @@
                     DisabledFill: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Height-60
+                    Height: =Parent.Height-2
                     HoverFill: =
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
@@ -92,6 +89,92 @@
                     X: =1
                     Y: =1
                     ZIndex: =1
+
+                "Gallery11 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    Height: =Parent.Height-50
+                    Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =122
+                    Width: =Parent.Width-50
+                    X: =Parent.X+25
+                    Y: =24
+                    ZIndex: =2
+
+                    Title9 As label:
+                        Color: =RGBA(149, 149, 149, 1)
+                        FontWeight: =FontWeight.Normal
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"HALF DAY","FULL DAY")&" LEAVE"
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =220
+                        X: =Parent.X
+                        Y: =25
+                        ZIndex: =2
+
+                    Subtitle5 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =32
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =16
+                        Text: =""&Text(ThisItem.From)&" - "&ThisItem.To 
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =283
+                        X: =Title9.X
+                        Y: =52
+                        ZIndex: =3
+
+                    Separator5 As rectangle:
+                        BorderColor: =RGBA(202, 202, 202, 1)
+                        Fill: =RGBA(202, 202, 202, 1)
+                        Height: =0.5
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =5
+
+                    Label14 As label:
+                        Color: =RGBA(60, 93, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =23
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.LeaveTypes.Value&" Leave"
+                        X: =25
+                        Y: =84
+                        ZIndex: =6
+
+                    Button3_3 As button:
+                        BorderThickness: =0
+                        Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
+                        Fill: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,0.12),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,0.08),RGBA(255, 246, 196,1)))
+                        Font: =Font.'Lato Black'
+                        Height: =36
+                        OnSelect: =Select(Parent)
+                        Size: =13
+                        Text: =ThisItem.Status.Value
+                        Width: =122
+                        X: =1036
+                        Y: =48
+                        ZIndex: =7
+
+            MainSectionContainer1_4 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0.2
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =30
+                LayoutMinHeight: =30
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
 
     navbar_3 As group:
         Height: =5
