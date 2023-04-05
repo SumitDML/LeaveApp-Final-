@@ -101,6 +101,7 @@
                             DisabledFill: =RGBA(60, 93, 255, 0.06)
                             DisplayMode: =DisplayMode.Disabled
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Lato Black'
                             Height: =Parent.Height-8
                             HoverFill: =
                             RadiusBottomLeft: =20
@@ -129,6 +130,22 @@
                             X: =127
                             Y: =111
                             ZIndex: =3
+
+                        Button2 As button:
+                            DisabledBorderColor: =Color.Transparent
+                            DisabledColor: =Color.Transparent
+                            DisabledFill: =Color.Transparent
+                            Fill: =Color.Transparent
+                            Height: =Button2_13.Height
+                            HoverColor: =Color.Transparent
+                            HoverFill: =Color.Transparent
+                            OnSelect: =Navigate('Apply Leave')
+                            PressedFill: =Color.Transparent
+                            Text: =""
+                            Width: =Button2_13.Width
+                            X: =Button2_13.X
+                            Y: =Button2_13.Y
+                            ZIndex: =4
 
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
