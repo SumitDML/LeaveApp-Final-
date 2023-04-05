@@ -449,6 +449,166 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 70,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 28,
+                  "charOffset": 101,
+                  "snippet": {
+                    "text": "Sum(LeaveBalance,TotalLeave)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 70,
+                  "charOffset": 130,
+                  "snippet": {
+                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 28,
+                  "charOffset": 214,
+                  "snippet": {
+                    "text": "Sum(LeaveBalance,TotalLeave)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Dashboard.OnVisible"
                 }
               ],
@@ -1729,12 +1889,52 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_4.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container6_2.HtmlText2_6.HtmlText"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_4.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container6_2.HtmlText2_6.HtmlText",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 28,
+                  "charOffset": 37,
+                  "snippet": {
+                    "text": "Sum(LeaveBalance,TotalLeave)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HtmlText",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container6_2.HtmlText2_6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_4.HtmlText"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_4.HtmlText",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1748,7 +1948,7 @@
               "properties": {
                 "member": "HtmlText",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_4"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_4"
               }
             }
           ],
@@ -1769,26 +1969,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_4.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.Label13.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_4.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.Label13.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 28,
-                  "charOffset": 126,
+                  "charLength": 99,
+                  "charOffset": 96,
                   "snippet": {
-                    "text": "Sum(LeaveBalance,TotalLeave)"
+                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Maternity\"),'Total Days')"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_4"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.Label13"
               }
             }
           ],
@@ -1809,12 +2009,132 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.Label12.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.Label12.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 96,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Casual\"),'Total Days')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.Label12"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.Label11.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.Label11.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 94,
+                  "charOffset": 91,
+                  "snippet": {
+                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Paid\"),'Total Days')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.Label11"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.Label10.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.Label10.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 94,
+                  "charOffset": 91,
+                  "snippet": {
+                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Sick\"),'Total Days')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.Label10"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1828,7 +2148,7 @@
               "properties": {
                 "member": "HtmlText",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7"
               }
             }
           ],
@@ -1849,12 +2169,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1868,7 +2188,7 @@
               "properties": {
                 "member": "HtmlText",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7"
               }
             }
           ],
@@ -1883,726 +2203,6 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 28,
-                  "charOffset": 155,
-                  "snippet": {
-                    "text": "Sum(LeaveBalance,TotalLeave)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 1018,
-                  "snippet": {
-                    "text": ".Id"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LeaveId.Id"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1021,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 1034,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 1177,
-                  "snippet": {
-                    "text": ".Id"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LeaveId.Id"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1180,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 1193,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 1577,
-                  "snippet": {
-                    "text": ".Id"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LeaveId.Id"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1580,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 1593,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 1735,
-                  "snippet": {
-                    "text": ".Id"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LeaveId.Id"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1738,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 1751,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 2079,
-                  "snippet": {
-                    "text": ".Id"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LeaveId.Id"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 2082,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 2095,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.Image8_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 56,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Status.Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 62,
-                  "snippet": {
-                    "text": "<>"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
         },
         {
           "locations": [
@@ -4001,186 +3601,6 @@
                 "member": "TabIndex",
                 "module": "Consumed Leaves",
                 "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container9_2.Gallery2_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container9_2.Gallery2_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container9_2.Gallery2_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container9_2.Gallery2_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container9_2.Gallery2_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container9_2.Gallery2_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container3_2.Container10_2.Gallery3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container12_2.Gallery5_1"
               }
             }
           ],
