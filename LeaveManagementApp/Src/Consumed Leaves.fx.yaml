@@ -1,34 +1,769 @@
 "'Consumed Leaves' As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
 
-    ScreenContainer4 As groupContainer.horizontalAutoLayoutContainer:
+    "'Left Navigation_9' As 'Left Navigation_8'":
+        Visible: =var
+
+    ScreenContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =RGBA(249, 250, 252, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutGap: =30
         LayoutMode: =LayoutMode.Auto
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =1728.00
-        X: =0.00
+        PaddingRight: =30
+        Width: =Parent.Width
         ZIndex: =1
 
-        LeftSideContainer4 As groupContainer.verticalAutoLayoutContainer:
+        SidebarContainer1_2 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =0
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Width: =863.30
-            X: =0.00
+            Visible: =If(App.ActiveScreen.Size<3,false,true)
+            Width: ='Left Navigation_7'.Width
             ZIndex: =2
 
-        RightSideContainer4 As groupContainer.verticalAutoLayoutContainer:
+            "'Left Navigation_7' As 'Left Navigation'":
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Visible: =true
+                Width: ='Left Navigation_7'.MenuWidth
+                ZIndex: =1
+
+        RightSideContainer1_2 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =7
+            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =40
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Width: =863.30
-            X: =863.30
             ZIndex: =3
+
+            HeaderContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =Component2_6.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =4
+
+                Icon1_2 As icon.Add:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Color: =RGBA(0, 0, 0, 1)
+                    Icon: =Icon.Hamburger
+                    OnSelect: =Set(var,true)
+                    Width: =If(App.ActiveScreen.Size<3,60,0)
+                    ZIndex: =1
+
+                Component2_6 As Component2_3:
+                    FillPortions: =1
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =200
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+            MainSectionContainer1_2 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =30
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =5
+
+                Container2_2 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =180
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutGap: =20
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    ZIndex: =1
+
+                    Container6_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                        Button2_14 As button:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            BorderStyle: =BorderStyle.Dashed
+                            BorderThickness: =4
+                            DisabledBorderColor: =RGBA(60, 93, 255, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(60, 93, 255, 0.06)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                        Icon3_1 As icon.Add:
+                            Color: =RGBA(60, 93, 255, 1)
+                            Icon: =Icon.Add
+                            X: =170
+                            Y: =35
+                            ZIndex: =2
+
+                        Label3_1 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(60, 93, 255, 1)
+                            Font: =Font.'Lato Black'
+                            Size: =15
+                            Text: ="Apply Leave"
+                            X: =127
+                            Y: =111
+                            ZIndex: =3
+
+                    Container7_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                        Button2_15 As button:
+                            BorderColor: =RGBA(237, 237, 237, 1)
+                            BorderThickness: =1
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                        Label2_4 As label:
+                            Color: =RGBA(116, 116, 116, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Text: ="Total Consumed Leave"
+                            Width: =180
+                            X: =20
+                            Y: =20
+                            ZIndex: =2
+
+                        HtmlText2_4 As htmlViewer:
+                            Height: =78
+                            HtmlText: ="<b><font weight=bold,font size= 8>"&Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')&"</font></b>"&"/"&Sum(LeaveBalance,TotalLeave)
+                            Size: =12
+                            Width: =150
+                            X: =20
+                            Y: =75
+                            ZIndex: =4
+
+                        Image6_4 As image:
+                            Height: =133
+                            Image: |-
+                                ="data:image/svg+xml;utf8, "&EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 40 40'> 
+                                  
+                                  <defs>
+                                    <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
+                                      <stop offset='0%' stop-color='#FC466B'/>
+                                      <stop offset='100%' stop-color='#3F5EFB'/>
+                                      
+                                      
+                                    </linearGradient>
+                                  </defs>
+                                  
+                                  
+                                  <style>
+                                    
+                                    .rail {
+                                     stroke: rgba(96,96,96,1) 
+                                     
+                                    }
+                                    
+                                    .progress {
+                                      stroke: url(#gradient);
+                                      stroke-linecap: round;
+                                      animation: progressbar 10s;
+                                      
+                                    }
+                                    
+                                    .progress-text {
+                                      font-size: 0.7em;
+                                      font-family: Trebuchet MS, sans-serif;
+                                      font-weight:bold;
+                                      
+                                    }
+                                    
+                                    .progress-name {
+                                      font-size:0.3em;
+                                      
+                                    }
+                                    
+                                    @keyframes progressbar {
+                                      from {
+                                        stroke-dasharray: 0, 100;
+                                        
+                                      }
+                                      to
+                                      
+                                      {
+                                        stroke-dasharray: "&((consumed/Total)*100)&", "&(100-((consumed/Total)*100))&";
+                                      }
+                                      
+                                    }
+                                    
+                                  </style>
+                                
+                                  <circle class='rail' cx='20' cy='20' r='16' stroke-width='1' fill='transparent'> </circle>
+                                   <circle class='progress' cx='20' cy='20' r='16' stroke-width='2' fill='transparent'  stroke-dasharray='"&((consumed/Total)*100)&" "&(100-((consumed/Total)*100))&"' stroke-dashoffset='25'> </circle>
+                                  
+                                 <g class='progress-text'>
+                                   <text y='50%' transform='translate(0,2)'>
+                                     <tspan x='50%' text-anchor='middle' class='progress-percent'> "&RoundUp(((consumed/Total)*100),0)&"% </tspan>
+                                   </text>
+                                   
+                                  </g>
+                                
+                                </svg>")
+                            Width: =169
+                            X: =212
+                            Y: =20
+                            ZIndex: =5
+
+                    Container8_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =3
+
+                        Button2_16 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(202, 202, 202, 1)
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                        Label2_5 As label:
+                            Color: =RGBA(116, 116, 116, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Text: ="Total Available Leave"
+                            Width: =180
+                            X: =20
+                            Y: =20
+                            ZIndex: =2
+
+                        HtmlText2_5 As htmlViewer:
+                            Height: =78
+                            HtmlText: ="<b><font weight=bold,font size= 8>"&Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')&"</font></b>"&"/"&Sum(LeaveBalance,TotalLeave)
+                            Size: =12
+                            Width: =150
+                            X: =20
+                            Y: =75
+                            ZIndex: =3
+
+                        Image6_5 As image:
+                            Height: =133
+                            Image: |-
+                                ="data:image/svg+xml;utf8, "&EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 40 40'> 
+                                  
+                                  <defs>
+                                    <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
+                                      <stop offset='0%' stop-color='#FC466B'/>
+                                      <stop offset='100%' stop-color='#3F5EFB'/>
+                                      
+                                      
+                                    </linearGradient>
+                                  </defs>
+                                  
+                                  
+                                  <style>
+                                    
+                                    .rail {
+                                     stroke: rgba(96,96,96,1) 
+                                     
+                                    }
+                                    
+                                    .progress {
+                                      stroke: url(#gradient);
+                                      stroke-linecap: round;
+                                      animation: progressbar 10s;
+                                      
+                                    }
+                                    
+                                    .progress-text {
+                                      font-size: 0.7em;
+                                      font-family: Trebuchet MS, sans-serif;
+                                      font-weight:bold;
+                                      
+                                    }
+                                    
+                                    .progress-name {
+                                      font-size:0.3em;
+                                      
+                                    }
+                                    
+                                    @keyframes progressbar {
+                                      from {
+                                        stroke-dasharray: 0, 100;
+                                        
+                                      }
+                                      to
+                                      
+                                      {
+                                        stroke-dasharray: "&((Available/Total)*100)&", "&(100-((Available/Total)*100))&";
+                                      }
+                                      
+                                    }
+                                    
+                                  </style>
+                                
+                                  <circle class='rail' cx='20' cy='20' r='16' stroke-width='1' fill='transparent'> </circle>
+                                   <circle class='progress' cx='20' cy='20' r='16' stroke-width='2' fill='transparent'  stroke-dasharray='"&((Available/Total)*100)&" "&(100-((Available/Total)*100))&"' stroke-dashoffset='25'> </circle>
+                                  
+                                 <g class='progress-text'>
+                                   <text y='50%' transform='translate(0,2)'>
+                                     <tspan x='50%' text-anchor='middle' class='progress-percent'> "&RoundUp(((Available/Total)*100),0)&"% </tspan>
+                                   </text>
+                                   
+                                  </g>
+                                
+                                </svg>")
+                            Width: =169
+                            X: =212
+                            Y: =23
+                            ZIndex: =5
+
+                Container3_2 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =252
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutGap: =20
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    PaddingLeft: =2
+                    ZIndex: =2
+
+                    Container9_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                        Button2_17 As button:
+                            BorderColor: =RGBA(219, 219, 219, 1)
+                            BorderThickness: =1
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                        Label4_5 As label:
+                            Font: =Font.'Lato Black'
+                            Size: =14
+                            Text: ="Leave Status"
+                            X: =24
+                            Y: =20
+                            ZIndex: =2
+
+                        "Gallery2_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                            Height: =176
+                            Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
+                            Layout: =Layout.Vertical
+                            TemplatePadding: =0
+                            TemplateSize: =85
+                            Width: =571
+                            X: =24
+                            Y: =60
+                            ZIndex: =3
+
+                            Title1_2 As label:
+                                Height: =Self.Size * 1.8
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: =" "&Text(ThisItem.From)&" - "&ThisItem.To 
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =340
+                                X: =15
+                                Y: =34
+                                ZIndex: =2
+
+                            Button3_3 As button:
+                                BorderThickness: =0
+                                Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
+                                Fill: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,0.12),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,0.08),RGBA(255, 246, 196,1)))
+                                Font: =Font.'Lato Black'
+                                Height: =36
+                                OnSelect: =Select(Parent)
+                                Size: =13
+                                Text: =ThisItem.Status.Value
+                                Width: =122
+                                X: =432
+                                Y: =28
+                                ZIndex: =3
+
+                            Label6_2 As label:
+                                Color: =RGBA(60, 93, 255, 1)
+                                FontWeight: =FontWeight.Semibold
+                                Height: =19
+                                OnSelect: =Select(Parent)
+                                Text: =ThisItem.LeaveTypes.Value&" Leave"
+                                X: =15
+                                Y: =55
+                                ZIndex: =4
+
+                    Container10_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                        Button2_18 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            BorderThickness: =1
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                        "Gallery3_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+                            DelayItemLoading: =true
+                            Height: =184
+                            Items: =LeaveBalance
+                            LoadingSpinner: =LoadingSpinner.Data
+                            ShowScrollbar: =false
+                            TemplatePadding: =0
+                            TemplateSize: =154
+                            Width: =Parent.Width
+                            X: =1
+                            Y: =54
+                            ZIndex: =2
+
+                            Image8_2 As image:
+                                Height: =130
+                                Image: |+
+                                    ="data:image/svg+xml;utf8, "&EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 40 40'> 
+                                      
+                                      <defs>
+                                        <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
+                                          <stop offset='0%' stop-color='#FC466B'/>
+                                          <stop offset='100%' stop-color='#3F5EFB'/>
+                                          
+                                          
+                                        </linearGradient>
+                                      </defs>
+                                      
+                                      
+                                      <style>
+                                        
+                                        .rail {
+                                         stroke: rgba(96,96,96,1) 
+                                         
+                                        }
+                                        
+                                        .progress {
+                                          stroke: url(#gradient);
+                                          stroke-linecap: round;
+                                          animation: progressbar 10s;
+                                          
+                                        }
+                                        
+                                        .progress-text {
+                                          font-size: 0.7em;
+                                          font-family: Trebuchet MS, sans-serif;
+                                          font-weight:bold;
+                                          
+                                        }
+                                        
+                                        .progress-name {
+                                          font-size:0.3em;
+                                          
+                                        }
+                                        
+                                        @keyframes progressbar {
+                                          from {
+                                            stroke-dasharray: 0, 100;
+                                            
+                                          }
+                                          to
+                                          
+                                          {
+                                            stroke-dasharray: "&((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100&", "&(100-(((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100))&";
+                                          }
+                                          
+                                        }
+                                        
+                                      </style>
+                                    
+                                      <circle class='rail' cx='20' cy='20' r='16' stroke-width='1' fill='transparent'> </circle>
+                                       <circle class='progress' cx='20' cy='20' r='16' stroke-width='2' fill='transparent'  stroke-dasharray='"&((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100&" "&(100-(((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100))&"' stroke-dashoffset='25'> </circle>
+                                      
+                                     <g class='progress-text'>
+                                       <text y='50%' transform='translate(0,2)'>
+                                         <tspan x='50%' text-anchor='middle' class='progress-percent'> "&RoundUp((((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100),0)&"% </tspan>
+                                       </text>
+                                       
+                                      </g>
+                                    
+                                    </svg>")
+                                    
+                                OnSelect: =Select(Parent)
+                                Width: =Parent.TemplateWidth
+                                Y: =4
+                                ZIndex: =1
+
+                            Label7_2 As label:
+                                Align: =Align.Center
+                                OnSelect: =Select(Parent)
+                                Text: =ThisItem.LeaveType.Value
+                                Width: =Parent.TemplateWidth
+                                Y: =134
+                                ZIndex: =2
+
+                        Label4_6 As label:
+                            Font: =Font.'Lato Black'
+                            Size: =14
+                            Text: ="Leave Balance"
+                            X: =25
+                            Y: =14
+                            ZIndex: =3
+
+                Container4_2 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =364
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutGap: =20
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    ZIndex: =3
+
+                    Container11_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                        Button2_19 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            BorderThickness: =1
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                        Label4_7 As label:
+                            Font: =Font.'Lato Black'
+                            Height: =36
+                            Size: =14
+                            Text: ="Consumed Leave"
+                            Width: =166
+                            X: =33
+                            Y: =21
+                            ZIndex: =2
+
+                    Container12_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                        Button2_20 As button:
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            BorderThickness: =1
+                            DisabledBorderColor: =RGBA(202, 202, 202, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =Parent.Height-2
+                            HoverFill: =
+                            RadiusBottomLeft: =20
+                            RadiusBottomRight: =20
+                            RadiusTopLeft: =20
+                            RadiusTopRight: =20
+                            Text: =""
+                            Width: =Parent.Width-2
+                            X: |
+                                =1
+                            Y: |
+                                =1
+                            ZIndex: =1
+
+                        Label4_8 As label:
+                            Font: =Font.'Lato Black'
+                            Size: =14
+                            Text: ="Today On leave"
+                            X: =24
+                            Y: =20
+                            ZIndex: =2
+
+                        "Gallery5_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                            Height: =290
+                            Items: =Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected")
+                            Layout: =Layout.Vertical
+                            TemplatePadding: =0
+                            TemplateSize: =109
+                            Width: =618
+                            Y: =60
+                            ZIndex: =3
+
+                            Image7_1 As image:
+                                Height: =80
+                                OnSelect: =Select(Parent)
+                                RadiusBottomLeft: =50
+                                RadiusBottomRight: =50
+                                RadiusTopLeft: =50
+                                RadiusTopRight: =50
+                                Width: =80
+                                X: =17
+                                Y: =15
+                                ZIndex: =1
+
+                            Title3_1 As label:
+                                FontWeight: =FontWeight.Bold
+                                Height: =27
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =15
+                                Text: =ThisItem.RequestedBy.DisplayName
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =345
+                                X: =Image7_1.X + Image7_1.Width + 24
+                                Y: =36
+                                ZIndex: =2
+
+                            Subtitle2_1 As label:
+                                Height: =32
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =14
+                                Text: =ThisItem.RequestedBy.JobTitle
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =Title3_1.Width
+                                X: =Title3_1.X
+                                Y: =63
+                                ZIndex: =3
+
+                            Button3_4 As button:
+                                BorderThickness: =0
+                                Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
+                                Fill: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,0.12),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,0.08),RGBA(255, 246, 196,1)))
+                                Font: =Font.'Lato Black'
+                                Height: =36
+                                OnSelect: =Select(Parent)
+                                Size: =13
+                                Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
+                                Width: =122
+                                X: =466
+                                Y: =37
+                                ZIndex: =4
+
+                Container5_2 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =4
+
+    navbar_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+        Rectangle1_2 As rectangle:
+            Fill: =RGBA(237, 237, 237, 0.7)
+            Height: =1117
+            Visible: =var
+            Width: =1728
+            ZIndex: =2
+
+        Icon2_2 As icon.Cancel:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =45
+            Icon: =Icon.Cancel
+            OnSelect: =Set(var,false)
+            Visible: =var
+            Width: =50
+            X: =339
+            Y: =27
+            ZIndex: =4
 
