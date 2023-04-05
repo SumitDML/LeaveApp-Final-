@@ -38,7 +38,7 @@
                     DisabledFill: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Height*3/5+4
+                    Height: =731
                     Text: =""
                     Width: =Parent.Width-58
                     X: =29
@@ -47,7 +47,7 @@
                     ZIndex: =1
 
                 Container15 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =Parent.Height*3/5
+                    Height: =730
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width-60
                     X: =30
@@ -69,6 +69,7 @@
                             ZIndex: =1
 
                         Radio1 As radio:
+                            Default: ="1"
                             Height: =65
                             Items: =onemulti
                             Layout: =Layout.Horizontal
@@ -235,5 +236,138 @@
                     Container17 As groupContainer.manualLayoutContainer:
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
+                        PaddingLeft: =
                         ZIndex: =2
+
+                        Label2_1 As label:
+                            Height: =65
+                            Size: =24
+                            Text: ="LEAVE FOR"
+                            Width: =201
+                            X: =4
+                            Y: =8
+                            ZIndex: =1
+
+                        Gallery4 As gallery.galleryHorizontal:
+                            DelayItemLoading: =true
+                            Height: =67
+                            Items: =fullhalf
+                            LoadingSpinner: =LoadingSpinner.Data
+                            OnSelect: =true
+                            TemplateSize: =Self.Width/3-10
+                            Width: =598
+                            Y: =73
+                            ZIndex: =2
+
+                            Button9 As button:
+                                BorderColor: =RGBA(219, 219, 219, 1)
+                                BorderThickness: =0.2
+                                Color: =If(ThisItem.IsSelected=true,RGBA(255,255,255, 1),RGBA(0, 0, 0, 1))
+                                Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
+                                Height: =43.85
+                                HoverBorderColor: =
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =
+                                OnSelect: =Select(Parent)
+                                PressedBorderColor: =
+                                Text: =ThisItem.Title
+                                Width: =135
+                                X: =20
+                                Y: =8
+                                ZIndex: =1
+
+                        Label2_2 As label:
+                            Height: =65
+                            Size: =24
+                            Text: ="SELECT LEAVE TYPE"
+                            Width: =317
+                            X: =4
+                            Y: =140
+                            ZIndex: =3
+
+                        Icon3 As icon.ChevronDown:
+                            Height: =36
+                            Icon: =Icon.ChevronDown
+                            OnSelect: =Select(Dropdown1)
+                            Width: =36
+                            X: =506
+                            Y: =215
+                            ZIndex: =4
+
+                        Dropdown1 As dropdown:
+                            BorderColor: =RGBA(128, 128, 128, 1)
+                            BorderThickness: =0.5
+                            ChevronBackground: =
+                            ChevronDisabledFill: =RGBA(0, 0, 0, 0)
+                            ChevronFill: =RGBA(0, 0, 0, 0)
+                            ChevronHoverBackground: =
+                            ChevronHoverFill: =RGBA(0, 0, 0, 0)
+                            Default: ="0"
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =56
+                            Items: =Choices([@LeaveBalance].LeaveType)
+                            Width: =534
+                            X: =21
+                            Y: =205
+                            ZIndex: =5
+
+                        Label2_3 As label:
+                            Height: =65
+                            Size: =24
+                            Text: ="SELECT LEAVE TYPE"
+                            Width: =317
+                            Y: =278
+                            ZIndex: =6
+
+                        TextInput2 As text:
+                            Default: =""
+                            Height: =145
+                            HintText: ="Enter the reason here..."
+                            RadiusBottomLeft: =10
+                            RadiusBottomRight: =10
+                            RadiusTopLeft: =10
+                            RadiusTopRight: =10
+                            Width: =558
+                            X: =21
+                            Y: =343
+                            ZIndex: =7
+
+                        Label2_4 As label:
+                            Height: =65
+                            Size: =24
+                            Text: ="NOTIFY"
+                            Width: =317
+                            X: =4
+                            Y: =511
+                            ZIndex: =8
+
+                        ComboBox2 As combobox:
+                            DisplayFields: =["DisplayName","JobTitle"]
+                            Height: =68
+                            Items: |-
+                                =Office365Users.SearchUserV2({searchTerm:Self.SearchText,top:5}).value
+                            SearchFields: =["DisplayName"]
+                            SearchItems: |-
+                                =Search(Office365Users.SearchUserV2({searchTerm:Self.SearchText,top:5}).value,ComboBox2.SearchText,"DisplayName")
+                            Template: =ListItemTemplate.Person
+                            Width: =558
+                            X: =21
+                            Y: =599
+                            ZIndex: =9
+
+                Container19 As groupContainer.manualLayoutContainer:
+                    Height: =110
+                    Width: =324
+                    X: =852
+                    Y: =828
+                    ZIndex: =4
+
+                    HtmlText2_1 As htmlViewer:
+                        Height: =110
+                        HtmlText: |-
+                            ="<div
+                            style= ' border-radius: 25px;width:"&Text(Parent.Width-15)&"px;height:"&Text(Parent.Height-15)&"px;background-image: linear-gradient(to left bottom, #3C5DFF, #CC3CFF, #CC3CFF);'
+                            ></div>"
+                        Width: =324
+                        ZIndex: =1
 

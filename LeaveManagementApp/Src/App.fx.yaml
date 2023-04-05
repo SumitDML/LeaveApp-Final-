@@ -39,7 +39,10 @@ App As appinfo:
                     Title: "Full Day"
                 },
                 {
-                    Title: "Half Day"
+                    Title: "First Half"
+                },
+                  {
+                    Title: "Second Half"
                 }
             )
         );
