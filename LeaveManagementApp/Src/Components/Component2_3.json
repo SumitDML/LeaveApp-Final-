@@ -33,14 +33,7 @@
           "DisabledFill",
           "PressedFill",
           "HoverFill",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "",
-            "InvariantPropertyName": "Font",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "Font",
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -67,14 +60,7 @@
           "LineHeight",
           "BorderThickness",
           "FocusedBorderThickness",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "",
-            "InvariantPropertyName": "Size",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "Size",
           "Italic",
           "Underline",
           "Strikethrough",
@@ -97,7 +83,7 @@
         "Name": "Label5_1",
         "Parent": "Component2_3",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 77,
+        "PublishOrderIndex": 63,
         "Rules": [
           {
             "Category": "Data",
@@ -215,7 +201,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Font.'Lato Black'",
+            "InvariantScript": "Font.'Open Sans'",
             "Property": "Font",
             "RuleProviderType": "Unknown"
           },
@@ -293,7 +279,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "33",
+            "InvariantScript": "36",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -473,7 +459,7 @@
         "Name": "Image2_1",
         "Parent": "Component2_3",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 78,
+        "PublishOrderIndex": 64,
         "Rules": [
           {
             "Category": "Data",
@@ -696,7 +682,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638162824714904353",
+    "LastModifiedTimestamp": "638162647237590726",
     "Name": "Component2_3",
     "Rules": [
       {
@@ -755,7 +741,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638162824714904353",
+  "LastModifiedTimestamp": "638162647237590726",
   "Name": "f0d75971fa9c48419598f051aa711744",
   "OverridableProperties": {},
   "TemplateOriginalName": "2c83fcd24b97406eb33eeade790d7b43",

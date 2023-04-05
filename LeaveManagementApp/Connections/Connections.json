@@ -52,5 +52,31 @@
     "dependencies": {},
     "dependents": [],
     "id": "b53750f6-d589-4c19-bebb-035000e3c271"
+  },
+  "d1a4a517-aff3-4142-bfd4-183252ff549b": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://digimantra-my.sharepoint.com/personal/sumit_pradhan_digimantra_com/_layouts/15/lists.aspx": {
+        "dataSources": {
+          "LeaveBalance": {
+            "tableName": "0f88d716-d72f-468d-9191-4ec41eea4278"
+          },
+          "LeaveRequests": {
+            "tableName": "38fc8fc7-e9c5-48bc-9791-9e8c392c96aa"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "LeaveBalance",
+      "LeaveRequests"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d1a4a517-aff3-4142-bfd4-183252ff549b"
   }
 }
