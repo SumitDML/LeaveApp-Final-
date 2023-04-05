@@ -182,7 +182,7 @@
                                   <defs>
                                     <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
                                       <stop offset='0%' stop-color='#0000FF'/>
-                                      <stop offset='100%' stop-color='#GGGBBB'/>
+                                      <stop offset='100%' stop-color='#0000FF'/>
                                       
                                       
                                     </linearGradient>
@@ -299,7 +299,7 @@
                                   <defs>
                                     <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
                                       <stop offset='0%' stop-color='#c4ff89'/>
-                                      <stop offset='100%' stop-color='#3F5EFB'/>
+                                      <stop offset='100%' stop-color='#c4ff89'/>
                                       
                                       
                                     </linearGradient>
@@ -528,7 +528,7 @@
                                         }
                                         
                                         .progress-text {
-                                          font-size: 0.7em;
+                                          font-size: 0.5em;
                                           font-family: Trebuchet MS, sans-serif;
                                           font-weight:bold;
                                           
@@ -559,7 +559,7 @@
                                       
                                      <g class='progress-text'>
                                        <text y='50%' transform='translate(0,4)'>
-                                         <tspan x='50%' text-anchor='middle' class='progress-percent'> "&RoundUp((((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100),0)&"% </tspan>
+                                         <tspan x='50%' text-anchor='middle' class='progress-percent'> "&(ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))&"/"&(ThisItem.TotalLeave)&"</tspan>
                                        </text>
                                        
                                       </g>
