@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
+    OnStart: |+
         =ClearCollect(
             lmsnav,
             Table(
@@ -31,4 +31,29 @@ App As appinfo:
                 }
             )
         );
+        
+        ClearCollect(
+            fullhalf,
+            Table(
+                {
+                    Title: "Full Day"
+                },
+                {
+                    Title: "Half Day"
+                }
+            )
+        );
+        ClearCollect(
+            onemulti,
+            Table(
+                {
+                    Title: "Single Day"
+                },
+                {
+                    Title: "Multiple Day"
+                }
+            )
+        );
+        
+        
 
