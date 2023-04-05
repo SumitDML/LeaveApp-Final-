@@ -1,15 +1,15 @@
-"'Left Navigation' As CanvasComponent":
+"'Left Navigation_11' As CanvasComponent":
     CurrentScreen: ="Text"
     Fill: =RGBA(255, 255, 255, 1) 
     Height: =Max(App.Height,App.DesignHeight)
     MenuWidth: =412
     NavItems: =lmsnav
-    Width: ='Left Navigation'.MenuWidth
+    Width: ='Left Navigation_11'.MenuWidth
     X: =0
     Y: =0
     ZIndex: =3
 
-    Image1 As image:
+    Image1_3 As image:
         Height: =75
         Image: =sketchwireLogo
         PaddingRight: =0.00
@@ -19,14 +19,14 @@
         Y: =13
         ZIndex: =2
 
-    Gallery1 As gallery.galleryVertical:
+    Gallery1_3 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =676
-        Items: ='Left Navigation'.NavItems
+        Items: ='Left Navigation_11'.NavItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
-        TemplateFill: =If(ThisItem.Title='Left Navigation'.CurrentScreen,RGBA(235, 235, 235,1))
+        TemplateFill: =If(ThisItem.Title='Left Navigation_11'.CurrentScreen,RGBA(235, 235, 235,1))
         TemplateSize: =82
         Transition: =Transition.Pop
         Width: =329
@@ -34,14 +34,14 @@
         Y: =123
         ZIndex: =3
 
-        Group1 As group:
+        Group1_3 As group:
             Height: =5
             Width: =5
             X: =40
             Y: =40
             ZIndex: =4
 
-            Label1 As label:
+            Label1_3 As label:
                 Color: =RGBA(149, 149, 149, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
@@ -51,11 +51,11 @@
                 PaddingTop: =7.03
                 Size: =17
                 Text: =ThisItem.Title
-                Width: =Parent.TemplateWidth-Image3.Width
+                Width: =Parent.TemplateWidth-Image3_3.Width
                 X: =70
                 ZIndex: =1
 
-            Image3 As image:
+            Image3_3 As image:
                 Height: =Parent.TemplateHeight*3/5
                 Image: =ThisItem.Icon
                 OnSelect: =Navigate(ThisItem.Screen)
@@ -66,7 +66,7 @@
                 Y: =Parent.TemplateHeight/2-Self.Height/2
                 ZIndex: =2
 
-            Button1 As button:
+            Button1_3 As button:
                 BorderThickness: =0
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(0, 0, 0, 0)

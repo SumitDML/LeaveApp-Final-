@@ -505,7 +505,7 @@
                         Label10 As label:
                             Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)
                             X: =74
-                            Y: =131
+                            Y: =183
                             ZIndex: =3
 
                     Container13_1 As groupContainer.manualLayoutContainer:
@@ -543,7 +543,7 @@
                         Label11 As label:
                             Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)
                             X: =74
-                            Y: =120
+                            Y: =198
                             ZIndex: =3
 
                     Container13_2 As groupContainer.manualLayoutContainer:
@@ -581,7 +581,7 @@
                         Label12 As label:
                             Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)
                             X: =74
-                            Y: =120
+                            Y: =188
                             ZIndex: =3
 
                     Container13_3 As groupContainer.manualLayoutContainer:
@@ -619,7 +619,7 @@
                         Label13 As label:
                             Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)
                             X: =74
-                            Y: =118
+                            Y: =189
                             ZIndex: =3
 
     navbar_2 As group:
