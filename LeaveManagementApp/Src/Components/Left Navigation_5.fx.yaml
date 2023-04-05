@@ -1,0 +1,83 @@
+"'Left Navigation_5' As CanvasComponent":
+    CurrentScreen: ="Text"
+    Fill: =RGBA(255, 255, 255, 1) 
+    Height: =Max(App.Height,App.DesignHeight)
+    MenuWidth: =412
+    NavItems: =lmsnav
+    Width: ='Left Navigation_5'.MenuWidth
+    X: =0
+    Y: =0
+    ZIndex: =3
+
+    Image1_1 As image:
+        Height: =75
+        Image: =sketchwireLogo
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =281
+        X: =31
+        Y: =13
+        ZIndex: =2
+
+    Gallery1_1 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =676
+        Items: ='Left Navigation_5'.NavItems
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.Title='Left Navigation_5'.CurrentScreen,RGBA(235, 235, 235,1))
+        TemplateSize: =74
+        Transition: =Transition.Pop
+        Width: =329
+        X: =31
+        Y: =123
+        ZIndex: =3
+
+        Group1_1 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =4
+
+            Label1_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.TemplateHeight
+                OnSelect: =Navigate(ThisItem.Screen)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.28
+                Text: =ThisItem.Title
+                Width: =252.24
+                X: =70
+                ZIndex: =1
+
+            Image3_1 As image:
+                Height: =Parent.TemplateHeight*3/5
+                Image: =ThisItem.Icon
+                OnSelect: =Navigate(ThisItem.Screen)
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =70.07
+                X: =0.00
+                Y: =Parent.TemplateHeight/2-Self.Height/2
+                ZIndex: =2
+
+            Button1_1 As button:
+                BorderThickness: =0
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =Parent.TemplateHeight
+                HoverFill: =RGBA(206, 206, 206, 0.1)
+                OnSelect: =Navigate(ThisItem.Screen,ScreenTransition.Fade)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.09
+                Text: =""
+                Width: =Parent.TemplateWidth
+                X: =0.00
+                Y: =
+                ZIndex: =3
+

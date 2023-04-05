@@ -1,4 +1,30 @@
 {
+  "7e0c485b-e592-4462-b2d4-332320d54a27": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://digimantra-my.sharepoint.com/personal/sumit_pradhan_digimantra_com": {
+        "dataSources": {
+          "LeaveBalance": {
+            "tableName": "0f88d716-d72f-468d-9191-4ec41eea4278"
+          },
+          "LeaveRequests": {
+            "tableName": "38fc8fc7-e9c5-48bc-9791-9e8c392c96aa"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "LeaveBalance",
+      "LeaveRequests"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7e0c485b-e592-4462-b2d4-332320d54a27"
+  },
   "965efd75-8953-47cc-a2be-44d246132001": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",

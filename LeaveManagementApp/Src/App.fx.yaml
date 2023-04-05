@@ -1,12 +1,12 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
+    OnStart: |+
         =ClearCollect(
             lmsnav,
             Table(
                 {
                     Title: "Dashboard",
-                    Screen: Dashboard,
+                    Screen: D,
                     Icon: home
                 },
                 {
@@ -31,4 +31,6 @@ App As appinfo:
                 }
             )
         );
+        
+        
 
