@@ -637,8 +637,8 @@
                             Height: =276
                             HtmlText: |-
                                 ="
-                                  <div style='width: 80px; height: 250px; background: #f2dfff; border-radius: 10px; position: relative;'>
-                                    <div style='width: 85%; height: 50%; background: #BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
+                                  <div style='width: 90px; height: 250px; background: #f2dfff; border-radius: 10px; position: relative;'>
+                                    <div style='width: 85%; height:50%; background: #BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 24px;'>4</span><span style='font-size: 17px;'>/8<span><p>
                                     </div>
                                   </div>
