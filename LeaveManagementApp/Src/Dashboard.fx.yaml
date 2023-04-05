@@ -101,16 +101,16 @@
                             DisabledFill: =RGBA(60, 93, 255, 0.06)
                             DisplayMode: =DisplayMode.Disabled
                             Fill: =RGBA(255, 255, 255, 1)
-                            Height: =Parent.Height-2
+                            Height: =Parent.Height-8
                             HoverFill: =
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
                             Text: =""
-                            Width: =Parent.Width-2
-                            X: =1
-                            Y: =1
+                            Width: =Parent.Width-5
+                            X: =3
+                            Y: =5
                             ZIndex: =1
 
                         Icon3 As icon.Add:
@@ -667,7 +667,7 @@
                                     ="
                                       <div style='margin-left:26px;width: 95px; height: 220px; background:"&If(ThisItem.LeaveType.Value="Sick","##e4bfff",If(ThisItem.LeaveType.Value="Paid","#fff5b2",If(ThisItem.LeaveType.Value="Maternity","##98b2ff",If(ThisItem.LeaveType.Value="Casual","##d1ffd4"))))&"; border-radius: 10px; position: relative;'>
                                         <div style='width: 85%; height:50%; background:"&If(ThisItem.LeaveType.Value="Sick","#BB5EFF",If(ThisItem.LeaveType.Value="Paid","##f6e15b",If(ThisItem.LeaveType.Value="Maternity","#4537bd",If(ThisItem.LeaveType.Value="Casual","##37bd46"))))&"; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
-                                          <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 24px;'>4</span><span style='font-size: 17px;'>/8<span><p>
+                                          <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=ThisItem.LeaveType.Value)),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=ThisItem.LeaveType.Value),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value=ThisItem.LeaveType.Value),TotalLeave)&"<span><p>
                                         </div>
                                       </div>
                                     "
