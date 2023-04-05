@@ -1101,7 +1101,7 @@
                 },
                 "region": {
                   "charLength": 112,
-                  "charOffset": 843,
+                  "charOffset": 839,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=ThisItem.LeaveType.Value),'Total Days')"
                   }
@@ -1141,7 +1141,7 @@
                 },
                 "region": {
                   "charLength": 77,
-                  "charOffset": 999,
+                  "charOffset": 995,
                   "snippet": {
                     "text": "Sum(Filter(LeaveBalance,LeaveType.Value=ThisItem.LeaveType.Value),TotalLeave)"
                   }
