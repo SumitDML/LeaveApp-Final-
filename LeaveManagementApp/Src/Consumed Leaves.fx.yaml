@@ -503,7 +503,7 @@
                             ZIndex: =2
 
                         Label10 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days'))
+                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)
                             X: =74
                             Y: =131
                             ZIndex: =3
@@ -541,7 +541,7 @@
                             ZIndex: =2
 
                         Label11 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days'))
+                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)
                             X: =74
                             Y: =120
                             ZIndex: =3
@@ -579,7 +579,7 @@
                             ZIndex: =2
 
                         Label12 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days'))
+                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)
                             X: =74
                             Y: =120
                             ZIndex: =3
@@ -617,7 +617,7 @@
                             ZIndex: =2
 
                         Label13 As label:
-                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days'))
+                            Text: =If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days'))&"/"&Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)
                             X: =74
                             Y: =118
                             ZIndex: =3
