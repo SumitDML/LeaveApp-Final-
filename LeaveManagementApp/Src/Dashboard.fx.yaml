@@ -132,20 +132,6 @@
                             Y: =1
                             ZIndex: =1
 
-                        HtmlText2 As htmlViewer:
-                            HtmlText: ="<b><font size=5>8</font></b>/10"
-                            Width: =(Parent.Width*3)/5
-                            X: =Parent.Width/2-Self.Width/2
-                            Y: =Parent.Height/2-Self.Height/2
-                            ZIndex: =2
-
-                        HtmlText2_1 As htmlViewer:
-                            HtmlText: ="<b><font size=5>8</font></b>/10"
-                            Width: =(Parent.Width*3)/5
-                            X: =HtmlText2.X
-                            Y: =HtmlText2.Y+HtmlText2.Height
-                            ZIndex: =3
-
                     Container8 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
