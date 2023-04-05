@@ -2370,12 +2370,12 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "MenuWidth",
+          "PropertyName": "NavItems",
           "RuleProviderType": "System"
         },
         {
           "Category": "Data",
-          "PropertyName": "NavItems",
+          "PropertyName": "MenuWidth",
           "RuleProviderType": "System"
         },
         {

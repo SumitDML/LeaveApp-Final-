@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |+
+    OnStart: |
         =ClearCollect(
             lmsnav,
             Table(
@@ -31,6 +31,4 @@ App As appinfo:
                 }
             )
         );
-        
-        
 

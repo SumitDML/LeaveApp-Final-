@@ -181,8 +181,8 @@
                                   
                                   <defs>
                                     <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
-                                      <stop offset='0%' stop-color='#FC466B'/>
-                                      <stop offset='100%' stop-color='#3F5EFB'/>
+                                      <stop offset='0%' stop-color='#0000FF'/>
+                                      <stop offset='100%' stop-color='#GGGBBB'/>
                                       
                                       
                                     </linearGradient>
@@ -234,7 +234,7 @@
                                    <circle class='progress' cx='20' cy='20' r='16' stroke-width='2' fill='transparent'  stroke-dasharray='"&((consumed/Total)*100)&" "&(100-((consumed/Total)*100))&"' stroke-dashoffset='25'> </circle>
                                   
                                  <g class='progress-text'>
-                                   <text y='50%' transform='translate(0,2)'>
+                                   <text y='50%' transform='translate(0,4)'>
                                      <tspan x='50%' text-anchor='middle' class='progress-percent'> "&RoundUp(((consumed/Total)*100),0)&"% </tspan>
                                    </text>
                                    
@@ -298,7 +298,7 @@
                                   
                                   <defs>
                                     <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
-                                      <stop offset='0%' stop-color='#FC466B'/>
+                                      <stop offset='0%' stop-color='#c4ff89'/>
                                       <stop offset='100%' stop-color='#3F5EFB'/>
                                       
                                       
@@ -351,7 +351,7 @@
                                    <circle class='progress' cx='20' cy='20' r='16' stroke-width='2' fill='transparent'  stroke-dasharray='"&((Available/Total)*100)&" "&(100-((Available/Total)*100))&"' stroke-dashoffset='25'> </circle>
                                   
                                  <g class='progress-text'>
-                                   <text y='50%' transform='translate(0,2)'>
+                                   <text y='50%' transform='translate(0,4)'>
                                      <tspan x='50%' text-anchor='middle' class='progress-percent'> "&RoundUp(((Available/Total)*100),0)&"% </tspan>
                                    </text>
                                    
@@ -505,8 +505,8 @@
                                       
                                       <defs>
                                         <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
-                                          <stop offset='0%' stop-color='#FC466B'/>
-                                          <stop offset='100%' stop-color='#3F5EFB'/>
+                                          <stop offset='0%' stop-color='#BB5EFF'/>
+                                          <stop offset='100%' stop-color='#BB5EFF'/>
                                           
                                           
                                         </linearGradient>
@@ -558,7 +558,7 @@
                                        <circle class='progress' cx='20' cy='20' r='16' stroke-width='2' fill='transparent'  stroke-dasharray='"&((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100&" "&(100-(((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100))&"' stroke-dashoffset='25'> </circle>
                                       
                                      <g class='progress-text'>
-                                       <text y='50%' transform='translate(0,2)'>
+                                       <text y='50%' transform='translate(0,4)'>
                                          <tspan x='50%' text-anchor='middle' class='progress-percent'> "&RoundUp((((ThisItem.TotalLeave- Sum(Filter(LeaveRequests,LeaveId.Id=ThisItem.Id && RequestedBy.Email=User().Email),'Total Days'))/(ThisItem.TotalLeave))*100),0)&"% </tspan>
                                        </text>
                                        
@@ -620,8 +620,7 @@
                             RadiusTopRight: =20
                             Text: =""
                             Width: =Parent.Width-2
-                            X: =1
-                            Y: =1
+                            X: =2
                             ZIndex: =1
 
                         Label4_4 As label:
@@ -633,6 +632,21 @@
                             X: =33
                             Y: =21
                             ZIndex: =2
+
+                        HtmlText3 As htmlViewer:
+                            Height: =276
+                            HtmlText: |-
+                                ="
+                                  <div style='width: 80px; height: 250px; background: #f2dfff; border-radius: 10px; position: relative;'>
+                                    <div style='width: 85%; height: 50%; background: #BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
+                                      <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 24px;'>4</span><span style='font-size: 17px;'>/8<span><p>
+                                    </div>
+                                  </div>
+                                "
+                            Width: =97
+                            X: =137
+                            Y: =86
+                            ZIndex: =3
 
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
