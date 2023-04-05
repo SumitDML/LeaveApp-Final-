@@ -140,8 +140,8 @@
                                   
                                   <defs>
                                     <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
-                                      <stop offset='0%' stop-color='#FC466B'/>
-                                      <stop offset='100%' stop-color='#3F5EFB'/>
+                                      <stop offset='0%' stop-color='#184be0'/>
+                                      <stop offset='100%' stop-color='#184be0'/>
                                       
                                       
                                     </linearGradient>
@@ -163,7 +163,7 @@
                                     }
                                     
                                     .progress-text {
-                                      font-size: 0.7em;
+                                      font-size: 0.6rem;
                                       font-family: Trebuchet MS, sans-serif;
                                       font-weight:bold;
                                       
@@ -257,8 +257,8 @@
                                   
                                   <defs>
                                     <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
-                                      <stop offset='0%' stop-color='#FC466B'/>
-                                      <stop offset='100%' stop-color='#3F5EFB'/>
+                                      <stop offset='0%' stop-color='#19e035'/>
+                                      <stop offset='100%' stop-color='#19e035'/>
                                       
                                       
                                     </linearGradient>
@@ -280,7 +280,7 @@
                                     }
                                     
                                     .progress-text {
-                                      font-size: 0.7em;
+                                      font-size: 0.6rem;
                                       font-family: Trebuchet MS, sans-serif;
                                       font-weight:bold;
                                       
@@ -375,8 +375,8 @@
                                   
                                   <defs>
                                     <linearGradient id='gradient' x1='80%' y1='20%' x2='5%' y2='5%' spreadMethod='pad'>
-                                      <stop offset='0%' stop-color='#FC466B'/>
-                                      <stop offset='100%' stop-color='#3F5EFB'/>
+                                      <stop offset='0%' stop-color='#e06c19'/>
+                                      <stop offset='100%' stop-color='#e06c19'/>
                                       
                                       
                                     </linearGradient>
@@ -398,7 +398,7 @@
                                     }
                                     
                                     .progress-text {
-                                      font-size: 0.7em;
+                                      font-size: 0.6rem;
                                       font-family: Trebuchet MS, sans-serif;
                                       font-weight:bold;
                                       
@@ -492,7 +492,7 @@
                             Text: =""
                             Width: =Parent.Width-2
                             X: =1
-                            Y: =2
+                            Y: =1
                             ZIndex: =1
 
                         Label9 As label:
@@ -530,7 +530,7 @@
                             Text: =""
                             Width: =Parent.Width-2
                             X: =1
-                            Y: =2
+                            Y: =1
                             ZIndex: =1
 
                         Label9_1 As label:
@@ -568,7 +568,7 @@
                             Text: =""
                             Width: =Parent.Width-2
                             X: =1
-                            Y: =2
+                            Y: =1
                             ZIndex: =1
 
                         Label9_2 As label:
@@ -606,7 +606,7 @@
                             Text: =""
                             Width: =Parent.Width-2
                             X: =1
-                            Y: =2
+                            Y: =1
                             ZIndex: =1
 
                         Label9_3 As label:

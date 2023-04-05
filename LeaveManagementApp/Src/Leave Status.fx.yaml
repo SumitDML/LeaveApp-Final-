@@ -149,7 +149,7 @@
                         Height: =23
                         OnSelect: =Select(Parent)
                         Text: =ThisItem.LeaveTypes.Value&" Leave"
-                        X: =25
+                        X: =21
                         Y: =84
                         ZIndex: =6
 
