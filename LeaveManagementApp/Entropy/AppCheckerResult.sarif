@@ -5207,6 +5207,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_4.RightSideContainer1_4.Container20.Container17_1.Container19_1.Gallery7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_4.RightSideContainer1_4.Container20.Container17_1.Container19_1.Gallery7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_4.RightSideContainer1_4.Container20.Container17_1.Container19_1.Gallery7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_4.RightSideContainer1_4.Container20.Container17_1.Container19_1.Gallery7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_4.RightSideContainer1_4.Container20.Container17_1.Container19_1.Gallery7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_4.RightSideContainer1_4.Container20.Container17_1.Container19_1.Gallery7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.customdatepicker"
                 }
               ],

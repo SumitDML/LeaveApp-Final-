@@ -97,7 +97,7 @@
     "DocumentLayoutLockOrientation": false,
     "DocumentLayoutMaintainAspectRatio": false,
     "DocumentLayoutOrientation": "landscape",
-    "DocumentLayoutScaleToFit": false,
+    "DocumentLayoutScaleToFit": true,
     "DocumentLayoutWidth": 1728,
     "DocumentType": "App",
     "EnableInstrumentation": false,
