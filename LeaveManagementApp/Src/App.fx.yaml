@@ -16,7 +16,7 @@ App As appinfo:
                 },
                 {
                     Title: "Leave Balance",
-                    Screen: 'Leave Balance',
+                    Screen: Dashboard,
                     Icon: leave_balance
                 },
                   {
