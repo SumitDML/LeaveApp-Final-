@@ -502,7 +502,8 @@
                                     err,
                                     "You don't have enough leave balance."
                                 )
-                            ],   
+                            ],  
+                        
                          Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
@@ -609,7 +610,8 @@
                                     err,
                                     "You don't have enough leave balance."
                                 )
-                            ],     
+                            ],   
+                        
                         Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
@@ -679,10 +681,11 @@
                                         JobTitle: "",
                                         Picture: ""
                                     }
-                                }       
-                            )));
-                        
-                        Set(visible,true);
+                                }   
+                              
+                            ))
+                            );
+                        Set(visible,true);         
                         Reset(from);
                         Reset(to);
                     Text: ="Submit"
