@@ -741,6 +741,7 @@
                             Height: =290
                             Items: =Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected")
                             Layout: =Layout.Vertical
+                            ShowScrollbar: =false
                             TemplatePadding: =0
                             TemplateSize: =109
                             Width: =618
