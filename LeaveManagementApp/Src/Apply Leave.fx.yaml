@@ -450,7 +450,7 @@
 
                 Button11 As button:
                     Height: =70
-                    Text: ="Button"
+                    Text: ="Submit"
                     Width: =251
                     X: =948
                     Y: =776
