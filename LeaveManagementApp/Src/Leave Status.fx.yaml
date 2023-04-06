@@ -111,7 +111,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =14
-                        Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"HALF DAY","FULL DAY")&" LEAVE"
+                        Text: =If(((ThisItem.FromType.Value="First Half" && ThisItem.ToType.Value="Second Half")|| ThisItem.FromType.Value="Full Day" || ThisItem.ToType.Value="Full Day" ),"FULL DAY","HALF DAY")&" LEAVE"
                         VerticalAlign: =VerticalAlign.Top
                         Width: =220
                         X: =Parent.X

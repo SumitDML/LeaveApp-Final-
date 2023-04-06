@@ -618,7 +618,7 @@
                                     }
                                 }       
                             ));
-                        
+                        Set(visible,true);
                         Reset(from);
                         Reset(to);
                     Text: ="Submit"
@@ -905,7 +905,7 @@
                                 HoverFill: =RGBA(186, 202, 226, 0)
                                 Items: =Choices([@LeaveRequests].LeaveTypes)
                                 OnChange: |
-                                    =Set(varChange,LookUp(LeaveBalance,LeaveType.Value=Leavetype.SelectedText.Value));
+                                    =Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2.SelectedText.Value));
                                 PressedBorderColor: =
                                 PressedFill: =RGBA(0, 18, 107, 0)
                                 Width: =529
@@ -970,6 +970,17 @@
                     X: =279
                     Y: =15
                     ZIndex: =5
+
+                Label12 As label:
+                    Color: =RGBA(0, 121, 187, 1)
+                    Height: =80
+                    Size: =25
+                    Text: ="Leave Successfully Applied!"
+                    Visible: =visible
+                    Width: =490
+                    X: =26
+                    Y: =776
+                    ZIndex: =6
 
     "'Left Navigation_14' As 'Left Navigation_11'":
         Visible: =var
