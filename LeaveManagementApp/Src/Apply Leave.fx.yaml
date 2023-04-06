@@ -325,7 +325,7 @@
                             Y: =12
                             ZIndex: =1
 
-                        Gallery7 As gallery.galleryHorizontal:
+                        LeaveFor As gallery.galleryHorizontal:
                             DelayItemLoading: =true
                             Height: =80
                             Items: =fullhalf
@@ -390,16 +390,18 @@
                             Y: =236
                             ZIndex: =5
 
-                        Dropdown1 As dropdown:
+                        Leavetype As dropdown:
                             BorderThickness: =0
                             ChevronBackground: =RGBA(56, 96, 178, 0)
                             ChevronFill: =RGBA(255, 255, 255, 0)
                             ChevronHoverBackground: =
-                            Default: ="null"
+                            Default: =
                             Height: =53
                             HoverBorderColor: =
                             HoverFill: =RGBA(186, 202, 226, 0)
-                            Items: =DropDownSample
+                            Items: =Choices([@LeaveRequests].LeaveTypes)
+                            OnChange: |
+                                =Set(vardata,LookUp(LeaveBalance,LeaveType.Value=Leavetype.SelectedText.Value));
                             PressedBorderColor: =
                             PressedFill: =RGBA(0, 18, 107, 0)
                             Width: =543
@@ -416,7 +418,7 @@
                             Y: =328
                             ZIndex: =7
 
-                        TextInput4 As text:
+                        Reason As text:
                             BorderColor: =RGBA(128, 128, 128, 1)
                             Default: =""
                             Height: =111
@@ -456,6 +458,164 @@
 
                 Button11 As button:
                     Height: =70
+                    OnSelect: |-
+                        =Set(varTotalDays,1 + ((DateDiff(_dateSelected,_dateSelected)) 
+                        * 5 - ((Weekday(_dateSelected) - 
+                        Weekday(_dateSelected))*2)) / 7 - 
+                        Switch(Weekday(_dateSelected),7,1,0) - 
+                        Switch(Weekday(_dateSelected),1,1,0));
+                        
+                        
+                        
+                        If(Radio1_3.Selected.Title="Single Day", 
+                         Patch(
+                                LeaveRequests,
+                                Defaults(LeaveRequests),
+                                {Details: Reason.Text},
+                                {LeaveTypes: Leavetype.SelectedText},
+                                {From: _dateSelected },
+                                {To: _dateSelected},
+                                {
+                                    Status: {
+                                        Value: "Pending",
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
+                                    }
+                                },
+                                {'Total Days': Value(varTotalDays)},
+                                {
+                                    FromType: {
+                                        Value: LeaveFor.Selected.Title,
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
+                                    }
+                                },
+                                {
+                                    ToType: {
+                                        Value: LeaveFor.Selected.Title,
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
+                                    }
+                                },
+                                {
+                                    LeaveId: {
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Id: vardata.Id,
+                                        Value: Leavetype.SelectedText.Value
+                                    }
+                                },
+                                
+                                {
+                                    RequestedBy: {
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Claims: Lower(User().Email),
+                                        Department: "",
+                                        DisplayName: User().FullName,
+                                        Email: User().Email,
+                                        JobTitle: "",
+                                        Picture: ""
+                                    }
+                                },
+                                
+                                {
+                                    'Reporting Manager':{
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Claims: Lower(User().Email),
+                                        Department: "",
+                                        DisplayName: User().FullName,
+                                        Email: User().Email,
+                                        JobTitle: "",
+                                        Picture: ""
+                                    }
+                                },
+                                
+                                {
+                                    HR: {
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Claims: Lower(User().Email),
+                                        Department: "",
+                                        DisplayName: User().FullName,
+                                        Email: User().Email,
+                                        JobTitle: "",
+                                        Picture: ""
+                                    }
+                                }       
+                            ),
+                             
+                         Patch(
+                                LeaveRequests,
+                                Defaults(LeaveRequests),
+                                {Reason: Reason.Text},
+                                {LeaveTypes: Leavetype.SelectedText},
+                                {From: from.SelectedDate},
+                                {To: to.SelectedDate},
+                                {'Total Days': Value(TotalDays.Text)},
+                                {
+                                    LeaveId: {
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Id: vardata.Id,
+                                        Value: LeaveTypes.SelectedText.Value
+                                    }
+                                },
+                                {
+                                    RequestedBy: {
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Claims: Lower(User().Email),
+                                        Department: "",
+                                        DisplayName: User().FullName,
+                                        Email: User().Email,
+                                        JobTitle: "",
+                                        Picture: ""
+                                    }
+                                },
+                                {
+                                    HR: {
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Claims: Lower(User().Email),
+                                        Department: "",
+                                        DisplayName: User().FullName,
+                                        Email: User().Email,
+                                        JobTitle: "",
+                                        Picture: ""
+                                    }
+                                },
+                                {
+                                    'Reporting Manager': {
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Claims: Lower(var.Mail),
+                                        Department: "",
+                                        DisplayName: var.Department,
+                                        Email: var.Mail,
+                                        JobTitle: "",
+                                        Picture: ""
+                                    }
+                                }
+                            ));
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                        
+                        
+                        Reset(Reason);
+                        Reset(LeaveTypes);
+                        Reset(Details);
+                        Reset(from);
+                        Reset(to);
+                        Reset(approver);
+                        );
                     Text: ="Submit"
                     Width: =251
                     X: =948
