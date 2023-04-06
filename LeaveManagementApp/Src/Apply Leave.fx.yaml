@@ -458,12 +458,19 @@
 
                 Button11 As button:
                     Height: =70
-                    OnSelect: |-
+                    OnSelect: |
                         =Set(varTotalDays,1 + ((DateDiff(_dateSelected,_dateSelected)) 
                         * 5 - ((Weekday(_dateSelected) - 
                         Weekday(_dateSelected))*2)) / 7 - 
                         Switch(Weekday(_dateSelected),7,1,0) - 
                         Switch(Weekday(_dateSelected),1,1,0));
+                        
+                        Set(varTotalDays2,1 + ((DateDiff(from.SelectedDate,to.SelectedDate)) 
+                        * 5 - ((Weekday(from.SelectedDate) - 
+                        Weekday(to.SelectedDate))*2)) / 7 - 
+                        Switch(Weekday(to.SelectedDate),7,1,0) - 
+                        Switch(Weekday(from.SelectedDate),1,1,0));
+                        
                         
                         
                         
@@ -542,34 +549,34 @@
                         Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
-                                {Details: Reason.Text},
-                                {LeaveTypes: Leavetype.SelectedText},
-                                {From: _dateSelected },
-                                {To: _dateSelected},
+                                {Details: Reasons2.Text},
+                                {LeaveTypes: LeaveTypes2.SelectedText},
+                                {From: from.SelectedDate },
+                                {To: to.SelectedDate},
                                 {
                                     Status: {
                                         Value: "Pending",
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
-                                {'Total Days': Value(varTotalDays)},
+                                {'Total Days': Value(varTotalDays2)},
                                 {
                                     FromType: {
-                                        Value: LeaveFor.Selected.Title,
+                                        Value: FromType.Selected.Title,
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
                                 {
                                     ToType: {
-                                        Value: LeaveFor.Selected.Title,
+                                        Value: ToType.Selected.Title,
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
                                 {
                                     LeaveId: {
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                        Id: vardata.Id,
-                                        Value: Leavetype.SelectedText.Value
+                                        Id: varChange.Id,
+                                        Value: LeaveTypes2.SelectedText.Value
                                     }
                                 },
                                 
@@ -609,34 +616,9 @@
                                     }
                                 }       
                             ));
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
                         
-                        
-                        Reset(Reason);
-                        Reset(LeaveTypes);
-                        Reset(Details);
                         Reset(from);
                         Reset(to);
-                        Reset(approver);
-                        );
                     Text: ="Submit"
                     Width: =251
                     X: =948
@@ -737,7 +719,7 @@
                                 Y: =167
                                 ZIndex: =7
 
-                            DatePicker2 As datepicker:
+                            from As datepicker:
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 Fill: =RGBA(255, 255, 255, 0)
                                 Format: =DateTimeFormat.LongDate
@@ -758,7 +740,7 @@
                                 Y: =168
                                 ZIndex: =9
 
-                            Gallery7_2 As gallery.galleryHorizontal:
+                            FromType As gallery.galleryHorizontal:
                                 DelayItemLoading: =true
                                 Height: =80
                                 Items: =firstsecondhalf
@@ -818,7 +800,7 @@
                                 Y: =414
                                 ZIndex: =13
 
-                            DatePicker2_1 As datepicker:
+                            to As datepicker:
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 Fill: =RGBA(255, 255, 255, 0)
                                 Format: =DateTimeFormat.LongDate
@@ -839,7 +821,7 @@
                                 Y: =415
                                 ZIndex: =15
 
-                            Gallery7_3 As gallery.galleryHorizontal:
+                            ToType As gallery.galleryHorizontal:
                                 DelayItemLoading: =true
                                 Height: =80
                                 Items: =firstsecondhalf
@@ -909,17 +891,19 @@
                                 Y: =86
                                 ZIndex: =5
 
-                            Dropdown1_1 As dropdown:
+                            LeaveTypes2 As dropdown:
+                                BorderColor: =RGBA(0, 0, 0, 0)
                                 BorderThickness: =0
-                                ChevronBackground: =RGBA(56, 96, 178, 0)
+                                ChevronBackground: =RGBA(0, 0, 0, 0)
                                 ChevronFill: =RGBA(255, 255, 255, 0)
                                 ChevronHoverBackground: =
                                 Default: ="null"
-                                Fill: =RGBA(255, 255, 255, 0)
                                 Height: =53
                                 HoverBorderColor: =
                                 HoverFill: =RGBA(186, 202, 226, 0)
-                                Items: =DropDownSample
+                                Items: =Choices([@LeaveRequests].LeaveTypes)
+                                OnChange: |
+                                    =Set(varChange,LookUp(LeaveBalance,LeaveType.Value=Leavetype.SelectedText.Value));
                                 PressedBorderColor: =
                                 PressedFill: =RGBA(0, 18, 107, 0)
                                 Width: =529
@@ -936,7 +920,7 @@
                                 Y: =169
                                 ZIndex: =7
 
-                            TextInput4_1 As text:
+                            Reasons2 As text:
                                 BorderColor: =RGBA(128, 128, 128, 1)
                                 Default: =""
                                 Height: =111
