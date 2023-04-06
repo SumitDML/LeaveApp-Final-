@@ -102,10 +102,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "2a31dd94-f2cb-49d4-b46a-968ab075fb59",
-    "Id": "2a31dd94-f2cb-49d4-b46a-968ab075fb59",
+    "Id": "9107a74b-55de-437a-88f2-2b4fca41b390",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Leave App (Demo)",
+    "Name": "Leave+App+(Demo).msapp",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
