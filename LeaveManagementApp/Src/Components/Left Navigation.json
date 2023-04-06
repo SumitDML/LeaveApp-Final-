@@ -1674,7 +1674,7 @@
       "NavItems",
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638163921753902497",
+    "LastModifiedTimestamp": "638163939006712179",
     "Name": "Left Navigation",
     "Rules": [
       {
@@ -1779,7 +1779,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638163921753902497",
+  "LastModifiedTimestamp": "638163939006712179",
   "Name": "44282070d4be478dab4786fb4733f563",
   "OverridableProperties": {},
   "TemplateOriginalName": "784fa766a3ea40dfb2045a277d69d5b8",

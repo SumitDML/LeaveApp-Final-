@@ -433,6 +433,7 @@
                             Height: =176
                             Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
                             Layout: =Layout.Vertical
+                            ShowScrollbar: =false
                             TemplatePadding: =0
                             TemplateSize: =85
                             Width: =571
@@ -458,9 +459,12 @@
                             Button3 As button:
                                 BorderThickness: =0
                                 Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
+                                DisplayMode: =DisplayMode.View
                                 Fill: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,0.12),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,0.08),RGBA(255, 246, 196,1)))
                                 Font: =Font.'Lato Black'
                                 Height: =36
+                                HoverColor: =Self.Color
+                                HoverFill: =Self.Fill
                                 OnSelect: =Select(Parent)
                                 Size: =13
                                 Text: =ThisItem.Status.Value
@@ -789,9 +793,12 @@
                             Button3_2 As button:
                                 BorderThickness: =0
                                 Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
+                                DisplayMode: =DisplayMode.View
                                 Fill: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,0.12),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,0.08),RGBA(255, 246, 196,1)))
                                 Font: =Font.'Lato Black'
                                 Height: =36
+                                HoverColor: =Self.Color
+                                HoverFill: =Self.Fill
                                 OnSelect: =Select(Parent)
                                 Size: =13
                                 Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
