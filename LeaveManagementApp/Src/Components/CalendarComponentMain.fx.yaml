@@ -442,7 +442,7 @@ CalendarComponentMain As CanvasComponent:
         BorderColor: =RGBA(130, 144, 156, 1)
         DisabledBorderColor: =galCalendar_1.BorderColor
         DisabledFill: =galCalendar_1.Fill
-        Height: =531
+        Height: =522
         HoverBorderColor: =galCalendar_1.BorderColor
         HoverFill: =galCalendar_1.Fill
         Items: |-
@@ -459,7 +459,7 @@ CalendarComponentMain As CanvasComponent:
         TemplatePadding: |
             =0
         TemplateSize: =55
-        Width: =843.61
+        Width: =532
         WrapCount: =7
         X: =0.00
         Y: =109
@@ -505,8 +505,6 @@ CalendarComponentMain As CanvasComponent:
                         TimeUnit.Days
                     ) = _today
             Width: =63.27
-            X: =32.34
-            Y: =5
             ZIndex: =2
 
         btnDayBack As button:
