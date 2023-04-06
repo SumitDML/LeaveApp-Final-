@@ -539,21 +539,40 @@
                                 }       
                             ),
                              
-                         Patch(
+                        Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
-                                {Reason: Reason.Text},
+                                {Details: Reason.Text},
                                 {LeaveTypes: Leavetype.SelectedText},
-                                {From: from.SelectedDate},
-                                {To: to.SelectedDate},
-                                {'Total Days': Value(TotalDays.Text)},
+                                {From: _dateSelected },
+                                {To: _dateSelected},
+                                {
+                                    Status: {
+                                        Value: "Pending",
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
+                                    }
+                                },
+                                {'Total Days': Value(varTotalDays)},
+                                {
+                                    FromType: {
+                                        Value: LeaveFor.Selected.Title,
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
+                                    }
+                                },
+                                {
+                                    ToType: {
+                                        Value: LeaveFor.Selected.Title,
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
+                                    }
+                                },
                                 {
                                     LeaveId: {
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                         Id: vardata.Id,
-                                        Value: LeaveTypes.SelectedText.Value
+                                        Value: Leavetype.SelectedText.Value
                                     }
                                 },
+                                
                                 {
                                     RequestedBy: {
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
@@ -565,6 +584,19 @@
                                         Picture: ""
                                     }
                                 },
+                                
+                                {
+                                    'Reporting Manager':{
+                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                        Claims: Lower(User().Email),
+                                        Department: "",
+                                        DisplayName: User().FullName,
+                                        Email: User().Email,
+                                        JobTitle: "",
+                                        Picture: ""
+                                    }
+                                },
+                                
                                 {
                                     HR: {
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
@@ -575,18 +607,7 @@
                                         JobTitle: "",
                                         Picture: ""
                                     }
-                                },
-                                {
-                                    'Reporting Manager': {
-                                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                        Claims: Lower(var.Mail),
-                                        Department: "",
-                                        DisplayName: var.Department,
-                                        Email: var.Mail,
-                                        JobTitle: "",
-                                        Picture: ""
-                                    }
-                                }
+                                }       
                             ));
                          
                          
