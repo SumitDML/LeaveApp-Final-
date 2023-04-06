@@ -61,4 +61,17 @@ App As appinfo:
                 }
             )
         );
+        ClearCollect(
+            firstsecondhalf,
+            Table(
+                {
+                    Title: "First Half"
+                   
+                },
+                   {
+                    Title: "Second Half"
+                   
+                }
+            )
+        );
 

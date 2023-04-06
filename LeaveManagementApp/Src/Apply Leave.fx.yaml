@@ -96,7 +96,7 @@
                     Height: =825
                     LayoutGap: =30
                     LayoutMode: =LayoutMode.Auto
-                    Visible: =false
+                    Visible: =If(Radio1_3.SelectedText.Value="Single Day",true,false)
                     Width: =Parent.Width-4
                     X: =2
                     Y: =2
@@ -129,16 +129,6 @@
                             X: =8
                             Y: =12
                             ZIndex: =2
-
-                        Radio1_1 As radio:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Height: =62
-                            Items: =singlemulti
-                            Layout: =Layout.Horizontal
-                            Width: =353
-                            X: =271
-                            Y: =12
-                            ZIndex: =3
 
                         dropdownCalendarSelection1_2 As dropdown:
                             Default: =_myCalendar.DisplayName
@@ -468,6 +458,7 @@
 
                 Container22 As groupContainer.manualLayoutContainer:
                     Height: =712
+                    Visible: =If(Radio1_3.SelectedText.Value="Multiple Days",true,false)
                     Width: =1238
                     X: =3
                     Y: =3
@@ -494,17 +485,6 @@
                                 X: =8
                                 Y: =12
                                 ZIndex: =2
-
-                            Radio1_2 As radio:
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                Default: ="Multiple Days"
-                                Height: =62
-                                Items: =singlemulti
-                                Layout: =Layout.Horizontal
-                                Width: =347
-                                X: =254
-                                Y: =12
-                                ZIndex: =3
 
                             dropdownCalendarSelection1_3 As dropdown:
                                 Default: =_myCalendar.DisplayName
@@ -594,12 +574,12 @@
                             Gallery7_2 As gallery.galleryHorizontal:
                                 DelayItemLoading: =true
                                 Height: =80
-                                Items: =fullhalf
+                                Items: =firstsecondhalf
                                 LoadingSpinner: =LoadingSpinner.Data
                                 TemplateSize: =172
-                                Width: =558
+                                Width: =374
                                 X: =8
-                                Y: =236
+                                Y: =234
                                 ZIndex: =10
 
                                 Button9_2 As button:
@@ -614,36 +594,76 @@
                                     PressedFill: =RGBA(0,0,0,0)
                                     Text: =ThisItem.Title
                                     Width: =147
-                                    X: =16
-                                    Y: =12
+                                    X: =3
+                                    Y: =15
                                     ZIndex: =1
 
-                        Container19_2 As groupContainer.manualLayoutContainer:
-                            LayoutMinHeight: =100
-                            LayoutMinWidth: =250
-                            ZIndex: =2
-
-                            Label10_7 As label:
+                            Label10_12 As label:
                                 Height: =62
-                                Size: =24
-                                Text: ="LEAVE FOR"
-                                Width: =207
-                                X: =20
-                                Y: =12
-                                ZIndex: =1
+                                Size: =22
+                                Text: ="TO"
+                                Width: =235
+                                X: =8
+                                Y: =339
+                                ZIndex: =11
 
-                            Gallery7_1 As gallery.galleryHorizontal:
+                            TextInput2_3 As text:
+                                BorderColor: =RGBA(128, 128, 128, 1)
+                                Default: =""
+                                Height: =62
+                                HintText: =""
+                                RadiusBottomLeft: =10
+                                RadiusBottomRight: =10
+                                RadiusTopLeft: =10
+                                RadiusTopRight: =10
+                                Size: =16
+                                Width: =548
+                                X: =8
+                                Y: =401
+                                ZIndex: =12
+
+                            Icon6_1 As icon.CalendarBlank:
+                                Color: =RGBA(60, 93, 255, 1)
+                                Height: =36
+                                Icon: =Icon.CalendarBlank
+                                Width: =46
+                                X: =488
+                                Y: =414
+                                ZIndex: =13
+
+                            DatePicker2_1 As datepicker:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                Fill: =RGBA(255, 255, 255, 0)
+                                Format: =DateTimeFormat.LongDate
+                                Height: =56
+                                IconBackground: =RGBA(56, 96, 178, 0)
+                                Size: =20
+                                Width: =512
+                                X: =23
+                                Y: =405
+                                ZIndex: =14
+
+                            Icon7_1 As icon.VerticalLine:
+                                Color: =RGBA(128, 128, 128, 1)
+                                Height: =35
+                                Icon: =Icon.VerticalLine
+                                Width: =20
+                                X: =468
+                                Y: =415
+                                ZIndex: =15
+
+                            Gallery7_3 As gallery.galleryHorizontal:
                                 DelayItemLoading: =true
                                 Height: =80
-                                Items: =fullhalf
+                                Items: =firstsecondhalf
                                 LoadingSpinner: =LoadingSpinner.Data
                                 TemplateSize: =172
-                                Width: =558
-                                X: =20
-                                Y: =74
-                                ZIndex: =2
+                                Width: =374
+                                X: =8
+                                Y: =481
+                                ZIndex: =16
 
-                                Button9_1 As button:
+                                Button9_3 As button:
                                     Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
                                     DisabledColor: =RGBA(0, 0, 0, 1)
                                     Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
@@ -655,9 +675,14 @@
                                     PressedFill: =RGBA(0,0,0,0)
                                     Text: =ThisItem.Title
                                     Width: =147
-                                    X: =16
-                                    Y: =12
+                                    X: =3
+                                    Y: =15
                                     ZIndex: =1
+
+                        Container19_2 As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            ZIndex: =2
 
                             Label10_8 As label:
                                 FontWeight: =FontWeight.Semibold
@@ -665,8 +690,8 @@
                                 Size: =24
                                 Text: ="SELECT LEAVE TYPE"
                                 Width: =341
-                                X: =20
-                                Y: =172
+                                X: =16
+                                Y: =22
                                 ZIndex: =3
 
                             TextInput2_1 As text:
@@ -681,7 +706,7 @@
                                 Size: =16
                                 Width: =548
                                 X: =30
-                                Y: =234
+                                Y: =84
                                 ZIndex: =4
 
                             Icon5_1 As icon.ChevronDown:
@@ -694,7 +719,7 @@
                                 OnSelect: =
                                 Width: =26
                                 X: =527
-                                Y: =236
+                                Y: =86
                                 ZIndex: =5
 
                             Dropdown1_1 As dropdown:
@@ -703,15 +728,16 @@
                                 ChevronFill: =RGBA(255, 255, 255, 0)
                                 ChevronHoverBackground: =
                                 Default: ="null"
+                                Fill: =RGBA(255, 255, 255, 0)
                                 Height: =53
                                 HoverBorderColor: =
                                 HoverFill: =RGBA(186, 202, 226, 0)
                                 Items: =DropDownSample
                                 PressedBorderColor: =
                                 PressedFill: =RGBA(0, 18, 107, 0)
-                                Width: =543
+                                Width: =529
                                 X: =35
-                                Y: =240
+                                Y: =90
                                 ZIndex: =6
 
                             Label10_9 As label:
@@ -719,8 +745,8 @@
                                 Size: =24
                                 Text: ="REASON"
                                 Width: =207
-                                X: =30
-                                Y: =328
+                                X: =16
+                                Y: =169
                                 ZIndex: =7
 
                             TextInput4_1 As text:
@@ -735,7 +761,7 @@
                                 Size: =16
                                 Width: =548
                                 X: =30
-                                Y: =390
+                                Y: =252
                                 ZIndex: =8
 
                             Label10_10 As label:
@@ -743,8 +769,8 @@
                                 Size: =24
                                 Text: ="NOTIFY"
                                 Width: =207
-                                X: =30
-                                Y: =535
+                                X: =16
+                                Y: =387
                                 ZIndex: =9
 
                             ComboBox1_1 As combobox:
@@ -757,9 +783,20 @@
                                     =Search(Office365Users.SearchUser({searchTerm:Self.SearchText,top:5}),ComboBox1_1.SearchText,"DisplayName")
                                 Template: =ListItemTemplate.Person
                                 Width: =543
-                                X: =35
-                                Y: =597
+                                X: =30
+                                Y: =449
                                 ZIndex: =10
+
+                Radio1_3 As radio:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Default: ="Single Day"
+                    Height: =62
+                    Items: =singlemulti
+                    Layout: =Layout.Horizontal
+                    Width: =353
+                    X: =279
+                    Y: =15
+                    ZIndex: =5
 
     "'Left Navigation_14' As 'Left Navigation_11'":
         Visible: =var
