@@ -95,7 +95,7 @@
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutHeight": 1117,
     "DocumentLayoutLockOrientation": false,
-    "DocumentLayoutMaintainAspectRatio": false,
+    "DocumentLayoutMaintainAspectRatio": true,
     "DocumentLayoutOrientation": "landscape",
     "DocumentLayoutScaleToFit": true,
     "DocumentLayoutWidth": 1728,
