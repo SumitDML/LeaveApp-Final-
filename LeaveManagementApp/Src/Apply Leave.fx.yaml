@@ -116,9 +116,9 @@
                         ZIndex: =1
 
                         Button4_1 As button:
-                            BorderColor: =ColorFade(Self.Fill, -75%)
-                            BorderThickness: =1
-                            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            BorderThickness: =0.5
+                            DisabledBorderColor: =RGBA(219, 219, 219, 1)
                             DisabledColor: =RGBA(255, 255, 255, 1)
                             DisabledFill: =RGBA(255, 255, 255, 1)
                             DisplayMode: =DisplayMode.Disabled
@@ -365,7 +365,8 @@
                             ZIndex: =3
 
                         TextInput2 As text:
-                            BorderColor: =RGBA(128, 128, 128, 1)
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            BorderThickness: =0.5
                             Default: =""
                             Height: =62
                             HintText: =""
@@ -421,7 +422,8 @@
                             ZIndex: =7
 
                         Reason As text:
-                            BorderColor: =RGBA(128, 128, 128, 1)
+                            BorderColor: =RGBA(202, 202, 202, 1)
+                            BorderThickness: =1
                             Default: =""
                             Height: =111
                             HintText: ="Enter Reson Here..."
@@ -461,7 +463,16 @@
                 Button11 As button:
                     Height: =70
                     OnSelect: |
-                        =Set(varTotalDays,1 + ((DateDiff(_dateSelected,_dateSelected)) 
+                        =
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Set(varTotalDays,1 + ((DateDiff(_dateSelected,_dateSelected)) 
                         * 5 - ((Weekday(_dateSelected) - 
                         Weekday(_dateSelected))*2)) / 7 - 
                         Switch(Weekday(_dateSelected),7,1,0) - 
@@ -983,6 +994,15 @@
                     X: =26
                     Y: =776
                     ZIndex: =6
+
+                Timer1 As timer:
+                    Duration: =1500
+                    OnTimerEnd: =Set(visible,false)
+                    Start: =visible
+                    Visible: =false
+                    X: =295
+                    Y: =837
+                    ZIndex: =7
 
     "'Left Navigation_14' As 'Left Navigation_11'":
         Visible: =var
