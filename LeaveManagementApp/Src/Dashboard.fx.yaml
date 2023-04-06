@@ -745,7 +745,6 @@
 
                             Image7 As image:
                                 Height: =80
-                                Image: =User()
                                 OnSelect: =Select(Parent)
                                 RadiusBottomLeft: =50
                                 RadiusBottomRight: =50
