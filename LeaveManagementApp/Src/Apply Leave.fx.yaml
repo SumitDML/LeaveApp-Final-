@@ -478,6 +478,7 @@
                          Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
+                                {Title: ""},
                                 {Details: Reason.Text},
                                 {LeaveTypes: Leavetype.SelectedText},
                                 {From: _dateSelected },
@@ -549,6 +550,7 @@
                         Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
+                                {Title: ""},
                                 {Details: Reasons2.Text},
                                 {LeaveTypes: LeaveTypes2.SelectedText},
                                 {From: from.SelectedDate },
