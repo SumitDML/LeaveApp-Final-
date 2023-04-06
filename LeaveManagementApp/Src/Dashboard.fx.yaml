@@ -3,6 +3,9 @@
         =Set(consumed,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Total,Sum(LeaveBalance,TotalLeave));
+        
+        Refresh(LeaveRequests);
+        Refresh(LeaveBalance)
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)

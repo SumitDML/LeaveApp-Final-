@@ -1,4 +1,7 @@
 "'Leave Status' As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+    OnVisible: |-
+        =Refresh(LeaveRequests);
+        Refresh(LeaveBalance)
 
     "'Left Navigation_12' As 'Left Navigation_11'":
         Visible: =var
