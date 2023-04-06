@@ -405,10 +405,16 @@
                             HoverFill: =RGBA(186, 202, 226, 0)
                             Items: =Choices([@LeaveRequests].LeaveTypes)
                             OnChange: |-
-                                =Set(vardata,LookUp(LeaveBalance,LeaveType.Value=Leavetype.SelectedText.Value));
+                                =If(Leavetype.SelectedText.Value="Unpaid",Set(leaves,0);Set(total,365);,
+                                
+                                
+                                Set(vardata,LookUp(LeaveBalance,LeaveType.Value=Leavetype.SelectedText.Value));
                                 ClearCollect(LeaveSum,Sum(Filter(LeaveRequests,LeaveId.Value=vardata.Id && RequestedBy.Email=User().Email),'Total Days'));
                                 
-                                ClearCollect(TotalLeave,Sum(Filter(LeaveBalance,Id=vardata.Id),TotalLeave))
+                                ClearCollect(TotalLeave,Sum(Filter(LeaveBalance,Id=vardata.Id),TotalLeave));
+                                Set(leaves,First(LeaveSum).Value);
+                                Set(total,First(TotalLeave).Value);
+                                )
                             PressedBorderColor: =
                             PressedFill: =RGBA(0, 18, 107, 0)
                             Width: =543
@@ -492,7 +498,7 @@
                                     "Please enter a valid start date"
                                 )
                             ],
-                            1 > Int(First(TotalLeave).Value - First(LeaveSum).Value),
+                            1 > total - leaves,
                             [
                                 Set(
                                     errordisplay,
@@ -600,7 +606,7 @@
                                     "Please enter valid end date"
                                 )
                             ],
-                            Int(varTotalDays2) > Int(First(TotalLeave1).Value - First(LeaveSum1).Value),
+                            Int(varTotalDays2) > total1-leaves1,
                             [
                                 Set(
                                     errordisplay,
@@ -972,12 +978,18 @@
                                 HoverFill: =RGBA(186, 202, 226, 0)
                                 Items: =Choices([@LeaveRequests].LeaveTypes)
                                 OnChange: |
-                                    =Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2.SelectedText.Value));
+                                    =If(LeaveTypes2.SelectedText.Value="Unpaid",Set(leaves1,0);Set(total1,365);,
                                     
+                                    Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2.SelectedText.Value));
                                     
                                     ClearCollect(LeaveSum1,Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days'));
                                     
-                                    ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave))
+                                    ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave));
+                                    
+                                    Set(leaves1,First(LeaveSum1).Value);
+                                    Set(total1,First(TotalLeave1).Value);
+                                    
+                                    )
                                 PressedBorderColor: =
                                 PressedFill: =RGBA(0, 18, 107, 0)
                                 Width: =529

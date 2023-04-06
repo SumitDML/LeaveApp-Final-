@@ -1819,7 +1819,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 141,
+                  "charOffset": 218,
                   "snippet": {
                     "text": "="
                   }
@@ -1860,7 +1860,7 @@
                 },
                 "region": {
                   "charLength": 98,
-                  "charOffset": 103,
+                  "charOffset": 180,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,LeaveId.Value=vardata.Id && RequestedBy.Email=User().Email),'Total Days')"
                   }
@@ -1900,7 +1900,7 @@
                 },
                 "region": {
                   "charLength": 50,
-                  "charOffset": 231,
+                  "charOffset": 308,
                   "snippet": {
                     "text": "Sum(Filter(LeaveBalance,Id=vardata.Id),TotalLeave)"
                   }
@@ -1940,7 +1940,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 150,
+                  "charOffset": 227,
                   "snippet": {
                     "text": "="
                   }
@@ -1981,7 +1981,7 @@
                 },
                 "region": {
                   "charLength": 100,
-                  "charOffset": 112,
+                  "charOffset": 189,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days')"
                   }
@@ -2021,7 +2021,7 @@
                 },
                 "region": {
                   "charLength": 52,
-                  "charOffset": 243,
+                  "charOffset": 320,
                   "snippet": {
                     "text": "Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave)"
                   }

@@ -404,7 +404,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/06/2023 16:20:48",
+  "HeaderLastSavedDateTimeUTC": "04/06/2023 17:48:01",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7e0c485b-e592-4462-b2d4-332320d54a27": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/4cd30ebd535b4de983d0480da0b51e1e\"",
@@ -489,7 +489,7 @@
     "LeaveBalance": 3,
     "LeaveRequests": 4,
     "LeaveSum": 14,
-    "LeaveSum1": 15,
+    "LeaveSum1": 16,
     "lmsnav": 8,
     "MyCalendarEvents": 9,
     "Office365Outlook": 0,
@@ -497,7 +497,7 @@
     "RadioSample": 6,
     "singlemulti": 10,
     "TotalLeave": 13,
-    "TotalLeave1": 16
+    "TotalLeave1": 15
   },
   "OrderGroupControls": {
     "Group1": {
@@ -1119,8 +1119,8 @@
     "Icon1_4": 5,
     "Icon2": 188,
     "Icon2_1": 257,
-    "Icon2_2": 125,
-    "Icon2_3": 211,
+    "Icon2_2": 126,
+    "Icon2_3": 212,
     "Icon2_4": 78,
     "Icon3": 139,
     "Icon4": 69,
@@ -1237,8 +1237,8 @@
     "MonthDayGallery1_2": 20,
     "navbar": 187,
     "navbar_1": 258,
-    "navbar_2": 126,
-    "navbar_3": 212,
+    "navbar_2": 125,
+    "navbar_3": 211,
     "navbar_4": 77,
     "NextArrow1": 263,
     "Radio1_3": 68,
