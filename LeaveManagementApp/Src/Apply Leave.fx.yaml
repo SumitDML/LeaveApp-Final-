@@ -403,8 +403,11 @@
                             HoverBorderColor: =
                             HoverFill: =RGBA(186, 202, 226, 0)
                             Items: =Choices([@LeaveRequests].LeaveTypes)
-                            OnChange: |
+                            OnChange: |-
                                 =Set(vardata,LookUp(LeaveBalance,LeaveType.Value=Leavetype.SelectedText.Value));
+                                ClearCollect(LeaveSum,Sum(Filter(LeaveRequests,LeaveId.Value=vardata.Id && RequestedBy.Email=User().Email),'Total Days'));
+                                
+                                ClearCollect(TotalLeave,Sum(Filter(LeaveBalance,Id=vardata.Id),TotalLeave))
                             PressedBorderColor: =
                             PressedFill: =RGBA(0, 18, 107, 0)
                             Width: =543
@@ -559,7 +562,46 @@
                                     }
                                 }       
                             ),
-                             
+                        
+                        
+                        If(
+                            from.SelectedDate < Today(),
+                            [
+                                Set(
+                                    errordisplay,
+                                    true
+                                ),
+                                Set(
+                                    err,
+                                    "Please enter a valid start date"
+                                )
+                            ],
+                            from.SelectedDate > to.SelectedDate,
+                            [
+                                Set(
+                                    errordisplay,
+                                    true
+                                ),
+                                Set(
+                                    err,
+                                    "Please enter valid end date"
+                                )
+                            ],
+                            Int((1 + ((DateDiff(from.SelectedDate,to.SelectedDate)) 
+                        * 5 - ((Weekday(from.SelectedDate) - 
+                        Weekday(to.SelectedDate))*2)) / 7 - 
+                        Switch(Weekday(to.SelectedDate),7,1,0) - 
+                        Switch(Weekday(from.SelectedDate),1,1,0))) > Int(First(TotalLeave1).Value - First(LeaveSum1).Value),
+                            [
+                                Set(
+                                    errordisplay,
+                                    true
+                                ),
+                                Set(
+                                    err,
+                                    "You don't have enough leave balance."
+                                )
+                            ],     
                         Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
@@ -630,7 +672,7 @@
                                         Picture: ""
                                     }
                                 }       
-                            ));
+                            )));
                         Set(visible,true);
                         Reset(from);
                         Reset(to);
@@ -919,6 +961,11 @@
                                 Items: =Choices([@LeaveRequests].LeaveTypes)
                                 OnChange: |
                                     =Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2.SelectedText.Value));
+                                    
+                                    
+                                    ClearCollect(LeaveSum1,Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days'));
+                                    
+                                    ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave))
                                 PressedBorderColor: =
                                 PressedFill: =RGBA(0, 18, 107, 0)
                                 Width: =529
@@ -991,8 +1038,8 @@
                     Text: ="Leave Successfully Applied!"
                     Visible: =visible
                     Width: =490
-                    X: =26
-                    Y: =776
+                    X: =438
+                    Y: =772
                     ZIndex: =6
 
                 Timer1 As timer:
@@ -1003,6 +1050,41 @@
                     X: =295
                     Y: =837
                     ZIndex: =7
+
+                Button4 As button:
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(255, 255, 255, 1)
+                    DisabledFill: =RGBA(255, 0, 0, 0.7)
+                    DisplayMode: =DisplayMode.Disabled
+                    Fill: |-
+                        =RGBA(56, 96, 178, 0.4
+                        )
+                    Height: =51
+                    Text: =err
+                    Visible: =errordisplay
+                    Width: =488
+                    X: =38
+                    Y: =776
+                    ZIndex: =8
+
+                Icon4 As icon.Error:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =58
+                    Icon: =Icon.Error
+                    Visible: =errordisplay
+                    Width: =32
+                    X: =49
+                    Y: =772
+                    ZIndex: =9
+
+                Timer2 As timer:
+                    Duration: =1500
+                    OnTimerEnd: =Set(errordisplay,false)
+                    Start: =errordisplay
+                    Visible: =false
+                    X: =375
+                    Y: =827
+                    ZIndex: =10
 
     "'Left Navigation_14' As 'Left Navigation_11'":
         Visible: =var
