@@ -6,7 +6,8 @@
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
         Refresh(LeaveRequests);
-        Refresh(LeaveBalance)
+        Refresh(LeaveBalance);
+        Set(_calendarVisible,true);
 
     Button7 As button:
         DisabledBorderColor: =RGBA(128, 128, 128, 1)
@@ -468,19 +469,6 @@
                     OnSelect: |
                         =
                         
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        Set(varTotalDays,1 + ((DateDiff(_dateSelected,_dateSelected)) 
-                        * 5 - ((Weekday(_dateSelected) - 
-                        Weekday(_dateSelected))*2)) / 7 - 
-                        Switch(Weekday(_dateSelected),7,1,0) - 
-                        Switch(Weekday(_dateSelected),1,1,0));
-                        
                         Set(varTotalDays2,1 + ((DateDiff(from.SelectedDate,to.SelectedDate)) 
                         * 5 - ((Weekday(from.SelectedDate) - 
                         Weekday(to.SelectedDate))*2)) / 7 - 
@@ -491,6 +479,30 @@
                         
                         
                         If(Radio1_3.Selected.Title="Single Day", 
+                        
+                        If(
+                            _selectedDate < Today(),
+                            [
+                                Set(
+                                    errordisplay,
+                                    true
+                                ),
+                                Set(
+                                    err,
+                                    "Please enter a valid start date"
+                                )
+                            ],
+                            1 > Int(First(TotalLeave).Value - First(LeaveSum).Value),
+                            [
+                                Set(
+                                    errordisplay,
+                                    true
+                                ),
+                                Set(
+                                    err,
+                                    "You don't have enough leave balance."
+                                )
+                            ],   
                          Patch(
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
@@ -505,7 +517,7 @@
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
-                                {'Total Days': Value(varTotalDays)},
+                                {'Total Days': 1},
                                 {
                                     FromType: {
                                         Value: LeaveFor.Selected.Title,
@@ -561,7 +573,7 @@
                                         Picture: ""
                                     }
                                 }       
-                            ),
+                            )),
                         
                         
                         If(
@@ -587,11 +599,7 @@
                                     "Please enter valid end date"
                                 )
                             ],
-                            Int((1 + ((DateDiff(from.SelectedDate,to.SelectedDate)) 
-                        * 5 - ((Weekday(from.SelectedDate) - 
-                        Weekday(to.SelectedDate))*2)) / 7 - 
-                        Switch(Weekday(to.SelectedDate),7,1,0) - 
-                        Switch(Weekday(from.SelectedDate),1,1,0))) > Int(First(TotalLeave1).Value - First(LeaveSum1).Value),
+                            Int(varTotalDays2) > Int(First(TotalLeave1).Value - First(LeaveSum1).Value),
                             [
                                 Set(
                                     errordisplay,
@@ -673,6 +681,7 @@
                                     }
                                 }       
                             )));
+                        
                         Set(visible,true);
                         Reset(from);
                         Reset(to);
