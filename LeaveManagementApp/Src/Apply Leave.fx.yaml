@@ -473,7 +473,7 @@
 
                 Button11 As button:
                     Height: =70
-                    OnSelect: |
+                    OnSelect: |+
                         =If(LeaveFor.Selected.Title="First Half" || LeaveFor.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
                         
                         
@@ -582,7 +582,8 @@
                                         Picture: ""
                                     }
                                 }       
-                            );Set(visible,true); ),
+                            );Set(visible,true);Reset(Reason);
+                        Reset(Leavetype); ),
                         
                         
                         If(
@@ -691,11 +692,16 @@
                                     }
                                 }   
                               
-                            );Set(visible,true); )
+                            );
+                        Set(visible,true);Reset(from);
+                        Reset(to);
+                        
+                        Reset(Reasons2);
+                        
+                        Reset(LeaveTypes2); )
                             );
                                 
-                        Reset(from);
-                        Reset(to);
+                        
                     Text: ="Submit"
                     Width: =251
                     X: =948
