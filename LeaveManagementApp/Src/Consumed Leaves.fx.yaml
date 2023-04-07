@@ -203,7 +203,7 @@
                                 
                                 </svg>")
                             Width: =181
-                            X: =222
+                            X: =Parent.Width-Self.Width
                             Y: =18
                             ZIndex: =4
 
@@ -320,7 +320,7 @@
                                 
                                 </svg>")
                             Width: =180
-                            X: =224
+                            X: =Parent.Width-Self.Width
                             Y: =23
                             ZIndex: =7
 
@@ -438,7 +438,7 @@
                                 
                                 </svg>")
                             Width: =169
-                            X: =232
+                            X: =Parent.Width-Self.Width
                             Y: =23
                             ZIndex: =7
 
@@ -508,14 +508,15 @@
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#e4bfff; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: 220px; background:#e4bfff; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)&"<span><p>
                                     </div>
                                   </div>
                                 "
                             OnSelect: =
-                            Width: =Parent.Width
+                            Width: =107
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =15
                             ZIndex: =4
 
@@ -556,14 +557,15 @@
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#fff5b2; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: 220px; background:#fff5b2; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#f6e15b; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)&"<span><p>
                                     </div>
                                   </div>
                                 "
                             OnSelect: =
-                            Width: =Parent.Width
+                            Width: =107
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =15
                             ZIndex: =4
 
@@ -603,14 +605,15 @@
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#98b2ff; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: 220px; background:#98b2ff; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#4537bd; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)&"<span><p>
                                     </div>
                                   </div>
                                 "
                             OnSelect: =
-                            Width: =Parent.Width
+                            Width: =106
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =15
                             ZIndex: =4
 
@@ -650,14 +653,15 @@
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='margin-left:98px;width: 95px; height: 220px; background:#d1ffd4; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: 220px; background:#d1ffd4; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#37bd46; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)&"<span><p>
                                     </div>
                                   </div>
                                 "
                             OnSelect: =
-                            Width: =Parent.Width
+                            Width: =108
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =15
                             ZIndex: =4
 

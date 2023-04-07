@@ -91,7 +91,7 @@
 
                     Container6 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =150
                         LayoutMinWidth: =250
                         ZIndex: =1
 
@@ -120,7 +120,7 @@
                         Icon3 As icon.Add:
                             Color: =RGBA(60, 93, 255, 1)
                             Icon: =Icon.Add
-                            X: =170
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =35
                             ZIndex: =2
 
@@ -130,7 +130,7 @@
                             Font: =Font.'Lato Black'
                             Size: =15
                             Text: ="Apply Leave"
-                            X: =127
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =111
                             ZIndex: =3
 
@@ -152,7 +152,7 @@
 
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =150
                         LayoutMinWidth: =250
                         ZIndex: =2
 
@@ -262,13 +262,13 @@
                                 
                                 </svg>")
                             Width: =169
-                            X: =212
+                            X: =Parent.Width-Self.Width
                             Y: =20
                             ZIndex: =5
 
                     Container8 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =150
                         LayoutMinWidth: =250
                         ZIndex: =3
 
@@ -379,7 +379,7 @@
                                 
                                 </svg>")
                             Width: =169
-                            X: =212
+                            X: =Parent.Width-Self.Width
                             Y: =23
                             ZIndex: =5
 
@@ -436,8 +436,8 @@
                             ShowScrollbar: =false
                             TemplatePadding: =0
                             TemplateSize: =85
-                            Width: =571
-                            X: =24
+                            Width: =Parent.Width
+                            X: =Parent.X
                             Y: =60
                             ZIndex: =3
 
@@ -469,7 +469,7 @@
                                 Size: =13
                                 Text: =ThisItem.Status.Value
                                 Width: =122
-                                X: =432
+                                X: =Parent.Width-Self.Width-30
                                 Y: =28
                                 ZIndex: =3
 
@@ -516,9 +516,9 @@
                             LoadingSpinner: =LoadingSpinner.Data
                             ShowScrollbar: =false
                             TemplatePadding: =0
-                            TemplateSize: =154
+                            TemplateSize: =Parent.Width/4
                             Width: =Parent.Width
-                            X: =1
+                            X: =Parent.Width-Self.Width
                             Y: =54
                             ZIndex: =2
 
@@ -666,8 +666,8 @@
                             LoadingSpinner: =LoadingSpinner.Data
                             ShowScrollbar: =false
                             TemplatePadding: =0
-                            TemplateSize: =155
-                            Width: =618
+                            TemplateSize: =Parent.Width/4
+                            Width: =Parent.Width
                             Y: =71
                             ZIndex: =4
 
@@ -690,14 +690,15 @@
                                 Height: =234
                                 HtmlText: |-
                                     ="
-                                      <div style='margin-left:26px;width: 95px; height: 220px; background:"&If(ThisItem.LeaveType.Value="Sick","##e4bfff",If(ThisItem.LeaveType.Value="Paid","#fff5b2",If(ThisItem.LeaveType.Value="Maternity","#98b2ff",If(ThisItem.LeaveType.Value="Casual","#d1ffd4"))))&"; border-radius: 10px; position: relative;'>
+                                      <div style='width: 95px; height: 220px; background:"&If(ThisItem.LeaveType.Value="Sick","##e4bfff",If(ThisItem.LeaveType.Value="Paid","#fff5b2",If(ThisItem.LeaveType.Value="Maternity","#98b2ff",If(ThisItem.LeaveType.Value="Casual","#d1ffd4"))))&"; border-radius: 10px; position: relative;'>
                                         <div style='width: 85%; height:50%; background:"&If(ThisItem.LeaveType.Value="Sick","#BB5EFF",If(ThisItem.LeaveType.Value="Paid","#f6e15b",If(ThisItem.LeaveType.Value="Maternity","#4537bd",If(ThisItem.LeaveType.Value="Casual","#37bd46"))))&"; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                           <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=ThisItem.LeaveType.Value)),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=ThisItem.LeaveType.Value),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value=ThisItem.LeaveType.Value),TotalLeave)&"<span><p>
                                         </div>
                                       </div>
                                     "
                                 OnSelect: =Select(Parent)
-                                Width: =155
+                                Width: =105
+                                X: =(Parent.TemplateWidth-Self.Width)/2
                                 Y: =4
                                 ZIndex: =3
 
@@ -743,8 +744,8 @@
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
                             TemplatePadding: =0
-                            TemplateSize: =109
-                            Width: =618
+                            TemplateSize: =105
+                            Width: =Parent.Width
                             Y: =60
                             ZIndex: =3
 
@@ -804,7 +805,7 @@
                                 Size: =13
                                 Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
                                 Width: =122
-                                X: =466
+                                X: =Parent.Width-Self.Width-30
                                 Y: =37
                                 ZIndex: =4
 
@@ -813,6 +814,11 @@
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =4
+
+                    Button5 As button:
+                        Height: =100
+                        Text: ="Button"
+                        ZIndex: =1
 
     navbar As group:
         Height: =5

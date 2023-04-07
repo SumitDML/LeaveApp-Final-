@@ -97,6 +97,7 @@
                     Height: =Parent.Height-50
                     Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
                     Layout: =Layout.Vertical
+                    ShowScrollbar: =false
                     TemplatePadding: =0
                     TemplateSize: =122
                     Width: =Parent.Width-50
@@ -166,7 +167,7 @@
                         Size: =13
                         Text: =ThisItem.Status.Value
                         Width: =122
-                        X: =1036
+                        X: =Parent.Width-Self.Width-30
                         Y: =48
                         ZIndex: =7
 

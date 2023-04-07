@@ -56,6 +56,7 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
             PaddingBottom: =100
             ZIndex: =3
 
@@ -102,9 +103,11 @@
                     ZIndex: =1
 
                 Container17_1 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =825
+                    Height: =727
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =30
                     LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
                     Visible: =If(Radio1_3.SelectedText.Value="Single Day",true,false)
                     Width: =Parent.Width-4
                     X: =2
@@ -112,6 +115,7 @@
                     ZIndex: =2
 
                     Container18_1 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =1
@@ -125,8 +129,8 @@
                             DisplayMode: =DisplayMode.Disabled
                             Height: =574
                             Text: =""
-                            Width: =600
-                            X: =8
+                            Width: =570
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =92
                             ZIndex: =1
 
@@ -315,6 +319,7 @@
                                 ZIndex: =3
 
                     Container19_1 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =2
@@ -324,7 +329,7 @@
                             Size: =24
                             Text: ="LEAVE FOR"
                             Width: =207
-                            X: =20
+                            X: =30
                             Y: =12
                             ZIndex: =1
 
@@ -333,9 +338,9 @@
                             Height: =80
                             Items: =fullhalf
                             LoadingSpinner: =LoadingSpinner.Data
-                            TemplateSize: =172
-                            Width: =558
-                            X: =20
+                            TemplateSize: =150
+                            Width: =Parent.Width-30
+                            X: =30
                             Y: =74
                             ZIndex: =2
 
@@ -351,7 +356,7 @@
                                 PressedFill: =RGBA(0,0,0,0)
                                 Text: =ThisItem.Title
                                 Width: =147
-                                X: =16
+                                X: =(Parent.TemplateWidth-Self.Width)/2
                                 Y: =12
                                 ZIndex: =1
 
