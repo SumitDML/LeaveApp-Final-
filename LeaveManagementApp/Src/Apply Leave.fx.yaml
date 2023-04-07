@@ -395,6 +395,7 @@
                             ZIndex: =5
 
                         Leavetype As dropdown:
+                            BorderColor: =RGBA(0, 0, 0, 0)
                             BorderThickness: =0
                             ChevronBackground: =RGBA(56, 96, 178, 0)
                             ChevronFill: =RGBA(255, 255, 255, 0)
@@ -762,6 +763,7 @@
                                 ZIndex: =4
 
                             Label10_11 As label:
+                                FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 Size: =22
                                 Text: ="FROM"
@@ -843,6 +845,7 @@
                                     ZIndex: =1
 
                             Label10_12 As label:
+                                FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 Size: =22
                                 Text: ="TO"
@@ -934,7 +937,7 @@
                                 Size: =24
                                 Text: ="SELECT LEAVE TYPE"
                                 Width: =341
-                                X: =16
+                                X: =30
                                 Y: =22
                                 ZIndex: =3
 
@@ -998,12 +1001,13 @@
                                 ZIndex: =6
 
                             Label10_9 As label:
+                                FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 Size: =24
                                 Text: ="REASON"
                                 Width: =207
-                                X: =16
-                                Y: =169
+                                X: =30
+                                Y: =190
                                 ZIndex: =7
 
                             Reasons2 As text:
@@ -1022,11 +1026,12 @@
                                 ZIndex: =8
 
                             Label10_10 As label:
+                                FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 Size: =24
                                 Text: ="NOTIFY"
                                 Width: =207
-                                X: =16
+                                X: =30
                                 Y: =387
                                 ZIndex: =9
 
