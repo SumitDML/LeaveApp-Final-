@@ -14,8 +14,8 @@
         Image: =sketchwireLogo
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =281
-        X: =31
+        Width: =253.26
+        X: =27.94
         Y: =13
         ZIndex: =2
 
@@ -29,8 +29,8 @@
         TemplateFill: =If(ThisItem.Title='Left Navigation'.CurrentScreen,RGBA(235, 235, 235,1))
         TemplateSize: =82
         Transition: =Transition.Pop
-        Width: =329
-        X: =31
+        Width: =296.52
+        X: =27.94
         Y: =123
         ZIndex: =3
 
@@ -47,21 +47,21 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =Parent.TemplateHeight
                 OnSelect: =Navigate(ThisItem.Screen)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =17
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =15
                 Text: =ThisItem.Title
-                Width: =Parent.TemplateWidth-Image3.Width
-                X: =70
+                Width: =224.36
+                X: =63.09
                 ZIndex: =1
 
             Image3 As image:
-                Height: =Parent.TemplateHeight*3/5
+                Height: =Parent.TemplateHeight*2.5/5
                 Image: =ThisItem.Icon
                 OnSelect: =Navigate(ThisItem.Screen)
                 PaddingRight: =0.00
                 PaddingTop: =0.00
-                Width: =70.07
+                Width: =63.16
                 X: =0.00
                 Y: =Parent.TemplateHeight/2-Self.Height/2
                 ZIndex: =2
@@ -73,11 +73,11 @@
                 Height: =Parent.TemplateHeight
                 HoverFill: =RGBA(206, 206, 206, 0.1)
                 OnSelect: =Navigate(ThisItem.Screen,ScreenTransition.Fade)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =21.09
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =19.01
                 Text: =""
-                Width: =Parent.TemplateWidth
+                Width: =287.51
                 X: =0.00
                 Y: =
                 ZIndex: =3

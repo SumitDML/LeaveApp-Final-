@@ -102,8 +102,8 @@ CalendarComponentMain As CanvasComponent:
         PressedFill: =galWeekdays_1.Fill
         ShowScrollbar: =false
         TemplatePadding: =0.00
-        TemplateSize: =118.11
-        Width: =843.61
+        TemplateSize: =106.46
+        Width: =760.33
         X: =0.00
         Y: =btnPrevMonth_1.Y + btnPrevMonth_1.Height + 20
         ZIndex: =1
@@ -134,9 +134,9 @@ CalendarComponentMain As CanvasComponent:
             PressedColor: |-
                 =ColorValue("#A7A7A7")
             PressedFill: =RGBA(0,0,0,0)
-            Size: =16.87
+            Size: =15.20
             Text: =ThisItem.Value
-            Width: =118.11
+            Width: =106.46
             X: =0.00
             ZIndex: =1
 
@@ -200,16 +200,16 @@ CalendarComponentMain As CanvasComponent:
                 _firstDayInView,
               DateAdd(_firstDayOfMonth,-(Mod(Weekday(_firstDayOfMonth)-3,7)+1),TimeUnit.Days)
             )
-        PaddingRight: =7.03
-        PaddingTop: =7.03
+        PaddingRight: =6.33
+        PaddingTop: =6.33
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        Size: =18.28
+        Size: =16.48
         Text: |-
             =Text(Time(0, 0, tmrInitialize_2.Value/1000), "hh:mm:ss")
         Visible: =false
-        Width: =224.96
+        Width: =202.76
         X: =0.00
         Y: =446
         ZIndex: =2
@@ -223,12 +223,12 @@ CalendarComponentMain As CanvasComponent:
         HoverColor: =lblMonthYear_1.Color
         HoverFill: =lblMonthYear_1.Fill
         PaddingLeft: =15
-        PaddingRight: =7.03
-        PaddingTop: =7.03
+        PaddingRight: =6.33
+        PaddingTop: =6.33
         PressedBorderColor: =lblMonthYear_1.BorderColor
         PressedColor: =lblMonthYear_1.Color
         PressedFill: =lblMonthYear_1.Fill
-        Size: =25.31
+        Size: =22.81
         Text: |-
             =If(
                 IsBlank(_today),
@@ -247,7 +247,7 @@ CalendarComponentMain As CanvasComponent:
                     "[$-en-US]yyyy"
                 )
             )
-        Width: =359.94
+        Width: =324.41
         X: =0.00
         Y: =8
         ZIndex: =3
@@ -300,12 +300,12 @@ CalendarComponentMain As CanvasComponent:
         PaddingBottom: |
             =7
         PaddingRight: =0.00
-        PaddingTop: =9.84
+        PaddingTop: =8.87
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =89.99
-        X: =388.06
+        Width: =81.11
+        X: =349.76
         Y: =8
         ZIndex: =4
 
@@ -361,12 +361,12 @@ CalendarComponentMain As CanvasComponent:
         PaddingBottom: |
             =7
         PaddingRight: =0.00
-        PaddingTop: =9.84
+        PaddingTop: =8.87
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =89.99
-        X: =632.71
+        Width: =81.11
+        X: =570.24
         Y: =8
         ZIndex: =5
 
@@ -429,12 +429,12 @@ CalendarComponentMain As CanvasComponent:
                 _selectedEnd,
                 Blank()
             )
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =22.50
+        PaddingRight: =6.33
+        PaddingTop: =6.33
+        Size: =20.28
         Text: ="Today"
-        Width: =140.60
-        X: =485.08
+        Width: =126.72
+        X: =437.19
         Y: =8
         ZIndex: =6
 
@@ -459,7 +459,7 @@ CalendarComponentMain As CanvasComponent:
         TemplatePadding: |
             =0
         TemplateSize: =55
-        Width: =532
+        Width: =479.48
         WrapCount: =7
         X: =0.00
         Y: =109
@@ -471,7 +471,7 @@ CalendarComponentMain As CanvasComponent:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =Parent.TemplateHeight-2
             OnSelect: =Select(Parent)
-            Width: =127.95
+            Width: =115.32
             X: =0.00
             ZIndex: =1
 
@@ -494,7 +494,7 @@ CalendarComponentMain As CanvasComponent:
                 )
             FocusedBorderColor: =icnToday.BorderColor
             FocusedBorderThickness: =0
-            Height: =63.27
+            Height: =57.02
             HoverFill: =icnToday.Fill
             OnSelect: =Select(Parent)
             PressedFill: =icnToday.Fill
@@ -504,7 +504,8 @@ CalendarComponentMain As CanvasComponent:
                         ThisItem.Value,
                         TimeUnit.Days
                     ) = _today
-            Width: =63.27
+            Width: =57.02
+            X: =0.00
             ZIndex: =2
 
         btnDayBack As button:
@@ -560,12 +561,12 @@ CalendarComponentMain As CanvasComponent:
             RadiusBottomRight: =If(DateAdd(_firstDayInView,ThisItem.Value,TimeUnit.Days) = _selectedStart,0, DateAdd(_firstDayInView,ThisItem.Value,TimeUnit.Days) = _selectedEnd, CalendarComponentMain.BorderRadius)
             RadiusTopLeft: =If(DateAdd(_firstDayInView,ThisItem.Value,TimeUnit.Days) = _selectedStart || DateAdd(_firstDayInView,ThisItem.Value,TimeUnit.Days) = _selectedEnd, CalendarComponentMain.BorderRadius,0)
             RadiusTopRight: =If(DateAdd(_firstDayInView,ThisItem.Value,TimeUnit.Days) = _selectedStart,0, DateAdd(_firstDayInView,ThisItem.Value,TimeUnit.Days) = _selectedEnd, CalendarComponentMain.BorderRadius)
-            Size: =25.31
+            Size: =22.81
             Text: =
             Visible: |-
                 =false //Calendar.SelectRange
                 //DateAdd(_firstDayInView,ThisItem.Value,Days) > _selectedStart && DateAdd(_firstDayInView,ThisItem.Value,Days) < _selectedEnd
-            Width: =120.52
+            Width: =108.62
             X: =0.00
             Y: =btnDayValue.Y
             ZIndex: =3
@@ -727,7 +728,7 @@ CalendarComponentMain As CanvasComponent:
                     /* default radius */
                    CalendarComponentMain.BorderRadius
                 ) 
-            Size: =19.68
+            Size: =17.73
             Text: |-
                 =If(
                     IsBlank(_today),
@@ -741,7 +742,7 @@ CalendarComponentMain As CanvasComponent:
                     )
                    
                 )
-            Width: =120.52
+            Width: =108.62
             X: =0.00
             ZIndex: =4
 
@@ -764,7 +765,7 @@ CalendarComponentMain As CanvasComponent:
                 )
             FocusedBorderColor: =icnEvent.BorderColor
             FocusedBorderThickness: =0
-            Height: =7.03
+            Height: =6.33
             HoverFill: =icnEvent.Fill
             OnSelect: =Select(Parent)
             PressedFill: =icnEvent.Fill
@@ -788,8 +789,8 @@ CalendarComponentMain As CanvasComponent:
                     )
                 ) > 0, true,false)
                 )
-            Width: =7.03
-            X: =56.74
+            Width: =6.33
+            X: =51.13
             Y: =btnDayValue.Y + btnDayValue.Height - icnEvent.Height
             ZIndex: =5
 
@@ -799,8 +800,8 @@ CalendarComponentMain As CanvasComponent:
         OnSelect: =Set(customdatepicker, false)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =56.24
-        X: =787.37
+        Width: =50.69
+        X: =709.64
         Y: =12
         ZIndex: =8
 

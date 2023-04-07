@@ -97,7 +97,7 @@
         "Name": "Label5_1",
         "Parent": "Component2_3",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 264,
+        "PublishOrderIndex": 255,
         "Rules": [
           {
             "Category": "Data",
@@ -239,7 +239,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "9",
+            "InvariantScript": "8.11",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -251,7 +251,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "450",
+            "InvariantScript": "405.58",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -293,7 +293,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "33",
+            "InvariantScript": "29.74",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -317,13 +317,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "7.03",
+            "InvariantScript": "6.33",
             "Property": "PaddingTop",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "7.03",
+            "InvariantScript": "6.33",
             "Property": "PaddingRight",
             "RuleProviderType": "Unknown"
           },
@@ -473,7 +473,7 @@
         "Name": "Image2_1",
         "Parent": "Component2_3",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 265,
+        "PublishOrderIndex": 256,
         "Rules": [
           {
             "Category": "Data",
@@ -495,25 +495,25 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Width-Self.Width-10",
+            "InvariantScript": "(Parent.Width-Self.Width)-30",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Height/2-Self.Height/2",
+            "InvariantScript": "14",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "74.52",
+            "InvariantScript": "70",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Height*4/5",
+            "InvariantScript": "70",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -696,7 +696,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638164403254930661",
+    "LastModifiedTimestamp": "638164475449428644",
     "Name": "Component2_3",
     "Rules": [
       {
@@ -755,7 +755,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638164403254930661",
+  "LastModifiedTimestamp": "638164475449428644",
   "Name": "f0d75971fa9c48419598f051aa711744",
   "OverridableProperties": {},
   "TemplateOriginalName": "2c83fcd24b97406eb33eeade790d7b43",

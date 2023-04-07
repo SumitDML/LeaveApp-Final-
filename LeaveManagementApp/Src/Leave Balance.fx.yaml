@@ -6,7 +6,7 @@
         LayoutMode: =LayoutMode.Auto
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =1728.00
+        Width: =1557.41
         X: =0.00
         ZIndex: =1
 
@@ -17,7 +17,7 @@
             LayoutMode: =LayoutMode.Auto
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =863.30
+            Width: =0.00
             X: =0.00
             ZIndex: =2
 
@@ -28,7 +28,7 @@
             LayoutMode: =LayoutMode.Auto
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =863.30
-            X: =863.30
+            Width: =0.00
+            X: =0.00
             ZIndex: =3
 

@@ -1,4 +1,5 @@
 "Dashboard As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+    Fill: =RGBA(249, 250, 252, 1)
     OnVisible: |-
         =Set(consumed,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
@@ -9,29 +10,36 @@
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
-        Height: =Parent.Height
+        Height: =1080
         LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutGap: =30
+        LayoutGap: =If(App.ActiveScreen.Size=3,50,70)
         LayoutMode: =LayoutMode.Auto
-        PaddingRight: =30
+        PaddingRight: =If(App.ActiveScreen.Size=2,20,If(App.ActiveScreen.Size=3,50,70))
+        PaddingTop: =0.00
         Width: =Parent.Width
+        X: =0.00
         ZIndex: =1
 
         SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
-            FillPortions: =0
+            FillPortions: =1.75
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =If(App.ActiveScreen.Size<3,false,true)
-            Width: ='Left Navigation_2'.Width
+            Width: =
+            X: =0.00
             ZIndex: =2
 
             "'Left Navigation_2' As 'Left Navigation'":
+                Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 Visible: =true
-                Width: ='Left Navigation_2'.MenuWidth
+                Width: =Parent.Width
+                X: =0.00
                 ZIndex: =1
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
@@ -42,6 +50,10 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =672.22
+            X: =33.33
             ZIndex: =3
 
             HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
@@ -50,7 +62,10 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                Width: =Parent.Width
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =672.22
+                X: =0.00
                 ZIndex: =4
 
                 Icon1 As icon.Add:
@@ -58,15 +73,22 @@
                     Color: =RGBA(0, 0, 0, 1)
                     Icon: =Icon.Hamburger
                     OnSelect: =Set(var,true)
-                    Width: =If(App.ActiveScreen.Size<3,60,0)
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =54.08
+                    X: =0.00
                     ZIndex: =1
 
                 Component2_4 As Component2_3:
-                    FillPortions: =1
                     LayoutMinHeight: =640
                     LayoutMinWidth: =200
                     Width: =Parent.Width
+                    X: =66.67
                     ZIndex: =2
+
+                Label11 As label:
+                    Text: ="Text"
+                    ZIndex: =3
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
@@ -74,11 +96,16 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =672.22
+                X: =0.00
                 ZIndex: =5
 
                 Container2 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =180
+                    Height: =If(Container2.Width<=950,390,180)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
                     LayoutMinHeight: =100
@@ -86,13 +113,20 @@
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
                     PaddingLeft: =2
-                    PaddingRight: =2
+                    PaddingRight: =1.80
+                    PaddingTop: =0.00
+                    Width: =672.22
+                    X: =0.00
                     ZIndex: =1
 
                     Container6 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =150
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =180
+                        LayoutMinWidth: =302
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =323.33
+                        X: =2.22
                         ZIndex: =1
 
                         Button2_13 As button:
@@ -107,19 +141,25 @@
                             Font: =Font.'Lato Black'
                             Height: =Parent.Height-8
                             HoverFill: =
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
+                            Size: =13.52
                             Text: =""
                             Width: =Parent.Width-5
-                            X: =3
+                            X: =2.70
                             Y: =5
                             ZIndex: =1
 
                         Icon3 As icon.Add:
                             Color: =RGBA(60, 93, 255, 1)
                             Icon: =Icon.Add
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =57.68
                             X: =(Parent.Width-Self.Width)/2
                             Y: =35
                             ZIndex: =2
@@ -128,32 +168,23 @@
                             Align: =Align.Center
                             Color: =RGBA(60, 93, 255, 1)
                             Font: =Font.'Lato Black'
-                            Size: =15
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
+                            Size: =13.52
                             Text: ="Apply Leave"
+                            Width: =135.19
                             X: =(Parent.Width-Self.Width)/2
                             Y: =111
                             ZIndex: =3
 
-                        Button2 As button:
-                            DisabledBorderColor: =Color.Transparent
-                            DisabledColor: =Color.Transparent
-                            DisabledFill: =Color.Transparent
-                            Fill: =Color.Transparent
-                            Height: =Button2_13.Height
-                            HoverColor: =Color.Transparent
-                            HoverFill: =Color.Transparent
-                            OnSelect: =Navigate('Apply Leave')
-                            PressedFill: =Color.Transparent
-                            Text: =""
-                            Width: =Button2_13.Width
-                            X: =Button2_13.X
-                            Y: =Button2_13.Y
-                            ZIndex: =4
-
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =150
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =180
+                        LayoutMinWidth: =302
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =323.33
+                        X: =347.78
                         ZIndex: =2
 
                         Button2_1 As button:
@@ -166,32 +197,40 @@
                             Fill: =RGBA(255, 255, 255, 1)
                             Height: =Parent.Height-2
                             HoverFill: =
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
+                            Size: =13.52
                             Text: =""
-                            Width: =Parent.Width-2
-                            X: =1
+                            Width: =Parent.Width-5
+                            X: =0.90
                             Y: =1
                             ZIndex: =1
 
                         Label2 As label:
                             Color: =RGBA(116, 116, 116, 1)
                             FontWeight: =FontWeight.Semibold
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
+                            Size: =11.71
                             Text: ="Total Consumed Leave"
-                            Width: =180
-                            X: =20
+                            Width: =162.23
+                            X: =18.02
                             Y: =20
                             ZIndex: =2
 
                         HtmlText2 As htmlViewer:
                             Height: =78
                             HtmlText: ="<b><font weight=bold,font size= 8>"&Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')&"</font></b>"&"/"&Sum(LeaveBalance,TotalLeave)
-                            Size: =12
-                            Width: =150
-                            X: =20
-                            Y: =75
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
+                            Size: =10.81
+                            Width: =135.19
+                            X: =18.02
+                            Y: =(Parent.Height-Self.Height)-20
                             ZIndex: =4
 
                         Image6 As image:
@@ -261,21 +300,28 @@
                                   </g>
                                 
                                 </svg>")
-                            Width: =169
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =152.31
                             X: =Parent.Width-Self.Width
-                            Y: =20
+                            Y: =(Parent.Height-Self.Height)/2
                             ZIndex: =5
 
                     Container8 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =150
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =180
+                        LayoutMinWidth: =302
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =667.78
+                        X: =2.22
                         ZIndex: =3
 
                         Button2_2 As button:
                             BorderColor: =RGBA(202, 202, 202, 1)
                             BorderThickness: =1
                             Color: =RGBA(202, 202, 202, 1)
+                            ContentLanguage: =Parent.Width
                             DisabledBorderColor: =RGBA(202, 202, 202, 1)
                             DisabledColor: =RGBA(255, 255, 255, 1)
                             DisabledFill: =RGBA(255, 255, 255, 1)
@@ -283,32 +329,40 @@
                             Fill: =RGBA(255, 255, 255, 1)
                             Height: =Parent.Height-2
                             HoverFill: =
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
+                            Size: =13.52
                             Text: =""
-                            Width: =Parent.Width-2
-                            X: =1
+                            Width: =Parent.Width-5
+                            X: =0.90
                             Y: =1
                             ZIndex: =1
 
                         Label2_1 As label:
                             Color: =RGBA(116, 116, 116, 1)
                             FontWeight: =FontWeight.Semibold
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
+                            Size: =11.71
                             Text: ="Total Available Leave"
-                            Width: =180
-                            X: =20
+                            Width: =162.23
+                            X: =18.02
                             Y: =20
                             ZIndex: =2
 
                         HtmlText2_1 As htmlViewer:
                             Height: =78
                             HtmlText: ="<b><font weight=bold,font size= 8>"&Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')&"</font></b>"&"/"&Sum(LeaveBalance,TotalLeave)
-                            Size: =12
-                            Width: =150
-                            X: =20
-                            Y: =75
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
+                            Size: =10.81
+                            Width: =135.19
+                            X: =18.02
+                            Y: =(Parent.Height-Self.Height)-20
                             ZIndex: =3
 
                         Image6_2 As image:
@@ -378,14 +432,16 @@
                                   </g>
                                 
                                 </svg>")
-                            Width: =169
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =152.31
                             X: =Parent.Width-Self.Width
-                            Y: =23
+                            Y: =(Parent.Height-Self.Height)/2
                             ZIndex: =5
 
                 Container3 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =252
+                    Height: =If(Self.Width<=883 && App.ActiveScreen.Size=3,550,252)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
                     LayoutMinHeight: =100
@@ -393,12 +449,20 @@
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
                     PaddingLeft: =2
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =672.22
+                    X: =0.00
                     ZIndex: =2
 
                     Container9 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =430
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =324.44
+                        X: =2.22
                         ZIndex: =1
 
                         Button2_3 As button:
@@ -411,33 +475,39 @@
                             Fill: =RGBA(255, 255, 255, 1)
                             Height: =Parent.Height-2
                             HoverFill: =
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
+                            Size: =13.52
                             Text: =""
-                            Width: =Parent.Width-2
-                            X: =1
+                            Width: =Parent.Width-5
+                            X: =0.90
                             Y: =1
                             ZIndex: =1
 
                         Label4 As label:
                             Font: =Font.'Lato Black'
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             Size: =14
                             Text: ="Leave Status"
-                            X: =24
+                            Width: =135.19
+                            X: =21.63
                             Y: =20
                             ZIndex: =2
 
                         "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                            Height: =176
+                            Height: =Parent.Height-Label4.Height-35
                             Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
                             TemplatePadding: =0
                             TemplateSize: =85
                             Width: =Parent.Width
-                            X: =Parent.X
+                            X: =1.80
                             Y: =60
                             ZIndex: =3
 
@@ -446,13 +516,13 @@
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
-                                PaddingRight: =0
-                                PaddingTop: =0
-                                Size: =12
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =10.81
                                 Text: =" "&Text(ThisItem.From)&" - "&ThisItem.To 
                                 VerticalAlign: =VerticalAlign.Top
-                                Width: =340
-                                X: =15
+                                Width: =306.43
+                                X: =13.52
                                 Y: =34
                                 ZIndex: =2
 
@@ -466,10 +536,12 @@
                                 HoverColor: =Self.Color
                                 HoverFill: =Self.Fill
                                 OnSelect: =Select(Parent)
-                                Size: =13
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =11.71
                                 Text: =ThisItem.Status.Value
-                                Width: =122
-                                X: =Parent.Width-Self.Width-30
+                                Width: =109.96
+                                X: =(Parent.Width-Self.Width)-30
                                 Y: =28
                                 ZIndex: =3
 
@@ -478,15 +550,23 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =19
                                 OnSelect: =Select(Parent)
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =11.71
                                 Text: =ThisItem.LeaveTypes.Value&" Leave"
-                                X: =15
+                                Width: =135.19
+                                X: =13.52
                                 Y: =55
                                 ZIndex: =4
 
                     Container10 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =430
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =324.44
+                        X: =348.89
                         ZIndex: =2
 
                         Button2_4 As button:
@@ -499,13 +579,16 @@
                             Fill: =RGBA(255, 255, 255, 1)
                             Height: =Parent.Height-2
                             HoverFill: =
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
+                            Size: =13.52
                             Text: =""
-                            Width: =Parent.Width-2
-                            X: =1
+                            Width: =Parent.Width-5
+                            X: =0.90
                             Y: =1
                             ZIndex: =1
 
@@ -515,10 +598,10 @@
                             Items: =LeaveBalance
                             LoadingSpinner: =LoadingSpinner.Data
                             ShowScrollbar: =false
-                            TemplatePadding: =0
-                            TemplateSize: =Parent.Width/4
+                            TemplatePadding: =0.00
+                            TemplateSize: =Parent.Width/If(Container10.Width<=540,3,4)
                             Width: =Parent.Width
-                            X: =Parent.Width-Self.Width
+                            X: =0.00
                             Y: =54
                             ZIndex: =2
 
@@ -591,42 +674,59 @@
                                     </svg>")
                                     
                                 OnSelect: =Select(Parent)
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
                                 Width: =Parent.TemplateWidth
+                                X: =0.00
                                 Y: =4
                                 ZIndex: =1
 
                             Label7 As label:
                                 Align: =Align.Center
                                 OnSelect: =Select(Parent)
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =11.71
                                 Text: =ThisItem.LeaveType.Value
                                 Width: =Parent.TemplateWidth
+                                X: =0.00
                                 Y: =134
                                 ZIndex: =2
 
                         Label4_2 As label:
                             Font: =Font.'Lato Black'
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             Size: =14
                             Text: ="Leave Balance"
-                            X: =25
+                            Width: =135.19
+                            X: =22.53
                             Y: =14
                             ZIndex: =3
 
                 Container4 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =364
+                    Height: =If(App.ActiveScreen.Size=3 && Container4.Width<=981,758,364)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =672.22
+                    X: =0.00
                     ZIndex: =3
 
                     Container11 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =250
-                        Width: =Parent.Width
+                        LayoutMinWidth: =480
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =325.56
+                        X: =0.00
                         ZIndex: =1
 
                         Button2_5 As button:
@@ -639,35 +739,42 @@
                             Fill: =RGBA(255, 255, 255, 1)
                             Height: =Parent.Height-2
                             HoverFill: =
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
+                            Size: =13.52
                             Text: =""
-                            Width: =Parent.Width-2
-                            X: =1
+                            Width: =Parent.Width-5
+                            X: =0.90
                             Y: =1
                             ZIndex: =1
 
                         Label4_4 As label:
                             Font: =Font.'Lato Black'
-                            Height: =36
+                            Height: =34
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             Size: =14
                             Text: ="Consumed Leave"
-                            Width: =166
-                            X: =33
+                            Width: =173
+                            X: =29.74
                             Y: =21
                             ZIndex: =2
 
                         "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+                            BorderColor: =RGBA(0, 0, 0, 0)
                             DelayItemLoading: =true
                             Height: =293
                             Items: =LeaveBalance
                             LoadingSpinner: =LoadingSpinner.Data
                             ShowScrollbar: =false
-                            TemplatePadding: =0
-                            TemplateSize: =Parent.Width/4
+                            TemplatePadding: =0.00
+                            TemplateSize: =Parent.Width/If(Container11.Width<=555,3,4)
                             Width: =Parent.Width
+                            X: =0.00
                             Y: =71
                             ZIndex: =4
 
@@ -677,12 +784,13 @@
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
-                                PaddingRight: =0
-                                PaddingTop: =0
-                                Size: =13
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =11.71
                                 Text: =ThisItem.Title
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =Parent.TemplateWidth
+                                X: =0.00
                                 Y: =252
                                 ZIndex: =2
 
@@ -697,6 +805,9 @@
                                       </div>
                                     "
                                 OnSelect: =Select(Parent)
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =9.91
                                 Width: =105
                                 X: =(Parent.TemplateWidth-Self.Width)/2
                                 Y: =4
@@ -705,7 +816,11 @@
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinWidth: =480
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =325.56
+                        X: =347.78
                         ZIndex: =2
 
                         Button2_6 As button:
@@ -718,23 +833,28 @@
                             Fill: =RGBA(255, 255, 255, 1)
                             Height: =Parent.Height-2
                             HoverFill: =
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             RadiusBottomLeft: =20
                             RadiusBottomRight: =20
                             RadiusTopLeft: =20
                             RadiusTopRight: =20
+                            Size: =13.52
                             Text: =""
-                            Width: =Parent.Width-2
-                            X: |
-                                =1
+                            Width: =Parent.Width-5
+                            X: =0.90
                             Y: |
                                 =1
                             ZIndex: =1
 
                         Label4_3 As label:
                             Font: =Font.'Lato Black'
+                            PaddingRight: =4.51
+                            PaddingTop: =4.51
                             Size: =14
                             Text: ="Today On leave"
-                            X: =24
+                            Width: =162
+                            X: =21.63
                             Y: =20
                             ZIndex: =2
 
@@ -744,20 +864,23 @@
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
                             TemplatePadding: =0
-                            TemplateSize: =105
+                            TemplateSize: =97
                             Width: =Parent.Width
+                            X: =0.00
                             Y: =60
                             ZIndex: =3
 
                             Image7 As image:
-                                Height: =80
+                                Height: =70
                                 OnSelect: =Select(Parent)
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
                                 RadiusBottomLeft: =50
                                 RadiusBottomRight: =50
                                 RadiusTopLeft: =50
                                 RadiusTopRight: =50
-                                Width: =80
-                                X: =17
+                                Width: =70
+                                X: =15.32
                                 Y: =15
                                 ZIndex: =1
 
@@ -767,14 +890,14 @@
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
-                                PaddingRight: =0
-                                PaddingTop: =0
-                                Size: =15
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =13.52
                                 Text: =ThisItem.RequestedBy.DisplayName
                                 VerticalAlign: =VerticalAlign.Top
-                                Width: =345
-                                X: =Image7.X + Image7.Width + 24
-                                Y: =36
+                                Width: =310.94
+                                X: =109
+                                Y: =25
                                 ZIndex: =2
 
                             Subtitle2 As label:
@@ -782,14 +905,14 @@
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
-                                PaddingRight: =0
-                                PaddingTop: =0
-                                Size: =14
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =12.62
                                 Text: =ThisItem.RequestedBy.JobTitle
                                 VerticalAlign: =VerticalAlign.Top
-                                Width: =Title3.Width
-                                X: =Title3.X
-                                Y: =63
+                                Width: =310.94
+                                X: =109
+                                Y: =53
                                 ZIndex: =3
 
                             Button3_2 As button:
@@ -802,50 +925,38 @@
                                 HoverColor: =Self.Color
                                 HoverFill: =Self.Fill
                                 OnSelect: =Select(Parent)
-                                Size: =13
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =11.71
                                 Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
-                                Width: =122
-                                X: =Parent.Width-Self.Width-30
-                                Y: =37
+                                Width: =109.96
+                                X: =(Parent.Width-Self.Width)-30
+                                Y: =35
                                 ZIndex: =4
 
                 Container5 As groupContainer.horizontalAutoLayoutContainer:
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =50
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =672.22
+                    X: =0.00
                     ZIndex: =4
 
-                    Button5 As button:
-                        Height: =100
-                        Text: ="Button"
+                    Label13 As label:
+                        Text: =App.ActiveScreen.Size
                         ZIndex: =1
 
-    navbar As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =5
+                    Label15 As label:
+                        Text: =App.ActiveScreen.Width
+                        ZIndex: =2
 
-        "'Left Navigation_3' As 'Left Navigation'":
-            Visible: =var
-            Width: ='Left Navigation_3'.MenuWidth
+                    Label16 As label:
+                        Text: =Container6.Width
+                        ZIndex: =3
 
-        Rectangle1 As rectangle:
-            Fill: =RGBA(237, 237, 237, 0.7)
-            Height: =1117
-            Visible: =var
-            Width: =1728
-            ZIndex: =2
-
-        Icon2 As icon.Cancel:
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =45
-            Icon: =Icon.Cancel
-            OnSelect: =Set(var,false)
-            Visible: =var
-            Width: =50
-            X: =339
-            Y: =27
-            ZIndex: =4
+                    Label17 As label:
+                        Text: =Container2.Width
+                        ZIndex: =4
 

@@ -14,28 +14,28 @@ Component2 As CanvasComponent:
         ImagePosition: =ImagePosition.Fill
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =129.35
-        X: =56.24
+        Width: =116.58
+        X: =50.69
         ZIndex: =1
 
     Label5 As label:
         Align: =Align.Center
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.28
+        PaddingRight: =6.33
+        PaddingTop: =6.33
+        Size: =16.48
         Text: ="Hello, "&User().FullName
-        Width: =327.60
-        X: =1211.99
+        Width: =295.26
+        X: =1092.34
         ZIndex: =3
 
     HtmlText1 As htmlViewer:
         Height: =29
         HtmlText: ="Welcome to <b>Leave Management System</b>"
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =11.25
-        Width: =306.51
-        X: =1233.08
+        PaddingRight: =6.33
+        PaddingTop: =6.33
+        Size: =10.14
+        Width: =276.26
+        X: =1111.36
         Y: =40
         ZIndex: =4
 
@@ -44,7 +44,7 @@ Component2 As CanvasComponent:
         Image: =User().Image
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =104.05
-        X: =1539.59
+        Width: =93.78
+        X: =1387.60
         ZIndex: =5
 

@@ -58,7 +58,7 @@
         "Name": "Image1",
         "Parent": "Left Navigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 266,
+        "PublishOrderIndex": 257,
         "Rules": [
           {
             "Category": "Data",
@@ -80,7 +80,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "31",
+            "InvariantScript": "27.94",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -92,7 +92,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "281",
+            "InvariantScript": "253.26",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -280,7 +280,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 268,
+            "PublishOrderIndex": 259,
             "Rules": [
               {
                 "Category": "Design",
@@ -410,7 +410,7 @@
             "Name": "Button1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 269,
+            "PublishOrderIndex": 260,
             "Rules": [
               {
                 "Category": "Data",
@@ -546,7 +546,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.TemplateWidth",
+                "InvariantScript": "287.51",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -600,7 +600,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "21.09",
+                "InvariantScript": "19.01",
                 "Property": "Size",
                 "RuleProviderType": "Unknown"
               },
@@ -624,13 +624,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "7.03",
+                "InvariantScript": "6.33",
                 "Property": "PaddingTop",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "7.03",
+                "InvariantScript": "6.33",
                 "Property": "PaddingRight",
                 "RuleProviderType": "Unknown"
               },
@@ -771,7 +771,7 @@
             "Name": "Label1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 271,
+            "PublishOrderIndex": 261,
             "Rules": [
               {
                 "Category": "Data",
@@ -907,7 +907,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "70",
+                "InvariantScript": "63.09",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -919,7 +919,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.TemplateWidth-Image3.Width",
+                "InvariantScript": "224.36",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -961,7 +961,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "17",
+                "InvariantScript": "15",
                 "Property": "Size",
                 "RuleProviderType": "Unknown"
               },
@@ -985,13 +985,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "7.03",
+                "InvariantScript": "6.33",
                 "Property": "PaddingTop",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "7.03",
+                "InvariantScript": "6.33",
                 "Property": "PaddingRight",
                 "RuleProviderType": "Unknown"
               },
@@ -1120,7 +1120,7 @@
             "Name": "Image3",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 272,
+            "PublishOrderIndex": 263,
             "Rules": [
               {
                 "Category": "Data",
@@ -1154,13 +1154,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "70.07",
+                "InvariantScript": "63.16",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.TemplateHeight*3/5",
+                "InvariantScript": "Parent.TemplateHeight*2.5/5",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1347,7 +1347,7 @@
             "Name": "Group1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 270,
+            "PublishOrderIndex": 262,
             "Rules": [
               {
                 "Category": "Design",
@@ -1459,7 +1459,7 @@
         "Name": "Gallery1",
         "Parent": "Left Navigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 267,
+        "PublishOrderIndex": 258,
         "Rules": [
           {
             "Category": "Data",
@@ -1583,7 +1583,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "31",
+            "InvariantScript": "27.94",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1595,7 +1595,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "329",
+            "InvariantScript": "296.52",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1674,7 +1674,7 @@
       "NavItems",
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638164403254933625",
+    "LastModifiedTimestamp": "638164625869903509",
     "Name": "Left Navigation",
     "Rules": [
       {
@@ -1779,7 +1779,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638164403254933625",
+  "LastModifiedTimestamp": "638164625869903509",
   "Name": "44282070d4be478dab4786fb4733f563",
   "OverridableProperties": {},
   "TemplateOriginalName": "784fa766a3ea40dfb2045a277d69d5b8",

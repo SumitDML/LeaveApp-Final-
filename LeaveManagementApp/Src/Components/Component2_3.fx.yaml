@@ -8,7 +8,7 @@ Component2_3 As CanvasComponent:
 
     Image2_1 As image:
         DisplayMode: =DisplayMode.View
-        Height: =Parent.Height*4/5
+        Height: =70
         Image: =User().Image
         ImagePosition: =ImagePosition.Fill
         PaddingRight: =0.00
@@ -17,22 +17,22 @@ Component2_3 As CanvasComponent:
         RadiusBottomRight: =50
         RadiusTopLeft: =50
         RadiusTopRight: =50
-        Width: =74.52
-        X: =Parent.Width-Self.Width-10
-        Y: =Parent.Height/2-Self.Height/2
+        Width: =70
+        X: =(Parent.Width-Self.Width)-30
+        Y: =14
         ZIndex: =1
 
     Label5_1 As label:
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Semibold
         Height: =89
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =33
+        PaddingRight: =6.33
+        PaddingTop: =6.33
+        Size: =29.74
         Text: =App.ActiveScreen.Name
         Visible: =If(App.ActiveScreen.Size>=4,true,false)
-        Width: =450
-        X: =9
+        Width: =405.58
+        X: =8.11
         Y: =5
         ZIndex: =3
 
