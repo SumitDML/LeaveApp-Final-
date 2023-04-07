@@ -551,8 +551,8 @@
                     ZIndex: =3
 
                     Container13 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =200
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =332.22
@@ -613,8 +613,8 @@
                             ZIndex: =4
 
                     Container13_1 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =200
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =332.22
@@ -675,8 +675,8 @@
                             ZIndex: =4
 
                     Container13_2 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =200
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =332.22
@@ -737,8 +737,8 @@
                             ZIndex: =4
 
                     Container13_3 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =200
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =332.22
@@ -814,12 +814,12 @@
                         ZIndex: =2
 
                     Label20 As label:
-                        Text: =Container6_2.Width
+                        Text: =Container13.Width
                         X: =150
                         ZIndex: =3
 
                     Label20_1 As label:
-                        Text: =Container2_2.Width
+                        Text: =Container4_2.Width
                         X: =300
                         ZIndex: =4
 
