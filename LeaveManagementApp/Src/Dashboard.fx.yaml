@@ -944,19 +944,3 @@
                     X: =0.00
                     ZIndex: =4
 
-                    Label13 As label:
-                        Text: =App.ActiveScreen.Size
-                        ZIndex: =1
-
-                    Label15 As label:
-                        Text: =App.ActiveScreen.Width
-                        ZIndex: =2
-
-                    Label16 As label:
-                        Text: =Container6.Width
-                        ZIndex: =3
-
-                    Label17 As label:
-                        Text: =Container2.Width
-                        ZIndex: =4
-
