@@ -18,9 +18,23 @@
           },
           "ImagePosition",
           "ImageRotation",
-          "X",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "0",
+            "InvariantPropertyName": "X",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Y",
-          "Width",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "253.26",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Height",
           "Fill",
           "DisabledFill",
@@ -80,19 +94,19 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "27.94",
+            "InvariantScript": "(Parent.Width-Self.Width)/2-40",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "13",
+            "InvariantScript": "12",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "253.26",
+            "InvariantScript": "220",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -374,7 +388,14 @@
                 "NameMapSourceSchema": "?"
               },
               "Y",
-              "Width",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Width",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "Height",
               "ZIndex",
               "RadiusTopLeft",
@@ -534,7 +555,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0.00",
+                "InvariantScript": "(Parent.TemplateWidth-Self.Width)/2",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -546,7 +567,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "287.51",
+                "InvariantScript": "300",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -771,7 +792,7 @@
             "Name": "Label1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 261,
+            "PublishOrderIndex": 262,
             "Rules": [
               {
                 "Category": "Data",
@@ -907,7 +928,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "63.09",
+                "InvariantScript": "Button1.X+Image3.Width+2",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -1142,7 +1163,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0.00",
+                "InvariantScript": "Button1.X+10",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -1347,7 +1368,7 @@
             "Name": "Group1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 262,
+            "PublishOrderIndex": 261,
             "Rules": [
               {
                 "Category": "Design",
@@ -1432,7 +1453,14 @@
           "DisabledFill",
           "PressedFill",
           "HoverFill",
-          "X",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "20",
+            "InvariantPropertyName": "X",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Y",
           "Width",
           "Height",
@@ -1583,7 +1611,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "27.94",
+            "InvariantScript": "(Parent.Width-Self.Width)/2",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1595,7 +1623,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "296.52",
+            "InvariantScript": "368",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1674,7 +1702,7 @@
       "NavItems",
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638164625869903509",
+    "LastModifiedTimestamp": "638164661186752350",
     "Name": "Left Navigation",
     "Rules": [
       {
@@ -1779,7 +1807,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638164625869903509",
+  "LastModifiedTimestamp": "638164661186752350",
   "Name": "44282070d4be478dab4786fb4733f563",
   "OverridableProperties": {},
   "TemplateOriginalName": "784fa766a3ea40dfb2045a277d69d5b8",

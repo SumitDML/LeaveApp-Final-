@@ -14,9 +14,9 @@
         Image: =sketchwireLogo
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =253.26
-        X: =27.94
-        Y: =13
+        Width: =220
+        X: =(Parent.Width-Self.Width)/2-40
+        Y: =12
         ZIndex: =2
 
     Gallery1 As gallery.galleryVertical:
@@ -29,8 +29,8 @@
         TemplateFill: =If(ThisItem.Title='Left Navigation'.CurrentScreen,RGBA(235, 235, 235,1))
         TemplateSize: =82
         Transition: =Transition.Pop
-        Width: =296.52
-        X: =27.94
+        Width: =368
+        X: =(Parent.Width-Self.Width)/2
         Y: =123
         ZIndex: =3
 
@@ -52,7 +52,7 @@
                 Size: =15
                 Text: =ThisItem.Title
                 Width: =224.36
-                X: =63.09
+                X: =Button1.X+Image3.Width+2
                 ZIndex: =1
 
             Image3 As image:
@@ -62,7 +62,7 @@
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =63.16
-                X: =0.00
+                X: =Button1.X+10
                 Y: =Parent.TemplateHeight/2-Self.Height/2
                 ZIndex: =2
 
@@ -77,8 +77,8 @@
                 PaddingTop: =6.33
                 Size: =19.01
                 Text: =""
-                Width: =287.51
-                X: =0.00
+                Width: =300
+                X: =(Parent.TemplateWidth-Self.Width)/2
                 Y: =
                 ZIndex: =3
 
