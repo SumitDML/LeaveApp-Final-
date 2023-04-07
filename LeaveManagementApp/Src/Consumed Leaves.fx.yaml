@@ -10,9 +10,10 @@
         Fill: =RGBA(249, 250, 252, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutGap: =70
+        LayoutGap: =If(App.ActiveScreen.Size=2,10,If(App.ActiveScreen.Size=3,50,70))
         LayoutMode: =LayoutMode.Auto
-        PaddingRight: =70
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingRight: =If(App.ActiveScreen.Size=2,10,If(App.ActiveScreen.Size=3,50,70))
         PaddingTop: =0.00
         Width: =Parent.Width
         X: =0.00
@@ -47,6 +48,7 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
             PaddingRight: =0.00
             PaddingTop: =0.00
             Width: =1395.56
@@ -90,6 +92,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                LayoutOverflowY: =LayoutOverflow.Scroll
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =1395.56
@@ -98,6 +101,7 @@
 
                 Container2_2 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
+                    Height: =If(App.ActiveScreen.Size<=3 && Container2_2.Width<=674,650,If(App.ActiveScreen.Size<=4 && Container2_2.Width<=1019,440,200))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
                     LayoutMinHeight: =100
@@ -113,8 +117,8 @@
 
                     Container6_2 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =325
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =448.89
@@ -243,8 +247,8 @@
 
                     Container7_2 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =325
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =448.89
@@ -374,8 +378,8 @@
 
                     Container8_2 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =325
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =448.89
@@ -793,4 +797,29 @@
                             X: =(Parent.Width-Self.Width)/2
                             Y: =15
                             ZIndex: =4
+
+                Container1 As groupContainer.manualLayoutContainer:
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    ZIndex: =4
+
+                    Label18 As label:
+                        Text: =App.ActiveScreen.Size
+                        ZIndex: =1
+
+                    Label19 As label:
+                        Text: =
+                        X: =233
+                        Y: =60
+                        ZIndex: =2
+
+                    Label20 As label:
+                        Text: =Container6_2.Width
+                        X: =150
+                        ZIndex: =3
+
+                    Label20_1 As label:
+                        Text: =Container2_2.Width
+                        X: =300
+                        ZIndex: =4
 
