@@ -474,7 +474,8 @@
                 Button11 As button:
                     Height: =70
                     OnSelect: |
-                        =
+                        =If(LeaveFor.Selected.Title="First Half" || LeaveFor.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
+                        
                         
                         Set(varTotalDays2,1 + ((DateDiff(from.SelectedDate,to.SelectedDate)) 
                         * 5 - ((Weekday(from.SelectedDate) - 
@@ -499,7 +500,7 @@
                                     "Please enter a valid start date"
                                 )
                             ],
-                            1 > total - leaves,
+                            duration > total - leaves,
                             [
                                 Set(
                                     errordisplay,
@@ -525,7 +526,7 @@
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
-                                {'Total Days': 1},
+                                {'Total Days': duration},
                                 {
                                     FromType: {
                                         Value: LeaveFor.Selected.Title,
