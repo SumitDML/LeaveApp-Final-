@@ -75,5 +75,5 @@ App As appinfo:
             )
         );
     SizeBreakpoints: =[600, 900, 1340,1550]
-    StartScreen: =Dashboard
+    StartScreen: ='Consumed Leaves'
 

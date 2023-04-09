@@ -5,11 +5,10 @@
 
     ScreenContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
-        Height: =1080
+        Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutGap: =70
         LayoutMode: =LayoutMode.Auto
-        PaddingRight: =70
+        LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingTop: =0.00
         Width: =Parent.Width
         X: =0.00
@@ -44,7 +43,11 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingRight: =0.00
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            PaddingLeft: |
+                =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
+            PaddingRight: |
+                =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
             PaddingTop: =0.00
             Width: =1395.56
             X: =491.11
@@ -83,7 +86,7 @@
 
             Container14 As groupContainer.manualLayoutContainer:
                 FillPortions: =6
-                LayoutMinHeight: =100
+                LayoutMinHeight: =300
                 LayoutMinWidth: =250
                 PaddingRight: =0.00
                 PaddingTop: =0.00
@@ -120,7 +123,7 @@
                     Layout: =Layout.Vertical
                     ShowScrollbar: =false
                     TemplatePadding: =0
-                    TemplateSize: =122
+                    TemplateSize: =(Parent.Height)/If(Parent.Height<750,6,8)
                     Width: =Parent.Width-50
                     X: =22.53
                     Y: =24
@@ -135,12 +138,12 @@
                         PaddingLeft: =0
                         PaddingRight: =0.00
                         PaddingTop: =0.00
-                        Size: =12.62
+                        Size: =If(App.ActiveScreen.Size<=2,10,12.62)
                         Text: =If(((ThisItem.FromType.Value="First Half" && ThisItem.ToType.Value="Second Half")|| ThisItem.FromType.Value="Full Day" || ThisItem.ToType.Value="Full Day" ),"FULL DAY","HALF DAY")&" LEAVE"
                         VerticalAlign: =VerticalAlign.Top
                         Width: =198.28
                         X: =22.53
-                        Y: =25
+                        Y: =Parent.TemplateHeight-Self.Height-65
                         ZIndex: =2
 
                     Subtitle5 As label:
@@ -151,12 +154,12 @@
                         PaddingLeft: =0
                         PaddingRight: =0.00
                         PaddingTop: =0.00
-                        Size: =14.42
+                        Size: =If(App.ActiveScreen.Size<=2,12,14.42)
                         Text: =""&Text(ThisItem.From)&" - "&ThisItem.To 
                         VerticalAlign: =VerticalAlign.Top
                         Width: =255.07
                         X: =22.53
-                        Y: =52
+                        Y: =Parent.TemplateHeight-Self.Height-30
                         ZIndex: =3
 
                     Separator5 As rectangle:
@@ -176,11 +179,11 @@
                         OnSelect: =Select(Parent)
                         PaddingRight: =4.51
                         PaddingTop: =4.51
-                        Size: =11.71
+                        Size: =If(App.ActiveScreen.Size<=2,9,11.71)
                         Text: =ThisItem.LeaveTypes.Value&" Leave"
                         Width: =135.19
                         X: =18.92
-                        Y: =84
+                        Y: =Parent.TemplateHeight-Self.Height-10
                         ZIndex: =6
 
                     Button3_3 As button:
@@ -195,18 +198,18 @@
                         OnSelect: =Select(Parent)
                         PaddingRight: =4.51
                         PaddingTop: =4.51
-                        Size: =11.71
+                        Size: =If(App.ActiveScreen.Size<=2,7,11.71)
                         Text: =ThisItem.Status.Value
-                        Width: =109.96
+                        Width: =If(App.ActiveScreen.Size<=2,95,109.96)
                         X: =Parent.TemplateWidth-Self.Width-30
-                        Y: =48
+                        Y: =(Parent.TemplateHeight-Self.Height)/2
                         ZIndex: =7
 
             MainSectionContainer1_4 As groupContainer.verticalAutoLayoutContainer:
-                FillPortions: =0.2
+                FillPortions: =0.05
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =30
-                LayoutMinHeight: =30
+                LayoutMinHeight: =10
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingRight: =0.00
