@@ -68,27 +68,25 @@
                 X: =0.00
                 ZIndex: =4
 
-                Icon1 As icon.Add:
+                hamburger As icon.Add:
                     AlignInContainer: =AlignInContainer.Stretch
                     Color: =RGBA(0, 0, 0, 1)
                     Icon: =Icon.Hamburger
                     OnSelect: =Set(var,true)
                     PaddingRight: =0.00
                     PaddingTop: =0.00
+                    Visible: =false
                     Width: =54.08
                     X: =0.00
                     ZIndex: =1
 
                 Component2_4 As Component2_3:
+                    FillPortions: =1
                     LayoutMinHeight: =640
                     LayoutMinWidth: =200
                     Width: =Parent.Width
                     X: =66.67
                     ZIndex: =2
-
-                Label11 As label:
-                    Text: ="Text"
-                    ZIndex: =3
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
