@@ -85,15 +85,13 @@
                 X: =0.00
                 ZIndex: =1
 
-                Icon1_4 As icon.Add:
-                    AlignInContainer: =AlignInContainer.Stretch
-                    Color: =RGBA(0, 0, 0, 1)
+                Icon8_2 As icon.Hamburger:
+                    Height: =Parent.Height
                     Icon: =Icon.Hamburger
-                    OnSelect: =Set(var,true)
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Width: =0.00
-                    X: =0.00
+                    OnSelect: =Set(varVisible,true)
+                    PaddingLeft: =13
+                    PaddingRight: =13
+                    Width: =If(App.ActiveScreen.Size<=2,80,0)
                     ZIndex: =1
 
                 Component2_8 As Component2_3:

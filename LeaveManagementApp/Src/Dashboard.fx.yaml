@@ -74,16 +74,13 @@
                 X: =0.00
                 ZIndex: =4
 
-                hamburger As icon.Add:
-                    AlignInContainer: =AlignInContainer.Stretch
-                    Color: =RGBA(0, 0, 0, 1)
+                Icon8_1 As icon.Hamburger:
+                    Height: =Parent.Height
                     Icon: =Icon.Hamburger
-                    OnSelect: =Set(var,true)
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Visible: =false
-                    Width: =54.08
-                    X: =0.00
+                    OnSelect: =Set(varVisible,true)
+                    PaddingLeft: =13
+                    PaddingRight: =13
+                    Width: =If(App.ActiveScreen.Size<=2,80,0)
                     ZIndex: =1
 
                 Component2_4 As Component2_3:
@@ -956,4 +953,34 @@
                         X: =270
                         Y: =14
                         ZIndex: =2
+
+    LeftNav_1 As group:
+        Height: =5
+        Width: =5
+        X: =-348
+        Y: =40
+        ZIndex: =5
+
+        "'Left Navigation_3' As 'Left Navigation'":
+            Visible: =varVisible
+            Width: ='Left Navigation_3'.MenuWidth
+            X: =
+
+        Rectangle1_1 As rectangle:
+            Fill: =RGBA(202, 202, 202, 0.6)
+            Height: =Parent.Height
+            Visible: =varVisible
+            Width: =Parent.Width
+            X: =
+            ZIndex: =2
+
+        Icon2_1 As icon.Cancel:
+            Height: =39
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varVisible,false)
+            Visible: =varVisible
+            Width: =39
+            X: =348
+            Y: =30
+            ZIndex: =4
 
