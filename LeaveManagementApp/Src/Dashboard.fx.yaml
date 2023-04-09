@@ -14,6 +14,7 @@
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutGap: =If(App.ActiveScreen.Size=2,15,If(App.ActiveScreen.Size=3,50,70))
         LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingRight: =If(App.ActiveScreen.Size=2,10,If(App.ActiveScreen.Size=3,50,70))
         PaddingTop: =0.00
         Width: =Parent.Width
@@ -771,6 +772,7 @@
                             ShowScrollbar: =false
                             TemplatePadding: =0.00
                             TemplateSize: =Parent.Width/If(Container11.Width<=555,3,4)
+                            Transition: =Transition.Pop
                             Width: =Parent.Width
                             X: =0.00
                             Y: =71
