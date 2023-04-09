@@ -4775,19 +4775,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Component2_3.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Component2_3.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Component2_3",
-                "type": "Component2_3.Icon1"
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8"
               }
             }
           ],
@@ -4805,19 +4805,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Component2_3.Icon1.TabIndex"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Component2_3.Icon1.TabIndex",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Component2_3",
-                "type": "Component2_3.Icon1"
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8"
               }
             }
           ],
@@ -5225,19 +5225,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Component2_3.varVisible"
+                  "fullyQualifiedName": "'Left Navigation'.varVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Component2_3.varVisible",
+                  "fullyQualifiedName": "'Left Navigation'.varVisible",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "varVisible",
-                "module": "Component2_3",
-                "type": "Component2_3"
+                "module": "Left Navigation",
+                "type": "'Left Navigation'"
               }
             }
           ],

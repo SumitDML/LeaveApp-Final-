@@ -68,13 +68,22 @@
                 X: =0.00
                 ZIndex: =4
 
+                Icon8 As icon.Hamburger:
+                    Height: =Parent.Height
+                    Icon: =Icon.Hamburger
+                    OnSelect: =Set(varVisible,true)
+                    PaddingLeft: =13
+                    PaddingRight: =13
+                    Width: =If(App.ActiveScreen.Size<=2,80,0)
+                    ZIndex: =1
+
                 Component2_6 As Component2_3:
                     FillPortions: =1
                     LayoutMinHeight: =640
                     LayoutMinWidth: =200
                     Width: =1395.56
                     X: =0.00
-                    ZIndex: =3
+                    ZIndex: =2
 
             MainSectionContainer1_2 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical

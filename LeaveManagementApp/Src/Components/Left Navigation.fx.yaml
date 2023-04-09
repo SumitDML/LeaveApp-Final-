@@ -25,7 +25,7 @@
         Items: ='Left Navigation'.NavItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =
+        OnSelect: =Set(varVisible,false)
         ShowScrollbar: =false
         TemplateFill: =If(ThisItem.Title='Left Navigation'.CurrentScreen,RGBA(235, 235, 235,1))
         TemplateSize: =82
