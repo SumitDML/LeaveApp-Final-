@@ -1,6 +1,6 @@
 Component2_3 As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =100
+    Height: =If(App.ActiveScreen.Size<2,70,100)
     Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
     Y: =0
@@ -8,7 +8,7 @@ Component2_3 As CanvasComponent:
 
     Image2_1 As image:
         DisplayMode: =DisplayMode.View
-        Height: =70
+        Height: =If(App.ActiveScreen.Size<2,40,70)
         Image: =User().Image
         ImagePosition: =ImagePosition.Fill
         PaddingRight: =0.00
@@ -17,7 +17,7 @@ Component2_3 As CanvasComponent:
         RadiusBottomRight: =50
         RadiusTopLeft: =50
         RadiusTopRight: =50
-        Width: =70
+        Width: =If(App.ActiveScreen.Size<2,40,70)
         X: =(Parent.Width-Self.Width)-30
         Y: =14
         ZIndex: =1
@@ -28,7 +28,7 @@ Component2_3 As CanvasComponent:
         Height: =89
         PaddingRight: =6.33
         PaddingTop: =6.33
-        Size: =29.74
+        Size: =If(App.ActiveScreen.Size<2,20,29.74)
         Text: =App.ActiveScreen.Name
         Width: =405.58
         X: =8.11

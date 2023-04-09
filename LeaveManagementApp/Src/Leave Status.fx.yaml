@@ -143,12 +143,12 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =198.28
                         X: =22.53
-                        Y: =Parent.TemplateHeight-Self.Height-65
+                        Y: =((Parent.TemplateHeight-Self.Height)/2)-30
                         ZIndex: =2
 
                     Subtitle5 As label:
                         FontWeight: =FontWeight.Bold
-                        Height: =32
+                        Height: =25
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -159,7 +159,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =255.07
                         X: =22.53
-                        Y: =Parent.TemplateHeight-Self.Height-30
+                        Y: =(Parent.TemplateHeight-Self.Height)/2
                         ZIndex: =3
 
                     Separator5 As rectangle:
@@ -183,7 +183,7 @@
                         Text: =ThisItem.LeaveTypes.Value&" Leave"
                         Width: =135.19
                         X: =18.92
-                        Y: =Parent.TemplateHeight-Self.Height-10
+                        Y: =((Parent.TemplateHeight-Self.Height)/2)+30
                         ZIndex: =6
 
                     Button3_3 As button:
