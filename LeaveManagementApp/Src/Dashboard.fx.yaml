@@ -934,13 +934,8 @@
                                 Y: =35
                                 ZIndex: =4
 
-                Container5 As groupContainer.horizontalAutoLayoutContainer:
-                    LayoutMinHeight: =50
+                Container5 As groupContainer.manualLayoutContainer:
+                    LayoutMinHeight: =40
                     LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Width: =672.22
-                    X: =0.00
                     ZIndex: =4
 
