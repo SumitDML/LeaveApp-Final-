@@ -726,7 +726,7 @@
                     Container11 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =400
+                        LayoutMinWidth: =350
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =325.56
@@ -821,7 +821,7 @@
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =400
+                        LayoutMinWidth: =350
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =325.56
