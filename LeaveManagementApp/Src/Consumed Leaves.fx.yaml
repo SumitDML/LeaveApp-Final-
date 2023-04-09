@@ -68,24 +68,13 @@
                 X: =0.00
                 ZIndex: =4
 
-                Icon1_2 As icon.Add:
-                    AlignInContainer: =AlignInContainer.Stretch
-                    Color: =RGBA(0, 0, 0, 1)
-                    Icon: =Icon.Hamburger
-                    OnSelect: =Set(var,true)
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Width: =0.00
-                    X: =0.00
-                    ZIndex: =1
-
                 Component2_6 As Component2_3:
                     FillPortions: =1
                     LayoutMinHeight: =640
                     LayoutMinWidth: =200
                     Width: =1395.56
                     X: =0.00
-                    ZIndex: =2
+                    ZIndex: =3
 
             MainSectionContainer1_2 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
@@ -809,4 +798,34 @@
                         X: =233
                         Y: =60
                         ZIndex: =2
+
+    LeftNav As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+        "'Left Navigation_1' As 'Left Navigation'":
+            Visible: =varVisible
+            Width: ='Left Navigation_1'.MenuWidth
+            X: =
+
+        Rectangle1 As rectangle:
+            Fill: =RGBA(202, 202, 202, 0.6)
+            Height: =Parent.Height
+            Visible: =varVisible
+            Width: =Parent.Width
+            X: =
+            ZIndex: =2
+
+        Icon2 As icon.Cancel:
+            Height: =39
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varVisible,false)
+            Visible: =varVisible
+            Width: =39
+            X: =348
+            Y: =30
+            ZIndex: =4
 

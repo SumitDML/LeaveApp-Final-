@@ -31,5 +31,15 @@ Component2_3 As CanvasComponent:
         Size: =If(App.ActiveScreen.Size<2,20,29.74)
         Text: =App.ActiveScreen.Name
         Width: =405.58
+        X: =Icon1.Width
         ZIndex: =3
+
+    Icon1 As icon.Hamburger:
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(varVisible,true)
+        PaddingLeft: =20
+        PaddingRight: =20
+        Width: =If(App.ActiveScreen.Size<=2,70,0)
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =4
 
