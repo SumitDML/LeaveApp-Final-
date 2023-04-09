@@ -10,10 +10,10 @@
         Fill: =RGBA(249, 250, 252, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutGap: =If(App.ActiveScreen.Size=2,10,If(App.ActiveScreen.Size=3,50,70))
+        LayoutGap: =
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
-        PaddingRight: =If(App.ActiveScreen.Size=2,10,If(App.ActiveScreen.Size=3,50,70))
+        PaddingRight: =
         PaddingTop: =0.00
         Width: =Parent.Width
         X: =0.00
@@ -49,7 +49,8 @@
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
-            PaddingRight: =0.00
+            PaddingLeft: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
+            PaddingRight: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
             PaddingTop: =0.00
             Width: =1395.56
             X: =491.11
@@ -537,7 +538,7 @@
 
                 Container4_2 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =If(App.ActiveScreen.Size<=3 && Container4_2.Width<=861,640,300)
+                    Height: =If(App.ActiveScreen.Size<=3 && Container4_2.Width<=860,640,300)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
                     LayoutMinHeight: =100
@@ -808,4 +809,10 @@
                         X: =233
                         Y: =60
                         ZIndex: =2
+
+                    Label13 As label:
+                        Text: =Container4_2.Width
+                        X: =40
+                        Y: =40
+                        ZIndex: =3
 
