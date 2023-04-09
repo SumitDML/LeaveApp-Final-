@@ -710,7 +710,7 @@
 
                 Container4 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =If(Container4.Width<=922,758,364)
+                    Height: =If(Container4.Width<=820,758,364)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
                     LayoutMinHeight: =100
@@ -726,7 +726,7 @@
                     Container11 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =450
+                        LayoutMinWidth: =400
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =325.56
@@ -821,7 +821,7 @@
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =450
+                        LayoutMinWidth: =400
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =325.56
