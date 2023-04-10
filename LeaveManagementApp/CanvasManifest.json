@@ -102,7 +102,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "2a31dd94-f2cb-49d4-b46a-968ab075fb59",
-    "Id": "9107a74b-55de-437a-88f2-2b4fca41b390",
+    "Id": "b5f50080-1d0e-44f4-848a-24f63ccbdd22",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "Name": "Leave App (Responsive)",
@@ -125,6 +125,7 @@
     "Dashboard",
     "Leave Balance",
     "Leave Status",
-    "Screen2"
+    "Screen2",
+    "Screen1"
   ]
 }

@@ -32,7 +32,7 @@
         LayoutMode: =LayoutMode.Auto
         PaddingRight: =27.03
         PaddingTop: =0.00
-        Width: =1557.41
+        Width: =Parent.Width
         X: =0.00
         ZIndex: =2
 
@@ -374,6 +374,8 @@
                         ZIndex: =2
 
                         Label10_2 As label:
+                            Font: =Font.'Lato Black'
+                            FontWeight: =FontWeight.Lighter
                             Height: =62
                             PaddingRight: =4.51
                             PaddingTop: =4.51
@@ -416,7 +418,8 @@
                                 ZIndex: =1
 
                         Label10_3 As label:
-                            FontWeight: =FontWeight.Semibold
+                            Font: =Font.'Lato Black'
+                            FontWeight: =FontWeight.Lighter
                             Height: =62
                             PaddingRight: =4.51
                             PaddingTop: =4.51
@@ -493,6 +496,8 @@
                             ZIndex: =6
 
                         Label10_4 As label:
+                            Font: =Font.'Lato Black'
+                            FontWeight: =FontWeight.Lighter
                             Height: =62
                             PaddingRight: =4.51
                             PaddingTop: =4.51
@@ -522,6 +527,8 @@
                             ZIndex: =8
 
                         Label10_5 As label:
+                            Font: =Font.'Lato Black'
+                            FontWeight: =FontWeight.Lighter
                             Height: =62
                             PaddingRight: =4.51
                             PaddingTop: =4.51
@@ -1210,7 +1217,7 @@
                     PaddingTop: =9.01
                     Size: =11.71
                     Width: =318.16
-                    X: =251.46
+                    X: =250
                     Y: =15
                     ZIndex: =5
 

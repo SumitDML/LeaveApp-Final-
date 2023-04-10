@@ -7,31 +7,31 @@ App As appinfo:
                 {
                     Title: "Dashboard",
                     Screen: Dashboard,
-                    Icon: home,
+                    Icon: menu,
                     acion:Set(varVisible,false)
                 },
                 {
                     Title: "Apply Leave",
                     Screen: 'Apply Leave',
-                    Icon: ApplyLeave,
+                    Icon: menu,
                     acion:Set(varVisible,false)
                 },
                 {
                     Title: "Leave Balance",
                     Screen: Dashboard,
-                    Icon: leave_balance,
+                    Icon: menu,
                     acion:Set(varVisible,false)
                 },
                   {
                     Title: "Consumed Leaves",
                     Screen: 'Consumed Leaves',
-                    Icon: ConsumedLeaves,
+                    Icon: menu,
                     acion:Set(varVisible,false)
                 },
                         {
                     Title: "Leave Status",
                     Screen: 'Leave Status',
-                    Icon: 'leaveStatus-7',
+                    Icon: menu,
                     acion:Set(varVisible,false)
                 }
             )
