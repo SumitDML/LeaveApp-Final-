@@ -942,18 +942,6 @@
                     LayoutMinWidth: =250
                     ZIndex: =4
 
-                    Label10 As label:
-                        Text: =Container11.Width
-                        X: =40
-                        Y: =14
-                        ZIndex: =1
-
-                    Label11 As label:
-                        Text: =Container4.Width
-                        X: =270
-                        Y: =14
-                        ZIndex: =2
-
     LeftNav_1 As group:
         Height: =5
         Width: =5
