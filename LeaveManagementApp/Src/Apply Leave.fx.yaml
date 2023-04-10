@@ -1,42 +1,16 @@
 "'Apply Leave' As screen":
-    OnVisible: |-
-        =/*resets calendar view and date selection to today*/
-        Set(_dateSelected, Today());
-        Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));
-        Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
-        Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
-        Refresh(LeaveRequests);
-        Refresh(LeaveBalance);
-        Set(_calendarVisible,true);
 
-    Button7 As button:
-        DisabledBorderColor: =RGBA(128, 128, 128, 1)
-        DisabledColor: =RGBA(255, 255, 255, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        DisplayMode: =DisplayMode.Disabled
-        Height: =877
-        PaddingRight: =4.51
-        PaddingTop: =4.51
-        Size: =13.52
-        Text: =""
-        Width: =1150.93
-        X: =392.96
-        Y: =116
-        ZIndex: =1
-
-    ScreenContainer1_4 As groupContainer.horizontalAutoLayoutContainer:
+    ScreenContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutGap: =30
         LayoutMode: =LayoutMode.Auto
-        PaddingRight: =27.03
         PaddingTop: =0.00
         Width: =Parent.Width
         X: =0.00
         ZIndex: =2
 
-        SidebarContainer1_4 As groupContainer.verticalAutoLayoutContainer:
+        SidebarContainer1_5 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =0
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -49,15 +23,15 @@
             X: =0.00
             ZIndex: =2
 
-            "'Left Navigation_13' As 'Left Navigation'":
+            "'Left Navigation_15' As 'Left Navigation'":
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 Visible: =true
-                Width: =371.33
+                Width: =Parent.Width
                 X: =0.00
                 ZIndex: =1
 
-        RightSideContainer1_4 As groupContainer.verticalAutoLayoutContainer:
+        RightSideContainer1_5 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
@@ -66,16 +40,18 @@
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
-            PaddingBottom: =100
-            PaddingRight: =0.00
+            PaddingLeft: |
+                =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
+            PaddingRight: |
+                =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
             PaddingTop: =0.00
             Width: =1125.56
             X: =404.44
             ZIndex: =3
 
-            HeaderContainer1_4 As groupContainer.horizontalAutoLayoutContainer:
+            HeaderContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
-                Height: =Component2_8.Height
+                Height: =Component2_9.Height
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -85,7 +61,7 @@
                 X: =0.00
                 ZIndex: =1
 
-                Icon8_2 As icon.Hamburger:
+                Icon8_4 As icon.Hamburger:
                     Height: =Parent.Height
                     Icon: =Icon.Hamburger
                     OnSelect: =Set(varVisible,true)
@@ -94,7 +70,7 @@
                     Width: =If(App.ActiveScreen.Size<=2,80,0)
                     ZIndex: =1
 
-                Component2_8 As Component2_3:
+                Component2_9 As Component2_3:
                     FillPortions: =1
                     LayoutMinHeight: =640
                     LayoutMinWidth: =200
@@ -102,7 +78,9 @@
                     X: =0.00
                     ZIndex: =2
 
-            Container20 As groupContainer.manualLayoutContainer:
+            Container20_1 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: =730
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 PaddingLeft: =1
@@ -112,35 +90,456 @@
                 X: =0.00
                 ZIndex: =2
 
-                Button8 As button:
+                Button8_1 As button:
+                    BorderColor: =RGBA(202, 202, 202, 1)
+                    BorderThickness: =0.5
                     DisabledColor: =RGBA(255, 255, 255, 1)
                     DisabledFill: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Height: =727
+                    Fill: =RGBA(202, 202, 202, 1)
+                    Height: =Parent.Height-4
                     PaddingRight: =4.51
                     PaddingTop: =4.51
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =13.52
                     Text: =""
-                    Width: =1128.40
-                    X: =0.90
+                    Width: =Parent.Width-4
+                    X: =3
                     Y: =1
                     ZIndex: =1
 
-                Container17_1 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =727
+                Container22_1 As groupContainer.manualLayoutContainer:
+                    Height: =Parent.Height
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Visible: =If(Radio1_4.SelectedText.Value="Multiple Days",true,false)
+                    Width: =Parent.Width
+                    X: =2.70
+                    Y: =3
+                    ZIndex: =3
+
+                    Multiple As groupContainer.horizontalAutoLayoutContainer:
+                        Height: =Parent.Height
+                        LayoutGap: =30
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =Parent.Width
+                        X: =1.80
+                        ZIndex: =1
+
+                        Container18_4 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =538.89
+                            X: =0.00
+                            ZIndex: =1
+
+                            Label10_17 As label:
+                                Font: =Font.'Lato Black'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =62
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =19.83
+                                Text: ="CHOOSE DATE"
+                                Width: =211.80
+                                X: =TextInput2_6.X
+                                Y: =15
+                                ZIndex: =2
+
+                            dropdownCalendarSelection1_5 As dropdown:
+                                Default: =_myCalendar.DisplayName
+                                Height: =33
+                                Items: =Office365Outlook.CalendarGetTables().value
+                                OnChange: =Select(dropdownCalendarSelection1_5)
+                                OnSelect: |-
+                                    =/*retrieves calendar events for all days in current month view and selected calendar 
+                                    _minDate and _maxDate act as markers to prevent duplicate data collection*/         
+                                    If(IsBlank(_userDomain),         
+                                    	UpdateContext({_showLoading: true});         
+                                    	Set(_userDomain, Right(User().Email, Len(User().Email) - Find("@", User().Email)));         
+                                    	Set(_dateSelected, Today());         
+                                    	Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));         
+                                    	Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
+                                    	Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days))         
+                                    );         
+                                    Set(_calendarVisible, false);         
+                                    UpdateContext({_showLoading: true});         
+                                    Set(_myCalendar, Self.Selected);         
+                                    Set(_minDate, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
+                                    Set(_maxDate, DateAdd(DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days), 40, TimeUnit.Days));         
+                                    ClearCollect(MyCalendarEvents, Office365Outlook.GetEventsCalendarViewV2(_myCalendar.Name, Text(_minDate, DateTimeFormat.UTC), Text(_maxDate, DateTimeFormat.UTC)).value);         
+                                    UpdateContext({_showLoading: false});         
+                                    Set(_calendarVisible, true)
+                                PaddingRight: =9.01
+                                PaddingTop: =9.01
+                                Size: =11.71
+                                Tooltip: ="Select a calendar"
+                                Visible: =false
+                                Width: =281.20
+                                X: =100.04
+                                Y: =92
+                                ZIndex: =4
+
+                            Label10_18 As label:
+                                Font: =Font.'Lato Black'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =62
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =19.83
+                                Text: ="FROM"
+                                Width: =211.80
+                                X: =TextInput2_5.X
+                                Y: =92
+                                ZIndex: =5
+
+                            FromType_1 As gallery.galleryHorizontal:
+                                DelayItemLoading: =true
+                                Height: =80
+                                Items: =firstsecondhalf
+                                LoadingSpinner: =LoadingSpinner.Data
+                                TemplatePadding: =4.51
+                                TemplateSize: =If(Container18_4.Width<525,130,155.02)
+                                Width: =Parent.Width*8/10
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =236
+                                ZIndex: =10
+
+                                Button9_4 As button:
+                                    Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
+                                    DisabledColor: =RGBA(0, 0, 0, 1)
+                                    Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
+                                    Height: =46
+                                    HoverColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =RGBA(0,0,0,0)
+                                    OnSelect: =Select(Parent)
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    PressedBorderColor: =
+                                    PressedFill: =RGBA(0,0,0,0)
+                                    Size: =13.52
+                                    Text: =ThisItem.Title
+                                    Width: =Parent.TemplateWidth-10
+                                    X: =2.70
+                                    Y: =15
+                                    ZIndex: =1
+
+                            Label10_19 As label:
+                                Font: =Font.'Lato Black'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =62
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =19.83
+                                Text: ="TO"
+                                Width: =211.80
+                                X: =TextInput2_6.X
+                                Y: =339
+                                ZIndex: =11
+
+                            ToType_1 As gallery.galleryHorizontal:
+                                DelayItemLoading: =true
+                                Height: =80
+                                Items: =firstsecondhalf
+                                LoadingSpinner: =LoadingSpinner.Data
+                                TemplatePadding: =4.51
+                                TemplateSize: =If(Container18_4.Width<525,130,155.02)
+                                Width: =Parent.Width*8/10
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =481
+                                ZIndex: =16
+
+                                Button9_5 As button:
+                                    Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
+                                    DisabledColor: =RGBA(0, 0, 0, 1)
+                                    Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
+                                    Height: =46
+                                    HoverColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =RGBA(0,0,0,0)
+                                    OnSelect: =Select(Parent)
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    PressedBorderColor: =
+                                    PressedFill: =RGBA(0,0,0,0)
+                                    Size: =13.52
+                                    Text: =ThisItem.Title
+                                    Width: =Parent.TemplateWidth-10
+                                    X: =2.70
+                                    Y: =15
+                                    ZIndex: =1
+
+                            fromType As group:
+                                Height: =5
+                                Width: =5
+                                X: =40
+                                Y: =40
+                                ZIndex: =17
+
+                                TextInput2_5 As text:
+                                    BorderColor: =RGBA(202, 202, 202, 1)
+                                    BorderThickness: =1
+                                    Default: =""
+                                    Height: =62
+                                    HintText: =""
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    RadiusBottomLeft: =15
+                                    RadiusBottomRight: =15
+                                    RadiusTopLeft: =15
+                                    RadiusTopRight: =15
+                                    Size: =14.42
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =154
+                                    ZIndex: =6
+
+                                from_1 As datepicker:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Fill: =RGBA(255, 255, 255, 0)
+                                    Format: =DateTimeFormat.LongDate
+                                    Height: =56
+                                    IconBackground: =RGBA(56, 96, 178, 0)
+                                    PaddingRight: =4.51
+                                    PaddingTop: =0.00
+                                    Size: =18.02
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =158
+                                    ZIndex: =8
+
+                            Group8 As group:
+                                Height: =5
+                                Width: =5
+                                X: =40
+                                Y: =40
+                                ZIndex: =17
+
+                                TextInput2_6 As text:
+                                    BorderColor: =RGBA(202, 202, 202, 1)
+                                    BorderThickness: =1
+                                    Default: =""
+                                    Height: =62
+                                    HintText: =""
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    RadiusBottomLeft: =15
+                                    RadiusBottomRight: =15
+                                    RadiusTopLeft: =15
+                                    RadiusTopRight: =15
+                                    Size: =14.42
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =401
+                                    ZIndex: =12
+
+                                to_1 As datepicker:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Fill: =RGBA(255, 255, 255, 0)
+                                    Format: =DateTimeFormat.LongDate
+                                    Height: =56
+                                    IconBackground: =RGBA(56, 96, 178, 0)
+                                    PaddingRight: =4.51
+                                    PaddingTop: =0.00
+                                    Size: =18.02
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =405
+                                    ZIndex: =14
+
+                        Container19_4 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =538.89
+                            X: =572.22
+                            ZIndex: =2
+
+                            Label10_20 As label:
+                                Font: =Font.'Lato Black'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =62
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =21.63
+                                Text: ="SELECT LEAVE TYPE"
+                                Width: =307.33
+                                X: =TextInput2_7.X
+                                Y: =22
+                                ZIndex: =3
+
+                            Label10_21 As label:
+                                Font: =Font.'Lato Black'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =62
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =21.63
+                                Text: ="REASON"
+                                Width: =186.57
+                                X: =Reasons2_1.X
+                                Y: =190
+                                ZIndex: =7
+
+                            Reasons2_1 As text:
+                                BorderColor: =RGBA(202, 202, 202, 1)
+                                BorderThickness: =1
+                                Default: =""
+                                Height: =111
+                                HintText: ="Enter Reson Here..."
+                                HoverBorderColor: =RGBA(128, 128, 128, 1)
+                                HoverFill: =RGBA(219, 219, 219, 0.3)
+                                Mode: =TextMode.MultiLine
+                                PaddingLeft: =25
+                                PaddingRight: =4.51
+                                PaddingTop: =10
+                                RadiusBottomLeft: =15
+                                RadiusBottomRight: =15
+                                RadiusTopLeft: =15
+                                RadiusTopRight: =15
+                                Size: =14.42
+                                Width: |
+                                    =(Parent.Width*8/10)
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =252
+                                ZIndex: =8
+
+                            Label10_22 As label:
+                                Font: =Font.'Lato Black'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =62
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =21.63
+                                Text: ="NOTIFY"
+                                Width: =186.57
+                                X: =ComboBox1_3.X
+                                Y: =387
+                                ZIndex: =9
+
+                            ComboBox1_3 As combobox:
+                                DisplayFields: =["DisplayName","JobTitle"]
+                                Height: =64
+                                Items: |-
+                                    =Office365Users.SearchUser({searchTerm:Self.SearchText,top:5})
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                SearchFields: =["DisplayName"]
+                                SearchItems: |-
+                                    =Search(Office365Users.SearchUser({searchTerm:Self.SearchText,top:5}),ComboBox1_3.SearchText,"DisplayName")
+                                Size: =11.71
+                                Template: =ListItemTemplate.Person
+                                Width: |
+                                    =(Parent.Width*8/10)
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =449
+                                ZIndex: =10
+
+                            leaveTypes2 As group:
+                                Height: =5
+                                Width: =5
+                                X: =40
+                                Y: =40
+                                ZIndex: =11
+
+                                TextInput2_7 As text:
+                                    BorderColor: =RGBA(202, 202, 202, 1)
+                                    BorderThickness: =1
+                                    Default: =""
+                                    Height: =62
+                                    HintText: =""
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    RadiusBottomLeft: =15
+                                    RadiusBottomRight: =15
+                                    RadiusTopLeft: =15
+                                    RadiusTopRight: =15
+                                    Size: =14.42
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =84
+                                    ZIndex: =4
+
+                                Icon5_3 As icon.ChevronDown:
+                                    Color: =RGBA(128, 128, 128, 1)
+                                    DisabledBorderColor: =RGBA(26, 26, 26, 1)
+                                    DisabledColor: =RGBA(26, 26, 26, 1)
+                                    DisplayMode: =DisplayMode.Disabled
+                                    Height: =57
+                                    Icon: =Icon.ChevronDown
+                                    OnSelect: =
+                                    PaddingRight: =0.00
+                                    PaddingTop: =0.00
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =86
+                                    ZIndex: =5
+
+                                LeaveTypes2_1 As dropdown:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderThickness: =0
+                                    ChevronBackground: =RGBA(0, 0, 0, 0)
+                                    ChevronFill: =RGBA(255, 255, 255, 0)
+                                    ChevronHoverBackground: =
+                                    Default: ="null"
+                                    Height: =53
+                                    HoverBorderColor: =
+                                    HoverFill: =RGBA(186, 202, 226, 0)
+                                    Items: =Choices([@LeaveRequests].LeaveTypes)
+                                    OnChange: |
+                                        =If(LeaveTypes2_1.SelectedText.Value="Unpaid",Set(leaves1,0);Set(total1,365);,
+                                        
+                                        Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2_1.SelectedText.Value));
+                                        
+                                        ClearCollect(LeaveSum1,Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days'));
+                                        
+                                        ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave));
+                                        
+                                        Set(leaves1,First(LeaveSum1).Value);
+                                        Set(total1,First(TotalLeave1).Value);
+                                        
+                                        )
+                                    PaddingRight: =9.01
+                                    PaddingTop: =9.01
+                                    PressedBorderColor: =
+                                    PressedFill: =RGBA(0, 18, 107, 0)
+                                    Size: =11.71
+                                    Width: |
+                                        =(Parent.Width*8/10)-20
+                                    X: =((Parent.Width-Self.Width)/2)+1
+                                    Y: =90
+                                    ZIndex: =6
+
+                Single As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =Parent.Height
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =30
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
                     PaddingRight: =0.00
                     PaddingTop: =0.00
-                    Visible: =If(Radio1_3.SelectedText.Value="Single Day",true,false)
-                    Width: =1128.40
-                    X: =1.80
-                    Y: =2
-                    ZIndex: =2
+                    Visible: =If(Radio1_4.SelectedText.Value="Single Day",true,false)
+                    Width: =Parent.Width
+                    ZIndex: =9
 
-                    Container18_1 As groupContainer.manualLayoutContainer:
+                    Container18_3 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
@@ -150,230 +549,246 @@
                         X: =0.00
                         ZIndex: =1
 
-                        Button4_1 As button:
-                            BorderColor: =RGBA(202, 202, 202, 1)
-                            BorderThickness: =0.5
-                            DisabledBorderColor: =RGBA(219, 219, 219, 1)
-                            DisabledColor: =RGBA(255, 255, 255, 1)
-                            DisabledFill: =RGBA(255, 255, 255, 1)
-                            DisplayMode: =DisplayMode.Disabled
-                            Height: =574
-                            PaddingRight: =4.51
-                            PaddingTop: =4.51
-                            Size: =13.52
-                            Text: =""
-                            Width: =513.73
-                            X: =18.48
-                            Y: =92
-                            ZIndex: =1
-
-                        Label10_1 As label:
+                        Label10_7 As label:
+                            Font: =Font.'Lato Black'
+                            FontWeight: =FontWeight.Lighter
                             Height: =62
                             PaddingRight: =4.51
                             PaddingTop: =4.51
                             Size: =21.63
                             Text: ="CHOOSE DATE"
                             Width: =211.80
-                            X: =7.21
-                            Y: =12
+                            X: =Container18.X
+                            Y: =17
                             ZIndex: =2
 
-                        dropdownCalendarSelection1_2 As dropdown:
-                            Default: =_myCalendar.DisplayName
-                            Height: =33
-                            Items: =Office365Outlook.CalendarGetTables().value
-                            OnChange: =Select(dropdownCalendarSelection1_2)
-                            OnSelect: |-
-                                =/*retrieves calendar events for all days in current month view and selected calendar 
-                                _minDate and _maxDate act as markers to prevent duplicate data collection*/         
-                                If(IsBlank(_userDomain),         
-                                	UpdateContext({_showLoading: true});         
-                                	Set(_userDomain, Right(User().Email, Len(User().Email) - Find("@", User().Email)));         
-                                	Set(_dateSelected, Today());         
-                                	Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));         
-                                	Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
-                                	Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days))         
-                                );         
-                                Set(_calendarVisible, false);         
-                                UpdateContext({_showLoading: true});         
-                                Set(_myCalendar, Self.Selected);         
-                                Set(_minDate, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
-                                Set(_maxDate, DateAdd(DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days), 40, TimeUnit.Days));         
-                                ClearCollect(MyCalendarEvents, Office365Outlook.GetEventsCalendarViewV2(_myCalendar.Name, Text(_minDate, DateTimeFormat.UTC), Text(_maxDate, DateTimeFormat.UTC)).value);         
-                                UpdateContext({_showLoading: false});         
-                                Set(_calendarVisible, true)
-                            PaddingRight: =9.01
-                            PaddingTop: =9.01
-                            Size: =11.71
-                            Tooltip: ="Select a calendar"
-                            Visible: =false
-                            Width: =281.20
-                            X: =100.04
-                            Y: =92
-                            ZIndex: =4
+                        Container18 As groupContainer.manualLayoutContainer:
+                            Height: =584
+                            Width: |
+                                =(Parent.Width*8/10)
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =112
+                            ZIndex: =10
 
-                        LblMonthSelected1_2 As label:
-                            Align: =Align.Center
-                            FontWeight: =FontWeight.Bold
-                            Height: =42
-                            PaddingRight: =4.51
-                            PaddingTop: =4.51
-                            Size: =21.63
-                            Text: =Text(_firstDayOfMonth, "mmmm yyyy")
-                            Visible: =_calendarVisible
-                            Width: =215.41
-                            Wrap: =false
-                            X: =84.72
-                            Y: =126
-                            ZIndex: =5
+                            Calendar As group:
+                                Height: =5
+                                Width: =5
+                                X: =-67
+                                Y: =-52
+                                ZIndex: =8
 
-                        iconPrevMonth1_2 As icon.ChevronLeft:
-                            Height: =42
-                            Icon: =Icon.ChevronLeft
-                            OnSelect: |-
-                                =/*changes month view to previous month*/
-                                Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, -1, TimeUnit.Months));
-                                Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
-                                Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
-                                /*collects calendar events for all days in current month view. Updates _minDate to prevent duplicate data collection if user returns to this month view*/
-                                If(_minDate > _firstDayOfMonth, Set(_minDate, _firstDayOfMonth); )
-                            PaddingBottom: =7
-                            PaddingLeft: =7
-                            PaddingRight: =6.31
-                            PaddingTop: =6.31
-                            TabIndex: =0
-                            Tooltip: ="View previous month"
-                            Visible: =_calendarVisible
-                            Width: =53.18
-                            X: =323.56
-                            Y: =126
-                            ZIndex: =6
+                                Button4_2 As button:
+                                    BorderColor: =RGBA(202, 202, 202, 1)
+                                    BorderThickness: =0.5
+                                    DisabledBorderColor: =RGBA(219, 219, 219, 1)
+                                    DisabledColor: =RGBA(255, 255, 255, 1)
+                                    DisabledFill: =RGBA(255, 255, 255, 1)
+                                    DisplayMode: =DisplayMode.Disabled
+                                    Height: =Parent.Height
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    RadiusBottomLeft: =15
+                                    RadiusBottomRight: =15
+                                    RadiusTopLeft: =15
+                                    RadiusTopRight: =15
+                                    Size: =13.52
+                                    Text: =""
+                                    Width: =Parent.Width
+                                    ZIndex: =1
 
-                        iconNextMonth1_2 As icon.ChevronRight:
-                            Height: =42
-                            Icon: =Icon.ChevronRight
-                            OnSelect: |-
-                                =/*changes month view to next month*/
-                                Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, 1, TimeUnit.Months));
-                                Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
-                                /*collects calendar events for all days in current month view. Updates _maxDate to prevent duplicate data collection if user returns to this month view*/
-                                Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
-                                If(_lastDayOfMonth > _maxDate, Set(_maxDate, _lastDayOfMonth))
-                            PaddingBottom: =7
-                            PaddingLeft: =7
-                            PaddingRight: =6.31
-                            PaddingTop: =6.31
-                            TabIndex: =0
-                            Tooltip: ="View next month"
-                            Visible: =_calendarVisible
-                            Width: =53.18
-                            X: =376.73
-                            Y: =126
-                            ZIndex: =7
+                                dropdownCalendarSelection1_4 As dropdown:
+                                    Default: =_myCalendar.DisplayName
+                                    Height: =57
+                                    Items: =Office365Outlook.CalendarGetTables().value
+                                    OnChange: =Select(dropdownCalendarSelection1_4)
+                                    OnSelect: |-
+                                        =/*retrieves calendar events for all days in current month view and selected calendar 
+                                        _minDate and _maxDate act as markers to prevent duplicate data collection*/         
+                                        If(IsBlank(_userDomain),         
+                                        	UpdateContext({_showLoading: true});         
+                                        	Set(_userDomain, Right(User().Email, Len(User().Email) - Find("@", User().Email)));         
+                                        	Set(_dateSelected, Today());         
+                                        	Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));         
+                                        	Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
+                                        	Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days))         
+                                        );         
+                                        Set(_calendarVisible, false);         
+                                        UpdateContext({_showLoading: true});         
+                                        Set(_myCalendar, Self.Selected);         
+                                        Set(_minDate, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
+                                        Set(_maxDate, DateAdd(DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days), 40, TimeUnit.Days));         
+                                        ClearCollect(MyCalendarEvents, Office365Outlook.GetEventsCalendarViewV2(_myCalendar.Name, Text(_minDate, DateTimeFormat.UTC), Text(_maxDate, DateTimeFormat.UTC)).value);         
+                                        UpdateContext({_showLoading: false});         
+                                        Set(_calendarVisible, true)
+                                    PaddingRight: =9.01
+                                    PaddingTop: =9.01
+                                    Size: =11.71
+                                    Tooltip: ="Select a calendar"
+                                    Visible: =false
+                                    Width: =400
+                                    Y: =70
+                                    ZIndex: =2
 
-                        WeekdayGallery1_2 As gallery.WeekdayGallery:
-                            AccessibleLabel: ="Days of the week"
-                            Height: =38
-                            Items: =Calendar.WeekdaysShort()
-                            ShowScrollbar: =false
-                            TemplatePadding: =0.00
-                            TemplateSize: =54.08
-                            Visible: =_calendarVisible
-                            Width: =384.84
-                            X: =84.72
-                            Y: =220
-                            ZIndex: =8
+                                LblMonthSelected1_3 As label:
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =60
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    Size: =21.63
+                                    Text: =Text(_firstDayOfMonth, "mmmm yyyy")
+                                    Visible: =_calendarVisible
+                                    Width: =164
+                                    Wrap: =false
+                                    X: =MonthDayGallery1_3.X
+                                    Y: =39
+                                    ZIndex: =3
 
-                            Title5_2 As label:
-                                Align: =Align.Center
-                                Height: =WeekdayGallery1_2.TemplateHeight
-                                OnSelect: =Select(Parent)
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =11.94
-                                Text: =ThisItem.Value
-                                Width: =54.08
-                                Wrap: =false
-                                X: =0.00
-                                Y: =WeekdayGallery1_2.TemplateHeight / 2 - Self.Height / 2
-                                ZIndex: =1
+                                iconPrevMonth1_3 As icon.ChevronLeft:
+                                    Height: =40
+                                    Icon: =Icon.ChevronLeft
+                                    OnSelect: |-
+                                        =/*changes month view to previous month*/
+                                        Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, -1, TimeUnit.Months));
+                                        Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
+                                        Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
+                                        /*collects calendar events for all days in current month view. Updates _minDate to prevent duplicate data collection if user returns to this month view*/
+                                        If(_minDate > _firstDayOfMonth, Set(_minDate, _firstDayOfMonth); )
+                                    PaddingBottom: =7
+                                    PaddingLeft: =7
+                                    PaddingRight: =6.31
+                                    PaddingTop: =6.31
+                                    TabIndex: =0
+                                    Tooltip: ="View previous month"
+                                    Visible: =_calendarVisible
+                                    Width: =40
+                                    X: =LblMonthSelected1_3.Width+LblMonthSelected1_3.X+50
+                                    Y: =44
+                                    ZIndex: =4
 
-                        MonthDayGallery1_2 As gallery.MonthDayGallery:
-                            AccessibleLabel: ="Days of selected month"
-                            Height: =360
-                            Items: =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
-                            Layout: =Layout.Vertical
-                            ShowScrollbar: =false
-                            TemplatePadding: =0
-                            TemplateSize: =60
-                            Visible: =_calendarVisible
-                            Width: =384.84
-                            WrapCount: =7
-                            X: =84.72
-                            Y: =258
-                            ZIndex: =9
+                                iconNextMonth1_3 As icon.ChevronRight:
+                                    Height: =40
+                                    Icon: =Icon.ChevronRight
+                                    OnSelect: |-
+                                        =/*changes month view to next month*/
+                                        Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, 1, TimeUnit.Months));
+                                        Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
+                                        /*collects calendar events for all days in current month view. Updates _maxDate to prevent duplicate data collection if user returns to this month view*/
+                                        Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
+                                        If(_lastDayOfMonth > _maxDate, Set(_maxDate, _lastDayOfMonth))
+                                    PaddingBottom: =7
+                                    PaddingLeft: =7
+                                    PaddingRight: =6.31
+                                    PaddingTop: =6.31
+                                    TabIndex: =0
+                                    Tooltip: ="View next month"
+                                    Visible: =_calendarVisible
+                                    Width: =40
+                                    X: =iconPrevMonth1_3.X+80
+                                    Y: =44
+                                    ZIndex: =5
 
-                            Circle1_2 As circle:
-                                Height: =5.86
-                                OnSelect: =Select(Parent)
-                                Visible: |-
-                                    =/*Visible if calendar events are found on this day*/               
-                                    CountRows(Filter(MyCalendarEvents, DateValue(Text(Start)) = DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days))) > 0 && !Subcircle1_2.Visible && Title6_2.Visible
-                                Width: =5.86
-                                X: =24.56
-                                Y: =MonthDayGallery1_2.TemplateHeight * (0.75)
-                                ZIndex: =1
+                                WeekdayGallery1_3 As gallery.WeekdayGallery:
+                                    AccessibleLabel: ="Days of the week"
+                                    Height: =26
+                                    Items: =Calendar.WeekdaysShort()
+                                    ShowScrollbar: =false
+                                    TemplatePadding: =0.00
+                                    TemplateSize: =56
+                                    Visible: =_calendarVisible
+                                    Width: =390
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =138
+                                    ZIndex: =6
 
-                            Subcircle1_2 As circle:
-                                Height: =30.81
-                                OnSelect: =Select(Parent)
-                                Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Title6_2.Visible)
-                                Width: =30.81
-                                X: =12.08
-                                Y: =MonthDayGallery1_2.TemplateHeight / 2 - Self.Height / 2
-                                ZIndex: =2
+                                    Title5_3 As label:
+                                        Align: =Align.Center
+                                        Height: =WeekdayGallery1_3.TemplateHeight
+                                        OnSelect: =Select(Parent)
+                                        PaddingRight: =4.51
+                                        PaddingTop: =4.51
+                                        Size: =11.94
+                                        Text: =ThisItem.Value
+                                        Width: =54.08
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =WeekdayGallery1_3.TemplateHeight / 2 - Self.Height / 2
+                                        ZIndex: =1
 
-                            Title6_2 As label:
-                                Align: =Align.Center
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                Color: =If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1_2.Color)
-                                Fill: |-
-                                    =/*Fill value changes if the gallery item day = today, or if it lies outside of the current month*/             
-                                    If(
-                                        /*Date selected is today*/
-                                        DateAdd(_firstDayInView, ThisItem.Value) = Today() && DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(0,0,0,0),
-                                        /*Today when it is not selected*/
-                                        DateAdd(_firstDayInView, ThisItem.Value) = Today(), ColorFade(Subcircle1_2.Fill, 0.67), 
-                                        /*The day is outside the range of the currently selected month*/
-                                        Abs(Self.Text - ThisItem.Value) > 10,RGBA(200, 200, 200, 0.3), RGBA(0, 0, 0, 0))
-                                FocusedBorderColor: =Self.Color
-                                FocusedBorderThickness: =2
-                                Height: =MonthDayGallery1_2.TemplateHeight
-                                OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, TimeUnit.Days))
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =10.27
-                                TabIndex: =0
-                                Text: =Day(DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days))
-                                Visible: |-
-                                    =/*This item is in a row containing no days of the visible month. It is in the row after the row where the last day of the month occurs*/ 
-                                     !(DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days) - Weekday(DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days)) + 1 > _lastDayOfMonth)
-                                Width: =54.98
-                                Wrap: =false
-                                X: =0.00
-                                ZIndex: =3
+                                MonthDayGallery1_3 As gallery.MonthDayGallery:
+                                    AccessibleLabel: ="Days of selected month"
+                                    Height: =362
+                                    Items: =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
+                                    Layout: =Layout.Vertical
+                                    ShowScrollbar: =false
+                                    TemplatePadding: =0
+                                    TemplateSize: =60
+                                    Visible: =_calendarVisible
+                                    Width: =385
+                                    WrapCount: =7
+                                    X: =(Parent.Width-Self.Width)/2
+                                    Y: =169
+                                    ZIndex: =7
 
-                    Container19_1 As groupContainer.manualLayoutContainer:
+                                    Circle1_3 As circle:
+                                        Height: =5.86
+                                        OnSelect: =Select(Parent)
+                                        Visible: |-
+                                            =/*Visible if calendar events are found on this day*/               
+                                            CountRows(Filter(MyCalendarEvents, DateValue(Text(Start)) = DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days))) > 0 && !Subcircle1_3.Visible && Title6_3.Visible
+                                        Width: =5.86
+                                        X: =24.56
+                                        Y: =MonthDayGallery1_3.TemplateHeight * (0.75)
+                                        ZIndex: =1
+
+                                    Subcircle1_3 As circle:
+                                        Height: =30.81
+                                        OnSelect: =Select(Parent)
+                                        Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Title6_3.Visible)
+                                        Width: =30.81
+                                        X: =12.08
+                                        Y: =MonthDayGallery1_3.TemplateHeight / 2 - Self.Height / 2
+                                        ZIndex: =2
+
+                                    Title6_3 As label:
+                                        Align: =Align.Center
+                                        BorderColor: =RGBA(0, 0, 0, 0)
+                                        Color: =If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1_3.Color)
+                                        Fill: |-
+                                            =/*Fill value changes if the gallery item day = today, or if it lies outside of the current month*/             
+                                            If(
+                                                /*Date selected is today*/
+                                                DateAdd(_firstDayInView, ThisItem.Value) = Today() && DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(0,0,0,0),
+                                                /*Today when it is not selected*/
+                                                DateAdd(_firstDayInView, ThisItem.Value) = Today(), ColorFade(Subcircle1_3.Fill, 0.67), 
+                                                /*The day is outside the range of the currently selected month*/
+                                                Abs(Self.Text - ThisItem.Value) > 10,RGBA(200, 200, 200, 0.3), RGBA(0, 0, 0, 0))
+                                        FocusedBorderColor: =Self.Color
+                                        FocusedBorderThickness: =2
+                                        Height: =MonthDayGallery1_3.TemplateHeight
+                                        OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, TimeUnit.Days))
+                                        PaddingRight: =4.51
+                                        PaddingTop: =4.51
+                                        Size: =10.27
+                                        TabIndex: =0
+                                        Text: =Day(DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days))
+                                        Visible: |-
+                                            =/*This item is in a row containing no days of the visible month. It is in the row after the row where the last day of the month occurs*/ 
+                                             !(DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days) - Weekday(DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days)) + 1 > _lastDayOfMonth)
+                                        Width: =54.98
+                                        Wrap: =false
+                                        X: =0.00
+                                        ZIndex: =3
+
+                    Container19_3 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
-                        PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =678.89
                         X: =712.22
                         ZIndex: =2
 
-                        Label10_2 As label:
+                        Label10_13 As label:
                             Font: =Font.'Lato Black'
                             FontWeight: =FontWeight.Lighter
                             Height: =62
@@ -382,23 +797,25 @@
                             Size: =21.63
                             Text: ="LEAVE FOR"
                             Width: =186.57
-                            X: =27.03
+                            X: =LeaveFor_1.X
                             Y: =12
                             ZIndex: =1
 
-                        LeaveFor As gallery.galleryHorizontal:
+                        LeaveFor_1 As gallery.galleryHorizontal:
                             DelayItemLoading: =true
                             Height: =80
                             Items: =fullhalf
                             LoadingSpinner: =LoadingSpinner.Data
+                            ShowScrollbar: =false
                             TemplatePadding: =4.51
-                            TemplateSize: =135.19
-                            Width: =523.64
-                            X: =27.03
+                            TemplateSize: =If(Container19_3.Width<525,120,135.19)
+                            Width: |
+                                =(Parent.Width*8/10)
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =74
                             ZIndex: =2
 
-                            Button9 As button:
+                            Button9_1 As button:
                                 Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
                                 DisabledColor: =RGBA(0, 0, 0, 1)
                                 Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
@@ -410,14 +827,14 @@
                                 PaddingTop: =4.51
                                 PressedBorderColor: =
                                 PressedFill: =RGBA(0,0,0,0)
-                                Size: =13.52
+                                Size: =If(Container19_3.Width<525,11,13.52)
                                 Text: =ThisItem.Title
-                                Width: =132.49
+                                Width: =Parent.TemplateWidth-5
                                 X: =1.36
                                 Y: =12
                                 ZIndex: =1
 
-                        Label10_3 As label:
+                        Label10_14 As label:
                             Font: =Font.'Lato Black'
                             FontWeight: =FontWeight.Lighter
                             Height: =62
@@ -426,29 +843,11 @@
                             Size: =21.63
                             Text: ="SELECT LEAVE TYPE"
                             Width: =307.33
-                            X: =18.02
+                            X: =TextInput2_4.X
                             Y: =172
                             ZIndex: =3
 
-                        TextInput2 As text:
-                            BorderColor: =RGBA(202, 202, 202, 1)
-                            BorderThickness: =0.5
-                            Default: =""
-                            Height: =62
-                            HintText: =""
-                            PaddingRight: =4.51
-                            PaddingTop: =4.51
-                            RadiusBottomLeft: =10
-                            RadiusBottomRight: =10
-                            RadiusTopLeft: =10
-                            RadiusTopRight: =10
-                            Size: =14.42
-                            Width: =493.90
-                            X: =27.03
-                            Y: =234
-                            ZIndex: =4
-
-                        Icon5 As icon.ChevronDown:
+                        Icon5_2 As icon.ChevronDown:
                             Color: =RGBA(128, 128, 128, 1)
                             DisabledBorderColor: =RGBA(26, 26, 26, 1)
                             DisabledColor: =RGBA(26, 26, 26, 1)
@@ -463,39 +862,7 @@
                             Y: =236
                             ZIndex: =5
 
-                        Leavetype As dropdown:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderThickness: =0
-                            ChevronBackground: =RGBA(56, 96, 178, 0)
-                            ChevronFill: =RGBA(255, 255, 255, 0)
-                            ChevronHoverBackground: =
-                            Default: =
-                            Height: =53
-                            HoverBorderColor: =
-                            HoverFill: =RGBA(186, 202, 226, 0)
-                            Items: =Choices([@LeaveRequests].LeaveTypes)
-                            OnChange: |-
-                                =If(Leavetype.SelectedText.Value="Unpaid",Set(leaves,0);Set(total,365);,
-                                
-                                
-                                Set(vardata,LookUp(LeaveBalance,LeaveType.Value=Leavetype.SelectedText.Value));
-                                ClearCollect(LeaveSum,Sum(Filter(LeaveRequests,LeaveId.Value=vardata.Id && RequestedBy.Email=User().Email),'Total Days'));
-                                
-                                ClearCollect(TotalLeave,Sum(Filter(LeaveBalance,Id=vardata.Id),TotalLeave));
-                                Set(leaves,First(LeaveSum).Value);
-                                Set(total,First(TotalLeave).Value);
-                                )
-                            PaddingRight: =9.01
-                            PaddingTop: =9.01
-                            PressedBorderColor: =
-                            PressedFill: =RGBA(0, 18, 107, 0)
-                            Size: =11.71
-                            Width: =489.40
-                            X: =31.54
-                            Y: =240
-                            ZIndex: =6
-
-                        Label10_4 As label:
+                        Label10_15 As label:
                             Font: =Font.'Lato Black'
                             FontWeight: =FontWeight.Lighter
                             Height: =62
@@ -504,11 +871,11 @@
                             Size: =21.63
                             Text: ="REASON"
                             Width: =186.57
-                            X: =27.03
+                            X: =Reason_1.X
                             Y: =328
                             ZIndex: =7
 
-                        Reason As text:
+                        Reason_1 As text:
                             BorderColor: =RGBA(202, 202, 202, 1)
                             BorderThickness: =1
                             Default: =""
@@ -520,13 +887,18 @@
                             PaddingLeft: =25
                             PaddingRight: =4.51
                             PaddingTop: =4.51
+                            RadiusBottomLeft: =15
+                            RadiusBottomRight: =15
+                            RadiusTopLeft: =15
+                            RadiusTopRight: =15
                             Size: =14.42
-                            Width: =493.90
-                            X: =27.03
+                            Width: |
+                                =(Parent.Width*8/10)
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =390
                             ZIndex: =8
 
-                        Label10_5 As label:
+                        Label10_16 As label:
                             Font: =Font.'Lato Black'
                             FontWeight: =FontWeight.Lighter
                             Height: =62
@@ -535,11 +907,11 @@
                             Size: =21.63
                             Text: ="NOTIFY"
                             Width: =186.57
-                            X: =27.03
+                            X: =ComboBox1_2.X
                             Y: =535
                             ZIndex: =9
 
-                        ComboBox1 As combobox:
+                        ComboBox1_2 As combobox:
                             DisplayFields: =["DisplayName","JobTitle"]
                             Height: =64
                             Items: |-
@@ -548,30 +920,112 @@
                             PaddingTop: =4.51
                             SearchFields: =["DisplayName"]
                             SearchItems: |-
-                                =Search(Office365Users.SearchUser({searchTerm:Self.SearchText,top:5}),ComboBox1.SearchText,"DisplayName")
+                                =Search(Office365Users.SearchUser({searchTerm:Self.SearchText,top:5}),ComboBox1_2.SearchText,"DisplayName")
                             Size: =11.71
                             Template: =ListItemTemplate.Person
-                            Width: =489.40
-                            X: =31.54
+                            Width: |
+                                =(Parent.Width*8/10)
+                            X: =(Parent.Width-Self.Width)/2
                             Y: =597
                             ZIndex: =10
 
-                Button11 As button:
+                        leaveTypes As group:
+                            Height: =5
+                            Width: =5
+                            X: =40
+                            Y: =40
+                            ZIndex: =11
+
+                            TextInput2_4 As text:
+                                BorderColor: =RGBA(202, 202, 202, 1)
+                                BorderThickness: =0.5
+                                Default: =""
+                                Height: =62
+                                HintText: =""
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                RadiusBottomLeft: =15
+                                RadiusBottomRight: =15
+                                RadiusTopLeft: =15
+                                RadiusTopRight: =15
+                                Size: =14.42
+                                Width: |
+                                    =Parent.Width*8/10
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =234
+                                ZIndex: =4
+
+                            Leavetype_1 As dropdown:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderThickness: =0
+                                ChevronBackground: =RGBA(56, 96, 178, 0)
+                                ChevronFill: =RGBA(255, 255, 255, 0)
+                                ChevronHoverBackground: =
+                                Default: =
+                                Height: =53
+                                HoverBorderColor: =
+                                HoverFill: =RGBA(186, 202, 226, 0)
+                                Items: =Choices([@LeaveRequests].LeaveTypes)
+                                OnChange: |-
+                                    =If(Leavetype_1.SelectedText.Value="Unpaid",Set(leaves,0);Set(total,365);,
+                                    
+                                    
+                                    Set(vardata,LookUp(LeaveBalance,LeaveType.Value=Leavetype_1.SelectedText.Value));
+                                    ClearCollect(LeaveSum,Sum(Filter(LeaveRequests,LeaveId.Value=vardata.Id && RequestedBy.Email=User().Email),'Total Days'));
+                                    
+                                    ClearCollect(TotalLeave,Sum(Filter(LeaveBalance,Id=vardata.Id),TotalLeave));
+                                    Set(leaves,First(LeaveSum).Value);
+                                    Set(total,First(TotalLeave).Value);
+                                    )
+                                PaddingRight: =9.01
+                                PaddingTop: =9.01
+                                PressedBorderColor: =
+                                PressedFill: =RGBA(0, 18, 107, 0)
+                                Size: =11.71
+                                Width: |
+                                    =(Parent.Width*8/10)-30
+                                X: =((Parent.Width-Self.Width)/2)+1
+                                Y: =240
+                                ZIndex: =6
+
+                Radio1_4 As radio:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Default: ="Single Day"
+                    Height: =61
+                    Items: =singlemulti
+                    Layout: =Layout.Horizontal
+                    PaddingRight: =0.00
+                    PaddingTop: =9.01
+                    RadioSize: =35
+                    Size: =11
+                    Width: =379
+                    X: =Label10_7.X+Label10_7.Width+20
+                    Y: =20
+                    ZIndex: =10
+
+            Container17 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: =70
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =4
+
+                Submit As button:
                     Height: =70
                     OnSelect: |+
-                        =If(LeaveFor.Selected.Title="First Half" || LeaveFor.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
+                        =If(LeaveFor_1.Selected.Title="First Half" || LeaveFor_1.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
                         
                         
-                        Set(varTotalDays2,1 + ((DateDiff(from.SelectedDate,to.SelectedDate)) 
-                        * 5 - ((Weekday(from.SelectedDate) - 
-                        Weekday(to.SelectedDate))*2)) / 7 - 
-                        Switch(Weekday(to.SelectedDate),7,1,0) - 
-                        Switch(Weekday(from.SelectedDate),1,1,0));
+                        Set(varTotalDays2,1 + ((DateDiff(from_1.SelectedDate,to_1.SelectedDate)) 
+                        * 5 - ((Weekday(from_1.SelectedDate) - 
+                        Weekday(to_1.SelectedDate))*2)) / 7 - 
+                        Switch(Weekday(to_1.SelectedDate),7,1,0) - 
+                        Switch(Weekday(from_1.SelectedDate),1,1,0));
                         
                         
                         
                         
-                        If(Radio1_3.Selected.Title="Single Day", 
+                        If(Radio1_4.Selected.Title="Single Day", 
                         
                         If(
                             _dateSelected < Today(),
@@ -601,8 +1055,8 @@
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
                                 {Title: ""},
-                                {Details: Reason.Text},
-                                {LeaveTypes: Leavetype.SelectedText},
+                                {Details: Reason_1.Text},
+                                {LeaveTypes: Leavetype_1.SelectedText},
                                 {From: _dateSelected },
                                 {To: _dateSelected},
                                 {
@@ -614,13 +1068,13 @@
                                 {'Total Days': duration},
                                 {
                                     FromType: {
-                                        Value: LeaveFor.Selected.Title,
+                                        Value: LeaveFor_1.Selected.Title,
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
                                 {
                                     ToType: {
-                                        Value: LeaveFor.Selected.Title,
+                                        Value: LeaveFor_1.Selected.Title,
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
@@ -628,7 +1082,7 @@
                                     LeaveId: {
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                         Id: vardata.Id,
-                                        Value: Leavetype.SelectedText.Value
+                                        Value: Leavetype_1.SelectedText.Value
                                     }
                                 },
                                 
@@ -667,12 +1121,12 @@
                                         Picture: ""
                                     }
                                 }       
-                            );Set(visible,true);Reset(Reason);
-                        Reset(Leavetype); ),
+                            );Set(visible,true);Reset(Reason_1);
+                        Reset(Leavetype_1); ),
                         
                         
                         If(
-                            from.SelectedDate < Today(),
+                            from_1.SelectedDate < Today(),
                             [
                                 Set(
                                     errordisplay,
@@ -683,7 +1137,7 @@
                                     "Please enter a valid start date"
                                 )
                             ],
-                            from.SelectedDate > to.SelectedDate,
+                            from_1.SelectedDate > to_1.SelectedDate,
                             [
                                 Set(
                                     errordisplay,
@@ -710,10 +1164,10 @@
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
                                 {Title: ""},
-                                {Details: Reasons2.Text},
-                                {LeaveTypes: LeaveTypes2.SelectedText},
-                                {From: from.SelectedDate },
-                                {To: to.SelectedDate},
+                                {Details: Reasons2_1.Text},
+                                {LeaveTypes: LeaveTypes2_1.SelectedText},
+                                {From: from_1.SelectedDate },
+                                {To: to_1.SelectedDate},
                                 {
                                     Status: {
                                         Value: "Pending",
@@ -723,13 +1177,13 @@
                                 {'Total Days': Value(varTotalDays2)},
                                 {
                                     FromType: {
-                                        Value: FromType.Selected.Title,
+                                        Value: FromType_1.Selected.Title,
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
                                 {
                                     ToType: {
-                                        Value: ToType.Selected.Title,
+                                        Value: ToType_1.Selected.Title,
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"
                                     }
                                 },
@@ -737,7 +1191,7 @@
                                     LeaveId: {
                                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                         Id: varChange.Id,
-                                        Value: LeaveTypes2.SelectedText.Value
+                                        Value: LeaveTypes2_1.SelectedText.Value
                                     }
                                 },
                                 
@@ -778,12 +1232,12 @@
                                 }   
                               
                             );
-                        Set(visible,true);Reset(from);
-                        Reset(to);
+                        Set(visible,true);Reset(from_1);
+                        Reset(to_1);
                         
-                        Reset(Reasons2);
+                        Reset(Reasons2_1);
                         
-                        Reset(LeaveTypes2); )
+                        Reset(LeaveTypes2_1); )
                             );
                                 
                         
@@ -792,536 +1246,100 @@
                     Size: =13.52
                     Text: ="Submit"
                     Width: =226.22
-                    X: =854.41
-                    Y: =776
-                    ZIndex: =3
+                    X: =Parent.Width-Self.Width
+                    ZIndex: =1
 
-                Container22 As groupContainer.manualLayoutContainer:
-                    Height: =712
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Visible: =If(Radio1_3.SelectedText.Value="Multiple Days",true,false)
-                    Width: =1115.79
-                    X: =2.70
-                    Y: =3
-                    ZIndex: =4
-
-                    Container17_2 As groupContainer.horizontalAutoLayoutContainer:
-                        Height: =712
-                        LayoutGap: =30
-                        LayoutMode: =LayoutMode.Auto
-                        PaddingRight: =0.00
-                        PaddingTop: =0.00
-                        Width: =1112.18
-                        X: =1.80
-                        ZIndex: =1
-
-                        Container18_2 As groupContainer.manualLayoutContainer:
-                            LayoutMinHeight: =100
-                            LayoutMinWidth: =250
-                            PaddingRight: =0.00
-                            PaddingTop: =0.00
-                            Width: =538.89
-                            X: =0.00
-                            ZIndex: =1
-
-                            Label10_6 As label:
-                                Height: =62
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =19.83
-                                Text: ="CHOOSE DATE"
-                                Width: =211.80
-                                X: =7.21
-                                Y: =12
-                                ZIndex: =2
-
-                            dropdownCalendarSelection1_3 As dropdown:
-                                Default: =_myCalendar.DisplayName
-                                Height: =33
-                                Items: =Office365Outlook.CalendarGetTables().value
-                                OnChange: =Select(dropdownCalendarSelection1_3)
-                                OnSelect: |-
-                                    =/*retrieves calendar events for all days in current month view and selected calendar 
-                                    _minDate and _maxDate act as markers to prevent duplicate data collection*/         
-                                    If(IsBlank(_userDomain),         
-                                    	UpdateContext({_showLoading: true});         
-                                    	Set(_userDomain, Right(User().Email, Len(User().Email) - Find("@", User().Email)));         
-                                    	Set(_dateSelected, Today());         
-                                    	Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));         
-                                    	Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
-                                    	Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days))         
-                                    );         
-                                    Set(_calendarVisible, false);         
-                                    UpdateContext({_showLoading: true});         
-                                    Set(_myCalendar, Self.Selected);         
-                                    Set(_minDate, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         
-                                    Set(_maxDate, DateAdd(DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days), 40, TimeUnit.Days));         
-                                    ClearCollect(MyCalendarEvents, Office365Outlook.GetEventsCalendarViewV2(_myCalendar.Name, Text(_minDate, DateTimeFormat.UTC), Text(_maxDate, DateTimeFormat.UTC)).value);         
-                                    UpdateContext({_showLoading: false});         
-                                    Set(_calendarVisible, true)
-                                PaddingRight: =9.01
-                                PaddingTop: =9.01
-                                Size: =11.71
-                                Tooltip: ="Select a calendar"
-                                Visible: =false
-                                Width: =281.20
-                                X: =100.04
-                                Y: =92
-                                ZIndex: =4
-
-                            Label10_11 As label:
-                                FontWeight: =FontWeight.Semibold
-                                Height: =62
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =19.83
-                                Text: ="FROM"
-                                Width: =211.80
-                                X: =7.21
-                                Y: =92
-                                ZIndex: =5
-
-                            TextInput2_2 As text:
-                                BorderColor: =RGBA(128, 128, 128, 1)
-                                Default: =""
-                                Height: =62
-                                HintText: =""
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                RadiusBottomLeft: =10
-                                RadiusBottomRight: =10
-                                RadiusTopLeft: =10
-                                RadiusTopRight: =10
-                                Size: =14.42
-                                Width: =493.90
-                                X: =7.21
-                                Y: =154
-                                ZIndex: =6
-
-                            Icon6 As icon.CalendarBlank:
-                                Color: =RGBA(60, 93, 255, 1)
-                                Height: =36
-                                Icon: =Icon.CalendarBlank
-                                PaddingRight: =0.00
-                                PaddingTop: =0.00
-                                Width: =41.46
-                                X: =439.82
-                                Y: =167
-                                ZIndex: =7
-
-                            from As datepicker:
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                Fill: =RGBA(255, 255, 255, 0)
-                                Format: =DateTimeFormat.LongDate
-                                Height: =56
-                                IconBackground: =RGBA(56, 96, 178, 0)
-                                PaddingRight: =4.51
-                                PaddingTop: =0.00
-                                Size: =18.02
-                                Width: =461.46
-                                X: =20.73
-                                Y: =158
-                                ZIndex: =8
-
-                            Icon7 As icon.VerticalLine:
-                                Color: =RGBA(128, 128, 128, 1)
-                                Height: =35
-                                Icon: =Icon.VerticalLine
-                                PaddingRight: =0.00
-                                PaddingTop: =0.00
-                                Width: =18.02
-                                X: =421.80
-                                Y: =168
-                                ZIndex: =9
-
-                            FromType As gallery.galleryHorizontal:
-                                DelayItemLoading: =true
-                                Height: =80
-                                Items: =firstsecondhalf
-                                LoadingSpinner: =LoadingSpinner.Data
-                                TemplatePadding: =4.51
-                                TemplateSize: =155.02
-                                Width: =337.08
-                                X: =7.21
-                                Y: =234
-                                ZIndex: =10
-
-                                Button9_2 As button:
-                                    Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
-                                    DisabledColor: =RGBA(0, 0, 0, 1)
-                                    Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
-                                    Height: =46
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(0,0,0,0)
-                                    OnSelect: =Select(Parent)
-                                    PaddingRight: =4.51
-                                    PaddingTop: =4.51
-                                    PressedBorderColor: =
-                                    PressedFill: =RGBA(0,0,0,0)
-                                    Size: =13.52
-                                    Text: =ThisItem.Title
-                                    Width: =132.49
-                                    X: =2.70
-                                    Y: =15
-                                    ZIndex: =1
-
-                            Label10_12 As label:
-                                FontWeight: =FontWeight.Semibold
-                                Height: =62
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =19.83
-                                Text: ="TO"
-                                Width: =211.80
-                                X: =7.21
-                                Y: =339
-                                ZIndex: =11
-
-                            TextInput2_3 As text:
-                                BorderColor: =RGBA(128, 128, 128, 1)
-                                Default: =""
-                                Height: =62
-                                HintText: =""
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                RadiusBottomLeft: =10
-                                RadiusBottomRight: =10
-                                RadiusTopLeft: =10
-                                RadiusTopRight: =10
-                                Size: =14.42
-                                Width: =493.90
-                                X: =7.21
-                                Y: =401
-                                ZIndex: =12
-
-                            Icon6_1 As icon.CalendarBlank:
-                                Color: =RGBA(60, 93, 255, 1)
-                                Height: =36
-                                Icon: =Icon.CalendarBlank
-                                PaddingRight: =0.00
-                                PaddingTop: =0.00
-                                Width: =41.46
-                                X: =439.82
-                                Y: =414
-                                ZIndex: =13
-
-                            to As datepicker:
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                Fill: =RGBA(255, 255, 255, 0)
-                                Format: =DateTimeFormat.LongDate
-                                Height: =56
-                                IconBackground: =RGBA(56, 96, 178, 0)
-                                PaddingRight: =4.51
-                                PaddingTop: =0.00
-                                Size: =18.02
-                                Width: =461.46
-                                X: =20.73
-                                Y: =405
-                                ZIndex: =14
-
-                            Icon7_1 As icon.VerticalLine:
-                                Color: =RGBA(128, 128, 128, 1)
-                                Height: =35
-                                Icon: =Icon.VerticalLine
-                                PaddingRight: =0.00
-                                PaddingTop: =0.00
-                                Width: =18.02
-                                X: =421.80
-                                Y: =415
-                                ZIndex: =15
-
-                            ToType As gallery.galleryHorizontal:
-                                DelayItemLoading: =true
-                                Height: =80
-                                Items: =firstsecondhalf
-                                LoadingSpinner: =LoadingSpinner.Data
-                                TemplatePadding: =4.51
-                                TemplateSize: =155.02
-                                Width: =337.08
-                                X: =7.21
-                                Y: =481
-                                ZIndex: =16
-
-                                Button9_3 As button:
-                                    Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
-                                    DisabledColor: =RGBA(0, 0, 0, 1)
-                                    Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
-                                    Height: =46
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(0,0,0,0)
-                                    OnSelect: =Select(Parent)
-                                    PaddingRight: =4.51
-                                    PaddingTop: =4.51
-                                    PressedBorderColor: =
-                                    PressedFill: =RGBA(0,0,0,0)
-                                    Size: =13.52
-                                    Text: =ThisItem.Title
-                                    Width: =132.49
-                                    X: =2.70
-                                    Y: =15
-                                    ZIndex: =1
-
-                        Container19_2 As groupContainer.manualLayoutContainer:
-                            LayoutMinHeight: =100
-                            LayoutMinWidth: =250
-                            PaddingRight: =0.00
-                            PaddingTop: =0.00
-                            Width: =538.89
-                            X: =572.22
-                            ZIndex: =2
-
-                            Label10_8 As label:
-                                FontWeight: =FontWeight.Semibold
-                                Height: =62
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =21.63
-                                Text: ="SELECT LEAVE TYPE"
-                                Width: =307.33
-                                X: =27.03
-                                Y: =22
-                                ZIndex: =3
-
-                            TextInput2_1 As text:
-                                BorderColor: =RGBA(128, 128, 128, 1)
-                                Default: =""
-                                Height: =62
-                                HintText: =""
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                RadiusBottomLeft: =10
-                                RadiusBottomRight: =10
-                                RadiusTopLeft: =10
-                                RadiusTopRight: =10
-                                Size: =14.42
-                                Width: =493.90
-                                X: =27.03
-                                Y: =84
-                                ZIndex: =4
-
-                            Icon5_1 As icon.ChevronDown:
-                                Color: =RGBA(128, 128, 128, 1)
-                                DisabledBorderColor: =RGBA(26, 26, 26, 1)
-                                DisabledColor: =RGBA(26, 26, 26, 1)
-                                DisplayMode: =DisplayMode.Disabled
-                                Height: =57
-                                Icon: =Icon.ChevronDown
-                                OnSelect: =
-                                PaddingRight: =0.00
-                                PaddingTop: =0.00
-                                Width: =23.43
-                                X: =474.98
-                                Y: =86
-                                ZIndex: =5
-
-                            LeaveTypes2 As dropdown:
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderThickness: =0
-                                ChevronBackground: =RGBA(0, 0, 0, 0)
-                                ChevronFill: =RGBA(255, 255, 255, 0)
-                                ChevronHoverBackground: =
-                                Default: ="null"
-                                Height: =53
-                                HoverBorderColor: =
-                                HoverFill: =RGBA(186, 202, 226, 0)
-                                Items: =Choices([@LeaveRequests].LeaveTypes)
-                                OnChange: |
-                                    =If(LeaveTypes2.SelectedText.Value="Unpaid",Set(leaves1,0);Set(total1,365);,
-                                    
-                                    Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2.SelectedText.Value));
-                                    
-                                    ClearCollect(LeaveSum1,Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days'));
-                                    
-                                    ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave));
-                                    
-                                    Set(leaves1,First(LeaveSum1).Value);
-                                    Set(total1,First(TotalLeave1).Value);
-                                    
-                                    )
-                                PaddingRight: =9.01
-                                PaddingTop: =9.01
-                                PressedBorderColor: =
-                                PressedFill: =RGBA(0, 18, 107, 0)
-                                Size: =11.71
-                                Width: =476.78
-                                X: =31.54
-                                Y: =90
-                                ZIndex: =6
-
-                            Label10_9 As label:
-                                FontWeight: =FontWeight.Semibold
-                                Height: =62
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =21.63
-                                Text: ="REASON"
-                                Width: =186.57
-                                X: =27.03
-                                Y: =190
-                                ZIndex: =7
-
-                            Reasons2 As text:
-                                BorderColor: =RGBA(128, 128, 128, 1)
-                                Default: =""
-                                Height: =111
-                                HintText: ="Enter Reson Here..."
-                                HoverBorderColor: =RGBA(128, 128, 128, 1)
-                                HoverFill: =RGBA(219, 219, 219, 0.3)
-                                Mode: =TextMode.MultiLine
-                                PaddingLeft: =25
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =14.42
-                                Width: =493.90
-                                X: =27.03
-                                Y: =252
-                                ZIndex: =8
-
-                            Label10_10 As label:
-                                FontWeight: =FontWeight.Semibold
-                                Height: =62
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =21.63
-                                Text: ="NOTIFY"
-                                Width: =186.57
-                                X: =27.03
-                                Y: =387
-                                ZIndex: =9
-
-                            ComboBox1_1 As combobox:
-                                DisplayFields: =["DisplayName","JobTitle"]
-                                Height: =64
-                                Items: |-
-                                    =Office365Users.SearchUser({searchTerm:Self.SearchText,top:5})
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                SearchFields: =["DisplayName"]
-                                SearchItems: |-
-                                    =Search(Office365Users.SearchUser({searchTerm:Self.SearchText,top:5}),ComboBox1_1.SearchText,"DisplayName")
-                                Size: =11.71
-                                Template: =ListItemTemplate.Person
-                                Width: =489.40
-                                X: =27.03
-                                Y: =449
-                                ZIndex: =10
-
-                Radio1_3 As radio:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    Default: ="Single Day"
-                    Height: =62
-                    Items: =singlemulti
-                    Layout: =Layout.Horizontal
-                    PaddingRight: =0.00
-                    PaddingTop: =9.01
-                    Size: =11.71
-                    Width: =318.16
-                    X: =250
-                    Y: =15
-                    ZIndex: =5
-
-                Label12 As label:
-                    Color: =RGBA(0, 121, 187, 1)
-                    Height: =80
-                    PaddingRight: =4.51
-                    PaddingTop: =4.51
-                    Size: =22.53
-                    Text: ="Leave Successfully Applied!"
-                    Visible: =visible
-                    Width: =441.63
-                    X: =394.77
-                    Y: =772
-                    ZIndex: =6
-
-                Timer1 As timer:
-                    Duration: =1500
-                    OnTimerEnd: =Set(visible,false)
-                    PaddingRight: =4.51
-                    PaddingTop: =4.51
-                    Size: =11.71
-                    Start: =visible
-                    Visible: =false
-                    Width: =144.20
-                    X: =265.88
-                    Y: =837
+                Label13 As label:
+                    Text: =App.ActiveScreen.Size
+                    X: =137
                     ZIndex: =7
 
-                Button4 As button:
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(255, 255, 255, 1)
-                    DisabledFill: =RGBA(255, 0, 0, 0.7)
-                    DisplayMode: =DisplayMode.Disabled
-                    Fill: |-
-                        =RGBA(56, 96, 178, 0.4
-                        )
-                    Height: =51
-                    PaddingRight: =4.51
-                    PaddingTop: =4.51
-                    Size: =13.52
-                    Text: =err
-                    Visible: =errordisplay
-                    Width: =439.82
-                    X: =34.24
-                    Y: =776
+                SuccessPopup As group:
+                    Height: =5
+                    Width: =5
+                    X: =-9.93
+                    Y: =26
+                    ZIndex: =7
+
+                    Label12_1 As label:
+                        Color: =RGBA(0, 121, 187, 1)
+                        Height: =80
+                        PaddingRight: =4.51
+                        PaddingTop: =4.51
+                        Size: =22.53
+                        Text: ="Leave Successfully Applied!"
+                        Visible: =visible
+                        Width: =441.63
+                        X: =350.59999999999997
+                        Y: =20
+                        ZIndex: =2
+
+                    Timer1_1 As timer:
+                        Duration: =1500
+                        OnTimerEnd: =Set(visible,false)
+                        PaddingRight: =4.51
+                        PaddingTop: =4.51
+                        Size: =11.71
+                        Start: =visible
+                        Visible: =false
+                        Width: =144.20
+                        X: =221.70999999999998
+                        Y: =60
+                        ZIndex: =3
+
+                Label13_1 As label:
+                    Text: =Container19_4.Width
+                    X: =287
                     ZIndex: =8
 
-                Icon4 As icon.Error:
-                    Color: =RGBA(255, 255, 255, 1)
-                    Height: =58
-                    Icon: =Icon.Error
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Visible: =errordisplay
-                    Width: =28.84
-                    X: =44.17
-                    Y: =772
-                    ZIndex: =9
+                ErrorPopup As group:
+                    Height: =5
+                    Width: =5
+                    X: =-9.93
+                    Y: =26
+                    ZIndex: =8
 
-                Timer2 As timer:
-                    Duration: =1500
-                    OnTimerEnd: =Set(errordisplay,false)
-                    PaddingRight: =4.51
-                    PaddingTop: =4.51
-                    Size: =11.71
-                    Start: =errordisplay
-                    Visible: =false
-                    Width: =144.20
-                    X: =337.98
-                    Y: =827
-                    ZIndex: =10
+                    Button4_3 As button:
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(255, 255, 255, 1)
+                        DisabledFill: =RGBA(255, 0, 0, 0.7)
+                        DisplayMode: =DisplayMode.Disabled
+                        Fill: |-
+                            =RGBA(56, 96, 178, 0.4
+                            )
+                        Height: =51
+                        PaddingRight: =4.51
+                        PaddingTop: =4.51
+                        Size: =13.52
+                        Text: =err
+                        Visible: =errordisplay
+                        Width: =439.82
+                        X: =24.310000000000002
+                        Y: =30
+                        ZIndex: =4
 
-    "'Left Navigation_14' As 'Left Navigation_11'":
-        Visible: =var
-        Width: =371.33
-        X: =0.00
-        ZIndex: =4
+                    Icon4_1 As icon.Error:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =58
+                        Icon: =Icon.Error
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Visible: =errordisplay
+                        Width: =28.84
+                        X: =9.93
+                        Y: =42
+                        ZIndex: =5
 
-    navbar_4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =5
-
-        Rectangle1_4 As rectangle:
-            Fill: =RGBA(237, 237, 237, 0.7)
-            Height: =1117
-            Visible: =var
-            Width: =1557.41
-            X: =0.00
-            ZIndex: =3
-
-        Icon2_4 As icon.Cancel:
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =45
-            Icon: =Icon.Cancel
-            OnSelect: =Set(var,false)
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Visible: =var
-            Width: =45.07
-            X: =305.53
-            Y: =27
-            ZIndex: =5
+                    Timer2_1 As timer:
+                        Duration: =1500
+                        OnTimerEnd: =Set(errordisplay,false)
+                        PaddingRight: =4.51
+                        PaddingTop: =4.51
+                        Size: =11.71
+                        Start: =errordisplay
+                        Visible: =false
+                        Width: =144.20
+                        X: =293.81
+                        Y: =60
+                        ZIndex: =6
 
