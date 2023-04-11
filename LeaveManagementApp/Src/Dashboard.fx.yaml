@@ -872,15 +872,16 @@
                             ZIndex: =3
 
                             Image7 As image:
-                                Height: =If(Container12.Width<430,40,70)
+                                Height: =45
+                                ImagePosition: =ImagePosition.Fill
                                 OnSelect: =Select(Parent)
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
-                                RadiusBottomLeft: =50
-                                RadiusBottomRight: =50
-                                RadiusTopLeft: =50
-                                RadiusTopRight: =50
-                                Width: =If(Container12.Width<430,40,70)
+                                RadiusBottomLeft: =60
+                                RadiusBottomRight: =60
+                                RadiusTopLeft: =60
+                                RadiusTopRight: =60
+                                Width: =74
                                 X: =15.32
                                 Y: =(Parent.TemplateHeight-Self.Height)/2
                                 ZIndex: =1
@@ -896,6 +897,7 @@
                                 Size: =If(Container12.Width<430,10,13.52)
                                 Text: =ThisItem.RequestedBy.DisplayName
                                 VerticalAlign: =VerticalAlign.Top
+                                Visible: =If(App.ActiveScreen.Size<=2,false,true)
                                 Width: =310.94
                                 X: =Image7.X+Image7.Width+10
                                 Y: =((Parent.TemplateHeight-Self.Height)/2)-10
@@ -911,6 +913,7 @@
                                 Size: =If(Container12.Width<430,9.2,12.62)
                                 Text: =ThisItem.RequestedBy.JobTitle
                                 VerticalAlign: =VerticalAlign.Top
+                                Visible: =If(App.ActiveScreen.Size<=2,false,true)
                                 Width: =310.94
                                 X: =Image7.X+Image7.Width+10
                                 Y: =((Parent.TemplateHeight-Self.Height)/2)+15
