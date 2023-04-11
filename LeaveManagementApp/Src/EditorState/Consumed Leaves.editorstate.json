@@ -2776,7 +2776,8 @@
         "LayoutOverflowX",
         "LayoutOverflowY",
         "LayoutWrap",
-        "ZIndex"
+        "ZIndex",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -2913,6 +2914,11 @@
           "Category": "Design",
           "PropertyName": "ZIndex",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -2939,7 +2945,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -3100,6 +3107,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -3126,7 +3138,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -3287,6 +3300,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -3313,7 +3331,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -3474,6 +3493,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -3500,7 +3524,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -3661,6 +3686,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -3731,7 +3761,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "PaddingTop"
+        "PaddingTop",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -3895,6 +3926,11 @@
           "Category": "Design",
           "PropertyName": "PaddingTop",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -3958,7 +3994,8 @@
           "NameMapSourceSchema": "?"
         },
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -4122,6 +4159,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -4177,7 +4219,8 @@
         },
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -4336,6 +4379,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -4399,7 +4447,8 @@
           "InvariantPropertyName": "PaddingLeft",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -4570,6 +4619,11 @@
           "Category": "Design",
           "PropertyName": "PaddingLeft",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -4603,7 +4657,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -4764,6 +4819,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -4797,7 +4857,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -4958,6 +5019,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -4999,7 +5065,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -5150,6 +5217,11 @@
         {
           "Category": "Design",
           "PropertyName": "PaddingRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -10363,7 +10435,8 @@
         "LayoutWrap",
         "ZIndex",
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -10514,6 +10587,11 @@
         {
           "Category": "Design",
           "PropertyName": "PaddingRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -10723,7 +10801,8 @@
           "InvariantPropertyName": "PaddingLeft",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -10880,6 +10959,11 @@
           "Category": "Design",
           "PropertyName": "PaddingLeft",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -10936,7 +11020,8 @@
         "ZIndex",
         "PaddingRight",
         "PaddingTop",
-        "PaddingLeft"
+        "PaddingLeft",
+        "DropShadow"
       ],
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
@@ -11055,6 +11140,11 @@
           "Category": "Design",
           "PropertyName": "PaddingLeft",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -11097,7 +11187,8 @@
           "NameMapSourceSchema": "?"
         },
         "PaddingTop",
-        "PaddingRight"
+        "PaddingRight",
+        "DropShadow"
       ],
       "DynamicProperties": [
         {
@@ -11260,6 +11351,11 @@
         {
           "Category": "Design",
           "PropertyName": "PaddingRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DropShadow",
           "RuleProviderType": "Unknown"
         }
       ],
