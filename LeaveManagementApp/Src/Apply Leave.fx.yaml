@@ -122,7 +122,7 @@
                     ZIndex: =3
 
                     Multiple As groupContainer.horizontalAutoLayoutContainer:
-                        Height: =Parent.Height
+                        Height: =Parent.Height-60
                         LayoutGap: =30
                         LayoutMode: =LayoutMode.Auto
                         LayoutOverflowY: =LayoutOverflow.Scroll
@@ -131,6 +131,7 @@
                         PaddingTop: =0.00
                         Width: =Parent.Width
                         X: =1.80
+                        Y: =50
                         ZIndex: =1
 
                         Container18_4 As groupContainer.manualLayoutContainer:
@@ -518,8 +519,7 @@
                                     ZIndex: =6
 
                 Single As groupContainer.horizontalAutoLayoutContainer:
-                    Height: |
-                        =Parent.Height-10
+                    Height: =Parent.Height-60
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =30
                     LayoutMode: =LayoutMode.Auto
@@ -530,6 +530,7 @@
                     PaddingTop: =0.00
                     Visible: =If(Radio1_4.SelectedText.Value="Single Day",true,false)
                     Width: =Parent.Width
+                    Y: =50
                     ZIndex: =9
 
                     Container18_3 As groupContainer.manualLayoutContainer:
@@ -558,7 +559,7 @@
                         Container18 As groupContainer.manualLayoutContainer:
                             Height: =469
                             Width: =Parent.Width*4/5
-                            X: =(Parent.Width-Self.Width)/2
+                            X: =20
                             Y: =108
                             ZIndex: =10
 
@@ -984,8 +985,7 @@
                     RadioSize: =35
                     Size: =11
                     Width: =379
-                    X: =Label10_7.X+Label10_7.Width+20
-                    Y: =20
+                    X: =Parent.Width/2-Self.Width/2
                     ZIndex: =10
 
             Container17 As groupContainer.manualLayoutContainer:
@@ -1230,7 +1230,7 @@
                     Size: =13.52
                     Text: ="Submit"
                     Width: =226.22
-                    X: =1182
+                    X: =Parent.Width-Self.Width-20
                     ZIndex: =1
 
                 SuccessPopup As group:
