@@ -7,7 +7,6 @@
         
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
-        Set(varVisible,false);
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)

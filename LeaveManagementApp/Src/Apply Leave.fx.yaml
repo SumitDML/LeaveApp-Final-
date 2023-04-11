@@ -1,7 +1,5 @@
 "'Apply Leave' As screen":
-    OnVisible: |-
-        =Set(_calendarVisible,true);
-        Set(varVisible,false);
+    OnVisible: =Set(_calendarVisible, true);
 
     ScreenContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
