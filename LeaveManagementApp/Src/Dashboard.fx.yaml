@@ -6,7 +6,8 @@
         Set(Total,Sum(LeaveBalance,TotalLeave));
         
         Refresh(LeaveRequests);
-        Refresh(LeaveBalance)
+        Refresh(LeaveBalance);
+        Set(varVisible,false);
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -949,12 +950,6 @@
                                 Y: =(Parent.TemplateHeight-Self.Height)/2
                                 ZIndex: =4
 
-    Label10 As label:
-        Text: =RightSideContainer1.Width
-        X: =48
-        Y: =782
-        ZIndex: =5
-
     LeftNav_1 As group:
         Height: =5
         Width: =5
@@ -964,7 +959,7 @@
 
         "'Left Navigation_3' As 'Left Navigation'":
             Visible: =varVisible
-            Width: ='Left Navigation_3'.MenuWidth
+            Width: ='Left Navigation_3'.MenuWidth*4/5
             X: =
 
         Rectangle1_1 As rectangle:
@@ -981,7 +976,7 @@
             OnSelect: =Set(varVisible,false)
             Visible: =varVisible
             Width: =39
-            X: =348
-            Y: =30
+            X: ='Left Navigation_3'.MenuWidth*4/5-Self.Height-10
+            Y: =33
             ZIndex: =4
 

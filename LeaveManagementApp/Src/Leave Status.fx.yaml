@@ -1,7 +1,8 @@
 "'Leave Status' As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
     OnVisible: |-
         =Refresh(LeaveRequests);
-        Refresh(LeaveBalance)
+        Refresh(LeaveBalance);
+        Set(varVisible,false);
 
     ScreenContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -69,7 +70,7 @@
                 Icon8_3 As icon.Hamburger:
                     Height: =Parent.Height
                     Icon: =Icon.Hamburger
-                    OnSelect: =Set(varVisible,true)
+                    OnSelect: =Set(varVisible,true);
                     PaddingLeft: =13
                     PaddingRight: =13
                     Width: =If(App.ActiveScreen.Size<=2,80,0)
