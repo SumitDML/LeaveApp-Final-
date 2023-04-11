@@ -102,15 +102,15 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "2a31dd94-f2cb-49d4-b46a-968ab075fb59",
-    "Id": "b5f50080-1d0e-44f4-848a-24f63ccbdd22",
+    "Id": "78d02640-8734-495e-a5be-383cd149872d",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "Leave App Responsive Final",
+    "Name": "Leave App (Responsive)",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "Leave App Responsive Final",
+    "AppName": "Leave App (Responsive)",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
