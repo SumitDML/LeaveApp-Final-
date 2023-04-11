@@ -101,7 +101,7 @@
                 LayoutOverflowY: =LayoutOverflow.Scroll
                 PaddingRight: =0.00
                 PaddingTop: =0.00
-                Width: =672.22
+                Width: =Parent.Width
                 X: =0.00
                 ZIndex: =5
 
@@ -109,7 +109,7 @@
                     Height: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=930,390,180)))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =180
+                    LayoutMinHeight: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=930,390,150)))
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -446,7 +446,7 @@
                     Height: =If(Self.Width<=693,550,252)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =200
+                    LayoutMinHeight: =If(Self.Width<=693,550,200)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -710,7 +710,7 @@
                     Height: =If(Container4.Width<=691,758,364)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =250
+                    LayoutMinHeight: =If(Container4.Width<=691,580,250)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -768,16 +768,15 @@
                         "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DelayItemLoading: =true
-                            Height: =293
+                            Height: =238
                             Items: =LeaveBalance
                             LoadingSpinner: =LoadingSpinner.Data
                             ShowScrollbar: =false
                             TemplatePadding: =0.00
-                            TemplateSize: =Parent.Width/If(Container11.Width<=450,2,If(Container11.Width<=555,3,4))
+                            TemplateSize: =If(Parent.Width<400,Self.Width/3,Self.Width/4)
                             Transition: =Transition.Pop
-                            Width: =Parent.Width
-                            X: =0.00
-                            Y: =71
+                            Width: =Parent.Width-5
+                            Y: =55
                             ZIndex: =4
 
                             Title4 As label:
@@ -788,19 +787,19 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
-                                Size: =11.71
+                                Size: =8
                                 Text: =ThisItem.Title
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =Parent.TemplateWidth
                                 X: =0.00
-                                Y: =252
+                                Y: =HtmlText3.Y+HtmlText3.Height
                                 ZIndex: =2
 
                             HtmlText3 As htmlViewer:
-                                Height: =234
+                                Height: =164
                                 HtmlText: |-
                                     ="
-                                      <div style='width: 95px; height: 220px; background:"&If(ThisItem.LeaveType.Value="Sick","##e4bfff",If(ThisItem.LeaveType.Value="Paid","#fff5b2",If(ThisItem.LeaveType.Value="Maternity","#98b2ff",If(ThisItem.LeaveType.Value="Casual","#d1ffd4"))))&"; border-radius: 10px; position: relative;'>
+                                      <div style='width: 80px; height: "&Parent.TemplateHeight*3/5&"px; background:"&If(ThisItem.LeaveType.Value="Sick","##e4bfff",If(ThisItem.LeaveType.Value="Paid","#fff5b2",If(ThisItem.LeaveType.Value="Maternity","#98b2ff",If(ThisItem.LeaveType.Value="Casual","#d1ffd4"))))&"; border-radius: 10px; position: relative;'>
                                         <div style='width: 85%; height:50%; background:"&If(ThisItem.LeaveType.Value="Sick","#BB5EFF",If(ThisItem.LeaveType.Value="Paid","#f6e15b",If(ThisItem.LeaveType.Value="Maternity","#4537bd",If(ThisItem.LeaveType.Value="Casual","#37bd46"))))&"; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                           <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=ThisItem.LeaveType.Value)),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=ThisItem.LeaveType.Value),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value=ThisItem.LeaveType.Value),TotalLeave)&"<span><p>
                                         </div>
@@ -810,9 +809,9 @@
                                 PaddingRight: =4.51
                                 PaddingTop: =4.51
                                 Size: =9.91
-                                Width: =105
-                                X: =(Parent.TemplateWidth-Self.Width)/2
-                                Y: =4
+                                Width: =95
+                                X: =Parent.TemplateWidth/2-Self.Width/2
+                                Y: =17
                                 ZIndex: =3
 
                     Container12 As groupContainer.manualLayoutContainer:
@@ -861,7 +860,7 @@
                             ZIndex: =2
 
                         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                            Height: =290
+                            Height: =233
                             Items: =Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected")
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
@@ -935,6 +934,12 @@
                                 X: =(Parent.Width-Self.Width)-30
                                 Y: =(Parent.TemplateHeight-Self.Height)/2
                                 ZIndex: =4
+
+    Label10 As label:
+        Text: =RightSideContainer1.Width
+        X: =48
+        Y: =782
+        ZIndex: =5
 
     LeftNav_1 As group:
         Height: =5
