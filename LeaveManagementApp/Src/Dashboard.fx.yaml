@@ -57,7 +57,7 @@
             PaddingBottom: =30
             PaddingLeft: |
                 =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
-            PaddingRight: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
+            PaddingRight: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,30,70))
             PaddingTop: =0.00
             Width: =672.22
             X: =33.33
@@ -179,6 +179,17 @@
                             X: =(Parent.Width-Self.Width)/2
                             Y: =111
                             ZIndex: =3
+
+                        Button2 As button:
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =Parent.Height
+                            HoverBorderColor: =
+                            HoverFill: =
+                            OnSelect: =Navigate('Apply Leave')
+                            PressedFill: =RGBA(255,255,255,0.3)
+                            Text: =""
+                            Width: =Parent.Width
+                            ZIndex: =4
 
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
