@@ -41,7 +41,7 @@
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 Visible: =true
-                Width: =Parent.Width
+                Width: =384
                 X: =0.00
                 ZIndex: =1
 

@@ -18,7 +18,7 @@ App As appinfo:
                 },
                 {
                     Title: "Leave Balance",
-                    Screen: Dashboard,
+                    Screen: 'Consumed Leaves',
                     Icon: menu,
                     acion:Set(varVisible,false)
                 },

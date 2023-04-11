@@ -806,7 +806,7 @@
             "Name": "Label1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 348,
+            "PublishOrderIndex": 349,
             "Rules": [
               {
                 "Category": "Data",
@@ -1155,7 +1155,7 @@
             "Name": "Image3",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 349,
+            "PublishOrderIndex": 350,
             "Rules": [
               {
                 "Category": "Data",
@@ -1382,7 +1382,7 @@
             "Name": "Group1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 350,
+            "PublishOrderIndex": 348,
             "Rules": [
               {
                 "Category": "Design",
