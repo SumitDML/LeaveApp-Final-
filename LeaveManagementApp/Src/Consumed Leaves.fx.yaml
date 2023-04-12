@@ -44,7 +44,7 @@
             FillPortions: =7
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =40
+            LayoutGap: =10
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -92,7 +92,6 @@
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowY: =LayoutOverflow.Scroll
-                PaddingBottom: =30
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =1395.56
@@ -103,7 +102,7 @@
                     Height: =If(App.ActiveScreen.Size<=3 && Container2_2.Width<=674,650,If(App.ActiveScreen.Size<=4 && Container2_2.Width<=1019,440,200))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =150
+                    LayoutMinHeight: =145
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -509,10 +508,10 @@
 
                 Container3_2 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =65
+                    Height: =40
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =10
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -526,6 +525,7 @@
                     Label8 As label:
                         FillPortions: =1
                         Font: =Font.'Lato Black'
+                        LayoutMinHeight: =12
                         PaddingRight: =4.51
                         PaddingTop: =4.51
                         Size: =18.02
@@ -535,11 +535,10 @@
                         ZIndex: =1
 
                 Container4_2 As groupContainer.horizontalAutoLayoutContainer:
-                    FillPortions: =0
                     Height: =If(Container4_2.Width<=741,640,300)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =200
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -551,7 +550,7 @@
                     ZIndex: =3
 
                     Container13 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =300
+                        LayoutMinHeight: =180
                         LayoutMinWidth: =175
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -590,14 +589,14 @@
                             Text: ="Sick Leave"
                             Width: =Parent.Width
                             X: =0.00
-                            Y: =246
+                            Y: =HtmlText3_2.Y+HtmlText3_2.Height
                             ZIndex: =2
 
                         HtmlText3_2 As htmlViewer:
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='width: 95px; height: 220px; background:#e4bfff; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: "&Parent.Width*3/5&"px; background:#e4bfff; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#BB5EFF; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)&"<span><p>
                                     </div>
@@ -607,13 +606,13 @@
                             PaddingRight: =4.51
                             PaddingTop: =4.51
                             Size: =9.91
-                            Width: =110
-                            X: =(Parent.Width-Self.Width)/2
+                            Width: =130
+                            X: =85
                             Y: =15
                             ZIndex: =4
 
                     Container13_1 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =300
+                        LayoutMinHeight: =180
                         LayoutMinWidth: =175
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -646,20 +645,21 @@
 
                         Label9_1 As label:
                             Align: =Align.Center
+                            Height: =27
                             PaddingRight: =4.51
                             PaddingTop: =4.51
                             Size: =11.71
                             Text: ="Paid Leave"
                             Width: =Parent.Width
                             X: =0.90
-                            Y: =246
+                            Y: =HtmlText3_3.Y+HtmlText3_3.Height
                             ZIndex: =2
 
                         HtmlText3_3 As htmlViewer:
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='width: 95px; height: 220px; background:#fff5b2; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: "&Parent.Width*3/5&"px; background:#fff5b2; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#f6e15b; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)&"<span><p>
                                     </div>
@@ -675,7 +675,7 @@
                             ZIndex: =4
 
                     Container13_2 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =300
+                        LayoutMinHeight: =180
                         LayoutMinWidth: =175
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -714,14 +714,14 @@
                             Text: ="Casual Leave"
                             Width: =Parent.Width
                             X: =0.00
-                            Y: =246
+                            Y: =HtmlText3_4.Y+HtmlText3_4.Height
                             ZIndex: =2
 
                         HtmlText3_4 As htmlViewer:
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='width: 95px; height: 220px; background:#98b2ff; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: "&Parent.Width*3/5&"px; background:#98b2ff; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#4537bd; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)&"<span><p>
                                     </div>
@@ -737,7 +737,7 @@
                             ZIndex: =4
 
                     Container13_3 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =300
+                        LayoutMinHeight: =180
                         LayoutMinWidth: =175
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -776,14 +776,14 @@
                             Text: ="Maternity Leave"
                             Width: =Parent.Width
                             X: =0.00
-                            Y: =246
+                            Y: =HtmlText3_5.Y+HtmlText3_5.Height
                             ZIndex: =2
 
                         HtmlText3_5 As htmlViewer:
                             Height: =231
                             HtmlText: |-
                                 ="
-                                  <div style='width: 95px; height: 220px; background:#d1ffd4; border-radius: 10px; position: relative;'>
+                                  <div style='width: 95px; height: "&Parent.Width*3/5&"px; background:#d1ffd4; border-radius: 10px; position: relative;'>
                                     <div style='width: 85%; height:50%; background:#37bd46; position: absolute; left: 7%; bottom: 2%; border-radius: 10px;'>
                                       <p style='color: #fff; position: absolute; bottom: 0%; left: 25%;'><span style='font-size: 30px;'>"&If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days'))&"</span><span style='font-size: 20px;'>/"&Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)&"<span><p>
                                     </div>
