@@ -94,7 +94,7 @@
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =30
+                LayoutGap: =10
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -123,7 +123,7 @@
                     Container6 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         Height: =Parent.Height
-                        LayoutMinHeight: =180
+                        LayoutMinHeight: =120
                         LayoutMinWidth: =295
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -193,7 +193,7 @@
 
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =180
+                        LayoutMinHeight: =120
                         LayoutMinWidth: =295
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -323,7 +323,7 @@
 
                     Container8 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =180
+                        LayoutMinHeight: =120
                         LayoutMinWidth: =295
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -456,7 +456,7 @@
                 Container3 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =If(Self.Width<=693,550,252)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutGap: =20
+                    LayoutGap: =10
                     LayoutMinHeight: =If(Self.Width<=693,550,200)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -470,7 +470,7 @@
 
                     Container9 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =200
+                        LayoutMinHeight: =180
                         LayoutMinWidth: =335
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -513,7 +513,7 @@
                             ZIndex: =2
 
                         "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                            Height: =Parent.Height-Label4.Height-35
+                            Height: =Parent.Height*2/3
                             Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
@@ -574,7 +574,7 @@
 
                     Container10 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =200
+                        LayoutMinHeight: =180
                         LayoutMinWidth: =335
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -720,7 +720,7 @@
                 Container4 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =If(Container4.Width<=691,758,364)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutGap: =20
+                    LayoutGap: =10
                     LayoutMinHeight: =If(Container4.Width<=691,580,250)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -779,12 +779,12 @@
                         "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DelayItemLoading: =true
-                            Height: =238
+                            Height: =201
                             Items: =LeaveBalance
                             LoadingSpinner: =LoadingSpinner.Data
                             ShowScrollbar: =false
                             TemplatePadding: =0.00
-                            TemplateSize: =If(Parent.Width<400,Self.Width/3,Self.Width/4)
+                            TemplateSize: =Parent.Width/4-10
                             Transition: =Transition.Pop
                             Width: =Parent.Width-5
                             Y: =55
@@ -807,7 +807,7 @@
                                 ZIndex: =2
 
                             HtmlText3 As htmlViewer:
-                                Height: =164
+                                Height: =140
                                 HtmlText: |-
                                     ="
                                       <div style='width: 80px; height: "&Parent.TemplateHeight*3/5&"px; background:"&If(ThisItem.LeaveType.Value="Sick","##e4bfff",If(ThisItem.LeaveType.Value="Paid","#fff5b2",If(ThisItem.LeaveType.Value="Maternity","#98b2ff",If(ThisItem.LeaveType.Value="Casual","#d1ffd4"))))&"; border-radius: 10px; position: relative;'>
@@ -820,7 +820,7 @@
                                 PaddingRight: =4.51
                                 PaddingTop: =4.51
                                 Size: =9.91
-                                Width: =95
+                                Width: =101
                                 X: =Parent.TemplateWidth/2-Self.Width/2
                                 Y: =17
                                 ZIndex: =3
