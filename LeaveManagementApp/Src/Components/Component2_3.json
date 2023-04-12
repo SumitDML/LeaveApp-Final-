@@ -528,13 +528,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(App.ActiveScreen.Size<2,40,70)",
+            "InvariantScript": "If(App.ActiveScreen.Size<2,30,50)",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(App.ActiveScreen.Size<2,40,70)",
+            "InvariantScript": "If(App.ActiveScreen.Size<2,30,50)",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -717,7 +717,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638169150990954577",
+    "LastModifiedTimestamp": "638169169466373464",
     "Name": "Component2_3",
     "Rules": [
       {
@@ -776,7 +776,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638169150990954577",
+  "LastModifiedTimestamp": "638169169466373464",
   "Name": "f0d75971fa9c48419598f051aa711744",
   "OverridableProperties": {},
   "TemplateOriginalName": "2c83fcd24b97406eb33eeade790d7b43",

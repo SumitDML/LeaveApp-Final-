@@ -987,7 +987,7 @@
 
             Container17 As groupContainer.manualLayoutContainer:
                 Height: =70
-                LayoutMinHeight: =70
+                LayoutMinHeight: =30
                 LayoutMinWidth: =250
                 ZIndex: =4
 

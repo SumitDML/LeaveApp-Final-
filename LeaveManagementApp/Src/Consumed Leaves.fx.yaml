@@ -87,7 +87,7 @@
 
             MainSectionContainer1_2 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =30
+                LayoutGap: =10
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -100,11 +100,10 @@
                 ZIndex: =5
 
                 Container2_2 As groupContainer.horizontalAutoLayoutContainer:
-                    FillPortions: =0
                     Height: =If(App.ActiveScreen.Size<=3 && Container2_2.Width<=674,650,If(App.ActiveScreen.Size<=4 && Container2_2.Width<=1019,440,200))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =150
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -117,7 +116,7 @@
 
                     Container6_2 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =200
+                        LayoutMinHeight: =140
                         LayoutMinWidth: =325
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -247,7 +246,7 @@
 
                     Container7_2 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =200
+                        LayoutMinHeight: =140
                         LayoutMinWidth: =325
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -378,7 +377,7 @@
 
                     Container8_2 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =200
+                        LayoutMinHeight: =140
                         LayoutMinWidth: =325
                         PaddingRight: =0.00
                         PaddingTop: =0.00

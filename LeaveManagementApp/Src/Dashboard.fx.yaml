@@ -54,7 +54,7 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =30
+            PaddingBottom: =20
             PaddingLeft: |
                 =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
             PaddingRight: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,30,70))
@@ -86,6 +86,7 @@
 
                 Component2_4 As Component2_3:
                     FillPortions: =1
+                    Height: =70
                     LayoutMinHeight: =640
                     LayoutMinWidth: =200
                     Width: =Parent.Width
@@ -721,7 +722,7 @@
                     Height: =If(Container4.Width<=691,758,364)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =10
-                    LayoutMinHeight: =If(Container4.Width<=691,580,250)
+                    LayoutMinHeight: =If(Container4.Width<=691,580,200)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -733,7 +734,7 @@
 
                     Container11 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =200
                         LayoutMinWidth: =335
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -827,7 +828,7 @@
 
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =200
                         LayoutMinWidth: =335
                         PaddingRight: =0.00
                         PaddingTop: =0.00
