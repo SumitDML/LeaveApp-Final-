@@ -110,7 +110,7 @@
                     Height: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=930,390,180)))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
-                    LayoutMinHeight: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=930,390,150)))
+                    LayoutMinHeight: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=930,390,130)))
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -793,7 +793,7 @@
 
                             Title4 As label:
                                 Align: =Align.Center
-                                Height: =38
+                                Height: =24
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
