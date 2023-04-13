@@ -4,7 +4,7 @@
         =Set(consumed,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Total,Sum(LeaveBalance,TotalLeave));
-        
+        Set(_calendarVisible, true);
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
 
