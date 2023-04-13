@@ -344,7 +344,7 @@
                 },
                 "region": {
                   "charLength": 94,
-                  "charOffset": 449,
+                  "charOffset": 450,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Sick\"),'Total Days')"
                   }
@@ -384,7 +384,7 @@
                 },
                 "region": {
                   "charLength": 59,
-                  "charOffset": 587,
+                  "charOffset": 588,
                   "snippet": {
                     "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Sick\"),TotalLeave)"
                   }
@@ -424,7 +424,7 @@
                 },
                 "region": {
                   "charLength": 94,
-                  "charOffset": 449,
+                  "charOffset": 450,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Paid\"),'Total Days')"
                   }
@@ -464,7 +464,7 @@
                 },
                 "region": {
                   "charLength": 59,
-                  "charOffset": 587,
+                  "charOffset": 588,
                   "snippet": {
                     "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Paid\"),TotalLeave)"
                   }
@@ -504,7 +504,7 @@
                 },
                 "region": {
                   "charLength": 96,
-                  "charOffset": 451,
+                  "charOffset": 452,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Casual\"),'Total Days')"
                   }
@@ -544,7 +544,7 @@
                 },
                 "region": {
                   "charLength": 61,
-                  "charOffset": 591,
+                  "charOffset": 592,
                   "snippet": {
                     "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Casual\"),TotalLeave)"
                   }
@@ -584,7 +584,7 @@
                 },
                 "region": {
                   "charLength": 99,
-                  "charOffset": 454,
+                  "charOffset": 455,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Maternity\"),'Total Days')"
                   }
@@ -624,7 +624,7 @@
                 },
                 "region": {
                   "charLength": 64,
-                  "charOffset": 597,
+                  "charOffset": 598,
                   "snippet": {
                     "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Maternity\"),TotalLeave)"
                   }
