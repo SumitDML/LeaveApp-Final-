@@ -588,6 +588,7 @@
                                     RadiusTopRight: =15
                                     Size: =13.52
                                     Text: =""
+                                    Visible: =_calendarVisible
                                     Width: =MonthDayGallery1_3.Width+10
                                     X: =MonthDayGallery1_3.X-10
                                     Y: =10
