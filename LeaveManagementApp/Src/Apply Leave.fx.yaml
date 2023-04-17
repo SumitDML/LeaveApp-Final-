@@ -1229,6 +1229,7 @@
                     Text: ="Submit"
                     Width: =226.22
                     X: =Parent.Width-Self.Width-20
+                    Y: =2
                     ZIndex: =1
 
                 SuccessPopup As group:
