@@ -41,7 +41,7 @@
             FillPortions: =7
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =20
+            LayoutGap: =10
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -86,7 +86,7 @@
 
             Container20_1 As groupContainer.manualLayoutContainer:
                 Height: =720
-                LayoutMinHeight: =620
+                LayoutMinHeight: =590
                 LayoutMinWidth: =250
                 PaddingLeft: =1
                 PaddingRight: =0.90
@@ -102,8 +102,7 @@
                     DisabledFill: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(202, 202, 202, 1)
-                    Height: |
-                        =Parent.Height-4
+                    Height: =580
                     PaddingRight: =4.51
                     PaddingTop: =4.51
                     RadiusBottomLeft: =15
@@ -118,7 +117,7 @@
                     ZIndex: =1
 
                 Container22_1 As groupContainer.manualLayoutContainer:
-                    Height: =Parent.Height
+                    Height: =578
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Visible: =If(Radio1_4.SelectedText.Value="Multiple Days",true,false)
@@ -161,7 +160,6 @@
                                 Text: ="CHOOSE DATE"
                                 Width: =211.80
                                 X: =20
-                                Y: =15
                                 ZIndex: =2
 
                             dropdownCalendarSelection1_5 As dropdown:
@@ -207,8 +205,8 @@
                                 Size: =16
                                 Text: ="FROM"
                                 Width: =211.80
-                                X: =TextInput2_5.X
-                                Y: =77
+                                X: =20
+                                Y: =63
                                 ZIndex: =5
 
                             FromType_1 As gallery.galleryHorizontal:
@@ -220,7 +218,7 @@
                                 TemplateSize: =If(Container18_4.Width<525,130,155.02)
                                 Width: =Parent.Width*8/10
                                 X: =20
-                                Y: =223
+                                Y: =191
                                 ZIndex: =10
 
                                 Button9_4 As button:
@@ -252,7 +250,7 @@
                                 Text: ="TO"
                                 Width: =211.80
                                 X: =20
-                                Y: =317
+                                Y: =285
                                 ZIndex: =11
 
                             ToType_1 As gallery.galleryHorizontal:
@@ -264,7 +262,7 @@
                                 TemplateSize: =If(Container18_4.Width<525,130,155.02)
                                 Width: =Parent.Width*8/10
                                 X: =20
-                                Y: =481
+                                Y: =419
                                 ZIndex: =16
 
                                 Button9_5 As button:
@@ -310,7 +308,7 @@
                                         =(Parent.Width*8/10)
                                     X: |
                                         =20
-                                    Y: =154
+                                    Y: =125
                                     ZIndex: =6
 
                                 from_1 As datepicker:
@@ -325,7 +323,7 @@
                                     Width: |
                                         =(Parent.Width*8/10)
                                     X: =36
-                                    Y: =157
+                                    Y: =128
                                     ZIndex: =8
 
                             Group8 As group:
@@ -352,7 +350,7 @@
                                         =(Parent.Width*8/10)
                                     X: |
                                         =20
-                                    Y: =401
+                                    Y: =360
                                     ZIndex: =12
 
                                 to_1 As datepicker:
@@ -368,7 +366,7 @@
                                         =(Parent.Width*8/10)
                                     X: |
                                         =20
-                                    Y: =401
+                                    Y: =363
                                     ZIndex: =14
 
                         Container19_4 As groupContainer.manualLayoutContainer:
@@ -404,8 +402,8 @@
                                 Size: =16
                                 Text: ="REASON"
                                 Width: =186.57
-                                X: =20
-                                Y: =168
+                                X: =23
+                                Y: =160
                                 ZIndex: =7
 
                             Reasons2_1 As text:
@@ -428,7 +426,7 @@
                                 Width: |
                                     =(Parent.Width*8/10)
                                 X: =20
-                                Y: =240
+                                Y: =222
                                 ZIndex: =8
 
                             Label10_22 As label:
@@ -441,7 +439,7 @@
                                 Text: ="NOTIFY"
                                 Width: =186.57
                                 X: =ComboBox1_3.X
-                                Y: =369
+                                Y: =351
                                 ZIndex: =9
 
                             ComboBox1_3 As combobox:
@@ -459,7 +457,7 @@
                                 Width: |
                                     =(Parent.Width*8/10)
                                 X: =20
-                                Y: =431
+                                Y: =397
                                 ZIndex: =10
 
                             leaveTypes2 As group:
@@ -525,7 +523,7 @@
                                     ZIndex: =6
 
                 Single As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =568
+                    Height: =531
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =30
                     LayoutMode: =LayoutMode.Auto
