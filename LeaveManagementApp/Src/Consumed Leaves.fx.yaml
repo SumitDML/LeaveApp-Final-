@@ -798,12 +798,6 @@
                             Y: =15
                             ZIndex: =4
 
-    Label10 As label:
-        Text: =Container4_2.Width
-        X: =505
-        Y: =275
-        ZIndex: =5
-
     LeftNav As group:
         Height: =5
         Width: =5
