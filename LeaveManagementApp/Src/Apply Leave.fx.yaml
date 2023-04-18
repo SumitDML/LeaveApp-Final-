@@ -417,6 +417,8 @@
                                 ZIndex: =9
 
                             ComboBox1_3 As combobox:
+                                BorderColor: =RGBA(202, 202, 202, 1)
+                                BorderThickness: =1
                                 DisplayFields: =["DisplayName","JobTitle"]
                                 Height: =64
                                 Items: |-

@@ -1056,26 +1056,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container6_2.HtmlText2_6.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container6_2.HtmlText2_6.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9.Text",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 28,
-                  "charOffset": 37,
+                  "charOffset": 0,
                   "snippet": {
                     "text": "Sum(LeaveBalance,TotalLeave)"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container6_2.HtmlText2_6"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9"
               }
             }
           ],
@@ -1096,26 +1096,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 28,
-                  "charOffset": 37,
+                  "charOffset": 0,
                   "snippet": {
                     "text": "Sum(LeaveBalance,TotalLeave)"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10"
               }
             }
           ],
@@ -1136,26 +1136,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 70,
-                  "charOffset": 66,
+                  "charOffset": 29,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container7_2.HtmlText2_7"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10"
               }
             }
           ],
@@ -1176,26 +1176,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_4.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_4.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8.Text",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 70,
-                  "charOffset": 37,
+                  "charOffset": 0,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_2.Container8_2.HtmlText2_4"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8"
               }
             }
           ],
@@ -1216,26 +1216,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.HtmlText3_2.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.HtmlText3_2.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 94,
-                  "charOffset": 450,
+                  "charLength": 28,
+                  "charOffset": 0,
                   "snippet": {
-                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Sick\"),'Total Days')"
+                    "text": "Sum(LeaveBalance,TotalLeave)"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.HtmlText3_2"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11"
               }
             }
           ],
@@ -1256,26 +1256,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.HtmlText3_2.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.HtmlText3_2.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 59,
-                  "charOffset": 588,
+                  "charLength": 28,
+                  "charOffset": 0,
                   "snippet": {
-                    "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Sick\"),TotalLeave)"
+                    "text": "Sum(LeaveBalance,TotalLeave)"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13.HtmlText3_2"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12"
               }
             }
           ],
@@ -1296,226 +1296,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.HtmlText3_3.HtmlText"
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.HtmlText3_3.HtmlText",
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 94,
-                  "charOffset": 450,
+                  "charLength": 28,
+                  "charOffset": 0,
                   "snippet": {
-                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Paid\"),'Total Days')"
+                    "text": "Sum(LeaveBalance,TotalLeave)"
                   }
                 }
               },
               "properties": {
-                "member": "HtmlText",
+                "member": "Text",
                 "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.HtmlText3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.HtmlText3_3.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.HtmlText3_3.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 59,
-                  "charOffset": 588,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Paid\"),TotalLeave)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_1.HtmlText3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.HtmlText3_4.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.HtmlText3_4.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 96,
-                  "charOffset": 452,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Casual\"),'Total Days')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.HtmlText3_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.HtmlText3_4.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.HtmlText3_4.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 61,
-                  "charOffset": 592,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Casual\"),TotalLeave)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_2.HtmlText3_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.HtmlText3_5.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.HtmlText3_5.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 99,
-                  "charOffset": 455,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Maternity\"),'Total Days')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.HtmlText3_5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.HtmlText3_5.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.HtmlText3_5.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 64,
-                  "charOffset": 598,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Maternity\"),TotalLeave)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container4_2.Container13_3.HtmlText3_5"
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13"
               }
             }
           ],
@@ -1596,6 +1396,86 @@
                 "member": "Text",
                 "module": "Dashboard",
                 "type": "Dashboard.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container1.Container7_8.Label3_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 28,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Sum(LeaveBalance,TotalLeave)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 28,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Sum(LeaveBalance,TotalLeave)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Consumed Leaves",
+                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15"
               }
             }
           ],
@@ -4506,6 +4386,96 @@
               },
               "properties": {
                 "member": "customdatepicker",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.consumed"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.consumed",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "consumed",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Available"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Available",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Available",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Total"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Total",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Total",
                 "module": "App",
                 "type": "App"
               }
