@@ -366,7 +366,7 @@
                             Size: =16
                             Text: ="Sick Leaves"
                             Width: =130
-                            X: =50
+                            X: =15
                             Y: =60
                             ZIndex: =2
 
@@ -376,7 +376,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =50
+                            X: =15
                             Y: =89
                             ZIndex: =3
 
@@ -384,7 +384,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (4)'
                             Width: =49
-                            X: =50
+                            X: =15
                             Y: =6
                             ZIndex: =5
 
@@ -427,7 +427,7 @@
                             Size: =16
                             Text: ="Casual Leaves"
                             Width: =170
-                            X: =50
+                            X: =15
                             Y: =60
                             ZIndex: =2
 
@@ -437,7 +437,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =50
+                            X: =15
                             Y: =89
                             ZIndex: =3
 
@@ -445,7 +445,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (5)'
                             Width: =49
-                            X: =50
+                            X: =15
                             Y: =6
                             ZIndex: =5
 
@@ -488,7 +488,7 @@
                             Size: =16
                             Text: ="Paid Leaves"
                             Width: =130
-                            X: =50
+                            X: =35
                             Y: =60
                             ZIndex: =2
 
@@ -498,7 +498,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =50
+                            X: =35
                             Y: =89
                             ZIndex: =3
 
@@ -506,7 +506,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (6)'
                             Width: =49
-                            X: =50
+                            X: =35
                             Y: =6
                             ZIndex: =5
 
@@ -549,7 +549,7 @@
                             Size: =16
                             Text: ="Maternity Leaves"
                             Width: =180
-                            X: =50
+                            X: =35
                             Y: =60
                             ZIndex: =2
 
@@ -559,7 +559,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =50
+                            X: =35
                             Y: =89
                             ZIndex: =3
 
@@ -567,7 +567,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (2)'
                             Width: =49
-                            X: =50
+                            X: =35
                             Y: =6
                             ZIndex: =5
 
@@ -610,7 +610,7 @@
                             Size: =16
                             Text: ="Unpaid Leaves"
                             Width: =170
-                            X: =50
+                            X: =35
                             Y: =60
                             ZIndex: =2
 
@@ -620,7 +620,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =50
+                            X: =35
                             Y: =89
                             ZIndex: =3
 
@@ -628,7 +628,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (3)'
                             Width: =49
-                            X: =50
+                            X: =35
                             Y: =6
                             ZIndex: =5
 
