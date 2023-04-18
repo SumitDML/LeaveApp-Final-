@@ -4855,6 +4855,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.menu"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.menu",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "menu",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Frame 1000003485"
                 }
               ],
@@ -5076,6 +5106,36 @@
               },
               "properties": {
                 "member": "Vector (5)",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.2023-calendar-with-holidays"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.2023-calendar-with-holidays",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "2023-calendar-with-holidays",
                 "module": "App",
                 "type": "App"
               }

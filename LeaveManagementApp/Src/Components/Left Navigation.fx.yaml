@@ -1,23 +1,13 @@
 "'Left Navigation' As CanvasComponent":
     CurrentScreen: ="Text"
-    Fill: =RGBA(255, 255, 255, 1) 
+    Fill: =RGBA(28, 37, 54, 1)
     Height: =Max(App.Height,App.DesignHeight)
-    MenuWidth: =412
+    MenuWidth: =340
     NavItems: =lmsnav
-    Width: ='Left Navigation'.MenuWidth
+    Width: =340
     X: =0
     Y: =0
     ZIndex: =3
-
-    Image1 As image:
-        Height: =75
-        Image: =sketchwireLogo
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =220
-        X: =(Parent.Width-Self.Width)/2-40
-        Y: =12
-        ZIndex: =2
 
     Gallery1 As gallery.galleryVertical:
         DelayItemLoading: =true
@@ -25,12 +15,12 @@
         Items: ='Left Navigation'.NavItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =ThisItem.acion
+        OnSelect: =Navigate(ThisItem.Screen,ScreenTransition.Fade)
         ShowScrollbar: =false
-        TemplateFill: =If(ThisItem.Title='Left Navigation'.CurrentScreen,RGBA(235, 235, 235,1))
+        TemplateFill: =
         TemplateSize: =82
         Transition: =Transition.Pop
-        Width: =368
+        Width: =Parent.Width*4/5-10
         X: =(Parent.Width-Self.Width)/2
         Y: =123
         ZIndex: =3
@@ -43,7 +33,7 @@
             ZIndex: =4
 
             Label1 As label:
-                Color: =RGBA(149, 149, 149, 1)
+                Color: =If(ThisItem.Title='Left Navigation'.CurrentScreen,RGBA(255, 255, 255, 1),RGBA(255, 255, 255, 0.4))
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =Parent.TemplateHeight
@@ -52,7 +42,7 @@
                 PaddingTop: =6.33
                 Size: =14
                 Text: =ThisItem.Title
-                Width: =224.36
+                Width: =202
                 X: =Button1.X+Image3.Width+20
                 ZIndex: =1
 
@@ -62,6 +52,7 @@
                 OnSelect: =Navigate(ThisItem.Screen)
                 PaddingRight: =0.00
                 PaddingTop: =0.00
+                Transparency: =If(ThisItem.Title='Left Navigation'.CurrentScreen,0,0.5)
                 Width: =30
                 X: =Button1.X+10
                 Y: =Parent.TemplateHeight/2-Self.Height/2
@@ -69,17 +60,32 @@
 
             Button1 As button:
                 BorderThickness: =0
+                Color: =RGBA(255, 255, 255, 0)
                 DisabledFill: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0,0,0,0)
                 Height: =Parent.TemplateHeight
-                HoverFill: =RGBA(206, 206, 206, 0.1)
+                HoverColor: =RGBA(255, 255, 255, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
                 OnSelect: =Navigate(ThisItem.Screen,ScreenTransition.Fade)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
+                PressedFill: =
                 Size: =19.01
                 Text: =""
-                Width: =300
+                Width: =Parent.TemplateWidth
                 X: =(Parent.TemplateWidth-Self.Width)/2
                 Y: =
                 ZIndex: =3
+
+    Image1 As image:
+        Height: =83
+        Image: ='Frame 9'
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =10
+        PaddingTop: =5
+        Width: =Gallery1.Width
+        X: =Gallery1.X
+        Y: =40
+        ZIndex: =4
 

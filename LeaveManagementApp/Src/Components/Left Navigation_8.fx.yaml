@@ -9,16 +9,6 @@
     Y: =0
     ZIndex: =3
 
-    Image1_2 As image:
-        Height: =75
-        Image: =sketchwireLogo
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =253.26
-        X: =27.94
-        Y: =13
-        ZIndex: =2
-
     Gallery1_2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =676
@@ -81,4 +71,11 @@
                 X: =0.00
                 Y: =
                 ZIndex: =3
+
+    Image4 As image:
+        Image: ='Frame 9'
+        Width: =296
+        X: =27
+        Y: =40
+        ZIndex: =4
 

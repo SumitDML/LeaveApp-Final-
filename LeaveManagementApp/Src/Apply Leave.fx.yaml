@@ -30,6 +30,7 @@
             ZIndex: =2
 
             "'Left Navigation_15' As 'Left Navigation'":
+                CurrentScreen: ="Apply Leave"
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 Visible: =true
@@ -1333,7 +1334,6 @@
 
         "'Left Navigation_6' As 'Left Navigation'":
             Visible: =varVisible
-            Width: ='Left Navigation_6'.MenuWidth
             X: =
             ZIndex: =4
 

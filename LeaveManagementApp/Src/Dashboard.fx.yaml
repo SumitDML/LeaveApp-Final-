@@ -23,27 +23,11 @@
         X: =0.00
         ZIndex: =1
 
-        SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
-            FillPortions: =1.75
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Visible: =If(App.ActiveScreen.Size<3,false,true)
-            Width: =
-            X: =0.00
-            ZIndex: =2
-
-            "'Left Navigation_2' As 'Left Navigation'":
-                Height: =Parent.Height
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                Visible: =true
-                Width: =384
-                X: =0.00
-                ZIndex: =1
+        "'Left Navigation_2' As 'Left Navigation'":
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            Width: =300
+            ZIndex: =1
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
             ContentLanguage: =
@@ -61,7 +45,7 @@
             PaddingTop: =0.00
             Width: =672.22
             X: =33.33
-            ZIndex: =3
+            ZIndex: =2
 
             HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
@@ -303,31 +287,34 @@
 
                 Container8 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.2
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =60
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =2
 
                     Container9 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         ZIndex: =1
 
                         Label7 As label:
                             Font: =Font.'Segoe UI'
                             FontWeight: =FontWeight.Semibold
+                            Size: =18
                             Text: ="Leave Balance"
+                            Width: =190
                             X: =10
                             Y: =Parent.Height-Self.Height-10
                             ZIndex: =1
 
                     Container10 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =100
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         ZIndex: =2
 
                         Button4 As button:
-                            Text: ="Button"
+                            Text: ="Apply Leave"
+                            Width: =190
                             X: =Parent.Width-Self.Width-10
                             Y: =Parent.Height-Self.Height-10
                             ZIndex: =1
@@ -654,7 +641,7 @@
 
                     Container9_2 As groupContainer.manualLayoutContainer:
                         Height: =Parent.Height
-                        LayoutMinHeight: =80
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         ZIndex: =1
 
@@ -669,7 +656,8 @@
                             ZIndex: =1
 
                     Container10_1 As groupContainer.manualLayoutContainer:
-                        LayoutMinHeight: =80
+                        Height: =60
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =250
                         ZIndex: =2
 
@@ -680,7 +668,7 @@
                             Text: ="Leave Status"
                             Width: =190
                             X: =10
-                            Y: =40
+                            Y: =Parent.Height-Self.Height-10
                             ZIndex: =1
 
                 Container4 As groupContainer.horizontalAutoLayoutContainer:
