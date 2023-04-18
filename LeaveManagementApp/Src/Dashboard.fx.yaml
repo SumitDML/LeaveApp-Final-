@@ -301,12 +301,43 @@
                             Y: =6
                             ZIndex: =5
 
-                Container1 As groupContainer.horizontalAutoLayoutContainer:
-                    LayoutGap: =10
+                Container8 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0.2
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =2
+
+                    Container9 As groupContainer.manualLayoutContainer:
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                        Label7 As label:
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            Text: ="Leave Balance"
+                            X: =10
+                            Y: =Parent.Height-Self.Height-10
+                            ZIndex: =1
+
+                    Container10 As groupContainer.manualLayoutContainer:
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                        Button4 As button:
+                            Text: ="Button"
+                            X: =Parent.Width-Self.Width-10
+                            Y: =Parent.Height-Self.Height-10
+                            ZIndex: =1
+
+                Container1 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutGap: =10
+                    LayoutMinHeight: =160
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =3
 
                     Container7_4 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
@@ -613,6 +644,45 @@
                             Y: =6
                             ZIndex: =5
 
+                Container8_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =60
+                    LayoutMinHeight: =80
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =4
+
+                    Container9_2 As groupContainer.manualLayoutContainer:
+                        Height: =Parent.Height
+                        LayoutMinHeight: =80
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                        Label7_1 As label:
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            Size: =18
+                            Text: ="Today On Leave"
+                            Width: =190
+                            X: =10
+                            Y: =Parent.Height-Self.Height-10
+                            ZIndex: =1
+
+                    Container10_1 As groupContainer.manualLayoutContainer:
+                        LayoutMinHeight: =80
+                        LayoutMinWidth: =250
+                        ZIndex: =2
+
+                        Label10 As label:
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            Size: =18
+                            Text: ="Leave Status"
+                            Width: =190
+                            X: =10
+                            Y: =40
+                            ZIndex: =1
+
                 Container4 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =If(Container4.Width<=691,758,364)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -625,7 +695,7 @@
                     PaddingTop: =0.00
                     Width: =672.22
                     X: =0.00
-                    ZIndex: =3
+                    ZIndex: =5
 
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -657,17 +727,6 @@
                                 =1
                             ZIndex: =1
 
-                        Label4_3 As label:
-                            Font: =Font.'Lato Black'
-                            PaddingRight: =4.51
-                            PaddingTop: =4.51
-                            Size: =14
-                            Text: ="Today On leave"
-                            Width: =162
-                            X: =21.63
-                            Y: =20
-                            ZIndex: =2
-
                         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                             Height: =233
                             Items: =Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected")
@@ -677,7 +736,7 @@
                             TemplateSize: =Parent.Height/If(App.ActiveScreen.Size<2,5,4)
                             Width: =Parent.Width
                             X: =0.00
-                            Y: =60
+                            Y: =19
                             ZIndex: =3
 
                             Image7 As image:
@@ -776,17 +835,6 @@
                             Y: =1
                             ZIndex: =1
 
-                        Label4_1 As label:
-                            Font: =Font.'Lato Black'
-                            PaddingRight: =4.51
-                            PaddingTop: =4.51
-                            Size: =14
-                            Text: ="Leave Status"
-                            Width: =135.19
-                            X: =21.63
-                            Y: =20
-                            ZIndex: =2
-
                         "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                             Height: =Parent.Height*2/3
                             Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
@@ -795,7 +843,7 @@
                             TemplatePadding: =0
                             TemplateSize: =85
                             Width: =Parent.Width
-                            Y: =60
+                            Y: =17
                             ZIndex: =3
 
                             Title1_1 As label:
