@@ -19,13 +19,13 @@ App As appinfo:
                 {
                     Title: "Leave Balance",
                     Screen: 'Consumed Leaves',
-                    Icon: 'Path 125',
+                    Icon: 'Path 125 (1)',
                     acion:Set(varVisible,false)
                 },
                     {
                     Title: "Leave Status",
                     Screen: 'Leave Status',
-                    Icon: 'Vector (8)',
+                    Icon: 'Vector (9)',
                     acion:Set(varVisible,false)
                 }
             )

@@ -69,7 +69,7 @@
                 OnSelect: =Navigate(ThisItem.Screen,ScreenTransition.Fade)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
-                PressedFill: =
+                PressedFill: =RGBA(0,0,0,0)
                 Size: =19.01
                 Text: =""
                 Width: =Parent.TemplateWidth

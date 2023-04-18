@@ -14,27 +14,12 @@
         X: =0.00
         ZIndex: =1
 
-        SidebarContainer1_3 As groupContainer.verticalAutoLayoutContainer:
-            FillPortions: =1.75
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Visible: =If(App.ActiveScreen.Size<3,false,true)
-            Width: =371.33
-            X: =0.00
-            ZIndex: =2
-
-            "'Left Navigation_10' As 'Left Navigation'":
-                CurrentScreen: ="Leave Status"
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                Visible: =true
-                Width: =371.33
-                X: =0.00
-                ZIndex: =1
+        "'Left Navigation_9' As 'Left Navigation'":
+            CurrentScreen: ="Leave Status"
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            Width: =300
+            ZIndex: =1
 
         RightSideContainer1_3 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
@@ -53,7 +38,7 @@
             PaddingTop: =0.00
             Width: =1395.56
             X: =491.11
-            ZIndex: =3
+            ZIndex: =2
 
             HeaderContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
