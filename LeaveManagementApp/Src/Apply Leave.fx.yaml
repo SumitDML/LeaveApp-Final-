@@ -171,7 +171,7 @@
                                 ZIndex: =4
 
                             Label10_18 As label:
-                                Font: =Font.'Lato Black'
+                                Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 PaddingRight: =4.51
@@ -215,7 +215,7 @@
                                     ZIndex: =1
 
                             Label10_19 As label:
-                                Font: =Font.'Lato Black'
+                                Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 PaddingRight: =4.51
@@ -355,7 +355,7 @@
                             ZIndex: =2
 
                             Label10_20 As label:
-                                Font: =Font.'Lato Black'
+                                Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 PaddingRight: =4.51
@@ -368,7 +368,7 @@
                                 ZIndex: =3
 
                             Label10_21 As label:
-                                Font: =Font.'Lato Black'
+                                Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 PaddingRight: =4.51
@@ -404,7 +404,7 @@
                                 ZIndex: =8
 
                             Label10_22 As label:
-                                Font: =Font.'Lato Black'
+                                Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Semibold
                                 Height: =62
                                 PaddingRight: =4.51
@@ -495,6 +495,15 @@
                                     X: =23
                                     Y: =90
                                     ZIndex: =6
+
+                    Label18 As label:
+                        FontWeight: =FontWeight.Bold
+                        Size: =18
+                        Text: ="Choose Date"
+                        Width: =170
+                        X: =20
+                        Y: =50
+                        ZIndex: =2
 
                 Single As groupContainer.horizontalAutoLayoutContainer:
                     Height: =531
@@ -957,8 +966,8 @@
                     RadioSize: =35
                     Size: =11
                     Width: =379
-                    X: =15
-                    Y: =50
+                    X: =488
+                    Y: =3
                     ZIndex: =10
 
             Container17 As groupContainer.manualLayoutContainer:
