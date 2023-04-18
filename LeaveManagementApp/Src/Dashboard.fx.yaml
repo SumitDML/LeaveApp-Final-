@@ -27,7 +27,7 @@
             CurrentScreen: ="Dashboard"
             LayoutMinHeight: =640
             LayoutMinWidth: =640
-            Width: =250
+            Width: =If(App.ActiveScreen.Size<=2,0,250)
             ZIndex: =1
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
@@ -143,7 +143,7 @@
                             Size: =16
                             Text: ="Total Leaves"
                             Width: =130
-                            X: =50
+                            X: =38
                             Y: =60
                             ZIndex: =2
 
@@ -153,7 +153,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =50
+                            X: =38
                             Y: =89
                             ZIndex: =3
 
@@ -161,7 +161,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (1)'
                             Width: =49
-                            X: =50
+                            X: =38
                             Y: =6
                             ZIndex: =5
 
@@ -203,7 +203,7 @@
                             Size: =16
                             Text: ="Available Leaves"
                             Width: =170
-                            X: =50
+                            X: =38
                             Y: =60
                             ZIndex: =2
 
@@ -213,7 +213,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')
                             Width: =114
-                            X: =50
+                            X: =38
                             Y: =89
                             ZIndex: =3
 
@@ -221,7 +221,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (1)'
                             Width: =49
-                            X: =50
+                            X: =38
                             Y: =6
                             ZIndex: =5
 
@@ -263,7 +263,7 @@
                             Size: =16
                             Text: ="Consumed Leaves"
                             Width: =190
-                            X: =50
+                            X: =38
                             Y: =60
                             ZIndex: =2
 
@@ -273,7 +273,7 @@
                             Size: =31.5
                             Text: =Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')
                             Width: =74
-                            X: =50
+                            X: =38
                             Y: =89
                             ZIndex: =3
 
@@ -281,7 +281,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (1)'
                             Width: =49
-                            X: =50
+                            X: =38
                             Y: =6
                             ZIndex: =5
 
@@ -294,7 +294,7 @@
 
                     Container9 As groupContainer.manualLayoutContainer:
                         LayoutMinHeight: =40
-                        LayoutMinWidth: =250
+                        LayoutMinWidth: =150
                         ZIndex: =1
 
                         Label7 As label:
@@ -309,12 +309,12 @@
 
                     Container10 As groupContainer.manualLayoutContainer:
                         LayoutMinHeight: =40
-                        LayoutMinWidth: =250
+                        LayoutMinWidth: =155
                         ZIndex: =2
 
                         Button4 As button:
                             Text: ="Apply Leave"
-                            Width: =190
+                            Width: =150
                             X: =Parent.Width-Self.Width-10
                             Y: =Parent.Height-Self.Height-1
                             ZIndex: =1
@@ -322,9 +322,11 @@
                 Container1 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.6
                     LayoutGap: =10
-                    LayoutMinHeight: =154
+                    LayoutMinHeight: =If(Container1.Width<517,475,Container1.Width<=945,315,154)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowY: =LayoutOverflow.Scroll
+                    LayoutWrap: =true
                     ZIndex: =3
 
                     Container7_4 As groupContainer.manualLayoutContainer:
@@ -488,7 +490,7 @@
                             Size: =16
                             Text: ="Paid Leaves"
                             Width: =130
-                            X: =35
+                            X: =15
                             Y: =60
                             ZIndex: =2
 
@@ -498,7 +500,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =35
+                            X: =15
                             Y: =89
                             ZIndex: =3
 
@@ -506,7 +508,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (6)'
                             Width: =49
-                            X: =35
+                            X: =15
                             Y: =6
                             ZIndex: =5
 
@@ -549,7 +551,7 @@
                             Size: =16
                             Text: ="Maternity Leaves"
                             Width: =180
-                            X: =35
+                            X: =15
                             Y: =60
                             ZIndex: =2
 
@@ -559,7 +561,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =35
+                            X: =15
                             Y: =89
                             ZIndex: =3
 
@@ -567,7 +569,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (2)'
                             Width: =49
-                            X: =35
+                            X: =15
                             Y: =6
                             ZIndex: =5
 
@@ -610,7 +612,7 @@
                             Size: =16
                             Text: ="Unpaid Leaves"
                             Width: =170
-                            X: =35
+                            X: =15
                             Y: =60
                             ZIndex: =2
 
@@ -620,7 +622,7 @@
                             Size: =31.5
                             Text: =Sum(LeaveBalance,TotalLeave)
                             Width: =74
-                            X: =35
+                            X: =15
                             Y: =89
                             ZIndex: =3
 
@@ -628,7 +630,7 @@
                             Height: =50
                             Image: ='Frame 1000003485 (3)'
                             Width: =49
-                            X: =35
+                            X: =15
                             Y: =6
                             ZIndex: =5
 
@@ -796,6 +798,17 @@
                                 Y: =(Parent.TemplateHeight-Self.Height)/2
                                 ZIndex: =4
 
+                        Label12 As label:
+                            Color: =RGBA(77, 77, 77, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =62
+                            Size: =12
+                            Text: =If(CountRows(Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected"))=0,"Everyone is at office.","")
+                            Width: =680
+                            X: =20
+                            Y: =10
+                            ZIndex: =4
+
                     Container9_1 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =135
@@ -883,6 +896,21 @@
                                 X: =13.52
                                 Y: =55
                                 ZIndex: =4
+
+                        Label13 As label:
+                            Font: =Font.'Segoe UI'
+                            Height: =52
+                            Text: =If(CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email))=0,"No Leave Requests Available.","")
+                            Width: =667
+                            X: =40
+                            Y: =40
+                            ZIndex: =4
+
+    Label11 As label:
+        Text: =Container1.Width
+        X: =262
+        Y: =297
+        ZIndex: =5
 
     LeftNav_1 As group:
         Height: =5
