@@ -372,7 +372,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/18/2023 14:44:27",
+  "HeaderLastSavedDateTimeUTC": "04/18/2023 15:00:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7e0c485b-e592-4462-b2d4-332320d54a27": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/3aceb8422124475e98c3f1a5bf35ae0d\"",
@@ -1052,7 +1052,7 @@
     "Dashboard": 49,
     "Description1": 253,
     "dropdownCalendarSelection1": 245,
-    "dropdownCalendarSelection1_4": 205,
+    "dropdownCalendarSelection1_4": 208,
     "dropdownCalendarSelection1_5": 171,
     "ErrorPopup": 230,
     "from_1": 174,
@@ -1081,7 +1081,7 @@
     "galleryTemplate5": 121,
     "galleryTemplate7": 265,
     "galleryTemplate7_1": 210,
-    "galleryTemplate7_3": 207,
+    "galleryTemplate7_3": 206,
     "galleryTemplate8": 249,
     "galWeekdays_1": 275,
     "Group1": 296,
@@ -1283,7 +1283,7 @@
     "Title3": 122,
     "Title5": 266,
     "Title5_1": 211,
-    "Title5_3": 208,
+    "Title5_3": 207,
     "Title6": 252,
     "Title9": 150,
     "Title9_1": 130,
@@ -1291,7 +1291,7 @@
     "to_1": 181,
     "ToType_1": 182,
     "WeekdayGallery1": 261,
-    "WeekdayGallery1_3": 206
+    "WeekdayGallery1_3": 205
   },
   "ResourcesJsonIndices": {
     "Image-174857": 1,
