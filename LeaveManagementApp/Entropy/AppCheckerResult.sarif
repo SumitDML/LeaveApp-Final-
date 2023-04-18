@@ -896,12 +896,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -914,8 +914,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'"
               }
             }
           ],
@@ -936,12 +936,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -954,8 +954,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'"
               }
             }
           ],
@@ -976,12 +976,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -994,8 +994,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'"
               }
             }
           ],
@@ -1016,12 +1016,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible"
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.OnVisible",
+                  "fullyQualifiedName": "'Leave Balance'.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1034,8 +1034,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'"
               }
             }
           ],
@@ -1056,12 +1056,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1074,8 +1074,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_9.Label3_9"
               }
             }
           ],
@@ -1096,12 +1096,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1114,8 +1114,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10"
               }
             }
           ],
@@ -1136,12 +1136,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1154,8 +1154,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_10.Label3_10"
               }
             }
           ],
@@ -1176,12 +1176,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1194,8 +1194,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container2_1.Container7_2.Label3_8"
               }
             }
           ],
@@ -1216,12 +1216,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1234,8 +1234,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_11.Label3_11"
               }
             }
           ],
@@ -1256,12 +1256,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1274,8 +1274,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_12.Label3_12"
               }
             }
           ],
@@ -1296,12 +1296,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1314,8 +1314,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_13"
               }
             }
           ],
@@ -1416,12 +1416,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1434,8 +1434,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_14.Label3_14"
               }
             }
           ],
@@ -1456,12 +1456,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15.Text"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15.Text",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1474,8 +1474,8 @@
               },
               "properties": {
                 "member": "Text",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_15.Label3_15"
               }
             }
           ],
@@ -4255,19 +4255,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.TabIndex"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.TabIndex",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8"
               }
             }
           ],
@@ -4285,19 +4285,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.AccessibleLabel"
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.AccessibleLabel",
+                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.HeaderContainer1_2.Icon8"
               }
             }
           ],
@@ -4315,19 +4315,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "'Leave Balance'.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "'Leave Balance'.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.Icon2"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.Icon2"
               }
             }
           ],
@@ -4345,19 +4345,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Consumed Leaves'.Icon2.TabIndex"
+                  "fullyQualifiedName": "'Leave Balance'.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Consumed Leaves'.Icon2.TabIndex",
+                  "fullyQualifiedName": "'Leave Balance'.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Consumed Leaves",
-                "type": "'Consumed Leaves'.Icon2"
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.Icon2"
               }
             }
           ],

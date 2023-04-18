@@ -18,7 +18,7 @@
             CurrentScreen: ="Leave Status"
             LayoutMinHeight: =640
             LayoutMinWidth: =640
-            Width: =300
+            Width: =If(App.ActiveScreen.Size<=2,0,250)
             ZIndex: =1
 
         RightSideContainer1_3 As groupContainer.verticalAutoLayoutContainer:

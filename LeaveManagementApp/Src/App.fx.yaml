@@ -18,7 +18,7 @@ App As appinfo:
                 },
                 {
                     Title: "Leave Balance",
-                    Screen: 'Consumed Leaves',
+                    Screen: 'Leave Balance',
                     Icon: 'Path 125 (1)',
                     acion:Set(varVisible,false)
                 },
