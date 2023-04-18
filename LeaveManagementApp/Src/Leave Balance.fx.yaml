@@ -79,11 +79,11 @@
 
                 Container2_1 As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0.4
+                    FillPortions: =0.35
                     Height: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2_1.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2_1.Width<=930,390,180)))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =10
-                    LayoutMinHeight: =If(App.ActiveScreen.Size<2,480,App.ActiveScreen.Size=2 && Container2_1.Width<=615,480,App.ActiveScreen.Size<=3 && Container2_1.Width<=930,310,145)
+                    LayoutMinHeight: =If(App.ActiveScreen.Size<2,480,App.ActiveScreen.Size=2 && Container2_1.Width<=615,480,App.ActiveScreen.Size<=3 && Container2_1.Width<=930,310,142)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
