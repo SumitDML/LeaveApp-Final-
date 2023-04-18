@@ -780,24 +780,13 @@
                                 Y: =((Parent.TemplateHeight-Self.Height)/2)+15
                                 ZIndex: =3
 
-                            Button3_2 As button:
-                                BorderThickness: =0
-                                Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
-                                DisplayMode: =DisplayMode.View
-                                Fill: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,0.12),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,0.08),RGBA(255, 246, 196,1)))
-                                Font: =Font.'Lato Black'
-                                Height: =If(App.ActiveScreen.Size<2,30,36)
-                                HoverColor: =Self.Color
-                                HoverFill: =Self.Fill
+                            Label24 As label:
                                 OnSelect: =Select(Parent)
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =If(Container12.Width<430,9,11.71)
                                 Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
                                 Width: =If(Container12.Width<430,85,109.96)
-                                X: =(Parent.Width-Self.Width)-30
-                                Y: =(Parent.TemplateHeight-Self.Height)/2
-                                ZIndex: =4
+                                X: =(Parent.TemplateWidth-Self.Width)-20
+                                Y: =26
+                                ZIndex: =5
 
                         Label12 As label:
                             Color: =RGBA(77, 77, 77, 1)
@@ -865,25 +854,6 @@
                                 Y: =34
                                 ZIndex: =2
 
-                            Button3_1 As button:
-                                BorderThickness: =0
-                                Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
-                                DisplayMode: =DisplayMode.View
-                                Fill: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,0.12),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,0.08),RGBA(255, 246, 196,1)))
-                                Font: =Font.'Lato Black'
-                                Height: =36
-                                HoverColor: =Self.Color
-                                HoverFill: =Self.Fill
-                                OnSelect: =Select(Parent)
-                                PaddingRight: =4.51
-                                PaddingTop: =4.51
-                                Size: =11.71
-                                Text: =ThisItem.Status.Value
-                                Width: =109.96
-                                X: =(Parent.Width-Self.Width)-30
-                                Y: =28
-                                ZIndex: =3
-
                             Label6_1 As label:
                                 Color: =RGBA(60, 93, 255, 1)
                                 FontWeight: =FontWeight.Semibold
@@ -897,6 +867,18 @@
                                 X: =13.52
                                 Y: =55
                                 ZIndex: =4
+
+                            Label23_1 As label:
+                                Align: =Align.Center
+                                Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
+                                Font: =Font.'Segoe UI'
+                                OnSelect: =Select(Parent)
+                                Size: =11
+                                Text: =ThisItem.Status.Value
+                                Width: =100
+                                X: =(Parent.Width-Self.Width)-30
+                                Y: =Parent.TemplateHeight/2-Self.Height/2
+                                ZIndex: =5
 
                         Label13 As label:
                             Font: =Font.'Segoe UI'
