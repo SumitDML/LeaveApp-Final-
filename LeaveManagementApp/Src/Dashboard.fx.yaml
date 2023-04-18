@@ -333,7 +333,7 @@
                         AlignInContainer: =AlignInContainer.Start
                         Height: =150
                         LayoutMinHeight: =140
-                        LayoutMinWidth: =180
+                        LayoutMinWidth: =150
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -394,7 +394,7 @@
                         AlignInContainer: =AlignInContainer.Start
                         Height: =150
                         LayoutMinHeight: =140
-                        LayoutMinWidth: =184
+                        LayoutMinWidth: =150
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -455,7 +455,7 @@
                         AlignInContainer: =AlignInContainer.Start
                         Height: =150
                         LayoutMinHeight: =140
-                        LayoutMinWidth: =184
+                        LayoutMinWidth: =150
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -516,7 +516,7 @@
                         AlignInContainer: =AlignInContainer.Start
                         Height: =150
                         LayoutMinHeight: =140
-                        LayoutMinWidth: =184
+                        LayoutMinWidth: =150
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -577,7 +577,7 @@
                         AlignInContainer: =AlignInContainer.Start
                         Height: =150
                         LayoutMinHeight: =140
-                        LayoutMinWidth: =184
+                        LayoutMinWidth: =150
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -640,6 +640,7 @@
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    Visible: =If(Container4.Height=140,true,false)
                     ZIndex: =4
 
                     Container9_2 As groupContainer.manualLayoutContainer:
