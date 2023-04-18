@@ -34,7 +34,7 @@
             LayoutMinHeight: =Parent.Height
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
-            PaddingRight: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
+            PaddingRight: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size<=4,50,70))
             PaddingTop: =0.00
             Width: =1395.56
             X: =491.11

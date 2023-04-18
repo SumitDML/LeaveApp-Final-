@@ -313,6 +313,7 @@
                         ZIndex: =2
 
                         Button4 As button:
+                            Height: =37.5
                             Text: ="Apply Leave"
                             Width: =150
                             X: =Parent.Width-Self.Width-10
@@ -640,7 +641,7 @@
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    Visible: =If(Container4.Height=140,true,false)
+                    Visible: =If(Container4.Width<=691,false,true)
                     ZIndex: =4
 
                     Container9_2 As groupContainer.manualLayoutContainer:
@@ -829,14 +830,14 @@
                             ZIndex: =1
 
                         "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                            Height: =Parent.Height*2/3
+                            Height: =167
                             Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email)
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
                             TemplatePadding: =0
-                            TemplateSize: =85
+                            TemplateSize: =76
                             Width: =Parent.Width
-                            Y: =17
+                            Y: =10
                             ZIndex: =3
 
                             Title1_1 As label:
@@ -847,11 +848,11 @@
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
                                 Size: =10.81
-                                Text: =" "&Text(ThisItem.From)&" - "&ThisItem.To 
+                                Text: =""&Text(ThisItem.From)&" - "&ThisItem.To 
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =306.43
-                                X: =13.52
-                                Y: =34
+                                X: =7
+                                Y: =((Parent.TemplateHeight-Self.Height)/2)
                                 ZIndex: =2
 
                             Label6_1 As label:
@@ -864,8 +865,8 @@
                                 Size: =11.71
                                 Text: =ThisItem.LeaveTypes.Value&" Leave"
                                 Width: =135.19
-                                X: =13.52
-                                Y: =55
+                                X: =7
+                                Y: =((Parent.TemplateHeight-Self.Height)/2)+20
                                 ZIndex: =4
 
                             Label23_1 As label:
@@ -879,6 +880,24 @@
                                 X: =(Parent.Width-Self.Width)-30
                                 Y: =Parent.TemplateHeight/2-Self.Height/2
                                 ZIndex: =5
+
+                            Title9_1 As label:
+                                Color: =RGBA(149, 149, 149, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Normal
+                                Height: =Self.Size * 1.8
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =If(App.ActiveScreen.Width<=420,10,12.62)
+                                Text: =If(((ThisItem.FromType.Value="First Half" && ThisItem.ToType.Value="Second Half")|| ThisItem.FromType.Value="Full Day" || ThisItem.ToType.Value="Full Day" ),"FULL DAY","HALF DAY")&" LEAVE"
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =198.28
+                                X: =7
+                                Y: =((Parent.TemplateHeight-Self.Height)/2)-20
+                                ZIndex: =6
 
                         Label13 As label:
                             Font: =Font.'Segoe UI'
