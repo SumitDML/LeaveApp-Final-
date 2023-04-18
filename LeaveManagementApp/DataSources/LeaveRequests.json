@@ -42,6 +42,7 @@
       "LeaveTypes": "LeaveTypes",
       "LeaveTypes#Id": "LeaveTypes Id",
       "Modified": "Modified",
+      "OData__ColorTag": "Color Tag",
       "ReportingManager": "Reporting Manager",
       "ReportingManager#Claims": "Reporting Manager Claims",
       "RequestedBy": "RequestedBy",
