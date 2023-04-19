@@ -12,7 +12,6 @@
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutGap: =
         LayoutMode: =LayoutMode.Auto
-        LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingRight: =
         PaddingTop: =0.00
         Width: =Parent.Width
@@ -364,16 +363,6 @@
                             Y: =60
                             ZIndex: =2
 
-                        Label3_11 As label:
-                            Font: =Font.'Segoe UI'
-                            Height: =50
-                            Size: =31.5
-                            Text: =Sum(LeaveBalance,TotalLeave)
-                            Width: =74
-                            X: =15
-                            Y: =89
-                            ZIndex: =3
-
                         Image6_11 As image:
                             Height: =50
                             Image: ='Frame 1000003485 (4)'
@@ -381,6 +370,30 @@
                             X: =15
                             Y: =6
                             ZIndex: =5
+
+                        Label3_4 As label:
+                            Align: =Align.Right
+                            Color: =RGBA(26, 26, 26, 1)
+                            Font: =Font.'Segoe UI'
+                            PaddingLeft: =7
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days')))
+                            Width: =37
+                            X: =15
+                            Y: =89
+                            ZIndex: =6
+
+                        Label4_5 As label:
+                            Color: =RGBA(118, 118, 118, 1)
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: ="/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)
+                            Width: =48
+                            X: =Label3_4.X+Label3_4.Width
+                            Y: =89
+                            ZIndex: =7
 
                     Container7_12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
@@ -425,16 +438,6 @@
                             Y: =60
                             ZIndex: =2
 
-                        Label3_12 As label:
-                            Font: =Font.'Segoe UI'
-                            Height: =50
-                            Size: =31.5
-                            Text: =Sum(LeaveBalance,TotalLeave)
-                            Width: =74
-                            X: =15
-                            Y: =89
-                            ZIndex: =3
-
                         Image6_12 As image:
                             Height: =50
                             Image: ='Frame 1000003485 (5)'
@@ -442,6 +445,30 @@
                             X: =15
                             Y: =6
                             ZIndex: =5
+
+                        Label3_5 As label:
+                            Align: =Align.Right
+                            Color: =RGBA(26, 26, 26, 1)
+                            Font: =Font.'Segoe UI'
+                            PaddingLeft: =7
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days')))
+                            Width: =37
+                            X: =15
+                            Y: =89
+                            ZIndex: =6
+
+                        Label4_6 As label:
+                            Color: =RGBA(118, 118, 118, 1)
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: ="/"&Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)
+                            Width: =48
+                            X: =Label3_5.X+Label3_5.Width
+                            Y: =89
+                            ZIndex: =7
 
                     Container7_13 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
@@ -486,16 +513,6 @@
                             Y: =60
                             ZIndex: =2
 
-                        Label3_13 As label:
-                            Font: =Font.'Segoe UI'
-                            Height: =50
-                            Size: =31.5
-                            Text: =Sum(LeaveBalance,TotalLeave)
-                            Width: =74
-                            X: =15
-                            Y: =89
-                            ZIndex: =3
-
                         Image6_13 As image:
                             Height: =50
                             Image: ='Frame 1000003485 (6)'
@@ -503,6 +520,30 @@
                             X: =15
                             Y: =6
                             ZIndex: =5
+
+                        Label3_6 As label:
+                            Align: =Align.Right
+                            Color: =RGBA(26, 26, 26, 1)
+                            Font: =Font.'Segoe UI'
+                            PaddingLeft: =7
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: =Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)-(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days')))
+                            Width: =37
+                            X: =15
+                            Y: =89
+                            ZIndex: =6
+
+                        Label4_7 As label:
+                            Color: =RGBA(118, 118, 118, 1)
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: ="/"&Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)
+                            Width: =48
+                            X: =Label3_6.X+Label3_6.Width
+                            Y: =89
+                            ZIndex: =7
 
                     Container7_14 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
@@ -547,16 +588,6 @@
                             Y: =60
                             ZIndex: =2
 
-                        Label3_14 As label:
-                            Font: =Font.'Segoe UI'
-                            Height: =50
-                            Size: =31.5
-                            Text: =Sum(LeaveBalance,TotalLeave)
-                            Width: =74
-                            X: =15
-                            Y: =89
-                            ZIndex: =3
-
                         Image6_14 As image:
                             Height: =50
                             Image: ='Frame 1000003485 (2)'
@@ -564,6 +595,30 @@
                             X: =15
                             Y: =6
                             ZIndex: =5
+
+                        Label3_7 As label:
+                            Align: =Align.Right
+                            Color: =RGBA(26, 26, 26, 1)
+                            Font: =Font.'Segoe UI'
+                            PaddingLeft: =7
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days')))
+                            Width: =37
+                            X: =15
+                            Y: =89
+                            ZIndex: =6
+
+                        Label4_8 As label:
+                            Color: =RGBA(118, 118, 118, 1)
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: ="/"&Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)
+                            Width: =48
+                            X: =Label3_7.X+Label3_7.Width
+                            Y: =89
+                            ZIndex: =7
 
                     Container7_15 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
@@ -608,16 +663,6 @@
                             Y: =60
                             ZIndex: =2
 
-                        Label3_15 As label:
-                            Font: =Font.'Segoe UI'
-                            Height: =50
-                            Size: =31.5
-                            Text: =Sum(LeaveBalance,TotalLeave)
-                            Width: =74
-                            X: =15
-                            Y: =89
-                            ZIndex: =3
-
                         Image6_15 As image:
                             Height: =50
                             Image: ='Frame 1000003485 (3)'
@@ -625,6 +670,30 @@
                             X: =15
                             Y: =6
                             ZIndex: =5
+
+                        Label3_20 As label:
+                            Align: =Align.Right
+                            Color: =RGBA(26, 26, 26, 1)
+                            Font: =Font.'Segoe UI'
+                            PaddingLeft: =7
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Unpaid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Unpaid"),'Total Days')))
+                            Width: =37
+                            X: =15
+                            Y: =89
+                            ZIndex: =6
+
+                        Label4_9 As label:
+                            Color: =RGBA(118, 118, 118, 1)
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            Size: =13.5
+                            Text: ="/∞"
+                            Width: =48
+                            X: =Label3_20.X+Label3_20.Width
+                            Y: =89
+                            ZIndex: =7
 
     Label19 As label:
         Text: =Container2_1.Width

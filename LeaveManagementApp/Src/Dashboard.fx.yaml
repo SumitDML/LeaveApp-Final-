@@ -15,7 +15,6 @@
         LayoutGap: =
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
-        LayoutOverflowY: =LayoutOverflow.Scroll
         LayoutWrap: =true
         PaddingRight: =
         PaddingTop: =0.00
@@ -32,10 +31,9 @@
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
             ContentLanguage: =
-            FillPortions: =7
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
+            LayoutMinHeight: =Parent.Height
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =20
@@ -94,7 +92,7 @@
                     Height: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=930,390,180)))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =10
-                    LayoutMinHeight: =If(App.ActiveScreen.Size<2,465,App.ActiveScreen.Size=2 && Container2.Width<=615,500,App.ActiveScreen.Size<=3 && Container2.Width<=930,310,145)
+                    LayoutMinHeight: =If(App.ActiveScreen.Size<2,465,App.ActiveScreen.Size=2 && Container2.Width<=615,500,App.ActiveScreen.Size<=3 && Container2.Width<=930,310,135)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -107,7 +105,7 @@
 
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =140
+                        LayoutMinHeight: =130
                         LayoutMinWidth: =280
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -167,7 +165,7 @@
 
                     Container7_3 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =140
+                        LayoutMinHeight: =130
                         LayoutMinWidth: =280
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -227,7 +225,7 @@
 
                     Container7_1 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =140
+                        LayoutMinHeight: =130
                         LayoutMinWidth: =280
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -324,7 +322,7 @@
                 Container1 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.6
                     LayoutGap: =10
-                    LayoutMinHeight: =If(Container1.Width<517,475,Container1.Width<=945,315,154)
+                    LayoutMinHeight: =If(Container1.Width<517,475,Container1.Width<=945,315,134)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowY: =LayoutOverflow.Scroll
@@ -333,7 +331,7 @@
 
                     Container7_4 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
-                        Height: =150
+                        Height: =130
                         LayoutMinHeight: =140
                         LayoutMinWidth: =150
                         PaddingRight: =0.00
@@ -408,7 +406,7 @@
 
                     Container7_5 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
-                        Height: =150
+                        Height: =130
                         LayoutMinHeight: =140
                         LayoutMinWidth: =150
                         PaddingRight: =0.00
@@ -483,7 +481,7 @@
 
                     Container7_6 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
-                        Height: =150
+                        Height: =130
                         LayoutMinHeight: =140
                         LayoutMinWidth: =150
                         PaddingRight: =0.00
@@ -558,7 +556,7 @@
 
                     Container7_7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
-                        Height: =150
+                        Height: =130
                         LayoutMinHeight: =140
                         LayoutMinWidth: =150
                         PaddingRight: =0.00
@@ -633,7 +631,7 @@
 
                     Container7_8 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.Start
-                        Height: =150
+                        Height: =130
                         LayoutMinHeight: =140
                         LayoutMinWidth: =150
                         PaddingRight: =0.00
@@ -683,14 +681,16 @@
                             ZIndex: =5
 
                         Label3_19 As label:
+                            Align: =Align.Right
                             Color: =RGBA(26, 26, 26, 1)
                             Font: =Font.'Segoe UI'
+                            Height: =27
                             PaddingLeft: =7
                             PaddingRight: =0
-                            Size: =13.5
-                            Text: =Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)-(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days')))
-                            Width: =18
-                            X: =15
+                            Size: =16
+                            Text: ="∞"
+                            Width: =37
+                            X: =5
                             Y: =89
                             ZIndex: =6
 
@@ -698,11 +698,11 @@
                             Color: =RGBA(118, 118, 118, 1)
                             PaddingLeft: =0
                             PaddingRight: =0
-                            Size: =13.5
-                            Text: ="/"&Sum(Filter(LeaveBalance,LeaveType.Value="Sick"),TotalLeave)
+                            Size: =16
+                            Text: ="/∞"
                             Width: =48
                             X: =Label3_19.X+Label3_19.Width
-                            Y: =89
+                            Y: =82
                             ZIndex: =7
 
                 Container8_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -751,7 +751,7 @@
                     Height: =If(Container4.Width<=691,758,364)
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =10
-                    LayoutMinHeight: =If(Container4.Width<=691,320,140)
+                    LayoutMinHeight: =If(Container4.Width<=691,320,127)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
@@ -763,7 +763,7 @@
 
                     Container12 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =135
+                        LayoutMinHeight: =125
                         LayoutMinWidth: =335
                         PaddingRight: =0.00
                         PaddingTop: =0.00
@@ -872,7 +872,7 @@
 
                     Container9_1 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        LayoutMinHeight: =135
+                        LayoutMinHeight: =125
                         LayoutMinWidth: =335
                         PaddingRight: =0.00
                         PaddingTop: =0.00
