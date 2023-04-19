@@ -314,6 +314,7 @@
 
                         Button4 As button:
                             Height: =37.5
+                            OnSelect: =Navigate('Apply Leave');
                             Text: ="Apply Leave"
                             Width: =150
                             X: =Parent.Width-Self.Width-10
@@ -909,7 +910,7 @@
                             ZIndex: =4
 
     Label11 As label:
-        Text: =Container1.Width
+        Text: =App.ActiveScreen.Width
         X: =262
         Y: =297
         ZIndex: =5

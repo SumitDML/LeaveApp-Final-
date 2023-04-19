@@ -32,6 +32,7 @@
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =Parent.Height
+            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size=3,50,70))
             PaddingRight: =If(App.ActiveScreen.Size<=2,10,If(App.ActiveScreen.Size<=4,50,70))
@@ -41,7 +42,10 @@
             ZIndex: =2
 
             HeaderContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =Component2_6.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingRight: =0.00
                 PaddingTop: =0.00
@@ -59,6 +63,8 @@
                     ZIndex: =1
 
                 Component2_6 As Component2_3:
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =640
                     Width: =1395.56
                     X: =0.00
                     ZIndex: =2
@@ -282,6 +288,8 @@
                     Height: =40
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
                     PaddingLeft: =2

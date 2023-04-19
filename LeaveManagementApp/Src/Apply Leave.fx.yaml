@@ -554,17 +554,17 @@
 
                             MonthDayGallery1_1 As gallery.MonthDayGallery:
                                 AccessibleLabel: ="Days of selected month"
-                                Height: =230
+                                Height: =130
                                 Items: =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
                                 Layout: =Layout.Vertical
                                 ShowScrollbar: =false
                                 TemplatePadding: =0
-                                TemplateSize: =36
+                                TemplateSize: =20
                                 Visible: =_calendarVisible
-                                Width: =324
+                                Width: =309
                                 WrapCount: =7
                                 X: =Parent.Width/2-Self.Width/2
-                                Y: =105
+                                Y: =95
                                 ZIndex: =7
 
                                 Circle1_1 As circle:
@@ -628,7 +628,7 @@
                                     DisabledColor: =RGBA(255, 255, 255, 1)
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     DisplayMode: =DisplayMode.Disabled
-                                    Height: =325
+                                    Height: =230
                                     PaddingRight: =4.51
                                     PaddingTop: =4.51
                                     RadiusBottomLeft: =15
@@ -679,10 +679,10 @@
                                 LblMonthSelected1_3 As label:
                                     Font: =Font.'Segoe UI'
                                     FontWeight: =FontWeight.Semibold
-                                    Height: =59
+                                    Height: =25
                                     PaddingRight: =4.51
                                     PaddingTop: =4.51
-                                    Size: =16
+                                    Size: =12
                                     Text: =Text(_firstDayOfMonth, "mmmm yyyy")
                                     Visible: =_calendarVisible
                                     Width: =164
@@ -692,7 +692,7 @@
                                     ZIndex: =3
 
                                 iconPrevMonth1_3 As icon.ChevronLeft:
-                                    Height: =39
+                                    Height: =25
                                     Icon: =Icon.ChevronLeft
                                     OnSelect: |-
                                         =/*changes month view to previous month*/
@@ -708,13 +708,13 @@
                                     TabIndex: =0
                                     Tooltip: ="View previous month"
                                     Visible: =_calendarVisible
-                                    Width: =40
+                                    Width: =25
                                     X: =WeekdayGallery1_3.X+WeekdayGallery1_3.Width-Self.Width*2+10
-                                    Y: =29
+                                    Y: =18
                                     ZIndex: =4
 
                                 iconNextMonth1_3 As icon.ChevronRight:
-                                    Height: =39
+                                    Height: =25
                                     Icon: =Icon.ChevronRight
                                     OnSelect: |-
                                         =/*changes month view to next month*/
@@ -730,14 +730,14 @@
                                     TabIndex: =0
                                     Tooltip: ="View next month"
                                     Visible: =_calendarVisible
-                                    Width: =40
+                                    Width: =25
                                     X: =WeekdayGallery1_3.X+WeekdayGallery1_3.Width-Self.Width
-                                    Y: =29
+                                    Y: =18
                                     ZIndex: =5
 
                                 WeekdayGallery1_3 As gallery.WeekdayGallery:
                                     AccessibleLabel: ="Days of the week"
-                                    Height: =30
+                                    Height: =15
                                     Items: =Calendar.WeekdaysShort()
                                     ShowScrollbar: =false
                                     TemplatePadding: =0.00
@@ -755,9 +755,9 @@
                                         OnSelect: =Select(Parent)
                                         PaddingRight: =4.51
                                         PaddingTop: =4.51
-                                        Size: =11.94
+                                        Size: =8
                                         Text: =ThisItem.Value
-                                        Width: =54.08
+                                        Width: =Parent.TemplateWidth
                                         Wrap: =false
                                         X: =0.00
                                         Y: =WeekdayGallery1_3.TemplateHeight / 2 - Self.Height / 2
