@@ -187,6 +187,7 @@
                         ZIndex: =7
 
                 Label9 As label:
+                    Color: =RGBA(77, 77, 77, 1)
                     Height: =133
                     Size: =18
                     Text: ="No Leave Request Available."
