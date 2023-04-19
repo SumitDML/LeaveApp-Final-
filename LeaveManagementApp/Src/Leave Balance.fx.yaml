@@ -43,6 +43,7 @@
 
             HeaderContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
                 Height: =Component2_6.Height
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -285,6 +286,7 @@
 
                 Container3_2 As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
                     Height: =40
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =20

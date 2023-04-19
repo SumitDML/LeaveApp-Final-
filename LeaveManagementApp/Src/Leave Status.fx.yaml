@@ -108,7 +108,7 @@
                     Layout: =Layout.Vertical
                     ShowScrollbar: =false
                     TemplatePadding: =0
-                    TemplateSize: =(Parent.Height)/If(Parent.Height<750,6,8)
+                    TemplateSize: =(Parent.Height)/If(Parent.Height<750,6,8)-10
                     Width: =Parent.Width
                     X: =
                     Y: =24
