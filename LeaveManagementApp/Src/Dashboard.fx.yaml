@@ -923,7 +923,7 @@
                                 Text: =""&Text(ThisItem.From)&" - "&ThisItem.To 
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =306.43
-                                X: =7
+                                X: =18
                                 Y: =((Parent.TemplateHeight-Self.Height)/2)
                                 ZIndex: =2
 
@@ -937,7 +937,7 @@
                                 Size: =11.71
                                 Text: =ThisItem.LeaveTypes.Value&" Leave"
                                 Width: =135.19
-                                X: =7
+                                X: =16
                                 Y: =((Parent.TemplateHeight-Self.Height)/2)+20
                                 ZIndex: =4
 
@@ -967,7 +967,7 @@
                                 Text: =If(((ThisItem.FromType.Value="First Half" && ThisItem.ToType.Value="Second Half")|| ThisItem.FromType.Value="Full Day" || ThisItem.ToType.Value="Full Day" ),"FULL DAY","HALF DAY")&" LEAVE"
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =198.28
-                                X: =7
+                                X: =17
                                 Y: =((Parent.TemplateHeight-Self.Height)/2)-20
                                 ZIndex: =6
 
