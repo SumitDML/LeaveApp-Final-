@@ -1013,6 +1013,7 @@
                 ZIndex: =6
 
                 Circle2_1 As circle:
+                    Fill: =If(Mod(ThisItem.Value,7)=0||Mod(ThisItem.Value,7)=6,RGBA(186, 202, 226, 1),RGBA(237, 116, 116, 1))
                     Height: =Self.Width
                     OnSelect: =Select(Parent)
                     Visible: |
