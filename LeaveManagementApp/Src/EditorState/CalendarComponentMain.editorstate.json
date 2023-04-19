@@ -1787,7 +1787,14 @@
           "NameMapSourceSchema": "?"
         },
         "TemplateMaximumWidth",
-        "Visible",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ShowScrollbar",
         {
           "AFDDataSourceName": "",
@@ -2130,7 +2137,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "TemplateSize",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "40",
+          "InvariantPropertyName": "TemplateSize",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "TemplateMaximumWidth",
         "Visible",
         {
@@ -3201,7 +3215,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "63",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
         "X",
         "VerticalAlign",

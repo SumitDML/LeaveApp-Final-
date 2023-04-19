@@ -50,7 +50,7 @@ CalendarComponentMain As CanvasComponent:
         BorderStyle: =BorderStyle.None
         DisabledBorderColor: =galWeekdays_1.BorderColor
         DisabledFill: =galWeekdays_1.Fill
-        Height: =37
+        Height: =41
         HoverBorderColor: =galWeekdays_1.BorderColor
         HoverFill: =galWeekdays_1.Fill
         Items: |-
@@ -102,9 +102,9 @@ CalendarComponentMain As CanvasComponent:
         PressedFill: =galWeekdays_1.Fill
         ShowScrollbar: =false
         TemplatePadding: =0.00
-        TemplateSize: =106.46
-        Width: =760.33
-        X: =0.00
+        TemplateSize: =Self.Width/7
+        Width: =479
+        X: =40
         Y: =btnPrevMonth_1.Y + btnPrevMonth_1.Height + 20
         ZIndex: =1
 
@@ -121,7 +121,7 @@ CalendarComponentMain As CanvasComponent:
             FocusedBorderColor: =RGBA(0,0,0,0)
             Font: =Font.'Segoe UI'
             FontWeight: =
-            Height: =34
+            Height: =39
             HoverBorderColor: =RGBA(0,0,0,0)
             HoverColor: =
             HoverFill: =RGBA(0,0,0,0)
@@ -136,7 +136,7 @@ CalendarComponentMain As CanvasComponent:
             PressedFill: =RGBA(0,0,0,0)
             Size: =15.20
             Text: =ThisItem.Value
-            Width: =106.46
+            Width: =Parent.TemplateWidth
             X: =0.00
             ZIndex: =1
 
@@ -458,10 +458,10 @@ CalendarComponentMain As CanvasComponent:
         ShowScrollbar: =false
         TemplatePadding: |
             =0
-        TemplateSize: =55
-        Width: =479.48
+        TemplateSize: =51
+        Width: =476
         WrapCount: =7
-        X: =0.00
+        X: =40
         Y: =109
         ZIndex: =7
 
@@ -469,9 +469,9 @@ CalendarComponentMain As CanvasComponent:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.TemplateHeight-2
+            Height: =53
             OnSelect: =Select(Parent)
-            Width: =115.32
+            Width: =68.49714285714286
             X: =0.00
             ZIndex: =1
 
@@ -494,7 +494,7 @@ CalendarComponentMain As CanvasComponent:
                 )
             FocusedBorderColor: =icnToday.BorderColor
             FocusedBorderThickness: =0
-            Height: =57.02
+            Height: =55
             HoverFill: =icnToday.Fill
             OnSelect: =Select(Parent)
             PressedFill: =icnToday.Fill
@@ -504,7 +504,7 @@ CalendarComponentMain As CanvasComponent:
                         ThisItem.Value,
                         TimeUnit.Days
                     ) = _today
-            Width: =57.02
+            Width: =68.49714285714286
             X: =0.00
             ZIndex: =2
 
@@ -536,7 +536,7 @@ CalendarComponentMain As CanvasComponent:
             FocusedBorderThickness: =0
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Normal
-            Height: =btnDayValue.Height
+            Height: =50
             HoverBorderColor: =ColorFade(btnDayBack.BorderColor, 20%)
             HoverColor: =btnDayBack.Color
             HoverFill: =ColorFade(btnDayBack.Fill, -10%)
@@ -566,7 +566,7 @@ CalendarComponentMain As CanvasComponent:
             Visible: |-
                 =false //Calendar.SelectRange
                 //DateAdd(_firstDayInView,ThisItem.Value,Days) > _selectedStart && DateAdd(_firstDayInView,ThisItem.Value,Days) < _selectedEnd
-            Width: =108.62
+            Width: =68
             X: =0.00
             Y: =btnDayValue.Y
             ZIndex: =3
@@ -655,7 +655,7 @@ CalendarComponentMain As CanvasComponent:
             FocusedBorderThickness: =0
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Lighter
-            Height: =Parent.TemplateHeight-5
+            Height: =50
             HoverBorderColor: =ColorFade(btnDayValue.BorderColor, 20%)
             HoverColor: =btnDayValue.Color
             HoverFill: =ColorFade(btnDayValue.Fill, -10%)
@@ -742,7 +742,7 @@ CalendarComponentMain As CanvasComponent:
                     )
                    
                 )
-            Width: =108.62
+            Width: =68.49714285714286
             X: =0.00
             ZIndex: =4
 
