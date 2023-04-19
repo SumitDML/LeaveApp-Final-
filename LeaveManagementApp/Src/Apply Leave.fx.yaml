@@ -357,9 +357,10 @@
                                 TextInput2_13 As text:
                                     BorderColor: =RGBA(202, 202, 202, 1)
                                     BorderThickness: =1
-                                    Default: =""
+                                    Default: =Text(_dateSelected, DateTimeFormat.LongDate)
+                                    DisabledFill: =RGBA(255, 255, 255, 1)
                                     Height: =42
-                                    HintText: =""
+                                    HintText: =Today()
                                     PaddingRight: =4.51
                                     PaddingTop: =4.51
                                     RadiusBottomLeft: =9
@@ -373,6 +374,19 @@
                                     Y: =Label10_27.Y+Label10_27.Height+5
                                     ZIndex: =3
 
+                                Icon1 As icon.CalendarBlank:
+                                    Color: =RGBA(166, 166, 166, 1)
+                                    Height: =TextInput2_13.Height-4
+                                    Icon: =Icon.CalendarBlank
+                                    PaddingBottom: =5
+                                    PaddingLeft: =5
+                                    PaddingRight: =5
+                                    PaddingTop: =5
+                                    Width: =42
+                                    X: =TextInput2_13.X+TextInput2_13.Width-Self.Width-10
+                                    Y: =TextInput2_13.Y+2
+                                    ZIndex: =4
+
                                 singlehalffull As gallery.galleryHorizontal:
                                     DelayItemLoading: =true
                                     Height: =42
@@ -383,7 +397,7 @@
                                     Width: =490
                                     X: =13
                                     Y: =TextInput2_13.Y+TextInput2_13.Height+5
-                                    ZIndex: =6
+                                    ZIndex: =5
 
                                     Button9_11 As button:
                                         Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
@@ -405,6 +419,22 @@
                                         X: =2
                                         Y: =1
                                         ZIndex: =1
+
+                                Button5 As button:
+                                    BorderThickness: =0
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =TextInput2_13.Height
+                                    HoverBorderColor: =
+                                    HoverFill: =
+                                    OnSelect: =Set(calView,true)
+                                    PressedBorderColor: =
+                                    PressedColor: =
+                                    PressedFill: =
+                                    Text: =
+                                    Width: =TextInput2_13.Width
+                                    X: =TextInput2_13.X
+                                    Y: =TextInput2_13.Y
+                                    ZIndex: =6
 
                         Container19_4 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
@@ -897,14 +927,15 @@
 
     Container6 As groupContainer.manualLayoutContainer:
         Height: =1080
+        Visible: =calView
         Width: =1920
         ZIndex: =8
 
         Container5_1 As groupContainer.manualLayoutContainer:
             Height: =441
             Width: =296
-            X: =852
-            Y: =160
+            X: =657
+            Y: =132
             ZIndex: =1
 
             Button3_1 As button:
