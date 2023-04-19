@@ -367,7 +367,7 @@
                                     RadiusBottomRight: =9
                                     RadiusTopLeft: =9
                                     RadiusTopRight: =9
-                                    Size: =14.42
+                                    Size: =12
                                     Width: |
                                         =(Parent.Width*8/10)
                                     X: =13
@@ -926,6 +926,7 @@
             ZIndex: =5
 
     Container6 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(245, 245, 245, 0.5)
         Height: =1080
         Visible: =calView
         Width: =1920
@@ -1111,7 +1112,9 @@
                     FocusedBorderColor: =Self.Color
                     FocusedBorderThickness: =2
                     Height: =MonthDayGallery2_1.TemplateHeight
-                    OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, TimeUnit.Days))
+                    OnSelect: |-
+                        =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, TimeUnit.Days));
+                        Set(calView,false)
                     Size: =17 * MonthDayGallery2_1.TemplateWidth / 91
                     TabIndex: =0
                     Text: =Day(DateAdd(_firstDayInView,ThisItem.Value, TimeUnit.Days))
@@ -1214,4 +1217,13 @@
                     X: =194
                     Y: =7
                     ZIndex: =5
+
+            Icon3 As icon.Cancel:
+                Height: =20
+                Icon: =Icon.Cancel
+                OnSelect: =Set(calView,false)
+                Width: =20
+                X: =Parent.Width-Self.Width-20
+                Y: =65
+                ZIndex: =12
 
