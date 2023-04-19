@@ -89,7 +89,7 @@
                     DisabledFill: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(202, 202, 202, 1)
-                    Height: =516
+                    Height: =440
                     PaddingRight: =4.51
                     PaddingTop: =4.51
                     RadiusBottomLeft: =15
@@ -104,7 +104,7 @@
                     ZIndex: =1
 
                 Container22_1 As groupContainer.manualLayoutContainer:
-                    Height: =527
+                    Height: =449
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Visible: =If(Radio1_4.SelectedText.Value="Multiple Days",true,false)
@@ -114,7 +114,7 @@
                     ZIndex: =3
 
                     Multiple As groupContainer.horizontalAutoLayoutContainer:
-                        Height: =500
+                        Height: =444
                         LayoutGap: =30
                         LayoutMode: =LayoutMode.Auto
                         LayoutOverflowY: =LayoutOverflow.Scroll
@@ -168,7 +168,7 @@
                                 Width: =281.20
                                 X: =100.04
                                 Y: =92
-                                ZIndex: =4
+                                ZIndex: =1
 
                             Label10_18 As label:
                                 Font: =Font.'Segoe UI'
@@ -180,39 +180,7 @@
                                 Width: =194
                                 X: =16
                                 Y: =Radio1_4.Y+Radio1_4.Height
-                                ZIndex: =5
-
-                            FromType_1 As gallery.galleryHorizontal:
-                                DelayItemLoading: =true
-                                Height: =80
-                                Items: =firstsecondhalf
-                                LoadingSpinner: =LoadingSpinner.Data
-                                TemplatePadding: =4.51
-                                TemplateSize: =If(Container18_4.Width<525,130,155.02)
-                                Width: =Parent.Width*8/10
-                                X: =12
-                                Y: =401
-                                ZIndex: =10
-
-                                Button9_4 As button:
-                                    Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
-                                    DisabledColor: =RGBA(0, 0, 0, 1)
-                                    Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
-                                    Font: =Font.'Segoe UI'
-                                    Height: =46
-                                    HoverColor: =RGBA(0, 0, 0, 1)
-                                    HoverFill: =RGBA(0,0,0,0)
-                                    OnSelect: =Select(Parent)
-                                    PaddingRight: =4.51
-                                    PaddingTop: =4.51
-                                    PressedBorderColor: =
-                                    PressedFill: =RGBA(0,0,0,0)
-                                    Size: =13
-                                    Text: =ThisItem.Title
-                                    Width: =Parent.TemplateWidth-10
-                                    X: =2.70
-                                    Y: =15
-                                    ZIndex: =1
+                                ZIndex: =2
 
                             Label10_19 As label:
                                 Font: =Font.'Segoe UI'
@@ -225,7 +193,7 @@
                                 Width: =211.80
                                 X: =16
                                 Y: =289
-                                ZIndex: =11
+                                ZIndex: =5
 
                             ToType_1 As gallery.galleryHorizontal:
                                 DelayItemLoading: =true
@@ -237,9 +205,42 @@
                                 Width: =600.51
                                 X: =17
                                 Y: =218.49
-                                ZIndex: =16
+                                ZIndex: =6
 
                                 Button9_5 As button:
+                                    Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
+                                    DisabledColor: =RGBA(0, 0, 0, 1)
+                                    Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
+                                    Font: =Font.'Segoe UI'
+                                    Height: =Parent.TemplateHeight-2
+                                    HoverColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =RGBA(0,0,0,0)
+                                    OnSelect: =Select(Parent)
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    PressedBorderColor: =
+                                    PressedFill: =RGBA(0,0,0,0)
+                                    Size: =10
+                                    Text: =ThisItem.Title
+                                    Width: |
+                                        =Parent.TemplateWidth-5
+                                    X: =2
+                                    Y: =1
+                                    ZIndex: =1
+
+                            ToType_2 As gallery.galleryHorizontal:
+                                DelayItemLoading: =true
+                                Height: =42
+                                Items: =firstsecondhalf
+                                LoadingSpinner: =LoadingSpinner.Data
+                                TemplatePadding: =4.51
+                                TemplateSize: =90
+                                Width: =600.51
+                                X: =17
+                                Y: =390
+                                ZIndex: =7
+
+                                Button9_6 As button:
                                     Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
                                     DisabledColor: =RGBA(0, 0, 0, 1)
                                     Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
@@ -275,16 +276,16 @@
                                     HintText: =""
                                     PaddingRight: =4.51
                                     PaddingTop: =4.51
-                                    RadiusBottomLeft: =15
-                                    RadiusBottomRight: =15
-                                    RadiusTopLeft: =15
-                                    RadiusTopRight: =15
+                                    RadiusBottomLeft: =9
+                                    RadiusBottomRight: =9
+                                    RadiusTopLeft: =9
+                                    RadiusTopRight: =9
                                     Size: =14.42
                                     Width: |
                                         =(Parent.Width*8/10)
                                     X: =13
                                     Y: =Label10_18.Y+Label10_18.Height+5
-                                    ZIndex: =6
+                                    ZIndex: =3
 
                                 from_1 As datepicker:
                                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -299,33 +300,33 @@
                                         =TextInput2_5.Width-5
                                     X: =25
                                     Y: =157
-                                    ZIndex: =8
+                                    ZIndex: =4
 
-                            Group8 As group:
+                            Group2 As group:
                                 Height: =5
                                 Width: =5
-                                X: =40
-                                Y: =40
-                                ZIndex: =17
+                                X: =60
+                                Y: =60
+                                ZIndex: =19
 
                                 TextInput2_6 As text:
                                     BorderColor: =RGBA(202, 202, 202, 1)
                                     BorderThickness: =1
                                     Default: =""
-                                    Height: =62
+                                    Height: =42
                                     HintText: =""
                                     PaddingRight: =4.51
                                     PaddingTop: =4.51
-                                    RadiusBottomLeft: =15
-                                    RadiusBottomRight: =15
-                                    RadiusTopLeft: =15
-                                    RadiusTopRight: =15
+                                    RadiusBottomLeft: =9
+                                    RadiusBottomRight: =9
+                                    RadiusTopLeft: =9
+                                    RadiusTopRight: =9
                                     Size: =14.42
                                     Width: |
                                         =(Parent.Width*8/10)
-                                    X: =16
-                                    Y: =321
-                                    ZIndex: =12
+                                    X: =25
+                                    Y: =328
+                                    ZIndex: =8
 
                                 to_1 As datepicker:
                                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -341,7 +342,7 @@
                                         =(Parent.Width*8/10)
                                     X: =40
                                     Y: =321
-                                    ZIndex: =14
+                                    ZIndex: =9
 
                         Container19_4 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
@@ -374,8 +375,8 @@
                                 Size: =13.5
                                 Text: ="REASON"
                                 Width: =186.57
-                                X: =23
-                                Y: =160
+                                X: =13
+                                Y: =130
                                 ZIndex: =7
 
                             Reasons2_1 As text:
@@ -399,7 +400,7 @@
                                 Width: |
                                     =(Parent.Width*8/10)
                                 X: =23
-                                Y: =204
+                                Y: =159
                                 ZIndex: =8
 
                             Label10_22 As label:
@@ -411,14 +412,14 @@
                                 Text: ="NOTIFY"
                                 Width: =186.57
                                 X: =23
-                                Y: =325
+                                Y: =297
                                 ZIndex: =9
 
                             ComboBox1_3 As combobox:
                                 BorderColor: =RGBA(202, 202, 202, 1)
                                 BorderThickness: =1
                                 DisplayFields: =["DisplayName","JobTitle"]
-                                Height: =64
+                                Height: =42
                                 Items: |-
                                     =Office365Users.SearchUser({searchTerm:Self.SearchText,top:5})
                                 PaddingRight: =4.51
@@ -431,35 +432,15 @@
                                 Width: |
                                     =(Parent.Width*8/10)
                                 X: =23
-                                Y: =364
+                                Y: =336
                                 ZIndex: =10
 
-                            leaveTypes2 As group:
+                            Group3 As group:
                                 Height: =5
                                 Width: =5
                                 X: =40
                                 Y: =40
-                                ZIndex: =11
-
-                                TextInput2_7 As text:
-                                    BorderColor: =RGBA(202, 202, 202, 1)
-                                    BorderThickness: =1
-                                    Default: =""
-                                    Height: =62
-                                    HintText: =""
-                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                    PaddingRight: =4.51
-                                    PaddingTop: =4.51
-                                    RadiusBottomLeft: =15
-                                    RadiusBottomRight: =15
-                                    RadiusTopLeft: =15
-                                    RadiusTopRight: =15
-                                    Size: =0
-                                    Width: |
-                                        =(Parent.Width*8/10)
-                                    X: =16
-                                    Y: =81
-                                    ZIndex: =4
+                                ZIndex: =12
 
                                 LeaveTypes2_1 As dropdown:
                                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -468,7 +449,7 @@
                                     ChevronFill: =RGBA(255, 255, 255, 0)
                                     ChevronHoverBackground: =
                                     Default: ="null"
-                                    Height: =53
+                                    Height: =37
                                     HoverBorderColor: =
                                     HoverFill: =RGBA(186, 202, 226, 0)
                                     Items: =Choices([@LeaveRequests].LeaveTypes)
@@ -493,8 +474,27 @@
                                     Width: |
                                         =(Parent.Width*8/10)-20
                                     X: =23
-                                    Y: =90
+                                    Y: =67
                                     ZIndex: =6
+
+                                TextInput2_7 As text:
+                                    BorderColor: =RGBA(202, 202, 202, 1)
+                                    BorderThickness: =1
+                                    Default: =""
+                                    Height: =42
+                                    HintText: =""
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    RadiusBottomLeft: =9
+                                    RadiusBottomRight: =9
+                                    RadiusTopLeft: =9
+                                    RadiusTopRight: =9
+                                    Size: =14.42
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =13
+                                    Y: =62
+                                    ZIndex: =11
 
                 Single As groupContainer.horizontalAutoLayoutContainer:
                     Height: =480
@@ -978,8 +978,8 @@
                     Height: =62
                     Text: ="Apply Leave"
                     Width: =265
-                    X: =1206
-                    Y: =552
+                    X: =622
+                    Y: =468
                     ZIndex: =12
 
     LeftNav_3 As group:

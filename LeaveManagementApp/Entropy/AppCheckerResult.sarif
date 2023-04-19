@@ -3466,19 +3466,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.FromType_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.TextInput2_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.FromType_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.TextInput2_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.FromType_1"
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.TextInput2_7"
               }
             }
           ],
@@ -3490,36 +3490,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.FromType_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.FromType_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.FromType_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
         },
         {
           "locations": [
@@ -3550,6 +3520,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.ToType_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.ToType_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.ToType_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -3646,19 +3646,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.TextInput2_7.AccessibleLabel"
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.ToType_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.TextInput2_7.AccessibleLabel",
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.ToType_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.TextInput2_7"
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container18_4.ToType_2"
               }
             }
           ],
