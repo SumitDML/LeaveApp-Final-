@@ -172,7 +172,7 @@
 
                             Label10_18 As label:
                                 Font: =Font.'Segoe UI'
-                                Height: =46
+                                Height: =32
                                 PaddingRight: =4.51
                                 PaddingTop: =4.51
                                 Size: =13.5
@@ -210,7 +210,7 @@
                                 Text: ="TO"
                                 Width: =211.80
                                 X: =16
-                                Y: =289
+                                Y: =ToType_1.Y+ToType_1.Height+20
                                 ZIndex: =5
 
                             ToType_1 As gallery.galleryHorizontal:
@@ -221,8 +221,8 @@
                                 TemplatePadding: =4.51
                                 TemplateSize: =90
                                 Width: =600.51
-                                X: =17
-                                Y: =218.49
+                                X: =16
+                                Y: =TextInput2_5.Y+TextInput2_5.Height+5
                                 ZIndex: =6
 
                                 Button9_5 As button:
@@ -254,8 +254,8 @@
                                 TemplatePadding: =4.51
                                 TemplateSize: =90
                                 Width: =600.51
-                                X: =17
-                                Y: =390
+                                X: =16
+                                Y: =TextInput2_6.Y+TextInput2_6.Height+5
                                 ZIndex: =7
 
                                 Button9_6 As button:
@@ -294,8 +294,8 @@
                                 Size: =14.42
                                 Width: |
                                     =(Parent.Width*8/10)
-                                X: =25
-                                Y: =328
+                                X: =16
+                                Y: =Label10_19.Y+Label10_19.Height+5
                                 ZIndex: =8
 
                         Container19_4 As groupContainer.manualLayoutContainer:
@@ -438,6 +438,7 @@
                                     DisplayFields: =["DisplayName","JobTitle"]
                                     Font: =Font.'Segoe UI'
                                     Height: =42
+                                    InputTextPlaceholder: ="Search Employee"
                                     Items: |-
                                         =Office365Users.SearchUser({searchTerm:Self.SearchText,top:5})
                                     PaddingRight: =4.51
