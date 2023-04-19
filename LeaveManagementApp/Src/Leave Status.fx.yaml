@@ -129,7 +129,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =198.28
                         X: =22.53
-                        Y: =((Parent.TemplateHeight-Self.Height)/2)-20
+                        Y: =((Parent.TemplateHeight-Self.Height)/2)-21
                         ZIndex: =2
 
                     Subtitle5 As label:

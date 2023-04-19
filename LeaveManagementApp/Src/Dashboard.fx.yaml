@@ -312,14 +312,44 @@
 
                         Button4 As button:
                             Fill: =RGBA(60, 93, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =37.5
                             OnSelect: =Navigate('Apply Leave');
+                            PaddingBottom: =0
                             PaddingLeft: =20
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =12
                             Text: ="Apply Leave"
-                            Width: =170
+                            Width: =130
                             X: =Parent.Width-Self.Width-10
                             Y: =Parent.Height-Self.Height-1
                             ZIndex: =1
+
+                        Image9 As image:
+                            Height: =20
+                            Image: ='Vector (10)'
+                            Width: =30
+                            X: =Button4.X
+                            Y: =Button4.Y+Button4.Height/2-Self.Height/2+2
+                            ZIndex: =2
+
+                        Button3 As button:
+                            BorderThickness: =0
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =Button4.Height
+                            HoverBorderColor: =
+                            HoverColor: =RGBA(0, 0, 0, 0)
+                            HoverFill: =
+                            OnSelect: =Navigate('Apply Leave')
+                            PressedBorderColor: =
+                            PressedColor: =
+                            PressedFill: =
+                            Text: =""
+                            Width: =Button4.Width
+                            X: =Button4.X
+                            Y: =Button4.Y
+                            ZIndex: =3
 
                 Container1 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.6

@@ -1944,780 +1944,8 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 10,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "LeaveFor_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LeaveFor_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 22,
-                  "snippet": {
-                    "text": ".Title"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 45,
-                  "snippet": {
-                    "text": "LeaveFor_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LeaveFor_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 55,
-                  "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 64,
-                  "snippet": {
-                    "text": ".Title"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 70,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 159,
-                  "snippet": {
-                    "text": "from_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "from_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 165,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 179,
-                  "snippet": {
-                    "text": "to_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "to_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 183,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 217,
-                  "snippet": {
-                    "text": "from_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "from_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 223,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 250,
-                  "snippet": {
-                    "text": "to_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "to_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 254,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 297,
-                  "snippet": {
-                    "text": "to_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "to_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 301,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 342,
-                  "snippet": {
-                    "text": "from_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "from_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 348,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 5,
-                  "charOffset": 652,
+                  "charOffset": 630,
                   "snippet": {
                     "text": "total"
                   }
@@ -2757,7 +1985,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 660,
+                  "charOffset": 638,
                   "snippet": {
                     "text": "leaves"
                   }
@@ -2796,125 +2024,8 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 8,
-                  "charOffset": 961,
-                  "snippet": {
-                    "text": "Reason_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Reason_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 969,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 999,
-                  "snippet": {
-                    "text": "Leavetype_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Leavetype_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 13,
-                  "charOffset": 1010,
+                  "charOffset": 993,
                   "snippet": {
                     "text": ".SelectedText"
                   }
@@ -2928,13 +2039,16 @@
             }
           ],
           "message": {
+            "arguments": [
+              "SelectedText"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2951,7 +2065,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 1377,
+                  "charOffset": 1360,
                   "snippet": {
                     "text": "LeaveFor_1"
                   }
@@ -2991,7 +2105,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 1387,
+                  "charOffset": 1370,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -3028,7 +2142,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 1396,
+                  "charOffset": 1379,
                   "snippet": {
                     "text": ".Title"
                   }
@@ -3065,7 +2179,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 1586,
+                  "charOffset": 1569,
                   "snippet": {
                     "text": "LeaveFor_1"
                   }
@@ -3105,7 +2219,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 1596,
+                  "charOffset": 1579,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -3142,7 +2256,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 1605,
+                  "charOffset": 1588,
                   "snippet": {
                     "text": ".Title"
                   }
@@ -3179,7 +2293,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 1891,
+                  "charOffset": 1874,
                   "snippet": {
                     "text": "vardata"
                   }
@@ -3219,7 +2333,7 @@
                 },
                 "region": {
                   "charLength": 3,
-                  "charOffset": 1898,
+                  "charOffset": 1881,
                   "snippet": {
                     "text": ".Id"
                   }
@@ -3256,7 +2370,7 @@
                 },
                 "region": {
                   "charLength": 11,
-                  "charOffset": 1927,
+                  "charOffset": 1910,
                   "snippet": {
                     "text": "Leavetype_1"
                   }
@@ -3296,7 +2410,7 @@
                 },
                 "region": {
                   "charLength": 13,
-                  "charOffset": 1938,
+                  "charOffset": 1921,
                   "snippet": {
                     "text": ".SelectedText"
                   }
@@ -3333,7 +2447,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 1951,
+                  "charOffset": 1934,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -3369,10 +2483,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 2334,
-                  "charOffset": 855,
+                  "charLength": 2339,
+                  "charOffset": 833,
                   "snippet": {
-                    "text": "Patch(\r\n        LeaveRequests,\r\n        Defaults(LeaveRequests),\r\n        {Title: \"\"},\r\n        {Details: Reason_1.Text},\r\n        {LeaveTypes: Leavetype_1.SelectedText},\r\n        {From: _dateSelected },\r\n        {To: _dateSelected},\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Status: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: \"Pending\",\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {'Total Days': duration},\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 FromType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ToType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {\r\n            LeaveId: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Id: vardata.Id,\r\n                Value: Leavetype_1.SelectedText.Value\r\n            }\r\n        },\r\n        \r\n        {\r\n            RequestedBy: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        },\r\n        \r\n        {\r\n            'Reporting Manager':{\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        },\r\n        \r\n        {\r\n            HR: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        }       \r\n    )"
+                    "text": "Patch(\r\n        LeaveRequests,\r\n        Defaults(LeaveRequests),\r\n        {Title: \"\"},\r\n        {Details: Reasons2_1.Text},\r\n        {LeaveTypes: singlehalffull.SelectedText},\r\n        {From: _dateSelected },\r\n        {To: _dateSelected},\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Status: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: \"Pending\",\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {'Total Days': duration},\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 FromType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ToType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {\r\n            LeaveId: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Id: vardata.Id,\r\n                Value: Leavetype_1.SelectedText.Value\r\n            }\r\n        },\r\n        \r\n        {\r\n            RequestedBy: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        },\r\n        \r\n        {\r\n            'Reporting Manager':{\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        },\r\n        \r\n        {\r\n            HR: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        }       \r\n    )"
                   }
                 }
               },
@@ -3409,52 +2523,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 24,
-                  "charOffset": 951,
+                  "charLength": 41,
+                  "charOffset": 966,
                   "snippet": {
-                    "text": "{Details: Reason_1.Text}"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Details",
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 38,
-                  "charOffset": 986,
-                  "snippet": {
-                    "text": "{LeaveTypes: Leavetype_1.SelectedText}"
+                    "text": "{LeaveTypes: singlehalffull.SelectedText}"
                   }
                 }
               },
@@ -3494,7 +2566,7 @@
                 },
                 "region": {
                   "charLength": 200,
-                  "charOffset": 1326,
+                  "charOffset": 1309,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 FromType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -3534,7 +2606,7 @@
                 },
                 "region": {
                   "charLength": 200,
-                  "charOffset": 1326,
+                  "charOffset": 1309,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 FromType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -3576,7 +2648,7 @@
                 },
                 "region": {
                   "charLength": 198,
-                  "charOffset": 1537,
+                  "charOffset": 1520,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ToType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -3616,7 +2688,7 @@
                 },
                 "region": {
                   "charLength": 198,
-                  "charOffset": 1537,
+                  "charOffset": 1520,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ToType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: LeaveFor_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -3658,7 +2730,7 @@
                 },
                 "region": {
                   "charLength": 237,
-                  "charOffset": 1746,
+                  "charOffset": 1729,
                   "snippet": {
                     "text": "{\r\n            LeaveId: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Id: vardata.Id,\r\n                Value: Leavetype_1.SelectedText.Value\r\n            }\r\n        }"
                   }
@@ -3698,7 +2770,7 @@
                 },
                 "region": {
                   "charLength": 237,
-                  "charOffset": 1746,
+                  "charOffset": 1729,
                   "snippet": {
                     "text": "{\r\n            LeaveId: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Id: vardata.Id,\r\n                Value: Leavetype_1.SelectedText.Value\r\n            }\r\n        }"
                   }
@@ -3740,7 +2812,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3214,
+                  "charOffset": 3197,
                   "snippet": {
                     "text": "Reason_1"
                   }
@@ -3780,7 +2852,7 @@
                 },
                 "region": {
                   "charLength": 11,
-                  "charOffset": 3232,
+                  "charOffset": 3215,
                   "snippet": {
                     "text": "Leavetype_1"
                   }
@@ -3820,7 +2892,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 3263,
+                  "charOffset": 3246,
                   "snippet": {
                     "text": "from_1"
                   }
@@ -3860,7 +2932,7 @@
                 },
                 "region": {
                   "charLength": 13,
-                  "charOffset": 3269,
+                  "charOffset": 3252,
                   "snippet": {
                     "text": ".SelectedDate"
                   }
@@ -3897,7 +2969,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 3475,
+                  "charOffset": 3458,
                   "snippet": {
                     "text": "from_1"
                   }
@@ -3937,7 +3009,7 @@
                 },
                 "region": {
                   "charLength": 13,
-                  "charOffset": 3481,
+                  "charOffset": 3464,
                   "snippet": {
                     "text": ".SelectedDate"
                   }
@@ -3974,7 +3046,7 @@
                 },
                 "region": {
                   "charLength": 4,
-                  "charOffset": 3497,
+                  "charOffset": 3480,
                   "snippet": {
                     "text": "to_1"
                   }
@@ -4014,7 +3086,7 @@
                 },
                 "region": {
                   "charLength": 13,
-                  "charOffset": 3501,
+                  "charOffset": 3484,
                   "snippet": {
                     "text": ".SelectedDate"
                   }
@@ -4051,7 +3123,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 4108,
+                  "charOffset": 4091,
                   "snippet": {
                     "text": "from_1"
                   }
@@ -4091,7 +3163,7 @@
                 },
                 "region": {
                   "charLength": 13,
-                  "charOffset": 4114,
+                  "charOffset": 4097,
                   "snippet": {
                     "text": ".SelectedDate"
                   }
@@ -4128,7 +3200,7 @@
                 },
                 "region": {
                   "charLength": 4,
-                  "charOffset": 4145,
+                  "charOffset": 4128,
                   "snippet": {
                     "text": "to_1"
                   }
@@ -4168,7 +3240,7 @@
                 },
                 "region": {
                   "charLength": 13,
-                  "charOffset": 4149,
+                  "charOffset": 4132,
                   "snippet": {
                     "text": ".SelectedDate"
                   }
@@ -4205,7 +3277,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 4465,
+                  "charOffset": 4448,
                   "snippet": {
                     "text": "FromType_1"
                   }
@@ -4245,7 +3317,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 4475,
+                  "charOffset": 4458,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -4282,7 +3354,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 4484,
+                  "charOffset": 4467,
                   "snippet": {
                     "text": ".Title"
                   }
@@ -4319,7 +3391,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4674,
+                  "charOffset": 4657,
                   "snippet": {
                     "text": "ToType_1"
                   }
@@ -4359,7 +3431,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 4682,
+                  "charOffset": 4665,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -4396,7 +3468,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 4691,
+                  "charOffset": 4674,
                   "snippet": {
                     "text": ".Title"
                   }
@@ -4433,7 +3505,7 @@
                 },
                 "region": {
                   "charLength": 2366,
-                  "charOffset": 3917,
+                  "charOffset": 3900,
                   "snippet": {
                     "text": "Patch(\r\n        LeaveRequests,\r\n        Defaults(LeaveRequests),\r\n        {Title: \"\"},\r\n        {Details: Reasons2_1.Text},\r\n        {LeaveTypes: LeaveTypes2_1.SelectedText},\r\n        {From: from_1.SelectedDate },\r\n        {To: to_1.SelectedDate},\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Status: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: \"Pending\",\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {'Total Days': Value(varTotalDays2)},\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 FromType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: FromType_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ToType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: ToType_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 },\r\n        {\r\n            LeaveId: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Id: varChange.Id,\r\n                Value: LeaveTypes2_1.SelectedText.Value\r\n            }\r\n        },\r\n        \r\n        {\r\n            RequestedBy: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        },\r\n        \r\n        {\r\n            'Reporting Manager':{\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        },\r\n        \r\n        {\r\n            HR: {\r\n                '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\r\n                Claims: Lower(User().Email),\r\n                Department: \"\",\r\n                DisplayName: User().FullName,\r\n                Email: User().Email,\r\n                JobTitle: \"\",\r\n                Picture: \"\"\r\n            }\r\n        }   \r\n      \r\n    )"
                   }
@@ -4473,7 +3545,7 @@
                 },
                 "region": {
                   "charLength": 28,
-                  "charOffset": 4101,
+                  "charOffset": 4084,
                   "snippet": {
                     "text": "{From: from_1.SelectedDate }"
                   }
@@ -4515,7 +3587,7 @@
                 },
                 "region": {
                   "charLength": 23,
-                  "charOffset": 4140,
+                  "charOffset": 4123,
                   "snippet": {
                     "text": "{To: to_1.SelectedDate}"
                   }
@@ -4557,7 +3629,7 @@
                 },
                 "region": {
                   "charLength": 200,
-                  "charOffset": 4414,
+                  "charOffset": 4397,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 FromType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: FromType_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -4597,7 +3669,7 @@
                 },
                 "region": {
                   "charLength": 200,
-                  "charOffset": 4414,
+                  "charOffset": 4397,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 FromType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: FromType_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -4639,7 +3711,7 @@
                 },
                 "region": {
                   "charLength": 196,
-                  "charOffset": 4625,
+                  "charOffset": 4608,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ToType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: ToType_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -4679,7 +3751,7 @@
                 },
                 "region": {
                   "charLength": 196,
-                  "charOffset": 4625,
+                  "charOffset": 4608,
                   "snippet": {
                     "text": "{\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ToType: {\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Value: ToType_1.Selected.Title,\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 '@odata.type': \"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\"\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }\r\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 }"
                   }
@@ -4721,7 +3793,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 6310,
+                  "charOffset": 6293,
                   "snippet": {
                     "text": "from_1"
                   }
@@ -4761,7 +3833,7 @@
                 },
                 "region": {
                   "charLength": 4,
-                  "charOffset": 6326,
+                  "charOffset": 6309,
                   "snippet": {
                     "text": "to_1"
                   }
@@ -8139,6 +7211,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.Icon4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.Icon4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.Icon4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.Icon4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.customdatepicker"
                 }
               ],
@@ -8289,17 +7421,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.err"
+                  "fullyQualifiedName": "App.visible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.err",
+                  "fullyQualifiedName": "App.visible",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "err",
+                "member": "visible",
                 "module": "App",
                 "type": "App"
               }
@@ -8319,17 +7451,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.visible"
+                  "fullyQualifiedName": "App.err"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.visible",
+                  "fullyQualifiedName": "App.err",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "visible",
+                "member": "err",
                 "module": "App",
                 "type": "App"
               }
@@ -9170,36 +8302,6 @@
               },
               "properties": {
                 "member": "Vector (11)",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Vector (10)"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Vector (10)",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Vector (10)",
                 "module": "App",
                 "type": "App"
               }

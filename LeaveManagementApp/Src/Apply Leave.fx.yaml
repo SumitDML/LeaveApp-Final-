@@ -304,7 +304,7 @@
                                     PressedBorderColor: =
                                     PressedColor: =
                                     PressedFill: =
-                                    Text: =
+                                    Text: =""
                                     Width: =TextInput2_13.Width
                                     X: =TextInput2_13.X
                                     Y: =TextInput2_13.Y
@@ -567,6 +567,83 @@
                                 Y: =Reasons2_1.Y+Reasons2_1.Height+20
                                 ZIndex: =4
 
+                            Group2 As group:
+                                Height: =5
+                                Width: =5
+                                X: =40
+                                Y: =40
+                                ZIndex: =10
+
+                                TextInput2_7 As text:
+                                    BorderColor: =RGBA(202, 202, 202, 1)
+                                    BorderThickness: =1
+                                    Default: =
+                                    Height: =42
+                                    HintText: =""
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    PaddingRight: =4.51
+                                    PaddingTop: =4.51
+                                    PressedBorderColor: =
+                                    PressedColor: =
+                                    PressedFill: =
+                                    RadiusBottomLeft: =9
+                                    RadiusBottomRight: =9
+                                    RadiusTopLeft: =9
+                                    RadiusTopRight: =9
+                                    Size: =14.42
+                                    Width: |
+                                        =(Parent.Width*8/10)
+                                    X: =13
+                                    Y: =62
+                                    ZIndex: =5
+
+                                LeaveTypes2_1 As dropdown:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderThickness: =0
+                                    ChevronBackground: =RGBA(0, 0, 0, 0)
+                                    ChevronFill: =RGBA(255, 255, 255, 0)
+                                    ChevronHoverBackground: =
+                                    Default: =
+                                    Font: =Font.'Segoe UI'
+                                    Height: =TextInput2_7.Height-4
+                                    HoverBorderColor: =
+                                    HoverFill: =RGBA(186, 202, 226, 0)
+                                    Items: =Choices([@LeaveRequests].LeaveTypes)
+                                    OnChange: |
+                                        =If(LeaveTypes2_1.SelectedText.Value="Unpaid",Set(leaves1,0);Set(total1,365);,
+                                        
+                                        Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2_1.SelectedText.Value));
+                                        
+                                        ClearCollect(LeaveSum1,Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days'));
+                                        
+                                        ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave));
+                                        
+                                        Set(leaves1,First(LeaveSum1).Value);
+                                        Set(total1,First(TotalLeave1).Value);
+                                        
+                                        )
+                                    PaddingRight: =40
+                                    PaddingTop: =9.01
+                                    PressedBorderColor: =
+                                    PressedFill: =RGBA(0, 18, 107, 0)
+                                    Size: =11.71
+                                    Width: |
+                                        =(Parent.Width*8/10)-15
+                                    X: =23
+                                    Y: =TextInput2_7.Y+2
+                                    ZIndex: =8
+
+                                Icon4 As icon.ChevronDown:
+                                    Height: =22
+                                    Icon: =Icon.ChevronDown
+                                    OnSelect: =Select(LeaveTypes2_1)
+                                    Width: =27
+                                    X: =576
+                                    Y: =72
+                                    ZIndex: =9
+
                             Group4 As group:
                                 Height: =5
                                 Width: =5
@@ -619,67 +696,6 @@
                                     Y: =TextInput2_8.Y+2
                                     ZIndex: =7
 
-                            Group3 As group:
-                                Height: =5
-                                Width: =5
-                                X: =40
-                                Y: =40
-                                ZIndex: =12
-
-                                TextInput2_7 As text:
-                                    BorderColor: =RGBA(202, 202, 202, 1)
-                                    BorderThickness: =1
-                                    Default: =
-                                    Height: =42
-                                    HintText: =""
-                                    PaddingRight: =4.51
-                                    PaddingTop: =4.51
-                                    RadiusBottomLeft: =9
-                                    RadiusBottomRight: =9
-                                    RadiusTopLeft: =9
-                                    RadiusTopRight: =9
-                                    Size: =14.42
-                                    Width: |
-                                        =(Parent.Width*8/10)
-                                    X: =13
-                                    Y: =62
-                                    ZIndex: =5
-
-                                LeaveTypes2_1 As dropdown:
-                                    BorderColor: =RGBA(0, 0, 0, 0)
-                                    BorderThickness: =0
-                                    ChevronBackground: =RGBA(0, 0, 0, 0)
-                                    ChevronFill: =RGBA(255, 255, 255, 0)
-                                    ChevronHoverBackground: =
-                                    Default: =
-                                    Height: =TextInput2_7.Height-4
-                                    HoverBorderColor: =
-                                    HoverFill: =RGBA(186, 202, 226, 0)
-                                    Items: =Choices([@LeaveRequests].LeaveTypes)
-                                    OnChange: |
-                                        =If(LeaveTypes2_1.SelectedText.Value="Unpaid",Set(leaves1,0);Set(total1,365);,
-                                        
-                                        Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2_1.SelectedText.Value));
-                                        
-                                        ClearCollect(LeaveSum1,Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days'));
-                                        
-                                        ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave));
-                                        
-                                        Set(leaves1,First(LeaveSum1).Value);
-                                        Set(total1,First(TotalLeave1).Value);
-                                        
-                                        )
-                                    PaddingRight: =9.01
-                                    PaddingTop: =9.01
-                                    PressedBorderColor: =
-                                    PressedFill: =RGBA(0, 18, 107, 0)
-                                    Size: =11.71
-                                    Width: |
-                                        =(Parent.Width*8/10)-20
-                                    X: =23
-                                    Y: =TextInput2_7.Y+2
-                                    ZIndex: =8
-
                 Rectangle3 As rectangle:
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =90
@@ -717,14 +733,14 @@
                 Button2 As button:
                     Height: =50
                     OnSelect: |-
-                        =If(LeaveFor_1.Selected.Title="First Half" || LeaveFor_1.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
+                        =If(singlehalffull.Selected.Title="First Half" || singlehalffull.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
                         
                         
-                        Set(varTotalDays2,1 + ((DateDiff(from_1.SelectedDate,to_1.SelectedDate)) 
-                        * 5 - ((Weekday(from_1.SelectedDate) - 
-                        Weekday(to_1.SelectedDate))*2)) / 7 - 
-                        Switch(Weekday(to_1.SelectedDate),7,1,0) - 
-                        Switch(Weekday(from_1.SelectedDate),1,1,0));
+                        Set(varTotalDays2,1 + ((DateDiff(_dateSelected,_dateSelected)) 
+                        * 5 - ((Weekday(_dateSelected) - 
+                        Weekday(_dateSelected))*2)) / 7 - 
+                        Switch(Weekday(_dateSelected),7,1,0) - 
+                        Switch(Weekday(_dateSelected),1,1,0));
                         
                         
                         
@@ -759,8 +775,8 @@
                                 LeaveRequests,
                                 Defaults(LeaveRequests),
                                 {Title: ""},
-                                {Details: Reason_1.Text},
-                                {LeaveTypes: Leavetype_1.SelectedText},
+                                {Details: Reasons2_1.Text},
+                                {LeaveTypes: singlehalffull.SelectedText},
                                 {From: _dateSelected },
                                 {To: _dateSelected},
                                 {
@@ -986,7 +1002,7 @@
             ZIndex: =5
 
     Container6 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(245, 245, 245, 0.5)
+        Fill: =RGBA(28, 37, 54, 0.4)
         Height: =1080
         Visible: =calView
         Width: =1920
@@ -1002,6 +1018,11 @@
             Button3_1 As button:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =379
+                HoverBorderColor: =
+                HoverFill: =
+                PressedBorderColor: =
+                PressedColor: =
+                PressedFill: =
                 Text: ="Button"
                 Width: =278
                 X: =10
