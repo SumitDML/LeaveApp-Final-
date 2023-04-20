@@ -67,6 +67,13 @@
                     X: =66.67
                     ZIndex: =2
 
+                Icon7 As icon.Bell:
+                    Height: =Parent.Height
+                    Icon: =Icon.Bell
+                    OnSelect: =Set(notipop,true)
+                    Width: =30
+                    ZIndex: =3
+
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =2
@@ -1048,4 +1055,141 @@
         Width: =App.ActiveScreen.Width
         Y: =App.ActiveScreen.Height-Self.Height-2
         ZIndex: =6
+
+    Container17_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(28, 37, 54, 0.4)
+        Height: =Parent.Height
+        Visible: =notipop
+        Width: =Parent.Width
+        ZIndex: =7
+
+        Button11_1 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HoverBorderColor: =
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =
+            OnSelect: =Set(notipop,false)
+            PressedBorderColor: =RGBA(0,0,0,0)
+            PressedColor: =
+            PressedFill: =
+            Text: =""
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Container18_1 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =499
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =310
+            X: =Parent.Width-Self.Width-30
+            Y: =66
+            ZIndex: =2
+
+            "Gallery2_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                Height: =Parent.Height-100
+                Items: =Filter(LeaveRequests,RequestedBy.Email=User().Email&&Status.Value="Approved")
+                Layout: =Layout.Vertical
+                ShowScrollbar: =false
+                TemplatePadding: =0
+                TemplateSize: =Self.Height/4-10
+                Width: |
+                    =Parent.Width-20
+                X: =10
+                Y: =64
+                ZIndex: =1
+
+                Title1_5 As label:
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =9
+                    Text: =""&Text(ThisItem.From)&" - "&ThisItem.To 
+                    VerticalAlign: =VerticalAlign.Top
+                    X: =25
+                    Y: =((Parent.TemplateHeight-Self.Height)/2)
+                    ZIndex: =2
+
+                Label6_3 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =19
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =4.51
+                    PaddingTop: =4.51
+                    Size: =9
+                    Text: =ThisItem.LeaveTypes.Value&" Leave"
+                    Width: =135.19
+                    X: =25
+                    Y: =((Parent.TemplateHeight-Self.Height)/2)+20
+                    ZIndex: =4
+
+                Label23_3 As label:
+                    Align: =Align.Center
+                    Color: =If(ThisItem.Status.Value="Approved",RGBA(60,93,255,1),If(ThisItem.Status.Value="Rejected",RGBA(212,0,0,1),RGBA(227, 195, 79,1)))
+                    Font: =Font.'Segoe UI'
+                    OnSelect: =Select(Parent)
+                    Size: =If(App.ActiveScreen.Width<=420,8,9)
+                    Text: =ThisItem.Status.Value
+                    Width: =100
+                    X: =(Parent.Width-Self.Width)-5
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
+                    ZIndex: =5
+
+                Title9_3 As label:
+                    Color: =RGBA(149, 149, 149, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Normal
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =If(App.ActiveScreen.Width<=420,8,9)
+                    Text: =If(((ThisItem.FromType.Value="First Half" && ThisItem.ToType.Value="Second Half")|| ThisItem.FromType.Value="Full Day" || ThisItem.ToType.Value="Full Day" ),"FULL DAY","HALF DAY")&" LEAVE"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =198.28
+                    X: =25
+                    Y: =((Parent.TemplateHeight-Self.Height)/2)-20
+                    ZIndex: =6
+
+                Button10_1 As button:
+                    Height: =71
+                    OnSelect: =Select(Parent)
+                    Text: ="Button"
+                    Width: =2
+                    X: =15
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
+                    ZIndex: =7
+
+            Label25_1 As label:
+                Font: =Font.'Segoe UI'
+                Size: =12
+                Text: ="Notifications"
+                X: =10
+                Y: =10
+                ZIndex: =2
+
+            Label26_1 As label:
+                Color: =RGBA(51, 51, 51, 1)
+                Height: =32
+                Size: =10
+                Text: ="No notification yet!"
+                Visible: =If(CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email&&Status.Value="Approved"))=0,true,false)
+                Width: =200
+                X: =20
+                Y: =60
+                ZIndex: =3
 

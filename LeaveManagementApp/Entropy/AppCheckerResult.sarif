@@ -1212,6 +1212,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Leave Status'.Container17.Container18.Label26.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Leave Status'.Container17.Container18.Label26.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 88,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email&&Status.Value=\"Approved\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Leave Status",
+                "type": "'Leave Status'.Container17.Container18.Label26"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.LeaveTypes2_1.OnChange"
                 }
               ],
@@ -2141,48 +2181,8 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 59,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveBalance,LeaveType.Value=\"Paid\"),TotalLeave)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Leave Balance",
-                "type": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_6"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_6.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Leave Balance'.ScreenContainer1_2.RightSideContainer1_2.MainSectionContainer1_2.Container1_1.Container7_13.Label3_6.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 94,
-                  "charOffset": 152,
+                  "charOffset": 92,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Paid\"),'Total Days')"
                   }
@@ -2446,6 +2446,126 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.Container17_1.Container18_1.Label26_1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.Container17_1.Container18_1.Label26_1.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 88,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email&&Status.Value=\"Approved\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Dashboard",
+                "type": "Dashboard.Container17_1.Container18_1.Label26_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Leave Balance'.Container17_2.Container18_2.Label26_2.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Leave Balance'.Container17_2.Container18_2.Label26_2.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 88,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email&&Status.Value=\"Approved\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.Container17_2.Container18_2.Label26_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container17_3.Container18_3.Label26_3.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container17_3.Container18_3.Label26_3.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 88,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email&&Status.Value=\"Approved\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container17_3.Container18_3.Label26_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -4550,6 +4670,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Dashboard.Container17_1.Container18_1.Gallery2_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.Container17_1.Container18_1.Gallery2_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard",
+                "type": "Dashboard.Container17_1.Container18_1.Gallery2_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.Container17_1.Container18_1.Gallery2_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.Container17_1.Container18_1.Gallery2_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.Container17_1.Container18_1.Gallery2_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Leave Status'.ScreenContainer1_3.RightSideContainer1_3.Container14.Gallery11.AccessibleLabel"
                 }
               ],
@@ -4593,6 +4773,66 @@
                 "member": "TabIndex",
                 "module": "Leave Status",
                 "type": "'Leave Status'.ScreenContainer1_3.RightSideContainer1_3.Container14.Gallery11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ScreenContainer1.RightSideContainer1.HeaderContainer1.Icon7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ScreenContainer1.RightSideContainer1.HeaderContainer1.Icon7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.ScreenContainer1.RightSideContainer1.HeaderContainer1.Icon7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ScreenContainer1.RightSideContainer1.HeaderContainer1.Icon7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ScreenContainer1.RightSideContainer1.HeaderContainer1.Icon7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard",
+                "type": "Dashboard.ScreenContainer1.RightSideContainer1.HeaderContainer1.Icon7"
               }
             }
           ],
@@ -5060,6 +5300,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Apply Leave'.Container17_3.Container18_3.Gallery2_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container17_3.Container18_3.Gallery2_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container17_3.Container18_3.Gallery2_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container17_3.Container18_3.Gallery2_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container17_3.Container18_3.Gallery2_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container17_3.Container18_3.Gallery2_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.Reasons2_1.AccessibleLabel"
                 }
               ],
@@ -5414,6 +5714,126 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.HeaderContainer1_5.Icon8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.HeaderContainer1_5.Icon8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.HeaderContainer1_5.Icon8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.HeaderContainer1_5.Icon8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.HeaderContainer1_5.Icon8.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.HeaderContainer1_5.Icon8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Leave Balance'.Container17_2.Container18_2.Gallery2_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Leave Balance'.Container17_2.Container18_2.Gallery2_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.Container17_2.Container18_2.Gallery2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Leave Balance'.Container17_2.Container18_2.Gallery2_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Leave Balance'.Container17_2.Container18_2.Gallery2_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Leave Balance",
+                "type": "'Leave Balance'.Container17_2.Container18_2.Gallery2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [

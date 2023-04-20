@@ -6,22 +6,6 @@ Component2_3 As CanvasComponent:
     Y: =0
     ZIndex: =8
 
-    Image2_1 As image:
-        DisplayMode: =DisplayMode.View
-        Height: =If(App.ActiveScreen.Size<2,30,50)
-        Image: =User().Image
-        ImagePosition: =ImagePosition.Fill
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        RadiusBottomLeft: =50
-        RadiusBottomRight: =50
-        RadiusTopLeft: =50
-        RadiusTopRight: =50
-        Width: =If(App.ActiveScreen.Size<2,30,50)
-        X: =(Parent.Width-Self.Width)-30
-        Y: =(Parent.Height-Self.Height)/2
-        ZIndex: =1
-
     Label5_1 As label:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
