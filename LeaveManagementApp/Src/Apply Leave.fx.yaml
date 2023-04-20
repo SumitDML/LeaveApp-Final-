@@ -289,10 +289,10 @@
                                     Color: =RGBA(166, 166, 166, 1)
                                     Height: =TextInput2_11.Height-4
                                     Icon: =Icon.CalendarBlank
-                                    PaddingBottom: =5
+                                    PaddingBottom: =10
                                     PaddingLeft: =5
                                     PaddingRight: =5
-                                    PaddingTop: =5
+                                    PaddingTop: =10
                                     Width: =42
                                     X: =TextInput2_11.X+TextInput2_11.Width-Self.Width-10
                                     Y: =TextInput2_11.Y+2
@@ -337,13 +337,13 @@
                                     Color: =RGBA(166, 166, 166, 1)
                                     Height: =TextInput2_12.Height-4
                                     Icon: =Icon.CalendarBlank
-                                    PaddingBottom: =5
+                                    PaddingBottom: =10
                                     PaddingLeft: =5
                                     PaddingRight: =5
-                                    PaddingTop: =5
+                                    PaddingTop: =10
                                     Width: =42
                                     X: =TextInput2_12.X+TextInput2_12.Width-Self.Width-10
-                                    Y: =275
+                                    Y: =TextInput2_12.Y+2
                                     ZIndex: =13
 
                                 Button5_2 As button:
@@ -441,10 +441,10 @@
                                     Color: =RGBA(166, 166, 166, 1)
                                     Height: =TextInput2_13.Height-4
                                     Icon: =Icon.CalendarBlank
-                                    PaddingBottom: =5
+                                    PaddingBottom: =10
                                     PaddingLeft: =5
                                     PaddingRight: =5
-                                    PaddingTop: =5
+                                    PaddingTop: =10
                                     Width: =42
                                     X: =TextInput2_13.X+TextInput2_13.Width-Self.Width-10
                                     Y: =TextInput2_13.Y+2
