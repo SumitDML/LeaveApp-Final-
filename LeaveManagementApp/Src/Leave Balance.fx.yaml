@@ -54,15 +54,6 @@
                 X: =0.00
                 ZIndex: =4
 
-                Icon8 As icon.Hamburger:
-                    Height: =Parent.Height
-                    Icon: =Icon.Hamburger
-                    OnSelect: =Set(varVisible,true)
-                    PaddingLeft: =13
-                    PaddingRight: =13
-                    Width: =If(App.ActiveScreen.Size<=2,80,0)
-                    ZIndex: =1
-
                 Component2_6 As Component2_3:
                     LayoutMinHeight: =640
                     LayoutMinWidth: =640
@@ -74,7 +65,7 @@
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =10
-                LayoutMinHeight: =If(Container2_1.Width<=930,540,430)
+                LayoutMinHeight: =If(App.ActiveScreen.Size<=2,580,App.ActiveScreen.Width<=930,540,430)
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowY: =LayoutOverflow.Scroll
@@ -708,36 +699,10 @@
         Y: =150
         ZIndex: =6
 
-    LeftNav_4 As group:
-        Height: =5
-        Width: =5
-        X: =-348
-        Y: =40
-        ZIndex: =10
-
-        Rectangle1_4 As rectangle:
-            Fill: =RGBA(202, 202, 202, 0.6)
-            Height: =Parent.Height
-            Visible: =varVisible
-            Width: =Parent.Width
-            X: =
-            ZIndex: =7
-
-        "'Left Navigation_12' As 'Left Navigation'":
-            CurrentScreen: ="Leave Balance"
-            Visible: =varVisible
-            Width: =250
-            X: =
-            ZIndex: =8
-
-        Icon2_4 As icon.Cancel:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =30
-            Icon: =Icon.Cancel
-            OnSelect: =Set(varVisible,false)
-            Visible: =varVisible
-            Width: =30
-            X: ='Left Navigation_12'.Width-Self.Width-10
-            Y: =20
-            ZIndex: =9
+    Component7_2 As Component7:
+        CurrentScreen: ="Leave Balance"
+        Visible: =If(App.ActiveScreen.Size<=2,true,false)
+        Width: =App.ActiveScreen.Width
+        Y: =App.ActiveScreen.Height-Self.Height-2
+        ZIndex: =7
 

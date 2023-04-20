@@ -58,17 +58,6 @@
                 X: =0.00
                 ZIndex: =4
 
-                Icon8_1 As icon.Hamburger:
-                    Height: =Parent.Height
-                    Icon: =Icon.Hamburger
-                    OnSelect: =Set(varVisible,true)
-                    PaddingBottom: =10
-                    PaddingLeft: =13
-                    PaddingRight: =13
-                    PaddingTop: =10
-                    Width: =If(App.ActiveScreen.Size<=2,50,0)
-                    ZIndex: =1
-
                 Component2_4 As Component2_3:
                     FillPortions: =1
                     Height: =70
@@ -886,41 +875,40 @@
 
                             Title3 As label:
                                 Font: =Font.'Segoe UI'
-                                Height: =27
-                                OnSelect: =Select(Parent)
-                                PaddingBottom: =0
-                                PaddingLeft: =0
-                                PaddingRight: =0.00
-                                PaddingTop: =0.00
-                                Size: =If(App.ActiveScreen.Width<=420,10,12)
-                                Text: =ThisItem.RequestedBy.DisplayName
-                                VerticalAlign: =VerticalAlign.Top
-                                Width: =310.94
-                                X: =Image7.X+Image7.Width+10
-                                Y: =If(App.ActiveScreen.Size<=2,((Parent.TemplateHeight-Self.Height)/2),((Parent.TemplateHeight-Self.Height)/2)-10)
-                                ZIndex: =2
-
-                            Subtitle2 As label:
-                                Font: =Font.'Segoe UI'
-                                Height: =32
+                                Height: =19
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
                                 Size: =If(App.ActiveScreen.Width<=420,8,10)
-                                Text: =ThisItem.RequestedBy.JobTitle
+                                Text: =ThisItem.RequestedBy.DisplayName
                                 VerticalAlign: =VerticalAlign.Top
-                                Visible: =If(App.ActiveScreen.Size<=2,false,true)
                                 Width: =310.94
                                 X: =Image7.X+Image7.Width+10
-                                Y: =((Parent.TemplateHeight-Self.Height)/2)+15
+                                Y: =((Parent.TemplateHeight-Self.Height)/2)-10
+                                ZIndex: =2
+
+                            Subtitle2 As label:
+                                Font: =Font.'Segoe UI'
+                                Height: =20
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =If(App.ActiveScreen.Width<=420,7,9)
+                                Text: =ThisItem.RequestedBy.JobTitle
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =310.94
+                                X: =Image7.X+Image7.Width+10
+                                Y: =((Parent.TemplateHeight-Self.Height)/2)+10
                                 ZIndex: =3
 
                             Label24 As label:
                                 Font: =Font.'Segoe UI'
                                 OnSelect: =Select(Parent)
-                                Size: =10
+                                Size: =9
                                 Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
                                 Width: =If(Container12.Width<430,85,109.96)
                                 X: =(Parent.TemplateWidth-Self.Width)-20
@@ -985,7 +973,7 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
-                                Size: =10.81
+                                Size: =10
                                 Text: =""&Text(ThisItem.From)&" - "&ThisItem.To 
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =306.43
@@ -1000,7 +988,7 @@
                                 OnSelect: =Select(Parent)
                                 PaddingRight: =4.51
                                 PaddingTop: =4.51
-                                Size: =11.71
+                                Size: =9
                                 Text: =ThisItem.LeaveTypes.Value&" Leave"
                                 Width: =135.19
                                 X: =16
@@ -1029,7 +1017,7 @@
                                 PaddingLeft: =0
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
-                                Size: =If(App.ActiveScreen.Width<=420,10,12.62)
+                                Size: =If(App.ActiveScreen.Width<=420,8,9)
                                 Text: =If(((ThisItem.FromType.Value="First Half" && ThisItem.ToType.Value="Second Half")|| ThisItem.FromType.Value="Full Day" || ThisItem.ToType.Value="Full Day" ),"FULL DAY","HALF DAY")&" LEAVE"
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =198.28
@@ -1049,7 +1037,7 @@
 
                 Container13 As groupContainer.manualLayoutContainer:
                     FillPortions: =0
-                    Height: =15
+                    Height: =If(App.ActiveScreen.Size<=2,50,15)
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     ZIndex: =8
@@ -1060,35 +1048,10 @@
         Y: =297
         ZIndex: =5
 
-    LeftNav_1 As group:
-        Height: =5
-        Width: =5
-        X: =-348
-        Y: =40
-        ZIndex: =5
-
-        "'Left Navigation_3' As 'Left Navigation'":
-            CurrentScreen: ="Dashboard"
-            Visible: =varVisible
-            Width: =250
-            X: =
-
-        Rectangle1_1 As rectangle:
-            Fill: =RGBA(202, 202, 202, 0.6)
-            Height: =Parent.Height
-            Visible: =varVisible
-            Width: =Parent.Width
-            X: =
-            ZIndex: =2
-
-        Icon2_1 As icon.Cancel:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =30
-            Icon: =Icon.Cancel
-            OnSelect: =Set(varVisible,false)
-            Visible: =varVisible
-            Width: =30
-            X: ='Left Navigation_3'.Width-Self.Width-10
-            Y: =20
-            ZIndex: =4
+    Component7_1 As Component7:
+        CurrentScreen: ="Dashboard"
+        Visible: =If(App.ActiveScreen.Size<=2,true,false)
+        Width: =App.ActiveScreen.Width
+        Y: =App.ActiveScreen.Height-Self.Height-2
+        ZIndex: =6
 

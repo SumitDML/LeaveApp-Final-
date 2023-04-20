@@ -1,7 +1,8 @@
 Component7 As CanvasComponent:
+    CurrentScreen: ="Text"
     Fill: =RGBA(28, 37, 54, 1)
     Height: |
-        =50
+        =40
     NavItems: =lmsnav
     Width: =640
     X: =0
@@ -10,32 +11,48 @@ Component7 As CanvasComponent:
 
     Gallery2 As gallery.galleryHorizontal:
         DelayItemLoading: =true
-        Height: =50
+        Height: =Parent.Height
         Items: =Component7.NavItems
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =59
+        TemplateSize: =Self.Width/4-10
+        Width: =Parent.Width
         ZIndex: =1
 
         Image10 As image:
-            Height: =28
+            Height: =22
             Image: =ThisItem.Icon
             OnSelect: =Select(Parent)
             PaddingBottom: =5
             PaddingLeft: =5
             PaddingRight: =5
             PaddingTop: =5
+            Transparency: =If(ThisItem.Title=Component7.CurrentScreen,0,0.5)
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
         Label17 As label:
             Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =If(ThisItem.Title=Component7.CurrentScreen,RGBA(255, 255, 255, 1),RGBA(255, 255, 255, 0.4))
             Font: =Font.'Segoe UI'
             Height: =12
             OnSelect: =Select(Parent)
             Size: =5
             Text: =ThisItem.Title
             Width: =Parent.TemplateWidth
-            Y: =28
+            Y: =18
             ZIndex: =2
+
+        Button8 As button:
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.TemplateHeight
+            HoverBorderColor: =
+            HoverFill: =
+            OnSelect: =Navigate(ThisItem.Screen)
+            PressedFill: =
+            Text: =""
+            Width: =Parent.TemplateWidth
+            ZIndex: =3
 

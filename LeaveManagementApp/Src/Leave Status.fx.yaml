@@ -1,8 +1,7 @@
 "'Leave Status' As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
-    OnVisible: |-
+    OnVisible: |
         =Refresh(LeaveRequests);
         Refresh(LeaveBalance);
-        If('Left Navigation_4'.CurrentScreen="Leave Status",Set(varVisible,false),Set(varVisible,true));
 
     ScreenContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -53,15 +52,6 @@
                 X: =0.00
                 ZIndex: =1
 
-                Icon8_3 As icon.Hamburger:
-                    Height: =Parent.Height
-                    Icon: =Icon.Hamburger
-                    OnSelect: =Set(varVisible,true);
-                    PaddingLeft: =13
-                    PaddingRight: =13
-                    Width: =If(App.ActiveScreen.Size<=2,80,0)
-                    ZIndex: =1
-
                 Component2_7 As Component2_3:
                     FillPortions: =1
                     LayoutMinHeight: =640
@@ -109,7 +99,7 @@
                     Layout: =Layout.Vertical
                     ShowScrollbar: =false
                     TemplatePadding: =0
-                    TemplateSize: =(Parent.Height)/If(Parent.Height<750,6,8)-10
+                    TemplateSize: =(Parent.Height)/If(Parent.Height<750,5,7)-10
                     Width: =Parent.Width
                     X: =
                     Y: =24
@@ -198,35 +188,17 @@
                     Y: =40
                     ZIndex: =3
 
-    LeftNav_2 As group:
-        Height: =5
-        Width: =5
-        X: =-348
-        Y: =40
+            Container15 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: =If(App.ActiveScreen.Size<=2,50,10)
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =3
+
+    Component7_3 As Component7:
+        CurrentScreen: ="Leave Status"
+        Visible: =If(App.ActiveScreen.Size<=2,true,false)
+        Width: =App.ActiveScreen.Width
+        Y: =App.ActiveScreen.Height-Self.Height-2
         ZIndex: =5
-
-        "'Left Navigation_4' As 'Left Navigation'":
-            CurrentScreen: ="Leave Status"
-            Visible: =varVisible
-            Width: =250
-            X: =
-
-        Rectangle1_2 As rectangle:
-            Fill: =RGBA(202, 202, 202, 0.6)
-            Height: =Parent.Height
-            Visible: =varVisible
-            Width: =Parent.Width
-            X: =
-            ZIndex: =2
-
-        Icon2_2 As icon.Cancel:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =30
-            Icon: =Icon.Cancel
-            OnSelect: =Set(varVisible,false)
-            Visible: =varVisible
-            Width: =30
-            X: ='Left Navigation_4'.Width-Self.Width-10
-            Y: =20
-            ZIndex: =4
 
