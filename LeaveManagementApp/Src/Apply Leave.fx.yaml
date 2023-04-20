@@ -6,6 +6,10 @@
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
         Set(_calendarVisible, true);
         If('Left Navigation_6'.CurrentScreen="Apply Leave",Set(varVisible,false),Set(varVisible,true));
+        Reset(LeaveTypes2_1);
+        Set(_dateSelected2,Today());
+        Set(_dateSelected,Today());
+        Refresh(LeaveRequests);
 
     ScreenContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -52,15 +56,6 @@
                 Width: =1125.56
                 X: =0.00
                 ZIndex: =1
-
-                Icon8_4 As icon.Hamburger:
-                    Height: =Parent.Height
-                    Icon: =Icon.Hamburger
-                    OnSelect: =Set(varVisible,true)
-                    PaddingLeft: =13
-                    PaddingRight: =13
-                    Width: =If(App.ActiveScreen.Size<=2,80,0)
-                    ZIndex: =1
 
                 Component2_9 As Component2_3:
                     FillPortions: =1
@@ -771,7 +766,18 @@
                                     err,
                                     "You don't have enough leave balance."
                                 )
-                            ],  
+                            ],
+                            Reasons2_1.Text="",
+                            [
+                                Set(
+                                    errordisplay,
+                                    true
+                                ),
+                                Set(
+                                    err,
+                                    "Please enter reason."
+                                )
+                            ],
                         
                          Patch(
                                 LeaveRequests,

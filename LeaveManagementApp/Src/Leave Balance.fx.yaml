@@ -376,12 +376,12 @@
                             Align: =Align.Right
                             Color: =RGBA(26, 26, 26, 1)
                             Font: =Font.'Segoe UI'
-                            PaddingLeft: =7
+                            PaddingLeft: =0
                             PaddingRight: =0
                             Size: =13.5
                             Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days')))
                             Width: =37
-                            X: =15
+                            X: =7
                             Y: =89
                             ZIndex: =6
 
@@ -456,7 +456,7 @@
                             Size: =13.5
                             Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days')))
                             Width: =37
-                            X: =15
+                            X: =7
                             Y: =89
                             ZIndex: =6
 
@@ -531,7 +531,7 @@
                             Size: =13.5
                             Text: =Sum(Filter(LeaveBalance,LeaveType.Value="Paid"),TotalLeave)-(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Paid"),'Total Days')))
                             Width: =37
-                            X: =15
+                            X: =7
                             Y: =89
                             ZIndex: =6
 
@@ -606,7 +606,7 @@
                             Size: =13.5
                             Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days')))
                             Width: =37
-                            X: =15
+                            X: =7
                             Y: =89
                             ZIndex: =6
 
@@ -681,7 +681,7 @@
                             Size: =13.5
                             Text: =(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Unpaid")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Unpaid"),'Total Days')))
                             Width: =37
-                            X: =15
+                            X: =7
                             Y: =89
                             ZIndex: =6
 

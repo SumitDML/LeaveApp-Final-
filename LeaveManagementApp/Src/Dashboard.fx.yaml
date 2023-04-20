@@ -364,7 +364,7 @@
                 Container1 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.6
                     LayoutGap: =10
-                    LayoutMinHeight: =If(Container1.Width<517,475,Container1.Width<=945,315,134)
+                    LayoutMinHeight: =If(Container1.Width<517,420,Container1.Width<=945,280,134)
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowY: =LayoutOverflow.Scroll
@@ -895,10 +895,9 @@
                                 Size: =If(App.ActiveScreen.Width<=420,10,12)
                                 Text: =ThisItem.RequestedBy.DisplayName
                                 VerticalAlign: =VerticalAlign.Top
-                                Visible: =If(App.ActiveScreen.Size<=2,false,true)
                                 Width: =310.94
                                 X: =Image7.X+Image7.Width+10
-                                Y: =((Parent.TemplateHeight-Self.Height)/2)-10
+                                Y: =If(App.ActiveScreen.Size<=2,((Parent.TemplateHeight-Self.Height)/2),((Parent.TemplateHeight-Self.Height)/2)-10)
                                 ZIndex: =2
 
                             Subtitle2 As label:
