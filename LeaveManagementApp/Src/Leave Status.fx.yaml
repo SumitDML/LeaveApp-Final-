@@ -54,6 +54,7 @@
 
                 Component2_7 As Component2_3:
                     FillPortions: =1
+                    Height: =70
                     LayoutMinHeight: =640
                     LayoutMinWidth: =200
                     Width: =1395.56
