@@ -81,7 +81,7 @@
                 ZIndex: =5
 
                 Container2 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=930,390,180)))
+                    Height: =If(App.ActiveScreen.Size<2,390,If(App.ActiveScreen.Size=2 && Container2.Width<=615,580,If(App.ActiveScreen.Size<=3 && Container2.Width<=900,390,180)))
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutGap: =10
                     LayoutMinHeight: =If(App.ActiveScreen.Size<2,465,App.ActiveScreen.Size=2 && Container2.Width<=615,500,App.ActiveScreen.Size<=3 && Container2.Width<=930,310,135)
@@ -98,7 +98,7 @@
                     Container7 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =130
-                        LayoutMinWidth: =280
+                        LayoutMinWidth: =270
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -158,7 +158,7 @@
                     Container7_3 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =130
-                        LayoutMinWidth: =280
+                        LayoutMinWidth: =270
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -218,7 +218,7 @@
                     Container7_1 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         LayoutMinHeight: =130
-                        LayoutMinWidth: =280
+                        LayoutMinWidth: =270
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Width: =323.33
@@ -1037,7 +1037,7 @@
 
                 Container13 As groupContainer.manualLayoutContainer:
                     FillPortions: =0
-                    Height: =If(App.ActiveScreen.Size<=2,50,25)
+                    Height: =If(App.ActiveScreen.Size<=2,90,25)
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     ZIndex: =8
