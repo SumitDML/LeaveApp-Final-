@@ -5874,36 +5874,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.err"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.err",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "err",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.From"
                 }
               ],

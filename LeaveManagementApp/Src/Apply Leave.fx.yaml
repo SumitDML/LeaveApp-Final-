@@ -992,6 +992,21 @@
                     Y: =405
                     ZIndex: =9
 
+                Button6 As button:
+                    Height: =50
+                    Size: =9
+                    Text: =err
+                    Width: =435
+                    X: =1095
+                    ZIndex: =10
+
+                Icon4 As icon.Error:
+                    Height: =50
+                    Icon: =Icon.Error
+                    Width: =24
+                    X: =1117
+                    ZIndex: =11
+
     Label15 As label:
         Text: =Container22_1.Width
         X: =258
