@@ -93,7 +93,7 @@
         "Name": "Image1",
         "Parent": "Left Navigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 335,
+        "PublishOrderIndex": 359,
         "Rules": [
           {
             "Category": "Data",
@@ -323,7 +323,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 337,
+            "PublishOrderIndex": 361,
             "Rules": [
               {
                 "Category": "Design",
@@ -487,7 +487,7 @@
             "Name": "Button1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 338,
+            "PublishOrderIndex": 362,
             "Rules": [
               {
                 "Category": "Data",
@@ -848,7 +848,7 @@
             "Name": "Label1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 339,
+            "PublishOrderIndex": 363,
             "Rules": [
               {
                 "Category": "Data",
@@ -1205,7 +1205,7 @@
             "Name": "Image3",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 340,
+            "PublishOrderIndex": 364,
             "Rules": [
               {
                 "Category": "Data",
@@ -1438,7 +1438,7 @@
             "Name": "Group1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 341,
+            "PublishOrderIndex": 365,
             "Rules": [
               {
                 "Category": "Design",
@@ -1564,7 +1564,7 @@
         "Name": "Gallery1",
         "Parent": "Left Navigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 336,
+        "PublishOrderIndex": 360,
         "Rules": [
           {
             "Category": "Data",
@@ -1779,7 +1779,7 @@
       "NavItems",
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638175204512068934",
+    "LastModifiedTimestamp": "638175604568440703",
     "Name": "Left Navigation",
     "Rules": [
       {
@@ -1884,7 +1884,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638175204512068934",
+  "LastModifiedTimestamp": "638175604568440703",
   "Name": "44282070d4be478dab4786fb4733f563",
   "OverridableProperties": {},
   "TemplateOriginalName": "784fa766a3ea40dfb2045a277d69d5b8",
