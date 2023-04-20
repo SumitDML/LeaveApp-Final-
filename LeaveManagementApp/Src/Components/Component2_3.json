@@ -229,7 +229,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Font.'Lato Black'",
+            "InvariantScript": "Font.'Segoe UI'",
             "Property": "Font",
             "RuleProviderType": "Unknown"
           },
@@ -307,7 +307,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(App.ActiveScreen.Width<500,16,25.74)",
+            "InvariantScript": "If(App.ActiveScreen.Width<500,16,21)",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -717,7 +717,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638175604568438869",
+    "LastModifiedTimestamp": "638175839186478861",
     "Name": "Component2_3",
     "Rules": [
       {
@@ -776,7 +776,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638175604568438869",
+  "LastModifiedTimestamp": "638175839186478861",
   "Name": "f0d75971fa9c48419598f051aa711744",
   "OverridableProperties": {},
   "TemplateOriginalName": "2c83fcd24b97406eb33eeade790d7b43",
