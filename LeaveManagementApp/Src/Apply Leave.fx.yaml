@@ -959,7 +959,7 @@
                         Reset(TextInput2_12);
                         
                         Reset(Reasons2_1);
-                        
+                        Set(_dateSelected2,Today());
                         Reset(LeaveTypes2_1); )
                             );
                                 
@@ -993,19 +993,39 @@
                     ZIndex: =9
 
                 Button6 As button:
+                    Fill: =RGBA(168, 0, 0, 0.9)
+                    Font: =Font.'Segoe UI'
                     Height: =50
-                    Size: =9
+                    PaddingLeft: =15
+                    Size: =8
                     Text: =err
-                    Width: =435
-                    X: =1095
+                    Visible: =errordisplay
+                    Width: =250
+                    X: =Parent.Width-Self.Width-5
                     ZIndex: =10
 
                 Icon4 As icon.Error:
-                    Height: =50
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =Button6.Height
                     Icon: =Icon.Error
-                    Width: =24
-                    X: =1117
+                    PaddingBottom: =4
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    PaddingTop: =4
+                    Visible: =errordisplay
+                    Width: =25
+                    X: =Button6.X+2
                     ZIndex: =11
+
+                Timer2 As timer:
+                    AutoStart: =errordisplay
+                    Duration: =2000
+                    OnTimerEnd: =Set(errordisplay,false)
+                    Visible: =false
+                    Width: =38
+                    X: =1490
+                    Y: =1
+                    ZIndex: =12
 
     Label15 As label:
         Text: =Container22_1.Width
@@ -1140,7 +1160,7 @@
                 TemplateSize: =Self.Width/7
                 Visible: =_calendarVisible
                 Width: =230
-                X: =20
+                X: =MonthDayGallery2_1.X
                 Y: =85
                 ZIndex: =5
 
@@ -1167,7 +1187,7 @@
                 Visible: =_calendarVisible
                 Width: =230
                 WrapCount: =7
-                X: =20
+                X: =Parent.Width/2-Self.Width/2
                 Y: =105
                 ZIndex: =6
 
@@ -1260,16 +1280,17 @@
                 Visible: |
                     =true
                 Width: =6.5
-                X: =40
+                X: =60
                 Y: =308
                 ZIndex: =7
 
             Label16 As label:
+                Font: =Font.'Segoe UI'
                 Height: =20
-                Size: =8
+                Size: =6
                 Text: ="Weekly Off"
                 Width: =85
-                X: =46
+                X: =66
                 Y: =301
                 ZIndex: =8
 
@@ -1280,74 +1301,71 @@
                 Visible: |
                     =true
                 Width: =6.5
-                X: =132
+                X: =130
                 Y: =308
                 ZIndex: =9
 
             Label16_1 As label:
+                Font: =Font.'Segoe UI'
                 Height: =20
-                Size: =8
+                PaddingLeft: =0
+                Size: =6
                 Text: ="Leave"
                 Width: =85
-                X: =146
+                X: =140
                 Y: =301
                 ZIndex: =10
 
             "Gallery5_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                Height: =55
+                Height: =80
                 Items: =Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected")
                 Layout: =Layout.Vertical
                 ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =38
+                TemplateSize: =Self.Height/2
                 Width: =254
                 X: =20
                 Y: =332
                 ZIndex: =11
 
                 Title3_1 As label:
-                    FontWeight: =FontWeight.Bold
-                    Height: =22
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Normal
+                    Height: =10
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0.00
                     PaddingTop: =0.00
-                    Size: =If(Container12.Width<430,7,8)
+                    Size: =If(Container12.Width<430,5,6)
                     Text: =ThisItem.RequestedBy.DisplayName
                     VerticalAlign: =VerticalAlign.Top
-                    Visible: =If(App.ActiveScreen.Size<=2,false,true)
                     Width: =73
                     Y: =7
                     ZIndex: =2
 
-                Subtitle2_1 As label:
-                    Height: =23
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Size: =If(Container12.Width<430,7,8)
-                    Text: =ThisItem.RequestedBy.JobTitle
-                    VerticalAlign: =VerticalAlign.Top
-                    Visible: =If(App.ActiveScreen.Size<=2,false,true)
-                    Width: =73
-                    X: =81
-                    Y: =8
-                    ZIndex: =3
-
                 Label24_1 As label:
-                    Height: =24
+                    Height: =10
                     OnSelect: =Select(Parent)
-                    Size: =8
+                    Size: =5
                     Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
                     Width: =53
                     X: =194
                     Y: =7
                     ZIndex: =5
 
+                Label21 As label:
+                    Height: =17
+                    OnSelect: =Select(Parent)
+                    Size: =5
+                    Text: =ThisItem.From&"-"&ThisItem.To
+                    Width: =65
+                    X: =101
+                    Y: =3
+                    ZIndex: =6
+
             Icon3 As icon.Cancel:
+                Color: =RGBA(0, 0, 0, 1)
                 Height: =20
                 Icon: =Icon.Cancel
                 OnSelect: =Set(calView,false)

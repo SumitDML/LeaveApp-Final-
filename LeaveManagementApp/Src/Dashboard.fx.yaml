@@ -148,9 +148,9 @@
                         Label3 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
-                            Size: =31.5
+                            Size: =If(App.ActiveScreen.Size<=2,18,31.5)
                             Text: =Sum(LeaveBalance,TotalLeave)
-                            Width: =74
+                            Width: =120
                             X: =38
                             Y: =89
                             ZIndex: =3
@@ -208,9 +208,9 @@
                         Label3_1 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
-                            Size: =31.5
+                            Size: =If(App.ActiveScreen.Size<=2,18,31.5)
                             Text: =Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')
-                            Width: =114
+                            Width: =120
                             X: =38
                             Y: =89
                             ZIndex: =3
@@ -268,9 +268,9 @@
                         Label3_2 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
-                            Size: =31.5
+                            Size: =If(App.ActiveScreen.Size<=2,18,31.5)
                             Text: =If(CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email))=0,0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'))
-                            Width: =74
+                            Width: =120
                             X: =38
                             Y: =89
                             ZIndex: =3
@@ -824,15 +824,14 @@
                             ZIndex: =1
 
                         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                            Height: =233
+                            Height: =Parent.Height-20
                             Items: =Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected")
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
                             TemplatePadding: =0
-                            TemplateSize: =Parent.Height/If(App.ActiveScreen.Size<2,5,4)
+                            TemplateSize: =Self.Height/2
                             Width: =Parent.Width
-                            X: =0.00
-                            Y: =19
+                            Y: =10
                             ZIndex: =3
 
                             Image7 As image:
@@ -851,14 +850,14 @@
                                 ZIndex: =1
 
                             Title3 As label:
-                                FontWeight: =FontWeight.Bold
+                                Font: =Font.'Segoe UI'
                                 Height: =27
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
-                                Size: =If(Container12.Width<430,10,13.52)
+                                Size: =If(App.ActiveScreen.Width<=420,10,12)
                                 Text: =ThisItem.RequestedBy.DisplayName
                                 VerticalAlign: =VerticalAlign.Top
                                 Visible: =If(App.ActiveScreen.Size<=2,false,true)
@@ -868,13 +867,14 @@
                                 ZIndex: =2
 
                             Subtitle2 As label:
+                                Font: =Font.'Segoe UI'
                                 Height: =32
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
                                 PaddingLeft: =0
                                 PaddingRight: =0.00
                                 PaddingTop: =0.00
-                                Size: =If(Container12.Width<430,9.2,12.62)
+                                Size: =If(App.ActiveScreen.Width<=420,8,10)
                                 Text: =ThisItem.RequestedBy.JobTitle
                                 VerticalAlign: =VerticalAlign.Top
                                 Visible: =If(App.ActiveScreen.Size<=2,false,true)
@@ -884,11 +884,13 @@
                                 ZIndex: =3
 
                             Label24 As label:
+                                Font: =Font.'Segoe UI'
                                 OnSelect: =Select(Parent)
+                                Size: =10
                                 Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
                                 Width: =If(Container12.Width<430,85,109.96)
                                 X: =(Parent.TemplateWidth-Self.Width)-20
-                                Y: =26
+                                Y: =Parent.TemplateHeight/2-Self.Height/2
                                 ZIndex: =5
 
                         Label12 As label:
