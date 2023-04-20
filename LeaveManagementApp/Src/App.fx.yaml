@@ -74,6 +74,7 @@ App As appinfo:
             )
         );
         Set(_calendarVisible, true);
+        Refresh(LeaveRequests);
     SizeBreakpoints: =[600, 900, 1340,1550]
     StartScreen: =Dashboard
 

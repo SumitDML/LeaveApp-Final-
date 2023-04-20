@@ -687,17 +687,12 @@
                             Y: =89
                             ZIndex: =7
 
-    Label19 As label:
-        Text: =Container2_1.Width
-        X: =260
-        Y: =80
-        ZIndex: =5
-
-    Label19_1 As label:
-        Text: =MainSectionContainer1_2.Height
-        X: =260
-        Y: =150
-        ZIndex: =6
+                Container16 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
+                    Height: =If(App.ActiveScreen.Size<=2,60,20)
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    ZIndex: =4
 
     Component7_2 As Component7:
         CurrentScreen: ="Leave Balance"

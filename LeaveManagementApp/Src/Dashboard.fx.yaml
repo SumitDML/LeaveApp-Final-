@@ -1037,16 +1037,10 @@
 
                 Container13 As groupContainer.manualLayoutContainer:
                     FillPortions: =0
-                    Height: =If(App.ActiveScreen.Size<=2,50,15)
+                    Height: =If(App.ActiveScreen.Size<=2,50,25)
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     ZIndex: =8
-
-    Label11 As label:
-        Text: =App.ActiveScreen.Width
-        X: =262
-        Y: =297
-        ZIndex: =5
 
     Component7_1 As Component7:
         CurrentScreen: ="Dashboard"
