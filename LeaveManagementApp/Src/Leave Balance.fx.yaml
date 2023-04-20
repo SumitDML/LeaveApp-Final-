@@ -64,6 +64,13 @@
                     X: =0.00
                     ZIndex: =2
 
+                Icon5 As icon.Bell:
+                    Height: =Parent.Height
+                    Icon: =Icon.Bell
+                    OnSelect: =Set(notipop,true)
+                    Width: =30
+                    ZIndex: =3
+
             MainSectionContainer1_2 As groupContainer.verticalAutoLayoutContainer:
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutDirection: =LayoutDirection.Vertical
@@ -697,7 +704,7 @@
                     LayoutMinWidth: =250
                     ZIndex: =4
 
-    Component7_2 As Component7:
+    bottomNav As Component7:
         CurrentScreen: ="Leave Balance"
         Visible: =If(App.ActiveScreen.Size<=2,true,false)
         Width: =App.ActiveScreen.Width

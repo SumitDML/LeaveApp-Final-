@@ -967,6 +967,7 @@
                             ZIndex: =3
 
                             Title1_1 As label:
+                                Font: =Font.'Segoe UI'
                                 Height: =Self.Size * 1.8
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
@@ -982,8 +983,7 @@
                                 ZIndex: =2
 
                             Label6_1 As label:
-                                Color: =RGBA(60, 93, 255, 1)
-                                FontWeight: =FontWeight.Semibold
+                                Font: =Font.'Segoe UI'
                                 Height: =19
                                 OnSelect: =Select(Parent)
                                 PaddingRight: =4.51
@@ -1042,7 +1042,7 @@
                     LayoutMinWidth: =250
                     ZIndex: =8
 
-    Component7_1 As Component7:
+    BottomNav2 As Component7:
         CurrentScreen: ="Dashboard"
         Visible: =If(App.ActiveScreen.Size<=2,true,false)
         Width: =App.ActiveScreen.Width
