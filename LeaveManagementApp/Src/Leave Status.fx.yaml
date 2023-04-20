@@ -2,6 +2,7 @@
     OnVisible: |-
         =Refresh(LeaveRequests);
         Refresh(LeaveBalance);
+        If('Left Navigation_4'.CurrentScreen="Leave Status",Set(varVisible,false),Set(varVisible,true));
 
     ScreenContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -205,7 +206,9 @@
         ZIndex: =5
 
         "'Left Navigation_4' As 'Left Navigation'":
+            CurrentScreen: ="Leave Status"
             Visible: =varVisible
+            Width: =250
             X: =
 
         Rectangle1_2 As rectangle:
@@ -217,12 +220,13 @@
             ZIndex: =2
 
         Icon2_2 As icon.Cancel:
-            Height: =39
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
             Icon: =Icon.Cancel
             OnSelect: =Set(varVisible,false)
             Visible: =varVisible
-            Width: =39
-            X: =348
-            Y: =30
+            Width: =30
+            X: ='Left Navigation_4'.Width-Self.Width-10
+            Y: =20
             ZIndex: =4
 

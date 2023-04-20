@@ -4,7 +4,8 @@
         Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Total,Sum(LeaveBalance,TotalLeave));
         Refresh(LeaveRequests);
-        Refresh(LeaveBalance)
+        Refresh(LeaveBalance);
+        If('Left Navigation_12'.CurrentScreen="Leave Balance",Set(varVisible,false),Set(varVisible,true));
 
     ScreenContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -146,9 +147,9 @@
                         Label3_9 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
-                            Size: =31.5
+                            Size: =If(App.ActiveScreen.Size<=2,18,31.5)
                             Text: =Sum(LeaveBalance,TotalLeave)
-                            Width: =74
+                            Width: =120
                             X: =38
                             Y: =89
                             ZIndex: =3
@@ -207,9 +208,9 @@
                         Label3_10 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
-                            Size: =31.5
+                            Size: =If(App.ActiveScreen.Size<=2,18,31.5)
                             Text: =Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')
-                            Width: =114
+                            Width: =120
                             X: =38
                             Y: =89
                             ZIndex: =3
@@ -268,9 +269,9 @@
                         Label3_8 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
-                            Size: =31.5
+                            Size: =If(App.ActiveScreen.Size<=2,18,31.5)
                             Text: =Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')
-                            Width: =74
+                            Width: =120
                             X: =38
                             Y: =89
                             ZIndex: =3
@@ -701,38 +702,42 @@
         Y: =80
         ZIndex: =5
 
-    LeftNav As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =5
-
-        "'Left Navigation_1' As 'Left Navigation'":
-            Visible: =varVisible
-            X: =
-
-        Rectangle1 As rectangle:
-            Fill: =RGBA(202, 202, 202, 0.6)
-            Height: =Parent.Height
-            Visible: =varVisible
-            Width: =Parent.Width
-            X: =
-            ZIndex: =2
-
-        Icon2 As icon.Cancel:
-            Height: =39
-            Icon: =Icon.Cancel
-            OnSelect: =Set(varVisible,false)
-            Visible: =varVisible
-            Width: =39
-            X: =348
-            Y: =30
-            ZIndex: =4
-
     Label19_1 As label:
         Text: =MainSectionContainer1_2.Height
         X: =260
         Y: =150
         ZIndex: =6
+
+    LeftNav_4 As group:
+        Height: =5
+        Width: =5
+        X: =-348
+        Y: =40
+        ZIndex: =10
+
+        Rectangle1_4 As rectangle:
+            Fill: =RGBA(202, 202, 202, 0.6)
+            Height: =Parent.Height
+            Visible: =varVisible
+            Width: =Parent.Width
+            X: =
+            ZIndex: =7
+
+        "'Left Navigation_12' As 'Left Navigation'":
+            CurrentScreen: ="Leave Balance"
+            Visible: =varVisible
+            Width: =250
+            X: =
+            ZIndex: =8
+
+        Icon2_4 As icon.Cancel:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varVisible,false)
+            Visible: =varVisible
+            Width: =30
+            X: ='Left Navigation_12'.Width-Self.Width-10
+            Y: =20
+            ZIndex: =9
 

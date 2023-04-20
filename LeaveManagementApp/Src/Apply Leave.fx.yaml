@@ -5,6 +5,7 @@
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
         Set(_calendarVisible, true);
+        If('Left Navigation_6'.CurrentScreen="Apply Leave",Set(varVisible,false),Set(varVisible,true));
 
     ScreenContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -1033,36 +1034,6 @@
         Y: =92
         ZIndex: =6
 
-    LeftNav_3 As group:
-        Height: =5
-        Width: =5
-        X: =-348
-        Y: =40
-        ZIndex: =6
-
-        Rectangle1_3 As rectangle:
-            Fill: =RGBA(202, 202, 202, 0.6)
-            Height: =Parent.Height
-            Visible: =varVisible
-            Width: =Parent.Width
-            X: =
-            ZIndex: =3
-
-        "'Left Navigation_6' As 'Left Navigation'":
-            Visible: =varVisible
-            X: =
-            ZIndex: =4
-
-        Icon2_3 As icon.Cancel:
-            Height: =39
-            Icon: =Icon.Cancel
-            OnSelect: =Set(varVisible,false)
-            Visible: =varVisible
-            Width: =39
-            X: =348
-            Y: =30
-            ZIndex: =5
-
     Container6 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(28, 37, 54, 0.4)
         Height: =1080
@@ -1280,7 +1251,7 @@
                 Visible: |
                     =true
                 Width: =6.5
-                X: =60
+                X: =80
                 Y: =308
                 ZIndex: =7
 
@@ -1290,7 +1261,7 @@
                 Size: =6
                 Text: ="Weekly Off"
                 Width: =85
-                X: =66
+                X: =86
                 Y: =301
                 ZIndex: =8
 
@@ -1301,7 +1272,7 @@
                 Visible: |
                     =true
                 Width: =6.5
-                X: =130
+                X: =150
                 Y: =308
                 ZIndex: =9
 
@@ -1312,13 +1283,13 @@
                 Size: =6
                 Text: ="Leave"
                 Width: =85
-                X: =140
+                X: =160
                 Y: =301
                 ZIndex: =10
 
             "Gallery5_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 Height: =80
-                Items: =Filter(LeaveRequests,(From<=Today()&&Today()<=To),Status.Value<>"Rejected")
+                Items: =Filter(LeaveRequests,(_firstDayOfMonth<=From&&_firstDayOfMonth+30>=To),Status.Value<>"Rejected")
                 Layout: =Layout.Vertical
                 ShowScrollbar: =false
                 TemplatePadding: =0
@@ -1330,7 +1301,6 @@
 
                 Title3_1 As label:
                     Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Normal
                     Height: =10
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -1355,6 +1325,7 @@
                     ZIndex: =5
 
                 Label21 As label:
+                    Color: =RGBA(116, 116, 116, 1)
                     Height: =17
                     OnSelect: =Select(Parent)
                     Size: =5
@@ -1686,4 +1657,37 @@
                 X: =Parent.Width-Self.Width-20
                 Y: =65
                 ZIndex: =12
+
+    LeftNav_3 As group:
+        Height: =5
+        Width: =5
+        X: =-348
+        Y: =40
+        ZIndex: =13
+
+        Rectangle1_3 As rectangle:
+            Fill: =RGBA(202, 202, 202, 0.6)
+            Height: =Parent.Height
+            Visible: =varVisible
+            Width: =Parent.Width
+            X: =
+            ZIndex: =10
+
+        "'Left Navigation_6' As 'Left Navigation'":
+            CurrentScreen: ="Apply Leave"
+            Visible: =varVisible
+            Width: =250
+            X: =
+            ZIndex: =11
+
+        Icon2_3 As icon.Cancel:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varVisible,false)
+            Visible: =varVisible
+            Width: =30
+            X: ='Left Navigation_6'.Width-Self.Width-10
+            Y: =20
+            ZIndex: =12
 
