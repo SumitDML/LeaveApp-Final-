@@ -269,7 +269,7 @@
                                     BorderColor: =RGBA(202, 202, 202, 1)
                                     BorderThickness: =1
                                     Default: =Text(_dateSelected, DateTimeFormat.LongDate)
-                                    DisabledFill: =RGBA(255, 255, 255, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
                                     Height: =42
                                     HintText: =Today()
                                     PaddingRight: =4.51
@@ -319,6 +319,7 @@
                                     BorderThickness: =1
                                     Default: =Text(_dateSelected2, DateTimeFormat.LongDate)
                                     DisabledFill: =RGBA(255, 255, 255, 1)
+                                    DisplayMode: =DisplayMode.Disabled
                                     Height: =42
                                     HintText: =Today()
                                     PaddingRight: =4.51
@@ -684,7 +685,7 @@
                                     DisabledFill: =RGBA(0, 0, 0, 0)
                                     DisplayFields: =["DisplayName","JobTitle"]
                                     Font: =Font.'Segoe UI'
-                                    Height: =TextInput2_8.Height-14
+                                    Height: =TextInput2_8.Height-6
                                     InputTextPlaceholder: ="Search Employee"
                                     Items: |-
                                         =Office365Users.SearchUser({searchTerm:Self.SearchText,top:5})
@@ -700,7 +701,7 @@
                                     Width: |
                                         =TextInput2_8.Width-4
                                     X: =TextInput2_8.X+2
-                                    Y: =TextInput2_8.Y+10
+                                    Y: =TextInput2_8.Y+3
                                     ZIndex: =7
 
                 Rectangle3 As rectangle:
@@ -1359,7 +1360,6 @@
                 Height: =80
                 Items: =Filter(LeaveRequests,(_firstDayOfMonth<=From&&_firstDayOfMonth+30>=To),Status.Value<>"Rejected")
                 Layout: =Layout.Vertical
-                ShowNavigation: =true
                 ShowScrollbar: =false
                 TemplatePadding: =0
                 TemplateSize: =24
