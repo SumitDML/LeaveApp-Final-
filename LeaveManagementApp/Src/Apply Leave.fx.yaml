@@ -1087,7 +1087,7 @@
                     PaddingRight: =2
                     PaddingTop: =4
                     Visible: =errordisplay
-                    Width: =25
+                    Width: =20
                     X: =Button6.X+2
                     ZIndex: =11
 
