@@ -75,12 +75,12 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "CurrentScreen",
+          "PropertyName": "NavItems",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
-          "PropertyName": "NavItems",
+          "PropertyName": "CurrentScreen",
           "RuleProviderType": "Unknown"
         },
         {

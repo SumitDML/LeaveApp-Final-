@@ -1667,7 +1667,7 @@
         CurrentScreen: ="Apply Leave"
         Visible: =If(App.ActiveScreen.Size<=2,true,false)
         Width: =App.ActiveScreen.Width
-        Y: =App.ActiveScreen.Height-Self.Height-2
+        Y: =App.ActiveScreen.Height-Self.Height
         ZIndex: =10
 
     Container17_3 As groupContainer.manualLayoutContainer:

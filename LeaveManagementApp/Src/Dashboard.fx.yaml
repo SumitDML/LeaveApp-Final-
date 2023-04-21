@@ -1053,7 +1053,7 @@
         CurrentScreen: ="Dashboard"
         Visible: =If(App.ActiveScreen.Size<=2,true,false)
         Width: =App.ActiveScreen.Width
-        Y: =App.ActiveScreen.Height-Self.Height-2
+        Y: =App.ActiveScreen.Height-Self.Height
         ZIndex: =6
 
     Container17_1 As groupContainer.manualLayoutContainer:
