@@ -1,11 +1,10 @@
 "'Leave Balance' As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
-    OnVisible: |-
+    OnVisible: |
         =Set(consumed,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Total,Sum(LeaveBalance,TotalLeave));
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
-        If('Left Navigation_12'.CurrentScreen="Leave Balance",Set(varVisible,false),Set(varVisible,true));
 
     ScreenContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)

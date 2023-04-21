@@ -1,13 +1,12 @@
 "Dashboard As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
     Fill: =RGBA(249, 250, 252, 1)
-    OnVisible: |-
+    OnVisible: |
         =Set(consumed,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Total,Sum(LeaveBalance,TotalLeave));
         Set(_calendarVisible, true);
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
-        If('Left Navigation_3'.CurrentScreen="Dashboard",Set(varVisible,false),Set(varVisible,true));
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -500,7 +499,7 @@
                             PaddingLeft: =7
                             PaddingRight: =0
                             Size: =13.5
-                            Text: =Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)-(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Sick"),'Total Days')))
+                            Text: =Sum(Filter(LeaveBalance,LeaveType.Value="Casual"),TotalLeave)-(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Casual"),'Total Days')))
                             Width: =37
                             X: =5
                             Y: =89
