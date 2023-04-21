@@ -659,6 +659,8 @@
                                     BorderColor: =RGBA(202, 202, 202, 1)
                                     BorderThickness: =1
                                     Default: =""
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    DisplayMode: =DisplayMode.Disabled
                                     Height: =42
                                     HintText: =""
                                     PaddingRight: =4.51
@@ -679,9 +681,10 @@
                                     BorderThickness: =1
                                     ChevronBackground: =RGBA(0, 0, 0, 0)
                                     ChevronHoverBackground: =
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
                                     DisplayFields: =["DisplayName","JobTitle"]
                                     Font: =Font.'Segoe UI'
-                                    Height: =TextInput2_8.Height-4
+                                    Height: =TextInput2_8.Height-14
                                     InputTextPlaceholder: ="Search Employee"
                                     Items: |-
                                         =Office365Users.SearchUser({searchTerm:Self.SearchText,top:5})
@@ -697,7 +700,7 @@
                                     Width: |
                                         =TextInput2_8.Width-4
                                     X: =TextInput2_8.X+2
-                                    Y: =TextInput2_8.Y+2
+                                    Y: =TextInput2_8.Y+10
                                     ZIndex: =7
 
                 Rectangle3 As rectangle:
@@ -766,7 +769,7 @@
                                     "Please enter a valid start date"
                                 )
                             ],
-                            duration > total1 - leaves1,
+                            duration > total - leaves,
                             [
                                 Set(
                                     errordisplay,
@@ -1299,12 +1302,14 @@
                 ZIndex: =10
 
             "Gallery5_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                BorderColor: =RGBA(255, 255, 255, 1)
                 Height: =80
                 Items: =Filter(LeaveRequests,(_firstDayOfMonth<=From&&_firstDayOfMonth+30>=To),Status.Value<>"Rejected")
                 Layout: =Layout.Vertical
+                ShowNavigation: =true
                 ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =Self.Height/2
+                TemplateSize: =24
                 Width: =254
                 X: =20
                 Y: =332
@@ -1318,33 +1323,48 @@
                     PaddingLeft: =0
                     PaddingRight: =0.00
                     PaddingTop: =0.00
-                    Size: =If(Container12.Width<430,5,6)
+                    Size: =If(Container12.Width<430,4.5,5)
                     Text: =ThisItem.RequestedBy.DisplayName
                     VerticalAlign: =VerticalAlign.Top
                     Width: =73
-                    Y: =7
+                    X: =10
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
                     ZIndex: =2
 
                 Label24_1 As label:
+                    Align: =Align.Center
                     Height: =10
                     OnSelect: =Select(Parent)
+                    PaddingLeft: =0
                     Size: =5
                     Text: =If((ThisItem.FromType.Value="Second Half" && ThisItem.From=Today())||(ThisItem.ToType.Value="First Half" && ThisItem.To=Today()),"Half Day","Full Day")
-                    Width: =53
-                    X: =194
-                    Y: =7
+                    Width: =40
+                    X: =Parent.TemplateWidth-Self.Width-10
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
                     ZIndex: =5
 
                 Label21 As label:
                     Color: =RGBA(116, 116, 116, 1)
-                    Height: =17
+                    Font: =Font.'Segoe UI'
+                    Height: =10
                     OnSelect: =Select(Parent)
-                    Size: =5
-                    Text: =ThisItem.From&"-"&ThisItem.To
-                    Width: =65
-                    X: =101
-                    Y: =3
+                    Size: =4.5
+                    Text: =Text(ThisItem.From,DateTimeFormat.LongDate)&"-"&Text(ThisItem.To,DateTimeFormat.LongDate)
+                    Width: =100
+                    X: =90
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
                     ZIndex: =6
+
+                Separator5_1 As rectangle:
+                    BorderColor: =RGBA(202, 202, 202, 1)
+                    Fill: =RGBA(202, 202, 202, 1)
+                    Height: =0.2
+                    OnSelect: =Select(Parent)
+                    Width: |
+                        =Parent.TemplateWidth-10
+                    X: =2
+                    Y: =Parent.TemplateHeight - 1
+                    ZIndex: =7
 
             Icon3 As icon.Cancel:
                 Color: =RGBA(0, 0, 0, 1)

@@ -650,7 +650,7 @@
                             PaddingLeft: =7
                             PaddingRight: =0
                             Size: =13.5
-                            Text: =Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)-(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Manternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days')))
+                            Text: =Sum(Filter(LeaveBalance,LeaveType.Value="Maternity"),TotalLeave)-(If(IsEmpty(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity")),0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value="Maternity"),'Total Days')))
                             Width: =37
                             X: =5
                             Y: =89

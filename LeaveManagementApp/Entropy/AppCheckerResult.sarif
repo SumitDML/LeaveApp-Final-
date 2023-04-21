@@ -2262,7 +2262,7 @@
                 },
                 "region": {
                   "charLength": 99,
-                  "charOffset": 163,
+                  "charOffset": 162,
                   "snippet": {
                     "text": "Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email,LeaveTypes.Value=\"Maternity\"),'Total Days')"
                   }
@@ -5403,66 +5403,6 @@
               },
               "properties": {
                 "member": "customdatepicker",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.leaves"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.leaves",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "leaves",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.total"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.total",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "total",
                 "module": "App",
                 "type": "App"
               }
