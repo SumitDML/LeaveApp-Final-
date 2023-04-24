@@ -89,3 +89,48 @@
         Y: =40
         ZIndex: =4
 
+    Image11 As image:
+        Height: =42
+        Image: =User().Image
+        RadiusBottomLeft: =45
+        RadiusBottomRight: =45
+        RadiusTopLeft: =45
+        RadiusTopRight: =45
+        Width: =42
+        X: =16
+        Y: =936
+        ZIndex: =5
+
+    Label11 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =18
+        Size: =11
+        Text: =User().FullName
+        X: =70
+        Y: =942
+        ZIndex: =6
+
+    Label15 As label:
+        Color: =RGBA(255, 255, 255, 0.6)
+        Font: =Font.'Segoe UI'
+        Height: =15
+        Size: =8
+        Text: =User().Email
+        Width: =185
+        X: =70
+        Y: =960
+        ZIndex: =7
+
+    Image13 As image:
+        Height: =39
+        Image: =logout
+        PaddingBottom: =10
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =10
+        Width: =54
+        X: =272
+        Y: =936
+        ZIndex: =8
+
