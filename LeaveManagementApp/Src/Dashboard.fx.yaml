@@ -1,5 +1,6 @@
 "Dashboard As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
     Fill: =RGBA(249, 250, 252, 1)
+    OnHidden: =
     OnVisible: |
         =Set(consumed,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
         Set(Available,Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days'));
@@ -1191,4 +1192,11 @@
                 X: =20
                 Y: =60
                 ZIndex: =3
+
+    Button13 As button:
+        OnSelect: =Exit()
+        Text: ="Button"
+        X: =741
+        Y: =627
+        ZIndex: =8
 

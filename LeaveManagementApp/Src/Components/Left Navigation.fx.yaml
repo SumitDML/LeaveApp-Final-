@@ -11,7 +11,7 @@
 
     Gallery1 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =676
+        Height: =454
         Items: ='Left Navigation'.NavItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -89,48 +89,68 @@
         Y: =40
         ZIndex: =4
 
-    Image11 As image:
-        Height: =42
-        Image: =User().Image
-        RadiusBottomLeft: =45
-        RadiusBottomRight: =45
-        RadiusTopLeft: =45
-        RadiusTopRight: =45
-        Width: =42
-        X: =16
-        Y: =936
-        ZIndex: =5
+    Container19 As groupContainer.manualLayoutContainer:
+        Height: =84
+        Width: =301
+        Y: =726
+        ZIndex: =9
 
-    Label11 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =18
-        Size: =11
-        Text: =User().FullName
-        X: =70
-        Y: =942
-        ZIndex: =6
+        Image11_1 As image:
+            Height: =40
+            Image: =User().Image
+            RadiusBottomLeft: =45
+            RadiusBottomRight: =45
+            RadiusTopLeft: =45
+            RadiusTopRight: =45
+            Width: =40
+            X: =5
+            Y: =15
+            ZIndex: =1
 
-    Label15 As label:
-        Color: =RGBA(255, 255, 255, 0.6)
-        Font: =Font.'Segoe UI'
-        Height: =15
-        Size: =8
-        Text: =User().Email
-        Width: =185
-        X: =70
-        Y: =960
-        ZIndex: =7
+        Label11_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Height: =18
+            Size: =10
+            Text: =User().FullName
+            X: =45
+            Y: =20
+            ZIndex: =2
 
-    Image13 As image:
-        Height: =39
-        Image: =logout
-        PaddingBottom: =10
-        PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =10
-        Width: =54
-        X: =272
-        Y: =936
-        ZIndex: =8
+        Label15_1 As label:
+            Color: =RGBA(255, 255, 255, 0.6)
+            Font: =Font.'Segoe UI'
+            Height: =15
+            Size: =7
+            Text: =User().Email
+            Width: =185
+            X: =45
+            Y: =37
+            ZIndex: =3
+
+        Image13_1 As image:
+            Height: =39
+            Image: =logout
+            PaddingBottom: =10
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =10
+            Width: =27
+            X: =215
+            Y: =15
+            ZIndex: =4
+
+        Button9 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =80
+            HoverBorderColor: =
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =
+            OnSelect: =Exit()
+            PressedBorderColor: =
+            PressedColor: =
+            PressedFill: =
+            Text: =""
+            Width: =301
+            ZIndex: =5
 

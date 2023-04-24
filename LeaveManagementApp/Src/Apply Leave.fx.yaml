@@ -605,7 +605,7 @@
 
                                 LeaveTypes2_1 As dropdown:
                                     BorderColor: =RGBA(0, 0, 0, 0)
-                                    BorderThickness: =0
+                                    BorderThickness: =1
                                     ChevronBackground: =RGBA(0, 0, 0, 0)
                                     ChevronFill: =RGBA(255, 255, 255, 0)
                                     ChevronHoverBackground: =
@@ -642,6 +642,7 @@
                                     PaddingTop: =9.01
                                     PressedBorderColor: =
                                     PressedFill: =RGBA(0, 18, 107, 0)
+                                    SelectionColor: =RGBA(128, 128, 128, 1)
                                     Size: =11.71
                                     Width: |
                                         =(Parent.Width*8/10)-15
