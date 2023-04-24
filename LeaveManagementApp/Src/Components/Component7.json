@@ -1335,7 +1335,7 @@
       "NavItems",
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638176471721811684",
+    "LastModifiedTimestamp": "638179077103946863",
     "Name": "Component7",
     "Rules": [
       {
@@ -1425,7 +1425,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638176471721811684",
+  "LastModifiedTimestamp": "638179077103946863",
   "Name": "6b60240ef2a74b4781025f3337b10226",
   "OverridableProperties": {},
   "Version": "638175781374663706"
