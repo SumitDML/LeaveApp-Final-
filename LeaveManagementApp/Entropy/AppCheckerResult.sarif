@@ -5536,36 +5536,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.DigiMantra-Labs-logo-design-New (1)"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.DigiMantra-Labs-logo-design-New (1)",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DigiMantra-Labs-logo-design-New (1)",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.facebook-logo-png-38347 (1)"
                 }
               ],
@@ -6237,6 +6207,36 @@
               },
               "properties": {
                 "member": "Vector (11)",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Rolling-1s-200px"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Rolling-1s-200px",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Rolling-1s-200px",
                 "module": "App",
                 "type": "App"
               }

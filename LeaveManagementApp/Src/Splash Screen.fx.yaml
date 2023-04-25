@@ -18,29 +18,110 @@
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        PaddingBottom: =150
+        PaddingBottom: =100
         PaddingTop: =150
         Width: =Parent.Width
         ZIndex: =2
 
         Container21 As groupContainer.verticalAutoLayoutContainer:
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =1
 
-        Container21_1 As groupContainer.verticalAutoLayoutContainer:
-            LayoutDirection: =LayoutDirection.Vertical
+            Image14 As image:
+                Image: ='DigiMantra-Labs-logo-design-New (1)'
+                Width: =500
+                ZIndex: =1
+
+            Label19 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =100
+                Size: =40
+                Text: ="Leave Management System"
+                Width: =800
+                ZIndex: =2
+
+        Container23 As groupContainer.manualLayoutContainer:
+            FillPortions: =0.35
+            Height: =
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
+            Width: =
+            X: =864
+            Y: =12
             ZIndex: =2
 
+            Container24 As groupContainer.manualLayoutContainer:
+                Height: =124
+                X: =(Parent.Width-Self.Width)/2
+                ZIndex: =5
+
+                "'User Profile_1' As group":
+                    Height: =5
+                    Width: =5
+                    X: =-824
+                    Y: =12
+                    ZIndex: =5
+
+                    Image13_2 As image:
+                        Height: =60
+                        Image: =User().Image
+                        RadiusBottomLeft: =50
+                        RadiusBottomRight: =50
+                        RadiusTopLeft: =50
+                        RadiusTopRight: =50
+                        Width: =60
+                        X: =107
+                        Y: =32
+                        ZIndex: =1
+
+                    Label11_2 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =31
+                        Text: =User().Email
+                        Width: =297
+                        X: =180
+                        Y: =77
+                        ZIndex: =2
+
+                    Label15_2 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =15
+                        Text: =User().FullName
+                        Width: =266
+                        X: =180
+                        Y: =47
+                        ZIndex: =3
+
+                    Label18_2 As label:
+                        Color: =RGBA(255, 255, 255, 0.6)
+                        Height: =16
+                        Size: =10
+                        Text: ="Logged in as"
+                        Width: =267
+                        X: =180
+                        Y: =32
+                        ZIndex: =4
+
         Container21_2 As groupContainer.verticalAutoLayoutContainer:
-            LayoutDirection: =LayoutDirection.Vertical
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
+
+            Image12 As image:
+                Image: ='Rolling-1s-200px (1)'
+                X: =804
+                Y: =744
+                ZIndex: =1
 
