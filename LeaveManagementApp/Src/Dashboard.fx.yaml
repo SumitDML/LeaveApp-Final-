@@ -1193,10 +1193,3 @@
                 Y: =60
                 ZIndex: =3
 
-    Button13 As button:
-        OnSelect: =Exit(true)
-        Text: ="Button"
-        X: =12
-        Y: =150
-        ZIndex: =8
-
