@@ -92,7 +92,7 @@
                     DisabledFill: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(202, 202, 202, 1)
-                    Height: =389
+                    Height: =If(App.ActiveScreen.Size=1,500,389)
                     PaddingRight: =4.51
                     PaddingTop: =4.51
                     RadiusBottomLeft: =15
@@ -107,7 +107,7 @@
                     ZIndex: =1
 
                 Container22_1 As groupContainer.manualLayoutContainer:
-                    Height: =387
+                    Height: =If(App.ActiveScreen.Size=1,480,377)
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Width: =Parent.Width
@@ -116,7 +116,7 @@
                     ZIndex: =2
 
                     Multiple As groupContainer.horizontalAutoLayoutContainer:
-                        Height: =377
+                        Height: =If(App.ActiveScreen.Size=1,480,377)
                         LayoutGap: =30
                         LayoutMode: =LayoutMode.Auto
                         LayoutOverflowY: =LayoutOverflow.Scroll
@@ -270,6 +270,7 @@
                                     BorderThickness: =1
                                     Default: =Text(_dateSelected, DateTimeFormat.LongDate)
                                     DisabledFill: =RGBA(0, 0, 0, 0)
+                                    Font: =Font.'Segoe UI'
                                     Height: =42
                                     HintText: =Today()
                                     PaddingRight: =4.51
@@ -318,8 +319,10 @@
                                     BorderColor: =RGBA(202, 202, 202, 1)
                                     BorderThickness: =1
                                     Default: =Text(_dateSelected2, DateTimeFormat.LongDate)
+                                    DisabledColor: =RGBA(0, 0, 0, 1)
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     DisplayMode: =DisplayMode.Disabled
+                                    Font: =Font.'Segoe UI'
                                     Height: =42
                                     HintText: =Today()
                                     PaddingRight: =4.51
@@ -1043,7 +1046,7 @@
                     Text: ="Apply Leave"
                     Width: =If(App.ActiveScreen.Size<=2,110,171)
                     X: =Parent.Width-Self.Width-40
-                    Y: =Container22_1.Y+Container22_1.Height+10
+                    Y: =Container22_1.Y+Container22_1.Height+30
                     ZIndex: =7
 
                 Label6 As label:

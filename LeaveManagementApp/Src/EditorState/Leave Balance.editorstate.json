@@ -70,7 +70,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "bottomNav",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4210,7 +4210,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container17_2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18001,7 +18001,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ScreenContainer1_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
