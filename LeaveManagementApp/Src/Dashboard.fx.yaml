@@ -1052,7 +1052,6 @@
     BottomNav2 As Component7:
         CurrentScreen: ="Dashboard"
         Visible: =If(App.ActiveScreen.Size<=2,true,false)
-        Width: =App.ActiveScreen.Width
         Y: =App.ActiveScreen.Height-Self.Height
         ZIndex: =6
 

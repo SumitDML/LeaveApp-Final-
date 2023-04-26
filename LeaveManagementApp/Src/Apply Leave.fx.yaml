@@ -92,7 +92,7 @@
                     DisabledFill: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(202, 202, 202, 1)
-                    Height: =If(App.ActiveScreen.Size=1,500,389)
+                    Height: =Container22_1.Height+5
                     PaddingRight: =4.51
                     PaddingTop: =4.51
                     RadiusBottomLeft: =15
@@ -107,7 +107,7 @@
                     ZIndex: =1
 
                 Container22_1 As groupContainer.manualLayoutContainer:
-                    Height: =If(App.ActiveScreen.Size=1,480,377)
+                    Height: =If(App.ActiveScreen.Size=1,400,377)
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Width: =Parent.Width
@@ -116,7 +116,7 @@
                     ZIndex: =2
 
                     Multiple As groupContainer.horizontalAutoLayoutContainer:
-                        Height: =If(App.ActiveScreen.Size=1,480,377)
+                        Height: =If(App.ActiveScreen.Size=1,430,377)
                         LayoutGap: =30
                         LayoutMode: =LayoutMode.Auto
                         LayoutOverflowY: =LayoutOverflow.Scroll
@@ -712,7 +712,7 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =90
                     Visible: =If(Container22_1.Width<=675,true,false)
-                    Width: =App.ActiveScreen.Width-20
+                    Width: =Button8_1.Width-20
                     X: =10
                     Y: =3
                     ZIndex: =4
@@ -1743,7 +1743,6 @@
     Component7_4 As Component7:
         CurrentScreen: ="Apply Leave"
         Visible: =If(App.ActiveScreen.Size<=2,true,false)
-        Width: =App.ActiveScreen.Width
         Y: =App.ActiveScreen.Height-Self.Height
         ZIndex: =10
 
