@@ -21,7 +21,7 @@
 
         Container24_1 As groupContainer.manualLayoutContainer:
             Height: =100
-            Width: =340
+            Width: =If(App.ActiveScreen.Size<=3,230,340)
             X: =Parent.Width-Self.Width
             Y: =Parent.Height-Self.Height-20
             ZIndex: =5
@@ -87,8 +87,15 @@
 
         Image12 As image:
             Image: =digimantralogo
-            Width: =Parent.Width*3/10
+            Width: =If(App.ActiveScreen.Size<=2,Parent.Width*2/5,Parent.Width*3/10)
             X: =(Parent.Width-Self.Width)/2
             Y: =(Parent.Height-Self.Height)/2-100
             ZIndex: =6
+
+        Image15 As image:
+            Image: ='Ellipsis-4.5s-200px (2)'
+            Width: =If(App.ActiveScreen.Size<=2,60,100)
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Parent.Height/2-Self.Height/2
+            ZIndex: =7
 
