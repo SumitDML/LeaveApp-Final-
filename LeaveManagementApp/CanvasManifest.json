@@ -125,10 +125,10 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Leave Balance",
+    "Splash Screen",
     "Dashboard",
-    "Leave Status",
     "Apply Leave",
-    "Splash Screen"
+    "Leave Balance",
+    "Leave Status"
   ]
 }

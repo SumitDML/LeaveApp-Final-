@@ -99,3 +99,12 @@
             Y: =Parent.Height/2-Self.Height/2
             ZIndex: =7
 
+    Timer3 As timer:
+        AutoStart: =true
+        Duration: =3000
+        OnTimerEnd: =Navigate(Dashboard)
+        Visible: =false
+        X: =40
+        Y: =40
+        ZIndex: =4
+

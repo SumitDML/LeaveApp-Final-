@@ -4,7 +4,7 @@
     Height: =Max(App.Height,App.DesignHeight)
     MenuWidth: =340
     NavItems: =lmsnav
-    Width: =340
+    Width: =250
     X: =0
     Y: =0
     ZIndex: =3
@@ -91,8 +91,8 @@
 
     Container19 As groupContainer.manualLayoutContainer:
         Height: =84
-        Width: =301
-        Y: =726
+        Width: =Parent.Width
+        Y: =App.ActiveScreen.Height-Self.Height-30
         ZIndex: =9
 
         Image11_1 As image:
@@ -151,6 +151,6 @@
             PressedColor: =
             PressedFill: =
             Text: =""
-            Width: =301
+            Width: =Parent.Width
             ZIndex: =5
 
