@@ -89,7 +89,7 @@
             Image: =digimantralogo
             Width: =If(App.ActiveScreen.Size<=2,Parent.Width*2/5,Parent.Width*3/10)
             X: =(Parent.Width-Self.Width)/2
-            Y: =(Parent.Height-Self.Height)/2-100
+            Y: =Image15.Y-Self.Height-5
             ZIndex: =6
 
         Image15 As image:
