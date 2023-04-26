@@ -22,7 +22,7 @@
         Container24_1 As groupContainer.manualLayoutContainer:
             Height: =100
             Width: =If(App.ActiveScreen.Size<=3,230,340)
-            X: =Parent.Width-Self.Width
+            X: =Parent.Width-Self.Width-4
             Y: =Parent.Height-Self.Height-20
             ZIndex: =5
 
