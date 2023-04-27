@@ -1038,6 +1038,8 @@
                         Reset(Reasons2_1);
                         Set(_dateSelected2,Today());
                         Set(_dateSelected,Today());
+                        Set(varChange,LookUp(LeaveBalance,LeaveType.Value="Sick"));
+                        Set(vardata,LookUp(LeaveBalance,LeaveType.Value="Sick"));
                         Reset(LeaveTypes2_1); )
                             );
                                 
@@ -1901,7 +1903,7 @@
         ZIndex: =13
 
     Label18_4 As label:
-        Text: =varChange.Id
+        Text: =
         X: =819
         Y: =603
         ZIndex: =14
