@@ -613,7 +613,7 @@
                                     ChevronBackground: =RGBA(0, 0, 0, 0)
                                     ChevronFill: =RGBA(255, 255, 255, 0)
                                     ChevronHoverBackground: =
-                                    Default: =
+                                    Default: ="Sick"
                                     Font: =Font.'Segoe UI'
                                     Height: =TextInput2_7.Height-4
                                     HoverBorderColor: =
@@ -621,10 +621,8 @@
                                     Items: =Choices([@LeaveRequests].LeaveTypes)
                                     OnChange: |-
                                         =If(Radio1_4.SelectedText.Value="Multiple Days",
-                                        If(LeaveTypes2_1.SelectedText.Value="Unpaid",Set(leaves1,0);Set(total1,365);,
-                                        
+                                        If(LeaveTypes2_1.SelectedText.Value="Unpaid",Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2_1.SelectedText.Value));,Set(leaves1,0);Set(total1,365);,
                                         Set(varChange,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2_1.SelectedText.Value));
-                                        
                                         ClearCollect(LeaveSum1,Sum(Filter(LeaveRequests,LeaveId.Value=varChange.Id && RequestedBy.Email=User().Email),'Total Days'));
                                         
                                         ClearCollect(TotalLeave1,Sum(Filter(LeaveBalance,Id=varChange.Id),TotalLeave));
@@ -633,7 +631,7 @@
                                         Set(total1,First(TotalLeave1).Value);
                                         
                                         ),
-                                        If(LeaveTypes2_1.SelectedText.Value="Unpaid",Set(leaves,0);Set(total,365);,
+                                        If(LeaveTypes2_1.SelectedText.Value="Unpaid",Set(vardata,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2_1.SelectedText.Value));Set(leaves,0);,
                                         Set(vardata,LookUp(LeaveBalance,LeaveType.Value=LeaveTypes2_1.SelectedText.Value));
                                         ClearCollect(LeaveSum,Sum(Filter(LeaveRequests,LeaveId.Value=vardata.Id && RequestedBy.Email=User().Email),'Total Days'));
                                         
@@ -1029,19 +1027,18 @@
                                     }
                                 }   
                               
-                            );
-                        Set(visible,true);
-                        Reset(TextInput2_11);
-                        Reset(TextInput2_12);
+                            );Set(visible,true);Reset(TextInput2_11);
+                        Reset(TextInput2_12););
                         Reset(ComboBox1_3);
                         
                         Reset(Reasons2_1);
                         Set(_dateSelected2,Today());
                         Set(_dateSelected,Today());
-                        Set(varChange,LookUp(LeaveBalance,LeaveType.Value="Sick"));
-                        Set(vardata,LookUp(LeaveBalance,LeaveType.Value="Sick"));
-                        Reset(LeaveTypes2_1); )
+                        
+                        Reset(LeaveTypes2_1);
                             );
+                        Set(varChange,LookUp(LeaveBalance,LeaveType.Value="Sick"));
+                        Set(vardata,LookUp(LeaveBalance,LeaveType.Value="Sick")); 
                                 
                         
                     PressedBorderColor: =
@@ -1890,21 +1887,15 @@
                 Y: =60
                 ZIndex: =3
 
-    Label18 As label:
-        Text: =varTotalDays2
-        X: =573
-        Y: =603
-        ZIndex: =12
-
-    Label18_2 As label:
-        Text: =total1-leaves1
-        X: =669
-        Y: =603
-        ZIndex: =13
-
     Label18_4 As label:
-        Text: =
+        Text: =vardata.Id
         X: =819
         Y: =603
         ZIndex: =14
+
+    Label19 As label:
+        Text: =varChange.Id
+        X: =528
+        Y: =587
+        ZIndex: =15
 
