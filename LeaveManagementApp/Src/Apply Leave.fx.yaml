@@ -911,7 +911,7 @@
                             CountRows(
                                 Filter(
                                     LeaveRequests,
-                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
+                                    From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                 )
                             ) > 0,[
                                 Set(
