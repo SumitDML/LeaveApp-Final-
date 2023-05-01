@@ -8,6 +8,10 @@
         Reset(LeaveTypes2_1);
         Set(_dateSelected2,Today());
         Set(_dateSelected,Today());
+        Set(total,8);
+        Set(total1,8);
+        Set(leaves,Sum(Filter(LeaveRequests,LeaveTypes.Value="Sick"),'Total Days'));
+        Set(leaves1,Sum(Filter(LeaveRequests,LeaveTypes.Value="Sick"),'Total Days'));
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
 
@@ -1886,16 +1890,4 @@
                 X: =20
                 Y: =60
                 ZIndex: =3
-
-    Label18_4 As label:
-        Text: =vardata.Id
-        X: =819
-        Y: =603
-        ZIndex: =14
-
-    Label19 As label:
-        Text: =varChange.Id
-        X: =528
-        Y: =587
-        ZIndex: =15
 

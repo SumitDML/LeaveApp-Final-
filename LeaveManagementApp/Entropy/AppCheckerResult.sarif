@@ -1134,6 +1134,86 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Apply Leave'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 63,
+                  "charOffset": 460,
+                  "snippet": {
+                    "text": "Sum(Filter(LeaveRequests,LeaveTypes.Value=\"Sick\"),'Total Days')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 63,
+                  "charOffset": 539,
+                  "snippet": {
+                    "text": "Sum(Filter(LeaveRequests,LeaveTypes.Value=\"Sick\"),'Total Days')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container19_4.LeaveTypes2_1.OnChange"
                 }
               ],
