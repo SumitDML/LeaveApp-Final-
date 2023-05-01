@@ -144,11 +144,11 @@
                             Y: =60
                             ZIndex: =2
 
-                        Label3_9 As label:
+                        totaldays1 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
                             Size: =If(App.ActiveScreen.Size<=2,18,31.5)
-                            Text: =Sum(LeaveBalance,TotalLeave)
+                            Text: =Sum(LeaveBalance,TotalLeave)-365
                             Width: =120
                             X: =38
                             Y: =89
@@ -209,7 +209,7 @@
                             Font: =Font.'Segoe UI'
                             Height: =50
                             Size: =If(App.ActiveScreen.Size<=2,18,31.5)
-                            Text: =Sum(LeaveBalance,TotalLeave)-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')
+                            Text: =totaldays1-consumeddays1
                             Width: =120
                             X: =38
                             Y: =89
@@ -266,11 +266,11 @@
                             Y: =60
                             ZIndex: =2
 
-                        Label3_8 As label:
+                        consumeddays1 As label:
                             Font: =Font.'Segoe UI'
                             Height: =50
                             Size: =If(App.ActiveScreen.Size<=2,18,31.5)
-                            Text: =Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')
+                            Text: =If(CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email))=0,0,Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email),'Total Days')-Sum(Filter(LeaveRequests,RequestedBy.Email=User().Email&&LeaveTypes.Value="Unpaid"),'Total Days'))
                             Width: =120
                             X: =38
                             Y: =89
