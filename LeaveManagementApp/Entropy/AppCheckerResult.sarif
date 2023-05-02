@@ -4794,6 +4794,30 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -5466,6 +5490,126 @@
                 "member": "Items",
                 "module": "Apply Leave",
                 "type": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 867,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Status.Value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 873,
+                  "snippet": {
+                    "text": "<>"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 859,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.Circle2_2"
               }
             }
           ],
@@ -9316,109 +9460,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconPrevMonth2_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Container20_2.Circle2_10.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconPrevMonth2_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.Container6_1.Container5_2.iconPrevMonth2_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconNextMonth2_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconNextMonth2_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.Container6_1.Container5_2.iconNextMonth2_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'.Container6_1.Container5_2.Icon3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.TabIndex",
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Container20_2.Circle2_10.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Apply Leave",
-                "type": "'Apply Leave'.Container6_1.Container5_2.Icon3_1"
+                "type": "'Apply Leave'.Container6_1.Container5_2.Container20_2.Circle2_10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Container20_2.Circle2_10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Container20_2.Circle2_10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.Container20_2.Circle2_10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2"
               }
             }
           ],
@@ -9466,19 +9580,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.TabIndex"
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2.TabIndex",
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Apply Leave",
-                "type": "'Apply Leave'.Container6_1.Container5_2.MonthDayGallery2_2"
+                "type": "'Apply Leave'.Container6_1.Container5_2.Icon3_1"
               }
             }
           ],
@@ -9496,19 +9610,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Icon3_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Apply Leave",
-                "type": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2"
+                "type": "'Apply Leave'.Container6_1.Container5_2.Icon3_1"
               }
             }
           ],
@@ -9526,19 +9640,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.TabIndex"
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconNextMonth2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.TabIndex",
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconNextMonth2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "Apply Leave",
-                "type": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2"
+                "type": "'Apply Leave'.Container6_1.Container5_2.iconNextMonth2_2"
               }
             }
           ],
@@ -9548,8 +9662,38 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconPrevMonth2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.iconPrevMonth2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.iconPrevMonth2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10210,6 +10354,66 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.Container6_1.Container5_2.Gallery5_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
