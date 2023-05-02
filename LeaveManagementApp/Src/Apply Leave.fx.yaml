@@ -801,7 +801,7 @@
                                     "Please enter a valid start date"
                                 )
                             ],
-                            duration > total - leaves,
+                            duration > total - leaves||total-leaves<0,
                             [
                                 Set(
                                     errordisplay,
@@ -937,7 +937,7 @@
                                     "Please enter valid end date"
                                 )
                             ],
-                            Int(varTotalDays2) > total1-leaves1,
+                            Int(varTotalDays2) > total1-leaves1||total1-leaves1<0,
                             [
                                 Set(
                                     errordisplay,
