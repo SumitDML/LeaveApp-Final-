@@ -523,7 +523,7 @@
                                     PaddingRight: =4.51
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
-                                    Text: =If(_dateSelected<Today(),"* Valid start date required","")
+                                    Text: =If(_dateSelected<Today(),"* Valid date required","")
                                     Width: =250
                                     X: =If(App.ActiveScreen.Size<3,160,250)
                                     Y: =Radio1_4.Y+Radio1_4.Height
@@ -565,7 +565,7 @@
                                 ZIndex: =2
 
                             Reasons2_1 As text:
-                                BorderColor: =RGBA(202, 202, 202, 1)
+                                BorderColor: =If(Self.Text<>"",RGBA(202, 202, 202, 1),reasoncolor=true,Color.Red,RGBA(202, 202, 202, 1))
                                 BorderThickness: =1
                                 Default: =""
                                 Font: =Font.'Segoe UI'
@@ -600,6 +600,21 @@
                                 X: =13
                                 Y: =Reasons2_1.Y+Reasons2_1.Height+20
                                 ZIndex: =4
+
+                            Label10_29 As label:
+                                Color: =RGBA(255, 0, 0, 1)
+                                Font: =Font.'Segoe UI'
+                                Height: =32
+                                PaddingBottom: =0
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Size: =If(App.ActiveScreen.Size<3,10,13)
+                                Text: =If(Reasons2_1.Text="","* Valid reason required","")
+                                Visible: =If(Reasons2_1.Text<>"",false,reasoncolor=true,true,false)
+                                Width: =250
+                                X: =320
+                                Y: =119
+                                ZIndex: =9
 
                             Group2 As group:
                                 Height: =5
@@ -815,12 +830,8 @@
                             _dateSelected < Today(),
                             [
                                 Set(
-                                    errordisplay,
+                                    singledate,
                                     true
-                                ),
-                                Set(
-                                    err,
-                                    "Please enter a valid start date"
                                 )
                             ],
                             duration > total - leaves||total-leaves<0,
@@ -837,7 +848,7 @@
                             Reasons2_1.Text="",
                             [
                                 Set(
-                                    errordisplay,
+                                    reasoncolor,
                                     true
                                 ),
                                 Set(
