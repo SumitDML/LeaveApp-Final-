@@ -801,7 +801,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5894,7 +5894,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Component7_4",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6014,7 +6014,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container17_3",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8239,7 +8239,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container6_1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10068,7 +10068,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate3_1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10101,7 +10101,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate3_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22820,7 +22820,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%SelectedCircle.ID%",
       "Name": "Subcircle2_1",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22943,7 +22943,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%SelectedCircle.ID%",
       "Name": "Subcircle2_2",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25018,7 +25018,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Timer1",
-      "ParentIndex": 10,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -26745,7 +26745,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%MonthDayLbl.ID%",
       "Name": "Title4_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27038,7 +27038,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%MonthDayLbl.ID%",
       "Name": "Title4_2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
