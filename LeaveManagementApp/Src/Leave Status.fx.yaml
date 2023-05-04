@@ -187,9 +187,10 @@
                         ZIndex: =7
 
                 Label9 As label:
-                    Color: =RGBA(77, 77, 77, 1)
-                    Height: =133
-                    Size: =14
+                    Color: =RGBA(153, 153, 153, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =79
+                    Size: =12
                     Text: ="No Leave Request Available."
                     Visible: =If(CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email))=0,true,false)
                     Width: =1453
