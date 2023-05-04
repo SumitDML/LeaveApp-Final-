@@ -923,7 +923,7 @@
                                 ZIndex: =5
 
                         Label12 As label:
-                            Color: =RGBA(77, 77, 77, 1)
+                            Color: =RGBA(153, 153, 153, 1)
                             Font: =Font.'Segoe UI'
                             Height: =62
                             Size: =12
@@ -1033,9 +1033,10 @@
                                 ZIndex: =6
 
                         Label13 As label:
-                            Color: =RGBA(77, 77, 77, 1)
+                            Color: =RGBA(153, 153, 153, 1)
                             Font: =Font.'Segoe UI'
                             Height: =52
+                            Size: =12
                             Text: =If(CountRows(Filter(LeaveRequests,RequestedBy.Email=User().Email))=0,"No Leave Requests Available.","")
                             Width: =667
                             X: =20
