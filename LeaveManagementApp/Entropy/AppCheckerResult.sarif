@@ -4842,6 +4842,30 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -6061,10 +6085,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 160,
+                  "charLength": 161,
                   "charOffset": 26,
                   "snippet": {
-                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
                   }
                 }
               },
@@ -6101,10 +6125,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 160,
+                  "charLength": 161,
                   "charOffset": 26,
                   "snippet": {
-                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
                   }
                 }
               },
@@ -6141,10 +6165,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 160,
+                  "charLength": 161,
                   "charOffset": 26,
                   "snippet": {
-                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
                   }
                 }
               },
@@ -6152,6 +6176,206 @@
                 "member": "Color",
                 "module": "Apply Leave",
                 "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.DisabledBorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.DisabledBorderColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 161,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisabledBorderColor",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 161,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.DisabledColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.DisabledColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 161,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisabledColor",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.BorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12.BorderColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 161,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "BorderColor",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.TextInput2_12"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.Icon1_2.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.Icon1_2.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 161,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.Icon1_2"
               }
             }
           ],
@@ -6584,7 +6808,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 4663,
+                  "charOffset": 4471,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -7794,6 +8018,46 @@
                 "member": "Text",
                 "module": "Apply Leave",
                 "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_7.Label10_28"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.Label10_30.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.Label10_30.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 161,
+                  "charOffset": 49,
+                  "snippet": {
+                    "text": "CountRows(\n        Filter(\n            LeaveRequests,\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Apply Leave",
+                "type": "'Apply Leave'.ScreenContainer1_5.RightSideContainer1_5.Container20_1.Container22_1.Multiple.Container3.Container18_6.Label10_30"
               }
             }
           ],
@@ -10874,36 +11138,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.singledate"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.singledate",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "singledate",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.From"
                 }
               ],
@@ -10945,6 +11179,66 @@
               },
               "properties": {
                 "member": "To",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.fromdate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.fromdate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "fromdate",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.singledate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.singledate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "singledate",
                 "module": "App",
                 "type": "App"
               }
