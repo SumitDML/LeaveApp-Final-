@@ -930,12 +930,8 @@
                             ) > 0,
                             [
                                 Set(
-                                    errordisplay,
+                                    singledate,
                                     true
-                                ),
-                                Set(
-                                    err,
-                                    "Already applied leave for this duration."
                                 )
                             ],
                             _dateSelected < Today(),
@@ -1036,7 +1032,8 @@
                                 }       
                             );
                         Set(visible,true);Reset(Reasons2_1);
-                        Reset(LeaveTypes2_1); ),
+                        Reset(LeaveTypes2_1); Set(_dateSelected,Today())
+                        ,
                         
                         If(LeaveFor_1.Selected.Title="First Half" || LeaveFor_1.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
                         If(
@@ -1207,45 +1204,6 @@
                     X: =845
                     Y: =405
                     ZIndex: =9
-
-                Button6 As button:
-                    DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                    DisabledColor: =RGBA(255, 255, 255, 1)
-                    DisabledFill: =RGBA(168, 0, 0, 1)
-                    DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(168, 0, 0, 0.9)
-                    Font: =Font.'Segoe UI'
-                    Height: =50
-                    PaddingLeft: =15
-                    Size: =8
-                    Text: =err
-                    Visible: =errordisplay
-                    Width: =250
-                    X: =Parent.Width-Self.Width-5
-                    ZIndex: =10
-
-                Icon4 As icon.Error:
-                    Color: =RGBA(255, 255, 255, 1)
-                    Height: =Button6.Height
-                    Icon: =Icon.Error
-                    PaddingBottom: =4
-                    PaddingLeft: =2
-                    PaddingRight: =2
-                    PaddingTop: =4
-                    Visible: =errordisplay
-                    Width: =20
-                    X: =Button6.X+2
-                    ZIndex: =11
-
-                Timer2 As timer:
-                    AutoStart: =errordisplay
-                    Duration: =2000
-                    OnTimerEnd: =Set(errordisplay,false)
-                    Visible: =false
-                    Width: =38
-                    X: =1490
-                    Y: =1
-                    ZIndex: =12
 
     Container6 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(28, 37, 54, 0.4)
