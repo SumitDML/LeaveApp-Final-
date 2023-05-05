@@ -588,7 +588,7 @@
                                         Font: =Font.'Segoe UI'
                                         Height: =Parent.TemplateHeight-2
                                         HoverColor: =RGBA(0, 0, 0, 1)
-                                        HoverFill: =RGBA(0,0,0,0)
+                                        HoverFill: =Self.Fill
                                         OnSelect: =Select(Parent)
                                         PaddingRight: =4.51
                                         PaddingTop: =4.51
@@ -1038,7 +1038,8 @@
                                 }       
                             );
                         Set(visible,true);Reset(Reasons2_1);
-                        Reset(LeaveTypes2_1); ),
+                        Reset(LeaveTypes2_1); );
+                        Set(_dateSelected,Blank()),
                         
                         If(LeaveFor_1.Selected.Title="First Half" || LeaveFor_1.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
                         If(
@@ -1170,8 +1171,8 @@
                         Reset(ComboBox1_3);
                         
                         Reset(Reasons2_1);
-                        Set(_dateSelected2,Today());
-                        Set(_dateSelected,Today());
+                        Set(_dateSelected2,Blank());
+                        Set(_dateSelected,Blank());
                         
                         Reset(LeaveTypes2_1);
                             );
@@ -1292,6 +1293,7 @@
                 ZIndex: =2
 
             iconPrevMonth2_1 As icon.ChevronLeft:
+                BorderColor: =RGBA(0, 0, 0, 0)
                 Height: =30
                 Icon: =Icon.ChevronLeft
                 OnSelect: |-
@@ -1314,6 +1316,7 @@
                 ZIndex: =3
 
             iconNextMonth2_1 As icon.ChevronRight:
+                BorderColor: =RGBA(0, 0, 0, 0)
                 Height: =30
                 Icon: =Icon.ChevronRight
                 OnSelect: |-
@@ -1465,7 +1468,7 @@
                 Layout: =Layout.Vertical
                 ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =40
+                TemplateSize: =Self.Height/2
                 Width: =MonthDayGallery2_1.Width+20
                 X: =If(App.ActiveScreen.Size=1,15,30)
                 Y: =362
