@@ -4954,7 +4954,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 119,
+                  "charOffset": 167,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -4994,7 +4994,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 102,
+                  "charOffset": 131,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5034,7 +5034,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 110,
+                  "charOffset": 139,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5074,7 +5074,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 109,
+                  "charOffset": 138,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5114,7 +5114,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 57,
+                  "charOffset": 84,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5194,7 +5194,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 49,
+                  "charOffset": 76,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5274,7 +5274,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 110,
+                  "charOffset": 137,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5314,7 +5314,7 @@
                 },
                 "region": {
                   "charLength": 155,
-                  "charOffset": 162,
+                  "charOffset": 130,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email)\r\n    )"
                   }
@@ -5756,7 +5756,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 4634,
+                  "charOffset": 5121,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -11066,66 +11066,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.fromdate"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.fromdate",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "fromdate",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.errordisplay"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.errordisplay",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "errordisplay",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.err"
                 }
               ],
@@ -11287,6 +11227,66 @@
               },
               "properties": {
                 "member": "Total",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.fromdate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.fromdate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "fromdate",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.errordisplay"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.errordisplay",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "errordisplay",
                 "module": "App",
                 "type": "App"
               }
