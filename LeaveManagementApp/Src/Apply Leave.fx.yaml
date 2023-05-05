@@ -1,13 +1,12 @@
 "'Apply Leave' As screen":
     OnVisible: |-
-        =Set(_dateSelected, Today());
-        Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));
+        =Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
         Set(_calendarVisible, true);
         Reset(LeaveTypes2_1);
         Set(_dateSelected2,Today());
-        Set(_dateSelected,Today());
+        Set(_dateSelected,Blank());
         Set(total,8);
         Set(total1,8);
         Set(leaves,Sum(Filter(LeaveRequests,LeaveTypes.Value="Sick"),'Total Days'));
@@ -534,7 +533,7 @@
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email&&_dateSelected<>Today()
                                                 )
                                             ) > 0||(duration > total - leaves||total-leaves<0),Color.Red,RGBA(0, 0, 0, 1))
-                                    Default: =Text(_dateSelected, DateTimeFormat.LongDate)
+                                    Default: =If(IsBlank(_dateSelected),"Select Date",Text(_dateSelected, DateTimeFormat.LongDate))
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     Height: =42
                                     HintText: =Today()

@@ -111,12 +111,12 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "Leave App New design",
+    "Name": "LeaveManagementSystemNewDesign",
     "OriginatingVersion": "1.330",
     "ParserErrorCount": 0
   },
   "PublishInfo": {
-    "AppName": "Leave App New design",
+    "AppName": "LeaveManagementSystemNewDesign",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
