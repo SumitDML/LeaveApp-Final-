@@ -220,7 +220,7 @@
                                         BorderThickness: =0
                                         Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
                                         DisabledColor: =RGBA(0, 0, 0, 1)
-                                        Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
+                                        Fill: =If(ThisItem.IsSelected=true,RGBA(56, 96, 178, 1),RGBA(255, 255, 255, 1))
                                         Font: =Font.'Segoe UI'
                                         Height: =Parent.TemplateHeight-2
                                         HoverBorderColor: =
@@ -257,7 +257,7 @@
                                         BorderThickness: =0
                                         Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
                                         DisabledColor: =RGBA(0, 0, 0, 1)
-                                        Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
+                                        Fill: =If(ThisItem.IsSelected=true,RGBA(56, 96, 178, 1),RGBA(255, 255, 255, 1))
                                         Font: =Font.'Segoe UI'
                                         Height: =Parent.TemplateHeight-2
                                         HoverBorderColor: =
@@ -586,7 +586,7 @@
                                     Button9_11 As button:
                                         Color: =If(ThisItem.IsSelected=true,RGBA(255, 255, 255, 1),RGBA(0,0,0,1))
                                         DisabledColor: =RGBA(0, 0, 0, 1)
-                                        Fill: =If(ThisItem.IsSelected=true,RGBA(60, 93, 255,1),RGBA(255, 255, 255, 1))
+                                        Fill: =If(ThisItem.IsSelected=true,RGBA(56, 96, 178, 1),RGBA(255, 255, 255, 1))
                                         Font: =Font.'Segoe UI'
                                         Height: =Parent.TemplateHeight-2
                                         HoverColor: =RGBA(0, 0, 0, 1)
@@ -685,7 +685,7 @@
                                 Height: =111
                                 HintText: ="Enter Reson Here..."
                                 HoverBorderColor: =RGBA(128, 128, 128, 1)
-                                HoverFill: =RGBA(219, 219, 219, 0.3)
+                                HoverFill: =RGBA(255, 255, 255, 1)
                                 Mode: =TextMode.MultiLine
                                 OnChange: =
                                 PaddingLeft: =25
@@ -1953,7 +1953,7 @@
                 Layout: =Layout.Vertical
                 ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =40
+                TemplateSize: =Self.Height/2-3
                 Width: =MonthDayGallery2_2.Width+20
                 X: =If(App.ActiveScreen.Size=1,15,30)
                 Y: =362
