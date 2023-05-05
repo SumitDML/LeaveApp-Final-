@@ -14,6 +14,7 @@
         Set(leaves1,Sum(Filter(LeaveRequests,LeaveTypes.Value="Sick"),'Total Days'));
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
+        Set(reasoncolor,false);
 
     ScreenContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -1204,6 +1205,12 @@
                     X: =845
                     Y: =405
                     ZIndex: =9
+
+                Label3 As label:
+                    Text: =reasoncolor
+                    X: =245
+                    Y: =485
+                    ZIndex: =10
 
     Container6 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(28, 37, 54, 0.4)
