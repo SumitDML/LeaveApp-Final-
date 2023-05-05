@@ -436,7 +436,7 @@
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
                                     Text: |
-                                        =If(IsBlank(_dateSelected)=true,"",(_dateSelected<Today()&&IsBlank(_dateSelected)=false),"* Valid date required",CountRows(
+                                        =If(IsBlank(_dateSelected)=true,"",(_dateSelected<Today()&&IsBlank(_dateSelected)=false),"*Past dates are not allowed.",CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -631,7 +631,7 @@
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
                                     Text: |
-                                        =If(_dateSelected<Today()&&IsBlank(_dateSelected)=false,"*Past dates are not allowed",CountRows(
+                                        =If(_dateSelected<Today()&&IsBlank(_dateSelected)=false,"*Past dates are not allowed.",CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email)
