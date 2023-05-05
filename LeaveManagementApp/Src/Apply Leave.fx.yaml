@@ -13,6 +13,7 @@
         Set(leaves1,Sum(Filter(LeaveRequests,LeaveTypes.Value="Sick"),'Total Days'));
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
+        Set(singledateblank,false)
 
     ScreenContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -522,7 +523,7 @@
 
                                 TextInput2_13 As text:
                                     BorderColor: |-
-                                        =If(IsBlank(_dateSelected)=true,RGBA(202, 202, 202, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||IsBlank(_dateSelected)=false&&CountRows(
+                                        =If(singledateblank=true,Color.Red,IsBlank(_dateSelected)=true,RGBA(202, 202, 202, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||IsBlank(_dateSelected)=false&&CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -530,7 +531,7 @@
                                             ) > 0||IsBlank(_dateSelected)=false&&(duration > total - leaves||total-leaves<0),Color.Red,RGBA(202, 202, 202, 1))
                                     BorderThickness: =1
                                     Color: |-
-                                        =If(IsBlank(_dateSelected)=true,RGBA(0,0,0, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||(CountRows(
+                                        =If(singledateblank=true,Color.Red,IsBlank(_dateSelected)=true,RGBA(0,0,0, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||(CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -555,12 +556,12 @@
 
                                 Icon1 As icon.CalendarBlank:
                                     Color: |
-                                        =If(IsBlank(_dateSelected)=true,RGBA(166, 166, 166, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
+                                        =If(singledateblank=true,Color.Red,IsBlank(_dateSelected)=true,RGBA(166, 166, 166, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0,Color.Red,RGBA(166, 166, 166, 1))
+                                            ) > 0||(duration > total - leaves||total-leaves<0),Color.Red,RGBA(166, 166, 166, 1))
                                     Height: =TextInput2_13.Height-4
                                     Icon: =Icon.CalendarBlank
                                     PaddingBottom: =10
@@ -633,12 +634,12 @@
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
                                     Text: |
-                                        =If(_dateSelected<Today()&&IsBlank(_dateSelected)=false,"*Past dates are not allowed.",CountRows(
+                                        =If(IsBlank(_dateSelected)=false,"",singledateblank=true,"*Please select date.",_dateSelected<Today()&&IsBlank(_dateSelected)=false,"*Past dates are not allowed.",CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email)
                                             ) > 0,"*Leave Already Applied",(duration > total - leaves||total-leaves<0),"No enough leave balance.")
-                                    Visible: =If(IsBlank(_dateSelected)=true,false,true)
+                                    Visible: =If(singledateblank=true,true,IsBlank(_dateSelected)=true,false,true)
                                     Width: =250
                                     X: =TextInput2_13.X+TextInput2_13.Width-Self.Width-3
                                     Y: =Radio1_4.Y+Radio1_4.Height+1
@@ -730,6 +731,20 @@
                                 X: =320
                                 Y: =119
                                 ZIndex: =9
+
+                            Label10_23 As label:
+                                Align: =Align.Right
+                                Color: =RGBA(255, 0, 0, 1)
+                                Font: =Font.'Segoe UI'
+                                Height: =27
+                                PaddingRight: =4.51
+                                PaddingTop: =4.51
+                                Text: ="*Reason is required."
+                                Visible: =If(Reasons2_1.Text<>"",false,reasoncolor=true,true,false)
+                                Width: =186.57
+                                X: =427
+                                Y: =124
+                                ZIndex: =10
 
                             Group2 As group:
                                 Height: =5
@@ -1049,8 +1064,8 @@
                                 }       
                             );
                         Set(visible,true);Reset(Reasons2_1);
-                        Reset(LeaveTypes2_1); );
-                        Set(_dateSelected,Blank()),
+                        Set(reasoncolor,false);
+                        Reset(LeaveTypes2_1); Set(_dateSelected,Blank());),
                         
                         If(LeaveFor_1.Selected.Title="First Half" || LeaveFor_1.Selected.Title="Second Half",Set(duration,0.5),Set(duration,1));
                         If(
@@ -1178,16 +1193,17 @@
                                 }   
                               
                             );Set(visible,true);Reset(TextInput2_11);
-                        Reset(TextInput2_12););
+                        Reset(TextInput2_12);
+                        Set(_dateSelected2,Blank());
+                        Set(_dateSelected,Blank()););
                         Reset(ComboBox1_3);
                         
                         Reset(Reasons2_1);
-                        Set(_dateSelected2,Blank());
-                        Set(_dateSelected,Blank());
+                        
                         
                         Reset(LeaveTypes2_1);
                             );
-                        Set(reasoncolor,false);
+                        
                         Set(varChange,LookUp(LeaveBalance,LeaveType.Value="Sick"));
                         Set(vardata,LookUp(LeaveBalance,LeaveType.Value="Sick")); 
                                 

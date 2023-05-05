@@ -4842,6 +4842,18 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -5302,7 +5314,7 @@
                 },
                 "region": {
                   "charLength": 155,
-                  "charOffset": 86,
+                  "charOffset": 162,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email)\r\n    )"
                   }
@@ -5342,7 +5354,7 @@
                 },
                 "region": {
                   "charLength": 165,
-                  "charOffset": 139,
+                  "charOffset": 170,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5382,7 +5394,7 @@
                 },
                 "region": {
                   "charLength": 165,
-                  "charOffset": 102,
+                  "charOffset": 133,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5422,7 +5434,7 @@
                 },
                 "region": {
                   "charLength": 165,
-                  "charOffset": 109,
+                  "charOffset": 140,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5744,7 +5756,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 4611,
+                  "charOffset": 4634,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -11024,36 +11036,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.singledateblank"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.singledateblank",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "singledateblank",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.singledate"
                 }
               ],
@@ -11084,17 +11066,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.err"
+                  "fullyQualifiedName": "App.fromdate"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.err",
+                  "fullyQualifiedName": "App.fromdate",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "err",
+                "member": "fromdate",
                 "module": "App",
                 "type": "App"
               }
@@ -11125,6 +11107,36 @@
               },
               "properties": {
                 "member": "errordisplay",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.err"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.err",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "err",
                 "module": "App",
                 "type": "App"
               }
@@ -11275,36 +11287,6 @@
               },
               "properties": {
                 "member": "Total",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.fromdate"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.fromdate",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "fromdate",
                 "module": "App",
                 "type": "App"
               }
