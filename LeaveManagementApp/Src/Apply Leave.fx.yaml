@@ -279,20 +279,20 @@
 
                                 TextInput2_11 As text:
                                     BorderColor: |-
-                                        =If((_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
+                                        =If(IsBlank(_dateSelected)=true,RGBA(202, 202, 202, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||(CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(202, 202, 202, 1))
+                                            ) > 0&&IsBlank(_dateSelected)=false)||((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&IsBlank(_dateSelected)=false),Color.Red,RGBA(202, 202, 202, 1))
                                     BorderThickness: =1
                                     Color: |-
-                                        =If((_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
+                                        =If(IsBlank(_dateSelected)=true,RGBA(0,0,0, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||(CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(0, 0, 0, 1))
+                                            ) > 0&&IsBlank(_dateSelected)=false)||((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&IsBlank(_dateSelected)=false),Color.Red,RGBA(0, 0, 0, 1))
                                     Default: =If(IsBlank(_dateSelected),"Select Date",Text(_dateSelected, DateTimeFormat.LongDate))
                                     DisabledFill: =RGBA(0, 0, 0, 0)
                                     Font: =Font.'Segoe UI'
@@ -312,7 +312,7 @@
 
                                 Icon1_1 As icon.CalendarBlank:
                                     Color: |-
-                                        =If((_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
+                                        =If(IsBlank(_dateSelected)=true,RGBA(166, 166, 166, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -347,15 +347,15 @@
 
                                 TextInput2_12 As text:
                                     BorderColor: |-
-                                        =If(IsBlank(_dateSelected2)=false||CountRows(
+                                        =If(IsBlank(_dateSelected2)=true,RGBA(202, 202, 202, 1),IsBlank(_dateSelected2)=false||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)||_dateSelected > _dateSelected2,Color.Red,RGBA(202, 202, 202, 1))
+                                            ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)||(_dateSelected > _dateSelected2),Color.Red,RGBA(202, 202, 202, 1))
                                     BorderThickness: =1
                                     Color: |-
-                                        =If(IsBlank(_dateSelected2)=false||CountRows(
+                                        =If(IsBlank(_dateSelected2)=true,RGBA(0,0,0,1),IsBlank(_dateSelected2)=false||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -363,14 +363,14 @@
                                             ) > 0||_dateSelected > _dateSelected2||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(0, 0, 0, 1))
                                     Default: =If(IsBlank(_dateSelected2),"Select Date",Text(_dateSelected2, DateTimeFormat.LongDate))
                                     DisabledBorderColor: |-
-                                        =If(IsBlank(_dateSelected2)=false||CountRows(
+                                        =If(IsBlank(_dateSelected2)=true,RGBA(202, 202, 202, 1),IsBlank(_dateSelected2)=false||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
                                             ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)||_dateSelected > _dateSelected2,Color.Red,RGBA(202, 202, 202, 1))
                                     DisabledColor: |-
-                                        =If(IsBlank(_dateSelected2)=false||CountRows(
+                                        =If(IsBlank(_dateSelected2)=true,RGBA(0, 0, 0, 1),IsBlank(_dateSelected2)=false||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -394,7 +394,7 @@
 
                                 Icon1_2 As icon.CalendarBlank:
                                     Color: |-
-                                        =If(_dateSelected<Today()&&IsBlank(_dateSelected2)=false||CountRows(
+                                        =If(IsBlank(_dateSelected2)=true,RGBA(166, 166, 166, 1),_dateSelected2<Today()&&IsBlank(_dateSelected2)=false||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -424,7 +424,7 @@
                                     Text: =
                                     Width: =TextInput2_13.Width
                                     X: =16
-                                    Y: =275
+                                    Y: =272
                                     ZIndex: =14
 
                                 Label10_30 As label:
@@ -436,12 +436,13 @@
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
                                     Text: |
-                                        =If((_dateSelected<Today()&&IsBlank(_dateSelected)=false),"* Valid date required",CountRows(
+                                        =If(IsBlank(_dateSelected)=true,"",(_dateSelected<Today()&&IsBlank(_dateSelected)=false),"* Valid date required",CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
                                             ) > 0,"*Leave Already Applied",(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),"No enough leave balance.")
+                                    Visible: =If(IsBlank(_dateSelected)=true,false,true)
                                     Width: =250
                                     X: =TextInput2_13.X+TextInput2_13.Width-Self.Width
                                     Y: =Radio1_4.Y+Radio1_4.Height
@@ -457,7 +458,8 @@
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
                                     Text: |
-                                        =If(_dateSelected > _dateSelected2,"*Valid End Date Required",IsBlank(_dateSelected)&&!IsBlank(_dateSelected2),"*Select start date")
+                                        =If(IsBlank(_dateSelected2)=true,"",_dateSelected > _dateSelected2,"*Valid End Date Required",IsBlank(_dateSelected)&&!IsBlank(_dateSelected2),"*Select start date")
+                                    Visible: =If(IsBlank(_dateSelected2)=true,false,true)
                                     Width: =250
                                     X: =TextInput2_13.X+TextInput2_13.Width-Self.Width-3
                                     Y: =239
@@ -520,20 +522,20 @@
 
                                 TextInput2_13 As text:
                                     BorderColor: |-
-                                        =If((_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
+                                        =If(IsBlank(_dateSelected)=true,RGBA(202, 202, 202, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||IsBlank(_dateSelected)=false&&CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||(duration > total - leaves||total-leaves<0),Color.Red,RGBA(202, 202, 202, 1))
+                                            ) > 0||IsBlank(_dateSelected)=false&&(duration > total - leaves||total-leaves<0),Color.Red,RGBA(202, 202, 202, 1))
                                     BorderThickness: =1
                                     Color: |-
-                                        =If((_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
+                                        =If(IsBlank(_dateSelected)=true,RGBA(0,0,0, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||(CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||(duration > total - leaves||total-leaves<0),Color.Red,RGBA(0, 0, 0, 1))
+                                            ) > 0&&IsBlank(_dateSelected)=false)||((duration > total - leaves||total-leaves<0)&&IsBlank(_dateSelected)=false),Color.Red,RGBA(0, 0, 0, 1))
                                     Default: =If(IsBlank(_dateSelected),"Select Date",Text(_dateSelected, DateTimeFormat.LongDate))
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     Height: =42
@@ -552,7 +554,7 @@
 
                                 Icon1 As icon.CalendarBlank:
                                     Color: |
-                                        =If((_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
+                                        =If(IsBlank(_dateSelected)=true,RGBA(166, 166, 166, 1),(_dateSelected<Today()&&IsBlank(_dateSelected)=false)||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -634,6 +636,7 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email)
                                             ) > 0,"*Leave Already Applied",(duration > total - leaves||total-leaves<0),"No enough leave balance.")
+                                    Visible: =If(IsBlank(_dateSelected)=true,false,true)
                                     Width: =250
                                     X: =TextInput2_13.X+TextInput2_13.Width-Self.Width-3
                                     Y: =Radio1_4.Y+Radio1_4.Height+1

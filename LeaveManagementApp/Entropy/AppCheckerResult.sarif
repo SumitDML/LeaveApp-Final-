@@ -4966,7 +4966,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 81,
+                  "charOffset": 112,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5006,7 +5006,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 58,
+                  "charOffset": 102,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5046,7 +5046,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 58,
+                  "charOffset": 110,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5086,7 +5086,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 58,
+                  "charOffset": 109,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5126,7 +5126,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 34,
+                  "charOffset": 86,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5166,7 +5166,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 34,
+                  "charOffset": 77,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5206,7 +5206,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 34,
+                  "charOffset": 80,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5246,7 +5246,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 34,
+                  "charOffset": 86,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5286,7 +5286,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 57,
+                  "charOffset": 110,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5366,7 +5366,7 @@
                 },
                 "region": {
                   "charLength": 165,
-                  "charOffset": 58,
+                  "charOffset": 139,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5406,7 +5406,7 @@
                 },
                 "region": {
                   "charLength": 165,
-                  "charOffset": 58,
+                  "charOffset": 102,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5446,7 +5446,7 @@
                 },
                 "region": {
                   "charLength": 165,
-                  "charOffset": 58,
+                  "charOffset": 109,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
