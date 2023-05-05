@@ -318,7 +318,7 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(0, 0, 0, 1))
+                                            ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(166, 166, 166, 1))
                                     Height: =TextInput2_11.Height-4
                                     Icon: =Icon.CalendarBlank
                                     PaddingBottom: =10
@@ -400,7 +400,7 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||_dateSelected > _dateSelected2||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(0, 0, 0, 1))
+                                            ) > 0||_dateSelected > _dateSelected2||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(166, 166, 166, 1))
                                     Height: =TextInput2_12.Height-4
                                     Icon: =Icon.CalendarBlank
                                     PaddingBottom: =10
@@ -523,7 +523,7 @@
                                         =If(_dateSelected<Today()||CountRows(
                                                 Filter(
                                                     LeaveRequests,
-                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
+                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email&&_dateSelected<>Today()
                                                 )
                                             ) > 0||(duration > total - leaves||total-leaves<0),Color.Red,RGBA(202, 202, 202, 1))
                                     BorderThickness: =1
@@ -531,7 +531,7 @@
                                         =If(_dateSelected<Today()||CountRows(
                                                 Filter(
                                                     LeaveRequests,
-                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
+                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email&&_dateSelected<>Today()
                                                 )
                                             ) > 0||(duration > total - leaves||total-leaves<0),Color.Red,RGBA(0, 0, 0, 1))
                                     Default: =Text(_dateSelected, DateTimeFormat.LongDate)
@@ -555,7 +555,7 @@
                                         =If(_dateSelected<Today()||CountRows(
                                                 Filter(
                                                     LeaveRequests,
-                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
+                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email&&_dateSelected<>Today()
                                                 )
                                             ) > 0,Color.Red,RGBA(166, 166, 166, 1))
                                     Height: =TextInput2_13.Height-4
@@ -620,6 +620,7 @@
                                     ZIndex: =6
 
                                 Label10_28 As label:
+                                    Align: =Align.Right
                                     Color: =RGBA(255, 0, 0, 1)
                                     Font: =Font.'Segoe UI'
                                     Height: =32
@@ -628,15 +629,15 @@
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
                                     Text: |
-                                        =If(_dateSelected<Today(),"* Valid date required",CountRows(
+                                        =If(_dateSelected<Today(),"*Past dates are not allowed",CountRows(
                                                 Filter(
                                                     LeaveRequests,
-                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email
+                                                    From <= _dateSelected && To >= _dateSelected&&RequestedBy.Email = User().Email&&_dateSelected<>Today()
                                                 )
                                             ) > 0,"*Leave Already Applied",(duration > total - leaves||total-leaves<0),"No enough leave balance.")
                                     Width: =250
-                                    X: =TextInput2_13.X+TextInput2_13.Width-Self.Width
-                                    Y: =Radio1_4.Y+Radio1_4.Height
+                                    X: =TextInput2_13.X+TextInput2_13.Width-Self.Width-3
+                                    Y: =Radio1_4.Y+Radio1_4.Height+1
                                     ZIndex: =7
 
                         Container19_4 As groupContainer.manualLayoutContainer:

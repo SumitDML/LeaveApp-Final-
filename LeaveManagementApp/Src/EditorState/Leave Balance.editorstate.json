@@ -70,7 +70,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "bottomNav",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4507,7 +4507,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container17_2",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

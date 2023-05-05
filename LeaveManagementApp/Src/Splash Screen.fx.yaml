@@ -22,7 +22,7 @@
         Container24_1 As groupContainer.manualLayoutContainer:
             Height: =100
             Width: =If(App.ActiveScreen.Size<=3,230,340)
-            X: =Parent.Width-Self.Width-8
+            X: =Parent.Width-Self.Width-10
             Y: =Parent.Height-Self.Height-20
             ZIndex: =5
 
@@ -53,7 +53,7 @@
                     Size: =If(App.ActiveScreen.Size<=3,8,12)
                     Text: =User().Email
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =341
+                    Width: =290
                     X: =Image13_3.X+Image13_3.Width+4
                     Y: =Label15_3.Y+Label15_3.Height
                     ZIndex: =2
@@ -67,7 +67,7 @@
                     PaddingTop: =0
                     Size: =If(App.ActiveScreen.Size<=3,8,12)
                     Text: =User().FullName
-                    Width: =322
+                    Width: =290
                     X: =Image13_3.X+Image13_3.Width+4
                     Y: =41
                     ZIndex: =3
