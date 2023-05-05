@@ -4854,91 +4854,35 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
       ],
       "results": [
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 63,
-                  "charOffset": 430,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveRequests,LeaveTypes.Value=\"Sick\"),'Total Days')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Apply Leave'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Apply Leave'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 63,
-                  "charOffset": 509,
-                  "snippet": {
-                    "text": "Sum(Filter(LeaveRequests,LeaveTypes.Value=\"Sick\"),'Total Days')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "Apply Leave",
-                "type": "'Apply Leave'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
         {
           "locations": [
             {
@@ -5114,7 +5058,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 84,
+                  "charOffset": 154,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5194,7 +5138,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 76,
+                  "charOffset": 146,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5274,7 +5218,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 137,
+                  "charOffset": 207,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -5756,7 +5700,7 @@
                 },
                 "region": {
                   "charLength": 166,
-                  "charOffset": 5121,
+                  "charOffset": 5240,
                   "snippet": {
                     "text": "CountRows(\r\n        Filter(\r\n            LeaveRequests,\r\n            From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email\r\n        )\r\n    )"
                   }
@@ -11036,6 +10980,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.samefromto"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.samefromto",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "samefromto",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.singledate"
                 }
               ],
@@ -11066,17 +11040,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.err"
+                  "fullyQualifiedName": "App.errordisplay"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.err",
+                  "fullyQualifiedName": "App.errordisplay",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "err",
+                "member": "errordisplay",
                 "module": "App",
                 "type": "App"
               }
@@ -11276,17 +11250,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.errordisplay"
+                  "fullyQualifiedName": "App.err"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.errordisplay",
+                  "fullyQualifiedName": "App.err",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "errordisplay",
+                "member": "err",
                 "module": "App",
                 "type": "App"
               }

@@ -4,19 +4,18 @@
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days));
         Set(_calendarVisible, true);
-        Reset(LeaveTypes2_1);
         Set(_dateSelected2,Blank());
         Set(_dateSelected,Blank());
-        Set(total,8);
-        Set(total1,8);
-        Set(leaves,Sum(Filter(LeaveRequests,LeaveTypes.Value="Sick"),'Total Days'));
-        Set(leaves1,Sum(Filter(LeaveRequests,LeaveTypes.Value="Sick"),'Total Days'));
         Refresh(LeaveRequests);
         Refresh(LeaveBalance);
         Set(singledateblank,false);
         Set(selecterror,false);
         Set(reasoncolor,false);
         Reset(Reasons2_1);
+        Reset(LeaveTypes2_1);
+        Set(vardata,LookUp(LeaveBalance,LeaveType.Value="Select"));
+        Set(varChange,LookUp(LeaveBalance,LeaveType.Value="Select"));
+        Set(leaves1,0);
 
     ScreenContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(249, 250, 252, 1)
@@ -369,14 +368,14 @@
                                             ) > 0||_dateSelected > _dateSelected2||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(0, 0, 0, 1))
                                     Default: =If(IsBlank(_dateSelected2),"Select Date",Text(_dateSelected2, DateTimeFormat.LongDate))
                                     DisabledBorderColor: |-
-                                        =If(todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(202, 202, 202, 1),((CountRows(
+                                        =If(_dateSelected=_dateSelected2&&IsBlank(_dateSelected2)=false,Color.Red,todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(202, 202, 202, 1),((CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
                                             ) > 0)||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)||(_dateSelected > _dateSelected2))=true,Color.Red,RGBA(202, 202, 202, 1))
                                     DisabledColor: |-
-                                        =If(todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(0, 0, 0, 1),CountRows(
+                                        =If(_dateSelected=_dateSelected2&&IsBlank(_dateSelected2)=false,Color.Red,todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(0, 0, 0, 1),CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -400,7 +399,7 @@
 
                                 Icon1_2 As icon.CalendarBlank:
                                     Color: |-
-                                        =If(todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(166, 166, 166, 1),_dateSelected2<Today()&&IsBlank(_dateSelected2)=false||CountRows(
+                                        =If(_dateSelected=_dateSelected2&&IsBlank(_dateSelected2)=false,Color.Red,todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(166, 166, 166, 1),_dateSelected2<Today()&&IsBlank(_dateSelected2)=false||CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
@@ -436,6 +435,7 @@
                                     ZIndex: =14
 
                                 Label10_30 As label:
+                                    Align: =Align.Right
                                     Color: =RGBA(255, 0, 0, 1)
                                     Font: =Font.'Segoe UI'
                                     Height: =32
@@ -466,7 +466,7 @@
                                     PaddingTop: =4.51
                                     Size: =If(App.ActiveScreen.Size<3,10,13)
                                     Text: |
-                                        =If(todateblank=true,"*Please select end date.",IsBlank(_dateSelected2)=true,"",_dateSelected > _dateSelected2,"*Valid End Date Required",IsBlank(_dateSelected)&&!IsBlank(_dateSelected2),"*Select start date")
+                                        =If(_dateSelected=_dateSelected2&&IsBlank(_dateSelected2)=false,"Apply for single day leave.",todateblank=true,"*Please select end date.",IsBlank(_dateSelected2)=true,"",_dateSelected > _dateSelected2,"*Valid End Date Required",IsBlank(_dateSelected)&&!IsBlank(_dateSelected2),"*Select start date")
                                     Visible: =If(todateblank=true,true,IsBlank(_dateSelected2)=true,false,true)
                                     Width: =250
                                     X: =TextInput2_13.X+TextInput2_13.Width-Self.Width-3
@@ -700,6 +700,7 @@
                                 HoverFill: =RGBA(255, 255, 255, 1)
                                 Mode: =TextMode.MultiLine
                                 OnChange: =
+                                OnSelect: =Set(reasoncolor,false);
                                 PaddingLeft: =25
                                 PaddingRight: =4.51
                                 PaddingTop: =10
@@ -779,7 +780,7 @@
                                     ChevronFill: =RGBA(255, 255, 255, 0)
                                     ChevronHoverBackground: =
                                     Color: =If(selecterror=true,Color.Red,LeaveTypes2_1.SelectedText.Value="Select",Color.DimGray,RGBA(0, 0, 0, 1))
-                                    Default: ="Select"
+                                    Default: =0
                                     Font: =Font.'Segoe UI'
                                     Height: =TextInput2_7.Height-4
                                     HoverBorderColor: =
@@ -1099,6 +1100,13 @@
                                     true
                                 )]
                             ,
+                            _dateSelected =_dateSelected2,
+                            [
+                                Set(
+                                    samefromto,
+                                    true
+                                )]
+                            ,
                             _dateSelected2 =Blank(),
                             [
                                 Set(
@@ -1279,6 +1287,14 @@
                     X: =405
                     Y: =516
                     ZIndex: =13
+
+            Label15 As label:
+                Text: =vardata.Id
+                ZIndex: =3
+
+            Label15_2 As label:
+                Text: =varChange.Id
+                ZIndex: =4
 
     Container6 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(28, 37, 54, 0.4)
