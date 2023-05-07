@@ -357,7 +357,7 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0)||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)||(_dateSelected > _dateSelected2))=true,Color.Red,RGBA(202, 202, 202, 1))
+                                            ) > 0)||((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&LeaveTypes2_1.SelectedText.Value<>"Select")||(_dateSelected > _dateSelected2))=true,Color.Red,RGBA(202, 202, 202, 1))
                                     BorderThickness: =1
                                     Color: |-
                                         =If(IsBlank(_dateSelected2)=true,RGBA(0,0,0,1),IsBlank(_dateSelected2)=false||CountRows(
@@ -365,7 +365,7 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||_dateSelected > _dateSelected2||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(0, 0, 0, 1))
+                                            ) > 0||_dateSelected > _dateSelected2||((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&LeaveTypes2_1.SelectedText.Value<>"Select"),Color.Red,RGBA(0, 0, 0, 1))
                                     Default: =If(IsBlank(_dateSelected2),"Select Date",Text(_dateSelected2, DateTimeFormat.LongDate))
                                     DisabledBorderColor: |-
                                         =If(_dateSelected=_dateSelected2&&IsBlank(_dateSelected2)=false,Color.Red,todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(202, 202, 202, 1),((CountRows(
@@ -373,14 +373,14 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0)||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)||(_dateSelected > _dateSelected2))=true,Color.Red,RGBA(202, 202, 202, 1))
+                                            ) > 0)||(((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)||(_dateSelected > _dateSelected2)=true)&&LeaveTypes2_1.SelectedText.Value<>"Select")),Color.Red,RGBA(202, 202, 202, 1))
                                     DisabledColor: |-
                                         =If(_dateSelected=_dateSelected2&&IsBlank(_dateSelected2)=false,Color.Red,todateblank=true,Color.Red,IsBlank(_dateSelected2)=true,RGBA(0, 0, 0, 1),CountRows(
                                                 Filter(
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||_dateSelected > _dateSelected2||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(0, 0, 0, 1))
+                                            ) > 0||_dateSelected > _dateSelected2||((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&LeaveTypes2_1.SelectedText.Value<>"Select"),Color.Red,RGBA(0, 0, 0, 1))
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     DisplayMode: =DisplayMode.Disabled
                                     Font: =Font.'Segoe UI'
@@ -404,7 +404,7 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||_dateSelected > _dateSelected2||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0),Color.Red,RGBA(166, 166, 166, 1))
+                                            ) > 0||_dateSelected > _dateSelected2||((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&LeaveTypes2_1.SelectedText.Value<>"Select"),Color.Red,RGBA(166, 166, 166, 1))
                                     Height: =TextInput2_12.Height-4
                                     Icon: =Icon.CalendarBlank
                                     PaddingBottom: =10
@@ -1288,14 +1288,6 @@
                     Y: =516
                     ZIndex: =13
 
-            Label15 As label:
-                Text: =vardata.Id
-                ZIndex: =3
-
-            Label15_2 As label:
-                Text: =varChange.Id
-                ZIndex: =4
-
     Container6 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(28, 37, 54, 0.4)
         Height: =1080
@@ -1465,7 +1457,22 @@
                     ZIndex: =2
 
                 Circle2_1 As circle:
-                    Fill: =If(Mod(ThisItem.Value,7)=0||Mod(ThisItem.Value,7)=6,RGBA(186, 202, 226, 1),RGBA(237, 116, 116, 1))
+                    Fill: |-
+                        =If(Mod(ThisItem.Value,7)=0||Mod(ThisItem.Value,7)=6,RGBA(186, 202, 226, 1),    
+                        !IsEmpty(Filter(
+                                LeaveRequests,
+                                From <= DateAdd(
+                                _firstDayInView,
+                                ThisItem.Value,
+                                TimeUnit.Days
+                            )
+                        
+                        && To >= DateAdd(
+                                _firstDayInView,
+                                ThisItem.Value,
+                                TimeUnit.Days
+                            )&&Status.Value<>"Rejected"&&RequestedBy.Email=User().Email
+                            )),Color.Green,RGBA(237, 116, 116, 1))
                     Height: =Self.Width
                     OnSelect: =Select(Parent)
                     Visible: |-
@@ -1595,7 +1602,7 @@
                     Visible: |
                         =true
                     Width: =9
-                    X: =80
+                    X: =10
                     Y: =Parent.Height/2-Self.Height/2
                     ZIndex: =1
 
@@ -1606,7 +1613,7 @@
                     Size: =If(App.ActiveScreen.Size<=2,7,10)
                     Text: ="Weekly Off"
                     Width: =85
-                    X: =95
+                    X: =25
                     Y: =Parent.Height/2-Self.Height/2
                     ZIndex: =2
 
@@ -1616,7 +1623,7 @@
                     Visible: |
                         =true
                     Width: =9
-                    X: =185
+                    X: =205
                     Y: =Parent.Height/2-Self.Height/2
                     ZIndex: =3
 
@@ -1625,11 +1632,33 @@
                     Height: =15
                     PaddingLeft: =0
                     Size: =If(App.ActiveScreen.Size<=2,7,10)
-                    Text: ="Leave"
-                    Width: =85
-                    X: =200
+                    Text: ="Team Leaves"
+                    Width: =80
+                    X: =220
                     Y: =Parent.Height/2-Self.Height/2
                     ZIndex: =4
+
+                Circle2_11 As circle:
+                    Fill: =Color.Green
+                    Height: =Self.Width
+                    OnSelect: =
+                    Visible: |
+                        =true
+                    Width: =9
+                    X: =110
+                    Y: =9
+                    ZIndex: =5
+
+                Label16_8 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =15
+                    PaddingLeft: =0
+                    Size: =If(App.ActiveScreen.Size<=2,7,10)
+                    Text: ="Self Leaves"
+                    Width: =85
+                    X: =127
+                    Y: =6
+                    ZIndex: =6
 
     Component7_4 As Component7:
         CurrentScreen: ="Apply Leave"
