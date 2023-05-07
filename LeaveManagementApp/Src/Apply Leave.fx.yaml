@@ -320,7 +320,7 @@
                                                     LeaveRequests,
                                                     From <= _dateSelected2 && To >= _dateSelected&&RequestedBy.Email = User().Email
                                                 )
-                                            ) > 0||(Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&LeaveTypes2_1.SelectedText.Value<>"Select"),Color.Red,RGBA(166, 166, 166, 1))
+                                            ) > 0||((Int(varTotalDays2) > total1-leaves1||total1-leaves1<0)&&LeaveTypes2_1.SelectedText.Value<>"Select"),Color.Red,RGBA(166, 166, 166, 1))
                                     Height: =TextInput2_11.Height-4
                                     Icon: =Icon.CalendarBlank
                                     PaddingBottom: =10
